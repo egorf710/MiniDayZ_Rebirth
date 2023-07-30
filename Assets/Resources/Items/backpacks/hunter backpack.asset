@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14400e054fc9e78428098e1abb894206, type: 3}
+  m_Name: hunter backpack
+  m_EditorClassIdentifier: 
+  item_name: "\u041E\u0445\u043E\u0442\u043D\u0438\u0447\u0438\u0439 \u0440\u044E\u043A\u0437\u0430\u043A"
+  item_path: backpacks/
+  item_description: "\u0421\u0442\u0430\u043D\u0434\u0430\u0440\u0442\u043D\u044B\u0439
+    \u043E\u0445\u043E\u0442\u043D\u0438\u0447\u0438\u0439 \u0440\u044E\u043A\u0437\u0430\u043A
+    \u0441 \u0437\u0430\u043A\u0440\u044B\u0432\u0430\u044E\u0449\u0438\u043C\u0438\u0441\u044F
+    \u043A\u0430\u0440\u043C\u0430\u043D\u0430\u043C\u0438. \u041E\u0447\u0435\u043D\u044C
+    \u043F\u0440\u043E\u0447\u043D\u044B\u0439 \u0438 \u0443\u0434\u043E\u0431\u043D\u044B\u0439,
+    \u0435\u0441\u043B\u0438 \u043D\u0435\u043C\u043D\u043E\u0433\u043E \u0441\u0442\u0430\u0440\u043E\u043C\u043E\u0434\u043D\u044B\u0439."
+  item_type: 4
+  item_sprite: {fileID: 5136803033497722080, guid: d5710f279dc250e4c8ac0fb861807303, type: 3}
+  item_drop_sprite: {fileID: 3626364154500819335, guid: 4d88638888e6a554e8a5c9660bd01126, type: 3}
+  stacable: 0
+  item_max_amount: 1
+  use_durability: 1
+  slot_count: 5
+  recipes: []
+  durability: 100
+  armor: 0
+  heat: 0

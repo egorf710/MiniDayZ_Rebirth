@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689ed7c2eb591fe468e3efcce6f36ef6, type: 3}
+  m_Name: lemas
+  m_EditorClassIdentifier: 
+  item_name: LE-MAS
+  item_path: rifles/
+  item_description: "\u0444\u0440\u0430\u043D\u0446\u0443\u0441\u043A\u0438\u0439
+    \u0431\u0443\u043B\u043F\u0430\u0431 \u0430\u0432\u0442\u043E\u043C\u0430\u0442
+    \n\u0443\u0440\u043E\u043D 18-30 \n\u043F\u0430\u0442\u0440\u043E\u043D\u044B
+    5.56\r\n\u0438\u0437\u043D\u043E\u0441 \u0437\u0430 \u0432\u044B\u0441\u0442\u0440\u0435\u043B
+    0.3\r\n\u0432\u044B\u0441\u0442\u0440\u0435\u043B \u0432 \u043C\u0438\u043D 700 "
+  item_type: 6
+  item_sprite: {fileID: 4221481523774337639, guid: b72f8a0325c02ec4b8a602ed6ad93212, type: 3}
+  item_drop_sprite: {fileID: -3476692178064407038, guid: 53d6b40fb6f695241b928d1d1c06b16b, type: 3}
+  stacable: 0
+  item_max_amount: 1
+  use_durability: 1
+  slot_count: 0
+  recipes: []
+  fullSprite: {fileID: 3122111012315645419, guid: 0278f604ff6a3c341b78f28040c70433, type: 3}
+  durability: 100
+  damage: 24
+  shot: 1
+  punch_range: 0
+  reload_time: 0.07
+  spread: {x: 2, y: 14}
+  aim_speed: 6
+  fire_rate: 700
+  force: 800
+  mag_size: 25
+  scope_range: 6
+  scope_baff: 1.3
+  ammo: {fileID: 11400000, guid: dedf9da404d21124daebf7fcaf04155c, type: 2}
+  shoot_clip: []
+  reload_clip: {fileID: 8300000, guid: 3ecf13483b2d1ef4ca2ae5a7b202c186, type: 3}

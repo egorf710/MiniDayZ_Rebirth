@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689ed7c2eb591fe468e3efcce6f36ef6, type: 3}
+  m_Name: akm
+  m_EditorClassIdentifier: 
+  item_name: "\u0410\u041A\u041C"
+  item_path: rifles/
+  item_description: "\u0410\u0432\u0442\u043E\u043C\u0430\u0442 \u041A\u0430\u043B\u0430\u0448\u043D\u0438\u043A\u043E\u0432\u0430
+    \u043C\u043E\u0434\u0435\u0440\u043D\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439
+    \u2014 \u0441\u0430\u043C\u0430\u044F \u0440\u0430\u0441\u043F\u0440\u043E\u0441\u0442\u0440\u0430\u043D\u0451\u043D\u043D\u0430\u044F
+    \u043C\u043E\u0434\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u044F \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0430
+    \u041A\u0430\u043B\u0430\u0448\u043D\u0438\u043A\u043E\u0432\u0430."
+  item_type: 6
+  item_sprite: {fileID: 208363232963045497, guid: b72f8a0325c02ec4b8a602ed6ad93212, type: 3}
+  item_drop_sprite: {fileID: 4402559074015365849, guid: a7b16d2a61003f749ba8e3c2de1214b7, type: 3}
+  stacable: 0
+  item_max_amount: 1
+  use_durability: 1
+  slot_count: 0
+  recipes: []
+  fullSprite: {fileID: -5840666631864212784, guid: 6f597fdc930350b49a2b071190bc9c47, type: 3}
+  durability: 100
+  damage: 38
+  shot: 1
+  punch_range: 0
+  reload_time: 0.07
+  spread: {x: 5, y: 16}
+  aim_speed: 8
+  fire_rate: 450
+  force: 1200
+  mag_size: 30
+  scope_range: 6.7
+  scope_baff: 1.4
+  ammo: {fileID: 11400000, guid: 918c912a994343c47898da824c36da46, type: 2}
+  shoot_clip:
+  - {fileID: 8300000, guid: 7cb7cc34d3f79194cad40908ae29a0b8, type: 3}
+  - {fileID: 8300000, guid: 4788f89e65ba3b64b923232e173e4012, type: 3}
+  - {fileID: 8300000, guid: 85cae6a23e7e94347811ea0890870182, type: 3}
+  - {fileID: 8300000, guid: f8327d8bfb5b53647858bc9f0ca754e5, type: 3}
+  - {fileID: 8300000, guid: ddf856d4e74b2994382b928ee7f415c0, type: 3}
+  reload_clip: {fileID: 8300000, guid: 3ecf13483b2d1ef4ca2ae5a7b202c186, type: 3}

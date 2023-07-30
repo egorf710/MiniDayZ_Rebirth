@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 608f39a0742ed93408795c4e45e0c3c8, type: 3}
+  m_Name: cap
+  m_EditorClassIdentifier: 
+  type: 1
+  idle:
+  - {fileID: 6541352373118836414, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: 1303104675569681104, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: -8729439606894437680, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: 8868847691746612698, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  run_down:
+  - {fileID: -8143716149732138519, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: -8143716149732138519, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: -6044288764639940232, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: 324508548162324373, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  run_up:
+  - {fileID: -5527904233956084507, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: -4607476107904109440, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: -5527904233956084507, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: 4123831292668108807, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  run_right:
+  - {fileID: -4303843334615069208, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: -4303843334615069208, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: 6874371888888476862, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: -1261533613148691623, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  run_left:
+  - {fileID: 5821799330435574990, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: -8103935125460900000, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: 5821799330435574990, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: -3734533465785519293, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  interact:
+  - {fileID: 3829139519910492670, guid: 5f1ee56171df3e04ca26b6cbab0ff8c5, type: 3}
+  - {fileID: 3829139519910492670, guid: 5f1ee56171df3e04ca26b6cbab0ff8c5, type: 3}
+  - {fileID: 3829139519910492670, guid: 5f1ee56171df3e04ca26b6cbab0ff8c5, type: 3}
+  - {fileID: 3829139519910492670, guid: 5f1ee56171df3e04ca26b6cbab0ff8c5, type: 3}
+  shoot:
+  - {fileID: 2749197184597569904, guid: 5f1ee56171df3e04ca26b6cbab0ff8c5, type: 3}
+  - {fileID: 1303104675569681104, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: 7025289822859003215, guid: 5f1ee56171df3e04ca26b6cbab0ff8c5, type: 3}
+  - {fileID: 2710341090433300750, guid: 5f1ee56171df3e04ca26b6cbab0ff8c5, type: 3}
+  weapon_idle:
+  - {fileID: 6541352373118836414, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: 1303104675569681104, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: -8729439606894437680, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: 8868847691746612698, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  pistol_idle:
+  - {fileID: 6541352373118836414, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: 1303104675569681104, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: -8729439606894437680, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}
+  - {fileID: 8868847691746612698, guid: a9bc4060885ebf94f86877a2008417e4, type: 3}

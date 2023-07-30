@@ -1,0 +1,345 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3019598893155583775
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3019598893155583772}
+  - component: {fileID: 3019598893155583842}
+  - component: {fileID: 3019598893155583773}
+  - component: {fileID: 6314174592911624774}
+  - component: {fileID: 2277181765043644607}
+  m_Layer: 0
+  m_Name: car_regular_blue-sheet0_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3019598893155583772
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3019598893155583775}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4395004459310008751}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &3019598893155583842
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3019598893155583775}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 5fc2c6d114c31f24f8123c02ecc1e6c2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: -5385751061723774048, guid: 90bc734f8632e3140a86165600e66e04, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3.15625, y: 1.625}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!61 &3019598893155583773
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3019598893155583775}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.22}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.15625, y: 1.625}
+    newSize: {x: 3.15625, y: 1.625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.15625, y: 1.15}
+  m_EdgeRadius: 0
+--- !u!114 &6314174592911624774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3019598893155583775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
+--- !u!114 &2277181765043644607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3019598893155583775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8e93dd881b096d4c9d50ad3ab836699, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sp: {fileID: 0}
+  loot_point: {fileID: 0}
+  loot_list:
+  - name: "\u041A\u043E\u043D\u0441\u0435\u0440\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439
+      \u0422\u0443\u043D\u0435\u0446"
+    chanse: 50
+    item: {fileID: 11400000, guid: 89393273d8714c64b8dd590a21e05a19, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  - name: "\u041A\u043E\u043D\u0441\u0435\u0440\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435
+      \u0411\u043E\u0431\u044B"
+    chanse: 50
+    item: {fileID: 11400000, guid: 9663ffe70b386754c846a310b6d3a5f6, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  - name: "\u0422\u0443\u0448\u0451\u043D\u043A\u0430"
+    chanse: 50
+    item: {fileID: 11400000, guid: e34ab3f944dd67d49b82557163222dcb, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  - name: "\u0420\u0438\u0441"
+    chanse: 50
+    item: {fileID: 11400000, guid: 03cccd9139a15d14a96cd811c6f51d20, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  - name: "\u0420\u0438\u0441"
+    chanse: 50
+    item: {fileID: 11400000, guid: 03cccd9139a15d14a96cd811c6f51d20, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  - name: "\u041F\u0435\u043F\u0441\u0438"
+    chanse: 50
+    item: {fileID: 11400000, guid: f0b92e2af50bc2a4fb9a8bbeb229e8f1, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  - name: "\u0421\u043F\u0440\u0430\u0439\u0442"
+    chanse: 50
+    item: {fileID: 11400000, guid: 0b6236e7b094008448190d6573e1ecd4, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  - name: "\u041A\u043E\u043B\u0430"
+    chanse: 50
+    item: {fileID: 11400000, guid: d159aec597301bc468a1e3e6b4797c01, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  - name: "\u0422\u0440\u044F\u043F\u043A\u0438"
+    chanse: 50
+    item: {fileID: 11400000, guid: 03cccd9139a15d14a96cd811c6f51d20, type: 2}
+    amount: {x: 1, y: 7}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  - name: "\u041F\u0430\u0442\u0440\u043E\u043D\u044B 12"
+    chanse: 30
+    item: {fileID: 11400000, guid: bba2f31819f95444f9c3b0dacdd7efd8, type: 2}
+    amount: {x: 1, y: 7}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  - name: "\u041F\u0430\u0442\u0440\u043E\u043D\u044B 357"
+    chanse: 20
+    item: {fileID: 11400000, guid: 03cccd9139a15d14a96cd811c6f51d20, type: 2}
+    amount: {x: 1, y: 7}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  - name: "\u041F\u0430\u0442\u0440\u043E\u043D\u044B 7.62x54R"
+    chanse: 20
+    item: {fileID: 11400000, guid: 112d772eb70462a48aeb9769760e2884, type: 2}
+    amount: {x: 1, y: 7}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  - name: "\u0421\u043A\u043E\u0442\u0447"
+    chanse: 40
+    item: {fileID: 11400000, guid: c32a03c2a31b0f547adb3af5a6124d33, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  - name: "\u0418\u0436 43"
+    chanse: 15
+    item: {fileID: 11400000, guid: c32a03c2a31b0f547adb3af5a6124d33, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 20, y: 70}
+    ammo: {x: 0, y: 2}
+  - name: "\u0420\u0435\u043C\u0438\u043D\u0433\u0442\u043E\u043D"
+    chanse: 15
+    item: {fileID: 11400000, guid: f1ba3a8cb8cc63e4e85aef19507ad3cf, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 20, y: 70}
+    ammo: {x: 0, y: 3}
+  - name: "\u0420\u0443\u0431\u0430\u0448\u043A\u0430"
+    chanse: 30
+    item: {fileID: 11400000, guid: d1da4e419d5a9884d934e74475fa818f, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 20, y: 70}
+    ammo: {x: 0, y: 0}
+  - name: "\u0425\u0443\u0434\u0438"
+    chanse: 30
+    item: {fileID: 11400000, guid: e5568317e5bcae7439886f1b043193f5, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 20, y: 70}
+    ammo: {x: 0, y: 0}
+  - name: "\u0424\u0443\u0442\u0431\u043E\u043B\u043A\u0430"
+    chanse: 30
+    item: {fileID: 11400000, guid: 530e8b942ac791a46ad78006c4e10b36, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 20, y: 70}
+    ammo: {x: 0, y: 0}
+  - name: "\u0414\u0436\u0438\u043D\u0441\u044B"
+    chanse: 30
+    item: {fileID: 11400000, guid: 90cbcdf55407ed141bad90900fbe7b7b, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 20, y: 70}
+    ammo: {x: 0, y: 0}
+  - name: "\u0411\u0430\u043D\u0434\u0430\u043D\u0430"
+    chanse: 40
+    item: {fileID: 11400000, guid: 0337404ae755aa14d9b6990bc7ed590c, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 20, y: 70}
+    ammo: {x: 0, y: 0}
+  - name: "\u0412\u0438\u0441\u043A\u0438"
+    chanse: 24
+    item: {fileID: 11400000, guid: 5bb260ca8b3c0664e87c83f2416ee11e, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 20, y: 70}
+    ammo: {x: 0, y: 0}
+  - name: "\u0424\u0430\u0435\u0440"
+    chanse: 40
+    item: {fileID: 11400000, guid: 799cbe720b7c1e348b5dae3e7b83d014, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  - name: "\u0414\u0440\u043E\u0432\u0430"
+    chanse: 30
+    item: {fileID: 11400000, guid: d08ae0f425d072947bac7af6ceb4acca, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  - name: "\u0411\u0438\u0442\u0430"
+    chanse: 30
+    item: {fileID: 11400000, guid: af2ca9a29e603cc48a94a6fcc4e111a3, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 20, y: 70}
+    ammo: {x: 0, y: 0}
+  - name: "\u041F\u043C"
+    chanse: 20
+    item: {fileID: 11400000, guid: 1b463db4f88189d449bd76ba13d91306, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 20, y: 70}
+    ammo: {x: 0, y: 0}
+  - name: "\u041F\u0430\u0442\u0440\u043E\u043D\u044B 9x18"
+    chanse: 30
+    item: {fileID: 11400000, guid: 26a2dc2fad9bef043883c09c2012da25, type: 2}
+    amount: {x: 1, y: 1}
+    durability: {x: 0, y: 0}
+    ammo: {x: 0, y: 0}
+  sprites:
+  - {fileID: 2346037644017957920, guid: 90bc734f8632e3140a86165600e66e04, type: 3}
+  - {fileID: -5385751061723774048, guid: 90bc734f8632e3140a86165600e66e04, type: 3}
+  time_growth: 2160
+  ready: 1
+  up: 0
+  right: 1
+  left: 0
+  down: 0
+  startTime: 0
+  networkManger: {fileID: 0}
+  natworkPlayer: {fileID: 0}
+--- !u!1 &9091149778271703143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4395004459310008751}
+  m_Layer: 0
+  m_Name: spawn point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4395004459310008751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9091149778271703143}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.948, y: -0.308, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3019598893155583772}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

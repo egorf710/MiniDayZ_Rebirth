@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689ed7c2eb591fe468e3efcce6f36ef6, type: 3}
+  m_Name: pan
+  m_EditorClassIdentifier: 
+  item_name: "\u0421\u043A\u043E\u0432\u043E\u0440\u043E\u0434\u043A\u0430"
+  item_path: melee weapons/
+  item_description: "\u0421\u043A\u043E\u0432\u043E\u0440\u043E\u0434\u0430 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F
+    \u0432 \u0440\u0430\u0437\u043B\u0438\u0447\u043D\u044B\u0445 \u0441\u043F\u043E\u0441\u043E\u0431\u0430\u0445
+    \u043F\u0440\u0438\u0433\u043E\u0442\u043E\u0432\u043B\u0435\u043D\u0438\u044F
+    \u043F\u0438\u0449\u0438 \u043A \u0443\u043F\u043E\u0442\u0440\u0435\u0431\u043B\u0435\u043D\u0438\u044E."
+  item_type: 8
+  item_sprite: {fileID: 1433940232081441619, guid: 8bc7bef08d41bf74c92f8f66472e375a, type: 3}
+  item_drop_sprite: {fileID: -3315085793671866215, guid: 2d6a1adc70cd4094692f6333e9a50476, type: 3}
+  stacable: 0
+  item_max_amount: 1
+  use_durability: 1
+  slot_count: 0
+  recipes: []
+  fullSprite: {fileID: 1433940232081441619, guid: 8bc7bef08d41bf74c92f8f66472e375a, type: 3}
+  durability: 100
+  damage: 33
+  shot: 1
+  reload_time: 0
+  spread: {x: 2, y: 14}
+  aim_speed: 6
+  fire_rate: 70
+  force: 1000
+  mag_size: 0
+  scope_range: 5
+  scope_baff: 1
+  ammo: {fileID: 0}
+  shoot_clip: []

@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689ed7c2eb591fe468e3efcce6f36ef6, type: 3}
+  m_Name: fn cal
+  m_EditorClassIdentifier: 
+  item_name: FN CAL
+  item_path: rifles/
+  item_description: Fusil Automatique Leger
+  item_type: 6
+  item_sprite: {fileID: -6236669803742965914, guid: b72f8a0325c02ec4b8a602ed6ad93212, type: 3}
+  item_drop_sprite: {fileID: -6283472358036035650, guid: bb2fea1a74cb62d41a772ae003fdade4, type: 3}
+  stacable: 0
+  item_max_amount: 1
+  use_durability: 1
+  slot_count: 0
+  recipes: []
+  fullSprite: {fileID: 8421050286883845899, guid: 6f597fdc930350b49a2b071190bc9c47, type: 3}
+  durability: 100
+  damage: 30
+  shot: 1
+  punch_range: 0
+  reload_time: 0.07
+  spread: {x: 2, y: 14}
+  aim_speed: 6
+  fire_rate: 550
+  force: 1000
+  mag_size: 20
+  scope_range: 6.5
+  scope_baff: 1.2
+  ammo: {fileID: 11400000, guid: dedf9da404d21124daebf7fcaf04155c, type: 2}
+  shoot_clip:
+  - {fileID: 8300000, guid: f914ae000057f6642b228302819ecb55, type: 3}
+  - {fileID: 8300000, guid: c474e3444272a294dae7c791cc5b37d0, type: 3}
+  reload_clip: {fileID: 8300000, guid: 3ecf13483b2d1ef4ca2ae5a7b202c186, type: 3}

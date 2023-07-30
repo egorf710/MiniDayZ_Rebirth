@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689ed7c2eb591fe468e3efcce6f36ef6, type: 3}
+  m_Name: sporter
+  m_EditorClassIdentifier: 
+  item_name: "\u0421\u043F\u043E\u0440\u0442\u0435\u0440"
+  item_path: other gun/
+  item_description: "\u041F\u043E\u043B\u0443\u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0430\u044F
+    \u0432\u0438\u043D\u0442\u043E\u0432\u043A\u0430, \u043F\u0438\u0442\u0430\u044E\u0449\u0430\u044F\u0441\u044F
+    \u043E\u0442 \u0441\u044A\u0435\u043C\u043D\u043E\u0433\u043E \u043C\u0430\u0433\u0430\u0437\u0438\u043D\u0430.
+    \u041E\u0442\u043B\u0438\u0447\u043D\u043E \u043F\u043E\u0434\u0445\u043E\u0434\u0438\u0442
+    \u0434\u043B\u044F \u0440\u0430\u0437\u0432\u043B\u0435\u043A\u0430\u0442\u0435\u043B\u044C\u043D\u044B\u0445
+    \u043C\u0435\u0440\u043E\u043F\u0440\u0438\u044F\u0442\u0438\u0439, \u0442\u0430\u043A\u0438\u0445
+    \u043A\u0430\u043A \u0441\u0442\u0440\u0435\u043B\u044C\u0431\u0430 \u043F\u043E
+    \u043C\u0438\u0448\u0435\u043D\u044F\u043C, \u043F\u043B\u0438\u043D\u043A\u0438\u043D\u0433
+    \u0438 \u0434\u0430\u0436\u0435 \u043E\u0445\u043E\u0442\u0430 \u043D\u0430 \u043C\u0435\u043B\u043A\u0443\u044E
+    \u0434\u0438\u0447\u044C. \u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u0435
+    .22 \u0440\u0430\u0443\u043D\u0434\u0430 LR."
+  item_type: 6
+  item_sprite: {fileID: -1431973458398511202, guid: b72f8a0325c02ec4b8a602ed6ad93212, type: 3}
+  item_drop_sprite: {fileID: 2400461150683577861, guid: 79916a25a2ae8d24395ddcce1495ba72, type: 3}
+  stacable: 0
+  item_max_amount: 1
+  use_durability: 1
+  slot_count: 0
+  recipes: []
+  fullSprite: {fileID: -5199043944531810750, guid: 6f597fdc930350b49a2b071190bc9c47, type: 3}
+  durability: 100
+  damage: 29
+  shot: 1
+  punch_range: 0
+  reload_time: 0.07
+  spread: {x: 4, y: 14}
+  aim_speed: 4
+  fire_rate: 200
+  force: 1000
+  mag_size: 30
+  scope_range: 6
+  scope_baff: 1.3
+  ammo: {fileID: 11400000, guid: 18907aba42a26224aab995070dd7c63e, type: 2}
+  shoot_clip:
+  - {fileID: 8300000, guid: b4573c09d4c0f954abf81cfdf65394ad, type: 3}
+  reload_clip: {fileID: 8300000, guid: 3ecf13483b2d1ef4ca2ae5a7b202c186, type: 3}

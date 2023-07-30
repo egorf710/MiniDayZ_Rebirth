@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d04019c8b352384e93d241df79fceb4, type: 3}
+  m_Name: x45
+  m_EditorClassIdentifier: 
+  item_name: .45
+  item_path: ammo/
+  item_description: "\u041F\u0438\u0441\u0442\u043E\u043B\u0435\u0442\u043D\u044B\u0439
+    \u0443\u043D\u0438\u0442\u0430\u0440\u043D\u044B\u0439 \u043F\u0430\u0442\u0440\u043E\u043D
+    \u0441 \u0431\u0435\u0441\u0444\u043B\u0430\u043D\u0446\u0435\u0432\u043E\u0439
+    \u0433\u0438\u043B\u044C\u0437\u043E\u0439 \u0446\u0438\u043B\u0438\u043D\u0434\u0440\u0438\u0447\u0435\u0441\u043A\u043E\u0439
+    \u0444\u043E\u0440\u043C\u044B \u0441 \u043D\u0435\u0431\u043E\u043B\u044C\u0448\u043E\u0439
+    \u043A\u043E\u043D\u0443\u0441\u043D\u043E\u0441\u0442\u044C\u044E"
+  item_type: 0
+  item_sprite: {fileID: 5211051010276371107, guid: f8e8d9801313f7041bfa82770e47e10a, type: 3}
+  item_drop_sprite: {fileID: 21300000, guid: f597c8bd90f3ef24aba6221c62c0775f, type: 3}
+  stacable: 1
+  item_max_amount: 30
+  use_durability: 0
+  slot_count: 0
+  recipes: []
+  prefabAmmo: {fileID: 8874859707319872651, guid: a27300435bf917d45bef7466729c91bb, type: 3}

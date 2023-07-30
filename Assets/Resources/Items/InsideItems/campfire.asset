@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21025f14d92fa6643a56be47f8587baa, type: 3}
+  m_Name: campfire
+  m_EditorClassIdentifier: 
+  item_name: "\u041D\u0430\u0431\u043E\u0440 \u0434\u043B\u044F \u043A\u043E\u0441\u0442\u0440\u0430"
+  item_path: InsideItems/
+  item_description: "\u041C\u043E\u0436\u043D\u043E \u043F\u043E\u0441\u0442\u0430\u0432\u0438\u0442\u044C
+    \u0438 \u0440\u0430\u0437\u0436\u0435\u0447\u044C"
+  item_type: 0
+  item_sprite: {fileID: 8333471095082013409, guid: f8e8d9801313f7041bfa82770e47e10a, type: 3}
+  item_drop_sprite: {fileID: 21300000, guid: 82e400f09b7c0354bbf114d13496fbb5, type: 3}
+  stacable: 0
+  item_max_amount: 1
+  use_durability: 0
+  slot_count: 0
+  recipes:
+  - item: {fileID: 11400000, guid: d08ae0f425d072947bac7af6ceb4acca, type: 2}
+    amount: 1
+  - item: {fileID: 11400000, guid: ecfcae087772adf47a58178533934171, type: 2}
+    amount: 1

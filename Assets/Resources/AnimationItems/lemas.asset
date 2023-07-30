@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 608f39a0742ed93408795c4e45e0c3c8, type: 3}
+  m_Name: lemas
+  m_EditorClassIdentifier: 
+  type: 5
+  idle:
+  - {fileID: 7119180191916579936, guid: 53d6b40fb6f695241b928d1d1c06b16b, type: 3}
+  - {fileID: 6553406935122897560, guid: 53d6b40fb6f695241b928d1d1c06b16b, type: 3}
+  - {fileID: 4729299553623051390, guid: 53d6b40fb6f695241b928d1d1c06b16b, type: 3}
+  - {fileID: -3428832009752015381, guid: 53d6b40fb6f695241b928d1d1c06b16b, type: 3}
+  run_down:
+  - {fileID: -8057749046678896813, guid: 53d6b40fb6f695241b928d1d1c06b16b, type: 3}
+  - {fileID: -8117065895878389198, guid: 53d6b40fb6f695241b928d1d1c06b16b, type: 3}
+  - {fileID: -6898210576797255733, guid: 53d6b40fb6f695241b928d1d1c06b16b, type: 3}
+  - {fileID: -178023703642023247, guid: 53d6b40fb6f695241b928d1d1c06b16b, type: 3}
+  run_up:
+  - {fileID: -4859654794131614538, guid: 53d6b40fb6f695241b928d1d1c06b16b, type: 3}
+  - {fileID: 1824235562917755646, guid: 53d6b40fb6f695241b928d1d1c06b16b, type: 3}
+  - {fileID: 379856957476888972, guid: 53d6b40fb6f695241b928d1d1c06b16b, type: 3}
+  - {fileID: 1824235562917755646, guid: 53d6b40fb6f695241b928d1d1c06b16b, type: 3}
+  run_right:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  run_left:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  interact:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  shoot:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  weapon_idle:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  pistol_idle:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

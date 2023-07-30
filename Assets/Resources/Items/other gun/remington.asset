@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689ed7c2eb591fe468e3efcce6f36ef6, type: 3}
+  m_Name: remington
+  m_EditorClassIdentifier: 
+  item_name: "\u0420\u0435\u043C\u0438\u043D\u0433\u0442\u043E\u043D"
+  item_path: other gun/
+  item_description: "\u0410\u043C\u0435\u0440\u0438\u043A\u0430\u043D\u0441\u043A\u043E\u0435
+    \u0440\u0443\u0436\u044C\u0451, \u0432\u043F\u0435\u0440\u0432\u044B\u0435 \u043F\u0440\u0435\u0434\u0441\u0442\u0430\u0432\u043B\u0435\u043D\u043D\u043E\u0435
+    \u0432 1950 \u0433\u043E\u0434\u0443 \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0435\u0439
+    Remington Arms. Remington 670 \u0431\u043B\u0430\u0433\u043E\u0434\u0430\u0440\u044F
+    \u0441\u0432\u043E\u0435\u0439 \u0445\u0430\u0440\u0430\u043A\u0442\u0435\u0440\u043D\u043E\u0439
+    \u043F\u0435\u0440\u0435\u0437\u0430\u0440\u044F\u0434\u043A\u0435 \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F
+    \u043E\u0434\u043D\u0438\u043C \u0438\u0437 \u0441\u0430\u043C\u044B\u0445 \u0437\u043D\u0430\u043C\u0435\u043D\u0438\u0442\u044B\u0445
+    \u043F\u043E\u043C\u043F\u043E\u0432\u044B\u0445 \u0440\u0443\u0436\u0435\u0439
+    \u0432 \u043C\u0438\u0440\u0435."
+  item_type: 6
+  item_sprite: {fileID: 6888609599128650599, guid: b72f8a0325c02ec4b8a602ed6ad93212, type: 3}
+  item_drop_sprite: {fileID: 4951306187556577048, guid: 75d1cbc7685fe264ca1c68d6be12f43f, type: 3}
+  stacable: 0
+  item_max_amount: 1
+  use_durability: 1
+  slot_count: 0
+  recipes: []
+  fullSprite: {fileID: 7950648042095763667, guid: 6f597fdc930350b49a2b071190bc9c47, type: 3}
+  durability: 100
+  damage: 20
+  shot: 5
+  punch_range: 0
+  reload_time: 0.09
+  spread: {x: 4, y: 11}
+  aim_speed: 2
+  fire_rate: 150
+  force: 1000
+  mag_size: 7
+  scope_range: 5.5
+  scope_baff: 1.1
+  ammo: {fileID: 11400000, guid: bba2f31819f95444f9c3b0dacdd7efd8, type: 2}
+  shoot_clip:
+  - {fileID: 8300000, guid: b55b5b392708583449cfc823b15a17cc, type: 3}
+  - {fileID: 8300000, guid: 1ae027ed48c4344429cb95222b5e8a67, type: 3}
+  reload_clip: {fileID: 8300000, guid: 8fb7f5f7a3293514ba40cf0ce05d57d1, type: 3}

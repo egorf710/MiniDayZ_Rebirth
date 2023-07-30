@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14400e054fc9e78428098e1abb894206, type: 3}
+  m_Name: civilian tent
+  m_EditorClassIdentifier: 
+  item_name: "\u041F\u043E\u0445\u043E\u0434\u043D\u0430\u044F \u043F\u0430\u043B\u0430\u0442\u043A\u0430."
+  item_path: backpacks/
+  item_description: "\u041F\u043E\u0445\u043E\u0434\u043D\u0430\u044F \u043F\u0430\u043B\u0430\u0442\u043A\u0430.
+    \u041F\u0440\u0435\u0434\u043B\u0430\u0433\u0430\u0435\u0442 \u0443\u0434\u043E\u0431\u043D\u043E\u0435
+    \u0438 \u0441\u0443\u0445\u043E\u0435 \u043F\u043E\u043C\u0435\u0449\u0435\u043D\u0438\u0435
+    \u0441 \u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u043C
+    \u043C\u0435\u0441\u0442\u043E\u043C \u0434\u043B\u044F \u0445\u0440\u0430\u043D\u0435\u043D\u0438\u044F
+    \u0432\u0435\u0449\u0435\u0439."
+  item_type: 4
+  item_sprite: {fileID: -6176071364602636731, guid: 6405548cfcff2ec48a547eedb4c4aee7, type: 3}
+  item_drop_sprite: {fileID: -2006261559278819551, guid: aff624f3e198ef2479d1a218d000a267, type: 3}
+  stacable: 0
+  item_max_amount: 1
+  use_durability: 1
+  slot_count: 0
+  recipes: []
+  durability: 100
+  armor: 0
+  heat: 0

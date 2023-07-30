@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689ed7c2eb591fe468e3efcce6f36ef6, type: 3}
+  m_Name: Scorpion
+  m_EditorClassIdentifier: 
+  item_name: "\u0421\u043A\u043E\u0440\u043F\u0438\u043E\u043D Vz61"
+  item_path: pistols/
+  item_description: "\u0427\u0435\u0445\u043E\u0441\u043B\u043E\u0432\u0430\u0446\u043A\u0438\u0439
+    \u0430\u0432\u0442\u043E\u043C\u0430\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439
+    \u043F\u0438\u0441\u0442\u043E\u043B\u0435\u0442, \u0440\u0430\u0437\u0440\u0430\u0431\u0430\u0442\u044B\u0432\u0430\u043B\u0441\u044F
+    \u0434\u043B\u044F \u0432\u043E\u043E\u0440\u0443\u0436\u0435\u043D\u0438\u044F
+    \u0442\u0430\u043D\u043A\u0438\u0441\u0442\u043E\u0432, \u0441\u0432\u044F\u0437\u0438\u0441\u0442\u043E\u0432
+    \u0438 \u0432\u043E\u0435\u043D\u043D\u043E\u0441\u043B\u0443\u0436\u0430\u0449\u0438\u0445
+    \u0434\u0440\u0443\u0433\u0438\u0445 \u0441\u043F\u0435\u0446\u0438\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u0435\u0439.
+    \u0421\u043A\u043E\u0440\u043F\u0438\u043E\u043D \u0431\u044B\u043B \u043F\u0440\u0438\u043D\u044F\u0442
+    \u043D\u0430 \u0432\u043E\u043E\u0440\u0443\u0436\u0435\u043D\u0438\u0435 \u0432
+    \u0427\u0421\u0421\u0420 \u0432 1961 \u0433\u043E\u0434\u0443."
+  item_type: 7
+  item_sprite: {fileID: -4882623338274383478, guid: 09b72ffd117c39b42bfb06c167428e4d, type: 3}
+  item_drop_sprite: {fileID: 4288995139824785954, guid: 033de5de9104dd8499dd9af07f6193d1, type: 3}
+  stacable: 0
+  item_max_amount: 1
+  use_durability: 1
+  slot_count: 0
+  recipes: []
+  fullSprite: {fileID: -3903605065023306017, guid: 97608c68aebec97478b1c5c4fd07d12f, type: 3}
+  durability: 100
+  damage: 20
+  shot: 1
+  punch_range: 0
+  reload_time: 0.05
+  spread: {x: 6, y: 16}
+  aim_speed: 5
+  fire_rate: 840
+  force: 1000
+  mag_size: 20
+  scope_range: 5.5
+  scope_baff: 1.2
+  ammo: {fileID: 11400000, guid: 26a2dc2fad9bef043883c09c2012da25, type: 2}
+  shoot_clip:
+  - {fileID: 8300000, guid: 3eda897f87413cd4c814a85524b61a7d, type: 3}
+  - {fileID: 8300000, guid: 26e73cf6683f84c49931dee2b6b41e5e, type: 3}
+  reload_clip: {fileID: 8300000, guid: 33cd1cb1e2e6fb140804c76a9ff47c82, type: 3}

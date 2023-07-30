@@ -1,0 +1,744 @@
+fileFormatVersion: 2
+guid: b72f8a0325c02ec4b8a602ed6ad93212
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7889357126814827880
+    second: gui_firearm-sheet0 slot_icon_0
+  - first:
+      213: -9173723148986522492
+    second: gui_firearm-sheet0 slot_icon_1
+  - first:
+      213: 2508755755091616327
+    second: gui_firearm-sheet0 slot_icon_2
+  - first:
+      213: 492692527403145705
+    second: gui_firearm-sheet0 slot_icon_3
+  - first:
+      213: 53784004848522918
+    second: gui_firearm-sheet0 slot_icon_4
+  - first:
+      213: 1897390282939071804
+    second: gui_firearm-sheet0 slot_icon_5
+  - first:
+      213: 1219363091754823127
+    second: gui_firearm-sheet0 slot_icon_6
+  - first:
+      213: -4717223969170256900
+    second: gui_firearm-sheet0 slot_icon_7
+  - first:
+      213: 208363232963045497
+    second: gui_firearm-sheet0 slot_icon_8
+  - first:
+      213: 55474062429668272
+    second: gui_firearm-sheet0 slot_icon_9
+  - first:
+      213: -2762773431558275814
+    second: gui_firearm-sheet0 slot_icon_10
+  - first:
+      213: -812767510560238178
+    second: gui_firearm-sheet0 slot_icon_11
+  - first:
+      213: -1431973458398511202
+    second: gui_firearm-sheet0 slot_icon_12
+  - first:
+      213: 6888609599128650599
+    second: gui_firearm-sheet0 slot_icon_13
+  - first:
+      213: -6236669803742965914
+    second: gui_firearm-sheet0 slot_icon_14
+  - first:
+      213: 5765666724293290201
+    second: gui_firearm-sheet0 slot_icon_15
+  - first:
+      213: -5558328281144556632
+    second: gui_firearm-sheet0 slot_icon_16
+  - first:
+      213: -7536654022063615298
+    second: gui_firearm-sheet0 slot_icon_17
+  - first:
+      213: 798285003264188048
+    second: gui_firearm-sheet0 slot_icon_18
+  - first:
+      213: -3640177681916508271
+    second: gui_firearm-sheet0 slot_icon_19
+  - first:
+      213: 375239580150261684
+    second: gui_firearm-sheet0 slot_icon_20
+  - first:
+      213: -9144486014720269021
+    second: gui_firearm-sheet0 slot_icon_21
+  - first:
+      213: 5913622922154086352
+    second: gui_firearm-sheet0 slot_icon_22
+  - first:
+      213: 4183134038365898607
+    second: gui_firearm-sheet0 slot_icon_23
+  - first:
+      213: 3378124214244145929
+    second: gui_firearm-sheet0 slot_icon_24
+  - first:
+      213: 4221481523774337639
+    second: gui_firearm-sheet0 slot_icon_25
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 844
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a71062e7f538290800000000000000
+      internalID: -7889357126814827880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_1
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 844
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48461e4866360b080800000000000000
+      internalID: -9173723148986522492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_2
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 844
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742e37a3114e0d220800000000000000
+      internalID: 2508755755091616327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_3
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 844
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e99a574e3566d600800000000000000
+      internalID: 492692527403145705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_4
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 844
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6189774441fb000800000000000000
+      internalID: 53784004848522918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_5
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 844
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3d7cd6d862e45a10800000000000000
+      internalID: 1897390282939071804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 664
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dda440854c0ce010800000000000000
+      internalID: 1219363091754823127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 664
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb06affacd098eb0800000000000000
+      internalID: -4717223969170256900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_8
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 664
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978a305a14144e200800000000000000
+      internalID: 208363232963045497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_9
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 664
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b34e59ad5515c000800000000000000
+      internalID: 55474062429668272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_10
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 664
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1df419a338a8a9d0800000000000000
+      internalID: -2762773431558275814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_11
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 664
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e951410614878b4f0800000000000000
+      internalID: -812767510560238178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 484
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f7e5cf9bb902ce0800000000000000
+      internalID: -1431973458398511202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_13
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 484
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763c868dee1499f50800000000000000
+      internalID: 6888609599128650599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_14
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 484
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66fce765bd5e279a0800000000000000
+      internalID: -6236669803742965914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_15
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 484
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d8aac28653c30050800000000000000
+      internalID: 5765666724293290201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_16
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 484
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a30f59a0e9dcd2b0800000000000000
+      internalID: -5558328281144556632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_17
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 484
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb211eb091d686790800000000000000
+      internalID: -7536654022063615298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 304
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e55112bf3141b00800000000000000
+      internalID: 798285003264188048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_19
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 304
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197cf0e4fad7b7dc0800000000000000
+      internalID: -3640177681916508271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_20
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 304
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b7e588f86e153500800000000000000
+      internalID: 375239580150261684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_21
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 304
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 325221f4b62481180800000000000000
+      internalID: -9144486014720269021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_22
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 304
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df0a9a47b8611250800000000000000
+      internalID: 5913622922154086352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_23
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 304
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6705a4ae3a7d0a30800000000000000
+      internalID: 4183134038365898607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 124
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90bfa25231281ee20800000000000000
+      internalID: 3378124214244145929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_firearm-sheet0 slot_icon_25
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 124
+        width: 180
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762b17a5417b59a30800000000000000
+      internalID: 4221481523774337639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14400e054fc9e78428098e1abb894206, type: 3}
+  m_Name: police hat
+  m_EditorClassIdentifier: 
+  item_name: "\u041C\u0438\u043B\u0438\u0446\u0435\u0439\u0441\u043A\u0430\u044F
+    \u0448\u043B\u044F\u043F\u0430"
+  item_path: head/
+  item_description: "\u0441\u043E\u0433\u0440\u0435\u0432\u0430\u0435\u0442 \u043D\u0430:
+    2\n\u0437\u0430\u0449\u0438\u0449\u0430\u0435\u0442 \u043D\u0430 0"
+  item_type: 1
+  item_sprite: {fileID: 413072155554986823, guid: dcfb40d409b80c74eb4eba83dc4f6cdf, type: 3}
+  item_drop_sprite: {fileID: 843045863934923756, guid: bf6ed2235ce1e8342afd1e89f2d63f39, type: 3}
+  stacable: 0
+  item_max_amount: 1
+  use_durability: 1
+  slot_count: 0
+  recipes: []
+  durability: 100
+  armor: 0
+  heat: 2

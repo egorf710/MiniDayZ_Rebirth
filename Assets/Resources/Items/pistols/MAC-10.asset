@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689ed7c2eb591fe468e3efcce6f36ef6, type: 3}
+  m_Name: MAC-10
+  m_EditorClassIdentifier: 
+  item_name: MAC-10
+  item_path: pistols/
+  item_description: "\u041A\u043E\u043C\u043F\u0430\u043A\u0442\u043D\u044B\u0439
+    \u043F\u0438\u0441\u0442\u043E\u043B\u0435\u0442-\u043F\u0443\u043B\u0435\u043C\u0451\u0442,
+    \u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0430\u043D\u043D\u044B\u0439
+    \u0432 \u0421\u0428\u0410."
+  item_type: 7
+  item_sprite: {fileID: 186529403097243143, guid: 09b72ffd117c39b42bfb06c167428e4d, type: 3}
+  item_drop_sprite: {fileID: -871881795414132641, guid: 001e2ba330465c740a25c12129de8ce7, type: 3}
+  stacable: 0
+  item_max_amount: 1
+  use_durability: 1
+  slot_count: 0
+  recipes: []
+  fullSprite: {fileID: 4658890223146151224, guid: 1866b6dc6a3dc03408ff3970ac012813, type: 3}
+  durability: 100
+  damage: 20
+  shot: 1
+  punch_range: 0
+  reload_time: 0.05
+  spread: {x: 6, y: 20}
+  aim_speed: 5
+  fire_rate: 450
+  force: 1000
+  mag_size: 30
+  scope_range: 5.5
+  scope_baff: 1.2
+  ammo: {fileID: 11400000, guid: 9bd8394a1cc77d64d87c93f13960a20b, type: 2}
+  shoot_clip:
+  - {fileID: 8300000, guid: 3eda897f87413cd4c814a85524b61a7d, type: 3}
+  - {fileID: 8300000, guid: 26e73cf6683f84c49931dee2b6b41e5e, type: 3}
+  reload_clip: {fileID: 8300000, guid: 33cd1cb1e2e6fb140804c76a9ff47c82, type: 3}

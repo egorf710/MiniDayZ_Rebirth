@@ -1,0 +1,1320 @@
+fileFormatVersion: 2
+guid: 95f8db6d6bd728c47be244fe20b47cb6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5865395224314882279
+    second: gui_btn_perks-sheet0_0
+  - first:
+      213: 2152371015892599253
+    second: gui_btn_perks-sheet0_1
+  - first:
+      213: -411310283963604424
+    second: gui_btn_perks-sheet0_2
+  - first:
+      213: -5964042065200975851
+    second: gui_btn_perks-sheet0_3
+  - first:
+      213: -2354097893161421212
+    second: gui_btn_perks-sheet0_4
+  - first:
+      213: 6596749224525841552
+    second: gui_btn_perks-sheet0_5
+  - first:
+      213: -859278944575600842
+    second: gui_btn_perks-sheet0_6
+  - first:
+      213: -7350691053380490659
+    second: gui_btn_perks-sheet0_7
+  - first:
+      213: -8334011269958058257
+    second: gui_btn_perks-sheet0_8
+  - first:
+      213: 4659865153508025007
+    second: gui_btn_perks-sheet0_9
+  - first:
+      213: -7950937450066445474
+    second: gui_btn_perks-sheet0_10
+  - first:
+      213: 7759086735815133867
+    second: gui_btn_perks-sheet0_11
+  - first:
+      213: 5756858398533926742
+    second: gui_btn_perks-sheet0_12
+  - first:
+      213: -4577486430242568119
+    second: gui_btn_perks-sheet0_13
+  - first:
+      213: 112383737285495140
+    second: gui_btn_perks-sheet0_14
+  - first:
+      213: 6367651802630832029
+    second: gui_btn_perks-sheet0_15
+  - first:
+      213: -3986176502304050392
+    second: gui_btn_perks-sheet0_16
+  - first:
+      213: -1809454196646982117
+    second: gui_btn_perks-sheet0_17
+  - first:
+      213: -6467789118053795396
+    second: gui_btn_perks-sheet0_18
+  - first:
+      213: 1378929677271014272
+    second: gui_btn_perks-sheet0_19
+  - first:
+      213: 540078145453067958
+    second: gui_btn_perks-sheet0_20
+  - first:
+      213: 3260026809286987424
+    second: gui_btn_perks-sheet0_21
+  - first:
+      213: -3785061027250110657
+    second: gui_btn_perks-sheet0_22
+  - first:
+      213: -5691912412734268803
+    second: gui_btn_perks-sheet0_23
+  - first:
+      213: 6742647326328120438
+    second: gui_btn_perks-sheet0_24
+  - first:
+      213: -8435946117910672244
+    second: gui_btn_perks-sheet0_25
+  - first:
+      213: -3111839706538604842
+    second: gui_btn_perks-sheet0_26
+  - first:
+      213: 2092571043424687536
+    second: gui_btn_perks-sheet0_27
+  - first:
+      213: -6338303466577956909
+    second: gui_btn_perks-sheet0_28
+  - first:
+      213: 4428534572790755133
+    second: gui_btn_perks-sheet0_29
+  - first:
+      213: 8267386287016239582
+    second: gui_btn_perks-sheet0_30
+  - first:
+      213: 7197592201649041817
+    second: gui_btn_perks-sheet0_31
+  - first:
+      213: -768489803230961706
+    second: gui_btn_perks-sheet0_32
+  - first:
+      213: -8494891367745303936
+    second: gui_btn_perks-sheet0_33
+  - first:
+      213: 2060524611848492454
+    second: gui_btn_perks-sheet0_34
+  - first:
+      213: 8217037630939085254
+    second: gui_btn_perks-sheet0_35
+  - first:
+      213: 8013542235927896975
+    second: gui_btn_perks-sheet0_36
+  - first:
+      213: -2014113520537150394
+    second: gui_btn_perks-sheet0_37
+  - first:
+      213: -744555300453884560
+    second: gui_btn_perks-sheet0_38
+  - first:
+      213: 7407195003112340989
+    second: gui_btn_perks-sheet0_39
+  - first:
+      213: -1376072999941224152
+    second: gui_btn_perks-sheet0_40
+  - first:
+      213: -5008170999826921533
+    second: gui_btn_perks-sheet0_41
+  - first:
+      213: 3360691611608532743
+    second: gui_btn_perks-sheet0_42
+  - first:
+      213: 1152993233725080439
+    second: gui_btn_perks-sheet0_43
+  - first:
+      213: 7275647944975223840
+    second: gui_btn_perks-sheet0_44
+  - first:
+      213: -6450097201469795724
+    second: gui_btn_perks-sheet0_45
+  - first:
+      213: 5420497440822711606
+    second: gui_btn_perks-sheet0_46
+  - first:
+      213: 6529623260748785661
+    second: gui_btn_perks-sheet0_47
+  - first:
+      213: -5346451544807769227
+    second: gui_btn_perks-sheet0_48
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 223
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9175073ae1ee99ea0800000000000000
+      internalID: -5865395224314882279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 223
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d100230902cedd10800000000000000
+      internalID: 2152371015892599253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_2
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 223
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83262e7d97bba4af0800000000000000
+      internalID: -411310283963604424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_3
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 223
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510753e27577b3da0800000000000000
+      internalID: -5964042065200975851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_4
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 223
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4663e9f4070945fd0800000000000000
+      internalID: -2354097893161421212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_5
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 223
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0944238f77c5c8b50800000000000000
+      internalID: 6596749224525841552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_6
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 223
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63749914a5a3314f0800000000000000
+      internalID: -859278944575600842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_7
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 223
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a2d9dbe691df990800000000000000
+      internalID: -7350691053380490659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 189
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee3c0cc7e4a75c80800000000000000
+      internalID: -8334011269958058257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_9
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 189
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa221180baa2ba040800000000000000
+      internalID: 4659865153508025007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_10
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 189
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b7079d38898a190800000000000000
+      internalID: -7950937450066445474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_11
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 189
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baac4bdd640ddab60800000000000000
+      internalID: 7759086735815133867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_12
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 189
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65fb6da563874ef40800000000000000
+      internalID: 5756858398533926742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_13
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 189
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 948883128508970c0800000000000000
+      internalID: -4577486430242568119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_14
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 189
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469ce63e9644f8100800000000000000
+      internalID: 112383737285495140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_15
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 189
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fbf25c3917e5850800000000000000
+      internalID: 6367651802630832029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_16
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 155
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823782047914ea8c0800000000000000
+      internalID: -3986176502304050392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 155
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e448bbef683e6e0800000000000000
+      internalID: -1809454196646982117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_18
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 155
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb93440a01ccd36a0800000000000000
+      internalID: -6467789118053795396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_19
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 155
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b9bff4c31f22310800000000000000
+      internalID: 1378929677271014272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_20
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 155
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be8eaa363ebe7700800000000000000
+      internalID: 540078145453067958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_21
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 155
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ae0dc55c11fd3d20800000000000000
+      internalID: 3260026809286987424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_22
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 155
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3ff491cc03c87bc0800000000000000
+      internalID: -3785061027250110657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_23
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 155
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a565251d34201b0800000000000000
+      internalID: -5691912412734268803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_24
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 121
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674668be402b29d50800000000000000
+      internalID: 6742647326328120438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_25
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 121
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c499983bf7dea80800000000000000
+      internalID: -8435946117910672244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_26
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 121
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d68fcd264680d4d0800000000000000
+      internalID: -3111839706538604842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_27
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 121
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5d89ee64e4a0d10800000000000000
+      internalID: 2092571043424687536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_28
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 121
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df6ef33492d908a0800000000000000
+      internalID: -6338303466577956909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_29
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 121
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3faab60bb0557d30800000000000000
+      internalID: 4428534572790755133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_30
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 121
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1e98a8608abb270800000000000000
+      internalID: 8267386287016239582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_31
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 121
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991b96119fbf2e360800000000000000
+      internalID: 7197592201649041817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 87
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df98e87896c555f0800000000000000
+      internalID: -768489803230961706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_33
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 87
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a42041f451c1a80800000000000000
+      internalID: -8494891367745303936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_34
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 87
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5dd24a734789c10800000000000000
+      internalID: 2060524611848492454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_35
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 87
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9342a8038c80270800000000000000
+      internalID: 8217037630939085254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_36
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 87
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83621db432d53f60800000000000000
+      internalID: 8013542235927896975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_37
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 87
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c521f9c6e6c04e0800000000000000
+      internalID: -2014113520537150394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_38
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 87
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ddfc826eecaa5f0800000000000000
+      internalID: -744555300453884560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_39
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 87
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd3f8e3c94abc660800000000000000
+      internalID: 7407195003112340989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 53
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8294f75b5e437ece0800000000000000
+      internalID: -1376072999941224152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_41
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 53
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c747e492076f7ab0800000000000000
+      internalID: -5008170999826921533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_42
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 53
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 707cf8d073393ae20800000000000000
+      internalID: 3360691611608532743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_43
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 53
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 773cc9cbc31400010800000000000000
+      internalID: 1152993233725080439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_44
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 53
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02c8c07024b48f460800000000000000
+      internalID: 7275647944975223840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_45
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 53
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 472d6a3f4c6ac76a0800000000000000
+      internalID: -6450097201469795724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_46
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 53
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 635d62214b9793b40800000000000000
+      internalID: 5420497440822711606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_47
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 53
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df72f0e92c1ed9a50800000000000000
+      internalID: 6529623260748785661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gui_btn_perks-sheet0_48
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 19
+        width: 29
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57bf4ee85a69dc5b0800000000000000
+      internalID: -5346451544807769227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96ae07d0c8570b34ebfbad1ccc764cc0, type: 3}
+  m_Name: stew
+  m_EditorClassIdentifier: 
+  item_name: "\u0422\u0443\u0448\u0451\u043D\u043A\u0430"
+  item_path: food/
+  item_description: "\u0417\u0430\u043A\u043E\u043D\u0441\u0435\u0440\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u043E\u0435
+    \u043C\u044F\u0441\u043E, \u043A\u043E\u0442\u043E\u0440\u043E\u0435 \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0435\u0442:
+    +35 \u0435\u0434\u044B."
+  item_type: 9
+  item_sprite: {fileID: 6349750105251081866, guid: f8e8d9801313f7041bfa82770e47e10a, type: 3}
+  item_drop_sprite: {fileID: 21300000, guid: 0783f92ca66a3d74398fd7cbd97c6849, type: 3}
+  stacable: 0
+  item_max_amount: 1
+  use_durability: 0
+  slot_count: 0
+  recipes: []
+  food_point: 35
+  water_point: 0
+  heal_point: 0
+  temperature_point: 0

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689ed7c2eb591fe468e3efcce6f36ef6, type: 3}
+  m_Name: amphibia
+  m_EditorClassIdentifier: 
+  item_name: "\u0410\u043C\u0444\u0438\u0431\u0438\u044F"
+  item_path: pistols/
+  item_description: "\u0421\u0430\u043C\u043E\u0437\u0430\u0440\u044F\u0434\u043D\u044B\u0439
+    \u043F\u0438\u0441\u0442\u043E\u043B\u0435\u0442 \u043F\u043E\u0434 \u043F\u0430\u0442\u0440\u043E\u043D
+    .22 LR.\u041F\u0440\u0438\u0448\u0451\u043B \u043D\u0430 \u0441\u043C\u0435\u043D\u0443
+    \u043F\u0438\u0441\u0442\u043E\u043B\u0435\u0442\u0430\u043C \u0442\u0438\u043F\u0430
+    Ruger MK II, \u0441\u043D\u044F\u0442\u044B\u043C \u0440\u0430\u043D\u0435\u0435
+    \u0441 \u043F\u0440\u043E\u0438\u0437\u0432\u043E\u0434\u0441\u0442\u0432\u0430.
+    \u041F\u0440\u0435\u0434\u043D\u0430\u0437\u043D\u0430\u0447\u0435\u043D \u0434\u043B\u044F
+    \u0441\u043F\u043E\u0440\u0442\u0430 \u0438 \u043E\u0445\u043E\u0442\u044B."
+  item_type: 7
+  item_sprite: {fileID: 7735473978608862025, guid: 09b72ffd117c39b42bfb06c167428e4d, type: 3}
+  item_drop_sprite: {fileID: 21300000, guid: adc52f95099cf384ea9fcfbc09bcbdb1, type: 3}
+  stacable: 0
+  item_max_amount: 1
+  use_durability: 1
+  slot_count: 0
+  recipes: []
+  fullSprite: {fileID: -6219395566087596758, guid: 1866b6dc6a3dc03408ff3970ac012813, type: 3}
+  durability: 100
+  damage: 15
+  shot: 1
+  punch_range: 0
+  reload_time: 0.05
+  spread: {x: 4, y: 10}
+  aim_speed: 8
+  fire_rate: 200
+  force: 1000
+  mag_size: 10
+  scope_range: 5.6
+  scope_baff: 1.2
+  ammo: {fileID: 11400000, guid: 18907aba42a26224aab995070dd7c63e, type: 2}
+  shoot_clip:
+  - {fileID: 8300000, guid: 7bd57fdae7f9e394b8dbcaa107ecbd03, type: 3}
+  - {fileID: 8300000, guid: 893c8866d6125e84dac412739af8f140, type: 3}
+  reload_clip: {fileID: 8300000, guid: 33cd1cb1e2e6fb140804c76a9ff47c82, type: 3}

@@ -1,0 +1,1287 @@
+fileFormatVersion: 2
+guid: 5ec30e1ba7ee33f40b4c5e3568fc17e9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3216494888440960529
+    second: RMDZ1_7
+  - first:
+      213: 4507653163039787118
+    second: RMDZ1_25
+  - first:
+      213: -3571335856697995113
+    second: RMDZ1_10
+  - first:
+      213: 4986546020240470064
+    second: RMDZ1_16
+  - first:
+      213: 4252807360183691074
+    second: RMDZ1_28
+  - first:
+      213: 6966816596463523653
+    second: RMDZ1_6
+  - first:
+      213: 4782205413426568708
+    second: RMDZ1_6
+  - first:
+      213: -9016421096820197900
+    second: RMDZ1_7
+  - first:
+      213: -4477404777238827404
+    second: RMDZ1_29
+  - first:
+      213: 303440630144985168
+    second: RMDZ1_30
+  - first:
+      213: -7832652126383200494
+    second: RMDZ1_10
+  - first:
+      213: 1239798235003671372
+    second: RMDZ1_31
+  - first:
+      213: 8365656218222917688
+    second: RMDZ1_32
+  - first:
+      213: 5612644344007609948
+    second: RMDZ1_27
+  - first:
+      213: 1791126663902624574
+    second: RMDZ1_26
+  - first:
+      213: 339364807528423201
+    second: RMDZ1_24
+  - first:
+      213: -1520597270078238896
+    second: RMDZ1_16
+  - first:
+      213: -934470860153286628
+    second: RMDZ1_23
+  - first:
+      213: 8473793037118388470
+    second: RMDZ1_22
+  - first:
+      213: -9094916128548770300
+    second: RMDZ1_21
+  - first:
+      213: -7936261314561994988
+    second: RMDZ1_20
+  - first:
+      213: -8919311300011276067
+    second: RMDZ1_21
+  - first:
+      213: -7591829160367652111
+    second: RMDZ1_22
+  - first:
+      213: 4981238179806747581
+    second: RMDZ1_23
+  - first:
+      213: 7824610744744157831
+    second: RMDZ1_24
+  - first:
+      213: -5437010934375576866
+    second: RMDZ1_7
+  - first:
+      213: -5621195094330698060
+    second: RMDZ1_26
+  - first:
+      213: 4069950561424300197
+    second: RMDZ1_27
+  - first:
+      213: -8802992837593291145
+    second: RMDZ1_28
+  - first:
+      213: -642961432849092527
+    second: RMDZ1_29
+  - first:
+      213: -4032259015922878651
+    second: RMDZ1_30
+  - first:
+      213: 3630986096782087723
+    second: RMDZ1_31
+  - first:
+      213: 9106828083935911858
+    second: RMDZ1_19
+  - first:
+      213: 4749002702368674820
+    second: RMDZ1_18
+  - first:
+      213: -2585922951980169978
+    second: RMDZ1_17
+  - first:
+      213: 7215853440859453343
+    second: RMDZ1_9
+  - first:
+      213: 1055438705924786942
+    second: RMDZ1_8
+  - first:
+      213: -4281418900559368114
+    second: RMDZ1_3
+  - first:
+      213: -614856152299447484
+    second: RMDZ1_2
+  - first:
+      213: 2872177431218768325
+    second: RMDZ1_5
+  - first:
+      213: -8775433952022594303
+    second: RMDZ1_15
+  - first:
+      213: -4763561745630130265
+    second: RMDZ1_12
+  - first:
+      213: -4797590336340008366
+    second: RMDZ1_13
+  - first:
+      213: -3483338124159216872
+    second: RMDZ1_0
+  - first:
+      213: 6438481574888957889
+    second: RMDZ1_1
+  - first:
+      213: -7583324861002828608
+    second: RMDZ1_4
+  - first:
+      213: 7674978195705808117
+    second: RMDZ1_48
+  - first:
+      213: 769810672418463946
+    second: RMDZ1_49
+  - first:
+      213: -8795620541670134964
+    second: RMDZ1_50
+  - first:
+      213: 7600091746979574621
+    second: RMDZ1_51
+  - first:
+      213: 5125944372992863692
+    second: RMDZ1_52
+  - first:
+      213: -5215839160085761898
+    second: RMDZ1_53
+  - first:
+      213: 6153506793753360257
+    second: RMDZ1_54
+  - first:
+      213: -1142520783279568792
+    second: RMDZ1_55
+  - first:
+      213: -6453414778356380022
+    second: RMDZ1_56
+  - first:
+      213: -6448858835830497244
+    second: RMDZ1_57
+  - first:
+      213: 8451786976724154263
+    second: RMDZ1_58
+  - first:
+      213: -7494257540086807028
+    second: RMDZ1_59
+  - first:
+      213: -4376698613895479404
+    second: RMDZ1_60
+  - first:
+      213: 4827407917309417491
+    second: RMDZ1_61
+  - first:
+      213: 4488930207155816680
+    second: RMDZ1_62
+  - first:
+      213: -3151575164103100080
+    second: RMDZ1_63
+  - first:
+      213: 3696117898548793586
+    second: RMDZ1_64
+  - first:
+      213: -5555356899100392519
+    second: RMDZ1_65
+  - first:
+      213: -2535333386947279470
+    second: RMDZ1_66
+  - first:
+      213: 630023235161654605
+    second: RMDZ1_67
+  - first:
+      213: 9026600956945495198
+    second: RMDZ1_68
+  - first:
+      213: 1235143682116359084
+    second: RMDZ1_69
+  - first:
+      213: -8215396530201522775
+    second: RMDZ1_70
+  - first:
+      213: -2930757803547717210
+    second: RMDZ1_71
+  - first:
+      213: -6183835632347628873
+    second: RMDZ1_72
+  - first:
+      213: 9221110746549537073
+    second: RMDZ1_73
+  - first:
+      213: -4792000969775052931
+    second: RMDZ1_74
+  - first:
+      213: 8626716457095627705
+    second: RMDZ1_75
+  - first:
+      213: -147457548775208840
+    second: RMDZ1_76
+  - first:
+      213: -6704095544305950034
+    second: RMDZ1_77
+  - first:
+      213: 7578250234869622155
+    second: RMDZ1_78
+  - first:
+      213: -9126815253612690694
+    second: RMDZ1_79
+  - first:
+      213: -4591745819630070400
+    second: RMDZ1_80
+  - first:
+      213: -8649040186748219394
+    second: RMDZ1_81
+  - first:
+      213: 5744834367736964933
+    second: RMDZ1_82
+  - first:
+      213: -5621114752141544430
+    second: RMDZ1_83
+  - first:
+      213: 5460303904289117232
+    second: RMDZ1_84
+  - first:
+      213: 5814893874814345223
+    second: RMDZ1_85
+  - first:
+      213: -3812269117839838941
+    second: RMDZ1_86
+  - first:
+      213: 3612176346140328906
+    second: RMDZ1_87
+  - first:
+      213: -3256226331408221258
+    second: RMDZ1_88
+  - first:
+      213: -3613689716075385230
+    second: RMDZ1_89
+  - first:
+      213: 2917650319897545900
+    second: RMDZ1_90
+  - first:
+      213: 299471092520255895
+    second: RMDZ1_91
+  - first:
+      213: -886502125889689197
+    second: RMDZ1_92
+  - first:
+      213: -6438365875125945566
+    second: RMDZ1_93
+  - first:
+      213: 8916140782757338140
+    second: RMDZ1_94
+  - first:
+      213: 4214340306752591178
+    second: RMDZ1_95
+  - first:
+      213: -8318797837784313879
+    second: RMDZ1_96
+  - first:
+      213: 7953636620963529410
+    second: RMDZ1_97
+  - first:
+      213: -3952097238278344613
+    second: RMDZ1_98
+  - first:
+      213: -4069376836529838452
+    second: RMDZ1_99
+  - first:
+      213: -3361964719136520660
+    second: RMDZ1_100
+  - first:
+      213: -1440461072220926526
+    second: RMDZ1_101
+  - first:
+      213: -8374848652345970176
+    second: RMDZ1_102
+  - first:
+      213: 6129945903737943497
+    second: RMDZ1_103
+  - first:
+      213: 5041045503084954223
+    second: RMDZ1_104
+  - first:
+      213: -1880016592554357321
+    second: RMDZ1_105
+  - first:
+      213: 4902510234792514969
+    second: RMDZ1_106
+  - first:
+      213: -4772999479314980400
+    second: RMDZ1_107
+  - first:
+      213: 8645040762446167970
+    second: RMDZ1_108
+  - first:
+      213: -3082772890789498194
+    second: RMDZ1_109
+  - first:
+      213: -4085911487660440551
+    second: RMDZ1_110
+  - first:
+      213: 8931532072517562512
+    second: RMDZ1_111
+  - first:
+      213: -8379864346791322395
+    second: RMDZ1_112
+  - first:
+      213: -4421955504831758297
+    second: RMDZ1_113
+  - first:
+      213: -7009645832835301967
+    second: RMDZ1_114
+  - first:
+      213: -3848588950216536417
+    second: RMDZ1_115
+  - first:
+      213: 3086413566958077471
+    second: RMDZ1_116
+  - first:
+      213: 8782529431126236907
+    second: RMDZ1_117
+  - first:
+      213: -55140607832778938
+    second: RMDZ1_118
+  - first:
+      213: -1155206093977300623
+    second: RMDZ1_119
+  - first:
+      213: -6526523440618227228
+    second: RMDZ1_120
+  - first:
+      213: -3544025824812924713
+    second: RMDZ1_121
+  - first:
+      213: -3688176931511058258
+    second: RMDZ1_122
+  - first:
+      213: 6323317686563342664
+    second: RMDZ1_123
+  - first:
+      213: -1888310097046050305
+    second: RMDZ1_124
+  - first:
+      213: -3790137133342707017
+    second: RMDZ1_125
+  - first:
+      213: -8578334707517204926
+    second: RMDZ1_126
+  - first:
+      213: 1947290946181630509
+    second: RMDZ1_127
+  - first:
+      213: -1909674299928839763
+    second: RMDZ1_128
+  - first:
+      213: 7880617657754582117
+    second: RMDZ1_129
+  - first:
+      213: -6771388182670901273
+    second: RMDZ1_130
+  - first:
+      213: -232854006563319125
+    second: RMDZ1_131
+  - first:
+      213: -1975221823575567920
+    second: RMDZ1_132
+  - first:
+      213: 6753451451480089653
+    second: RMDZ1_133
+  - first:
+      213: 4712015962257355667
+    second: RMDZ1_134
+  - first:
+      213: -5284119585452005740
+    second: RMDZ1_135
+  - first:
+      213: 3718964046069597944
+    second: RMDZ1_136
+  - first:
+      213: -6313313649611835579
+    second: RMDZ1_137
+  - first:
+      213: -4710961255352550851
+    second: RMDZ1_138
+  - first:
+      213: -6005135486670735027
+    second: RMDZ1_139
+  - first:
+      213: 2767220142204361263
+    second: RMDZ1_140
+  - first:
+      213: -9154226499018964765
+    second: RMDZ1_141
+  - first:
+      213: 7657679097594900346
+    second: RMDZ1_142
+  - first:
+      213: -4099619272024641150
+    second: RMDZ1_143
+  - first:
+      213: 812772964615248250
+    second: RMDZ1_144
+  - first:
+      213: -1306631538182239280
+    second: RMDZ1_145
+  - first:
+      213: -6871216037718524953
+    second: RMDZ1_146
+  - first:
+      213: -5555199733566028063
+    second: RMDZ1_147
+  - first:
+      213: 6954632756140324849
+    second: RMDZ1_148
+  - first:
+      213: -3374119389689371306
+    second: RMDZ1_149
+  - first:
+      213: 5487069114912047728
+    second: RMDZ1_150
+  - first:
+      213: 563311933248609164
+    second: RMDZ1_151
+  - first:
+      213: 1866367715915774324
+    second: RMDZ1_152
+  - first:
+      213: 7723848302137783216
+    second: RMDZ1_153
+  - first:
+      213: 3659625165805880163
+    second: RMDZ1_154
+  - first:
+      213: -855175601651702096
+    second: RMDZ1_155
+  - first:
+      213: 179515592555756290
+    second: RMDZ1_156
+  - first:
+      213: 3903605326286997048
+    second: RMDZ1_157
+  - first:
+      213: -5726291793665083800
+    second: RMDZ1_14
+  - first:
+      213: -4262385902291218165
+    second: RMDZ1_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RMDZ1_7
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 230
+        width: 106
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116126f2f0943ac20800000000000000
+      internalID: 3216494888440960529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_25
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 92
+        width: 40
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6807a15ba66e8e30800000000000000
+      internalID: 4507653163039787118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_10
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 160
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79096e7c5f0107ec0800000000000000
+      internalID: -3571335856697995113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_16
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 148
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03032908f25c33540800000000000000
+      internalID: 4986546020240470064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_28
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 140
+        width: 48
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2476ae103c1050b30800000000000000
+      internalID: 4252807360183691074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_6
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 192
+        width: 106
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547118f58ca1fa060800000000000000
+      internalID: 6966816596463523653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_29
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 129
+        width: 40
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47eea01d3101dd1c0800000000000000
+      internalID: -4477404777238827404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 118
+        width: 45
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058663a35a9063400800000000000000
+      internalID: 303440630144985168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_31
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 108
+        width: 40
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c43dc8e0de5a43110800000000000000
+      internalID: 1239798235003671372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_32
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 98
+        width: 53
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838f630e108c81470800000000000000
+      internalID: 8365656218222917688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_27
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 151
+        width: 66
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ecd273b4e14ed40800000000000000
+      internalID: 5612644344007609948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_26
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 162
+        width: 39
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3b75a5063c5bd810800000000000000
+      internalID: 1791126663902624574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_24
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 101
+        width: 49
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12f10029e7aa5b400800000000000000
+      internalID: 339364807528423201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_23
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 110
+        width: 50
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c101c9724b71803f0800000000000000
+      internalID: -934470860153286628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_22
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 119
+        width: 29
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f8be950fd5f89570800000000000000
+      internalID: 8473793037118388470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_21
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 127
+        width: 36
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e21efc7fd58c180800000000000000
+      internalID: -9094916128548770300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_20
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 136
+        width: 63
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f8bdce16cbcd190800000000000000
+      internalID: -7936261314561994988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_19
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 145
+        width: 50
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bf1d8d64e3f16e70800000000000000
+      internalID: 9106828083935911858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_18
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 154
+        width: 40
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4041e08ebc8d7e140800000000000000
+      internalID: 4749002702368674820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_17
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 163
+        width: 45
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60541b6a6c4fc1cd0800000000000000
+      internalID: -2585922951980169978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_9
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 160
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9735b5297cd32460800000000000000
+      internalID: 7215853440859453343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_8
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 192
+        width: 94
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efa48dc39eba5ae00800000000000000
+      internalID: 1055438705924786942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_3
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 278
+        width: 106
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e40f381a1385594c0800000000000000
+      internalID: -4281418900559368114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_2
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 278
+        width: 105
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b5a3e46979777f0800000000000000
+      internalID: -614856152299447484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_5
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 224
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c940bff7260cd720800000000000000
+      internalID: 2872177431218768325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_15
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 149
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d7acb9055673680800000000000000
+      internalID: -8775433952022594303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_14
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 148
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 866bb5ee3ff1880b0800000000000000
+      internalID: -5726291793665083800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_11
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 160
+        width: 2
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b019c4eda96f8d4c0800000000000000
+      internalID: -4262385902291218165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_12
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 152
+        width: 10
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af831ea4dd64edb0800000000000000
+      internalID: -4763561745630130265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_13
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 153
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2526b9002098b6db0800000000000000
+      internalID: -4797590336340008366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 320
+        width: 28
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8131aec7e62b8afc0800000000000000
+      internalID: -3483338124159216872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_1
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 357
+        width: 61
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7672c31e41a5950800000000000000
+      internalID: 6438481574888957889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RMDZ1_4
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 280
+        width: 40
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4b983973e92c690800000000000000
+      internalID: -7583324861002828608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
