@@ -155,7 +155,7 @@ public class WeaponManager : MonoBehaviour
     public void ShootButtonDown()
     {
         weaponController.shootButtonDown = true;
-        weaponController.Shoot();
+        weaponController.PlayerShoot();
     }
     public void ShootButtonUp() => weaponController.shootButtonDown = false;
     public void ReloadButtonPress()

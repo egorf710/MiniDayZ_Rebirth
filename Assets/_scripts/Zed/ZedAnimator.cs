@@ -6,6 +6,16 @@ public class ZedAnimator : MonoBehaviour
 {
     [SerializeField] private Animator anim;
     [SerializeField] private Vector2 lastDir;
+
+    public void OnEnable()
+    {
+        anim.enabled = true;
+    }
+    public void OnDisable()
+    {
+        anim.enabled = false;
+    }
+
     public void AnimMove(Vector2 direction, bool walk = false)
     {
         anim.SetBool("walk", walk);

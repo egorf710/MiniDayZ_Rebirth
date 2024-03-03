@@ -11,10 +11,10 @@ public class CanvasManager : MonoBehaviour
     private Sprite defaultInteractSprite;
     public static CanvasManager Instance;
     public PlayerInteract playerInteract;
-    private void Start()
+    private void Awake()
     {
         Instance = this;
-        Init(FindObjectOfType<PlayerMove>().transform);
+        //Init(FindObjectOfType<PlayerMove>().transform);
         defaultInteractSprite = interactButton.GetComponent<Image>().sprite;
     }
     public void Init(Transform player)

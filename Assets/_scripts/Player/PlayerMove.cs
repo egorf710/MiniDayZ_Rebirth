@@ -9,10 +9,15 @@ public class PlayerMove : MonoBehaviour
 {
     public float base_movement_speed = 1f;
     [SerializeField] private float movement_speed;
-    [SerializeField] Vector2 moveDirection;
+    [SerializeField] public Vector2 moveDirection;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private PlayerAnimator playerAnimator;
     [SerializeField] private bool IsGoToPoint;
+
+    private void Awake()
+    {
+        FindObjectOfType<CanvasManager>().Init(transform);
+    }
     private void Update()
     {
         moveDirection = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));

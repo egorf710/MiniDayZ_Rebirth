@@ -23,11 +23,12 @@ public class Tree : MonoBehaviour, Interactable, Revivedable
         {
             AudioSource.PlayClipAtPoint(treeFallClip[Random.Range(0, treeFallClip.Length)], transform.position);
 
-            ItemLoot[] itemToDrop = ItemRandomizer.GetItems(itemLoot, dropCount, true);
+            ItemLootData[] itemToDrop = ItemRandomizer.GetItems(itemLoot, dropCount, true);
 
-            foreach (var item in itemToDrop)
+            foreach (var loot in itemToDrop)
             {
-                InventoryManager.InstantiateItem(item.item, item.amount);
+                Item item = Resources.Load<Item>("Items/" + loot.itemPath);
+                InventoryManager.InstantiateItem(item, loot.amount);
             }
 
             mySpriteRenderer.color = new Color(1, 1, 1, 0);

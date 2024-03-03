@@ -51,10 +51,10 @@ public class InventorySlot : MonoBehaviour
             {
                 this.itemInfo.amount = this.itemInfo.item.item_max_amount;
             }
-            if (this.itemInfo.durability > 100)
+/*            if (this.itemInfo.durability > 100)
             {
                 this.itemInfo.amount = 100;
-            }
+            }*/
             if (this.itemInfo.durability < 0)
             {
                 this.itemInfo.amount = 0;
@@ -103,21 +103,31 @@ public class InventorySlot : MonoBehaviour
         }
         if(itemInfo.item.item_type != ItemType.def && itemInfo.item.item_type != ItemType.food)
         {
-            durabilityText.text = this.itemInfo.durability.ToString() + "%";
+
         }
         if(itemInfo.item.item_type == ItemType.melee)
         {
             itemBar.SetActive(true);
-            durabilityText.text = this.itemInfo.durability.ToString() + "%";
+            //durabilityText.text = ((this.itemInfo.item as weaponItem).durability / 100 * itemInfo.durability) + "%";
         }
         if(itemInfo.item.item_type == ItemType.rifle || itemInfo.item.item_type == ItemType.pistol)
         {
             itemBar.SetActive(true);
-            durabilityText.text = this.itemInfo.durability.ToString() + "%";
+            //durabilityText.text = ((this.itemInfo.item as weaponItem).durability / 100 * itemInfo.durability) + "%";
             ammoText.text = this.itemInfo.ammo.ToString();
         }
         if (itemInfo.item is armorItem || itemInfo.item is weaponItem)
         {
+            if (itemInfo.item is armorItem)
+            {
+                durabilityText.text = ((this.itemInfo.item as armorItem).durability / 100 * itemInfo.durability) + "%";
+            }
+            else if (itemInfo.item is weaponItem)
+            {
+                durabilityText.text = ((this.itemInfo.item as weaponItem).durability / 100 * itemInfo.durability) + "%";
+            }
+
+
             InventoryManager.SetClothes(this.itemInfo.item, true);
 
             InventoryManager.SwitchToNewWeapon();
@@ -197,6 +207,7 @@ public class InventorySlot : MonoBehaviour
 
     public void Refresh()
     {
+        if(this.itemInfo == null) { ClearSlot(); return; }
         {
             if (this.itemInfo.amount > this.itemInfo.item.item_max_amount)
             {
@@ -257,6 +268,14 @@ public class InventorySlot : MonoBehaviour
     /// TRUE IS NULL
     /// </summary>
     /// <returns></returns>
+    
+    public void RefreshAmmo()
+    {
+        //print("test");
+        itemBar.SetActive(true);
+        durabilityText.text = itemInfo.durability.ToString() + "%";
+        ammoText.text = itemInfo.ammo.ToString();
+    }
     public bool SlotIsNull()
     {
         if(itemInfo == null) { return true; }

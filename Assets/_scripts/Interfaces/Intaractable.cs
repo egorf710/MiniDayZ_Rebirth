@@ -22,7 +22,7 @@ namespace Assets._scripts.Interfaces
     {
         public void Revived();
     }
-
+    [Serializable]
     public struct VulnerabledData
     {
         public int health;

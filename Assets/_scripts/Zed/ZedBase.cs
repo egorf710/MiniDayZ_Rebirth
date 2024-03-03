@@ -1,11 +1,12 @@
 using Assets._scripts.Interfaces;
-using Mono.CecilX.Cil;
-
+using Assets._scripts.World;
+using Mirror;
+using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
-public class ZedBase : MonoBehaviour, Vulnerable
+public class ZedBase : NetworkBehaviour, AliveTarget
 {
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private ZedAnimator animator;
@@ -26,7 +27,8 @@ public class ZedBase : MonoBehaviour, Vulnerable
     [SerializeField] private Vector2 idleTimeInterval;
     [SerializeField] private float idleDistance;
     [Space]
-    [SerializeField] private VulnerabledData vulnerabledData;
+    [SerializeField] [SyncVar] private VulnerabledData vulnerabledData;
+    [HideInInspector] public VulnerableObject myVulController;
     private float nextTime;
     private float idleNextTime;
     private float searchNextTime;
@@ -36,6 +38,7 @@ public class ZedBase : MonoBehaviour, Vulnerable
         StartCoroutine(IEUpdate());
         StartCoroutine(Check());
         rude = Random.Range(0, 2) == 0;
+        UpdateMyState();
     }
     private Vector3 lastTargetPos;
     private float lastDist;
@@ -170,19 +173,27 @@ public class ZedBase : MonoBehaviour, Vulnerable
             {
                 yield return new WaitForSeconds(1f);
             }
-            Collider2D[] colls = Physics2D.OverlapCircleAll(transform.position, 20, targetLayer);
-            if (colls.Length > 0)
-            {
-                enable = true;
-                target = colls[0].transform;
-                rb.simulated = true;
-            }
-            else
-            {
-                enable = false;
-                target = null;
-                rb.simulated = false;
-            }
+            UpdateMyState();
+        }
+    }
+    private void UpdateMyState()
+    {
+        Collider2D[] colls = Physics2D.OverlapCircleAll(transform.position, 20, targetLayer);
+        if (colls.Length > 0)
+        {
+            enable = true;
+            target = colls[0].transform;
+            rb.simulated = true;
+            animator.enabled = true;
+            TargetManager.AddTarget(this);
+        }
+        else
+        {
+            enable = false;
+            target = null;
+            rb.simulated = false;
+            animator.enabled = false;
+            TargetManager.RemoveTarget(this);
         }
     }
     private void Attak()
@@ -196,12 +207,33 @@ public class ZedBase : MonoBehaviour, Vulnerable
 
     public void TakeDamage(int damage)
     {
-        int blockChanse = Random.Range(0, 100);
-        if(blockChanse <= vulnerabledData.blockChanse)
+        int attackChanse = Random.Range(0, 100);
+        if(attackChanse <= vulnerabledData.blockChanse)
         {
             return;
         }
         vulnerabledData.health -= Mathf.Clamp(damage - vulnerabledData.armor, 
             1, damage);
+        DebuMessager.Mess("-" + damage, Color.red, transform.position, true);
+        if(vulnerabledData.health <= 0)
+        {
+            myVulController.DropLoot();
+        }
+    }
+
+    public Transform getTransform()
+    {
+        return transform;
+    }
+
+    private void OnDestroy()
+    {
+        StopAllCoroutines();
+        TargetManager.RemoveTarget(this);
+    }
+
+    public uint getNetID()
+    {
+        return netId;
     }
 }

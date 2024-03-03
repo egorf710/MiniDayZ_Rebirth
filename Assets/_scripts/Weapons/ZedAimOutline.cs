@@ -26,6 +26,8 @@ public class ZedAimOutline : MonoBehaviour
         {
             myTransform = myImage.rectTransform;
         }
+
+        offset = new Vector2(0, 0.4f);
     }
     public void SetTarget(Transform target)
     {
@@ -75,7 +77,7 @@ public class ZedAimOutline : MonoBehaviour
             myImage.sprite = aimImages[1];
             return;
         }
-        else if (aimRange >= 0)
+        else
         {
             myImage.sprite = aimImages[0];
             return;

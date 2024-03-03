@@ -1,7 +1,10 @@
+using Assets._scripts;
 using Assets._scripts.Menu;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 using UnityEngine.UI;
 using static ItemObject;
@@ -27,6 +30,10 @@ public class InventoryManager : MonoBehaviour
         foreach (var slot in slots)
         {
             slot.Init();
+            if(slot.slotType == ItemType.pants || slot.slotType == ItemType.head || slot.slotType == ItemType.body || slot.slotType == ItemType.backpack || slot.slotType == ItemType.shield)
+            {
+                clothesSlots.ToList().Add(slot);
+            }
         }
         SetActiveInventory(true);
         SetActiveInventory(false);
@@ -62,7 +69,7 @@ public class InventoryManager : MonoBehaviour
                     {
                         slot.SetSlot(itemInfo);
                         itemInfo.amount = Mathf.Abs(diff);
-                        print("add " + itemInfo.item.item_name);
+                        //print("add " + itemInfo.item.item_name);
                         return true;
                     }
                 }
@@ -85,14 +92,14 @@ public class InventoryManager : MonoBehaviour
                     {
                         slot.SetSlot(itemInfo);
                         itemInfo.amount = Mathf.Abs(diff);
-                        print("add " + itemInfo.item.item_name);
+                        //print("add " + itemInfo.item.item_name);
                         return true;
                     }
                 }
                 else
                 {
                     slot.SetSlot(itemInfo);
-                    print("add " + itemInfo.item.item_name);
+                    //print("add " + itemInfo.item.item_name);
                     return true;
                 }
             }
@@ -210,5 +217,42 @@ public class InventoryManager : MonoBehaviour
             Debug.Log(itemv.itemInfo.item.item_name);
         }
         return (list.Length > 0 ? list.First() : null);
+    }
+
+    private InventorySlot[] clothesSlots = new InventorySlot[5];
+
+    public static void ClothesDamage(int damage = 1)
+    {
+        Instance.ClothesDamageInstance(damage);
+    }
+    private void ClothesDamageInstance(int damage)
+    {
+        foreach (var slot in clothesSlots)
+        {
+            slot.itemInfo.durability -= damage;
+        }
+    }
+    
+    public static void SpawnLoot(ItemLootData[] itemLoot, Vector2 pos)
+    {
+        Instance.SpawnLootInstance(itemLoot, pos);
+    }
+
+    private void SpawnLootInstance(ItemLootData[] itemLoot, Vector2 pos)
+    {
+        foreach (var loot in itemLoot)
+        {
+            Item item = Resources.Load<Item>("Items/" + loot.itemPath);
+            ItemInfo itemInfo = new ItemInfo()
+            {
+                name = item.item_name,
+                ammo = 0, //TODO only 0 ammo, not not not
+                insideItems = null, //Maybe TODO
+                item = item,
+                amount = loot.amount,
+                durability = loot.durability
+            };
+            Instantiate(itemObjectPrefab, pos + MyInstance.RandomVector(0.5f), Quaternion.identity).GetComponent<ItemObject>().Set(itemInfo);
+        }
     }
 }

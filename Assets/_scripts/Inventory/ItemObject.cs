@@ -109,7 +109,7 @@ public class ItemObject : MonoBehaviour, Interactable
         float dist = Vector2.Distance(InventoryManager.Instance.player.position, transform.position);
         if (dist > 0.5f)
         {
-            message = "Игрок слишком далеко чтобы подобрать предмет " + dist;
+            message = "Игрок слишком далеко чтобы подобрать предмет. Дистанция: " + dist;
             InventoryManager.Instance.player.GetComponent<PlayerMove>().GoToPoint(transform.position);
             return false;
         }

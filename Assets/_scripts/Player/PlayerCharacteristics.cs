@@ -1,3 +1,4 @@
+using Assets._scripts.Interfaces;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using UnityEngine.UI;
 
 public enum Effect { Bleeding, Regeneration, SickProtection, Sick, Adrinaline, Energizer }
 
-public class PlayerCharacteristics : MonoBehaviour
+public class PlayerCharacteristics : MonoBehaviour, Vulnerable
 {
     [SerializeField] private Slider healthField;
     [SerializeField] private Slider waterField;
@@ -63,6 +64,14 @@ public class PlayerCharacteristics : MonoBehaviour
         get { return currentHeat; }
         set { currentHeat = value; Refresh(); }
     }
+
+    [Space]
+
+    public int handDamage = 15;
+    public int armor = 0;
+    public int blockChanse = 10;
+    public int handCritChanse = 10;
+
 
     private void Refresh()
     {
@@ -247,5 +256,20 @@ public class PlayerCharacteristics : MonoBehaviour
             effectType = effectType,
             effectTime = (int)(Time.time + time)
         });
+    }
+
+    public void TakeDamage(int damage)
+    {
+        if(armor < damage)
+        {
+            if(UnityEngine.Random.Range(0, 100) <= blockChanse)
+            {
+                //block
+                DebuMessager.Mess("blocked", Color.gray);
+                return;
+            }
+            playerHealth -= (damage - armor);
+        }
+        InventoryManager.ClothesDamage(damage <= 10 ? 1 : 2);
     }
 }
