@@ -65,6 +65,11 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
             RefreshMyStatus();
         }
     }
+    [Command]
+    public void CMDUpdateMyClohes(string clotheData)
+    {
+        SetMyClothes(playerAnimator.GetAnimClothesData());
+    }
     [ClientRpc]
     public void RefreshMyStatus()
     {
@@ -100,6 +105,19 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
             playerAnimator.speed = speed;
             playerAnimator.animationDir = animDir;
         }
+    }
+    [Header("Inventory")]
+    [SerializeField] private GameObject itemObjectPrefab;
+    [Command]
+    public void CMDSpawnItemObject(Vector3 position, ItemObject.NetworkItemInfo itemInfo)
+    {
+        CLTSpawnItemObject(position, itemInfo);
+    }
+    [ClientRpc]
+    public void CLTSpawnItemObject(Vector3 position, ItemObject.NetworkItemInfo itemInfo)
+    {
+        ItemObject itemObject = Instantiate(itemObjectPrefab, position, Quaternion.identity).GetComponent<ItemObject>();
+        itemObject.Set(itemInfo);
     }
 }
 public class PlayerData

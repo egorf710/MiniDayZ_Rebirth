@@ -50,7 +50,9 @@ public class PlayerAnimator : MonoBehaviour
     public float timeInteract;
     public bool INTERACT;
 
+    [Header("Network")]
     public PlayerNetwork playerNetwork;
+    [SerializeField] private int repeate = 5;
 
     //private void Update()
     //{
@@ -100,9 +102,11 @@ public class PlayerAnimator : MonoBehaviour
         }
         speed = dir.magnitude;
     }
+    
     private IEnumerator Animating()
     {
         int index = 0;
+        int rep = 0;
         while (true)
         {
             if (index > 3) { index = 0; }
@@ -119,10 +123,15 @@ public class PlayerAnimator : MonoBehaviour
                 }
 
             }
-            if (playerNetwork.isLocalPlayer)
+            if(rep >= repeate)
             {
-                playerNetwork.CMDAnimSync(interact, shoot, speed, animationDir);
+                if (playerNetwork.isLocalPlayer)
+                {
+                    playerNetwork.CMDAnimSync(interact, shoot, speed, animationDir);
+                }
+                rep = 0;
             }
+            rep++;
             yield return new WaitForSeconds(1 / AnimationSpeed);
         }
     }
@@ -792,6 +801,8 @@ public class PlayerAnimator : MonoBehaviour
                 vest_shoot[i] = animationItem.shoot[i];
             }
         }
+
+        NetUpdateMyClotheData();
     }
     public void SetNetClothByName(string itemname, bool isWeapon = false)
     {
@@ -1662,6 +1673,8 @@ public class PlayerAnimator : MonoBehaviour
                 vest_shoot[i] = null;
             }
         }
+
+        NetUpdateMyClotheData();
     }
     public void ClearClothByType(AnimationThpe animType)
     {
@@ -1953,6 +1966,8 @@ public class PlayerAnimator : MonoBehaviour
                 vest_shoot[i] = null;
             }
         }
+
+        NetUpdateMyClotheData();
     }
     public void ClearClothByType(ItemType itemType)
     {
@@ -2203,6 +2218,8 @@ public class PlayerAnimator : MonoBehaviour
                 hand_shoot[i] = null;
             }
         }
+        
+        NetUpdateMyClotheData();
     }
     public string GetAnimClothesData()
     {
@@ -2559,6 +2576,16 @@ public class PlayerAnimator : MonoBehaviour
         for (int i = 0; i < vest_shoot.Length; i++)
         {
             vest_shoot[i] = null;
+        }
+
+        NetUpdateMyClotheData();
+    }
+
+    public void NetUpdateMyClotheData()
+    {
+        if (playerNetwork.isLocalPlayer)
+        {
+            playerNetwork.CMDUpdateMyClohes(GetAnimClothesData());
         }
     }
     #endregion

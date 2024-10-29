@@ -52,6 +52,23 @@ public class ItemObject : MonoBehaviour, Interactable
             spriteRender.sprite = itemInfo.item.item_drop_sprite;
         }
     }
+    public void Set(NetworkItemInfo itemInfo)
+    {
+        Item item = InventoryManager.GetItemByName(itemInfo.item);
+        print(item.name);
+        this.itemInfo = new ItemInfo
+        {
+            name = item.name,
+            item = item,
+            amount = itemInfo.amount,
+            durability = itemInfo.durability,
+            ammo = itemInfo.ammo
+        };
+        if (spriteRender != null)
+        {
+            spriteRender.sprite = item.item_drop_sprite;
+        }
+    }
     public void Set(InventorySlot slot)
     {
         itemInfo = new ItemInfo
@@ -64,7 +81,7 @@ public class ItemObject : MonoBehaviour, Interactable
         };
         if (spriteRender != null)
         {
-            spriteRender.sprite = slot.itemInfo.item.item_drop_sprite;
+            spriteRender.sprite = itemInfo.item.item_drop_sprite;
         }
         itemInfo.insideItems = new List<ItemInfo>();
         foreach (var item in slot.insideSlots)
@@ -152,6 +169,39 @@ public class ItemObject : MonoBehaviour, Interactable
         }
         public ItemInfo()
         {
+        }
+    }
+    public class NetworkItemInfo
+    {
+        public string name;
+        public string item;
+        public int amount = 0;
+        public int durability = 0;
+        public int ammo;
+        public List<NetworkItemInfo> insideItems;
+
+        public NetworkItemInfo(NetworkItemInfo itemInfo)
+        {
+            this.name = itemInfo.name;
+            this.item = itemInfo.item;
+            this.amount = itemInfo.amount;
+            this.durability = itemInfo.durability;
+            this.ammo = itemInfo.ammo;
+            insideItems = new List<NetworkItemInfo>();
+        }
+        public NetworkItemInfo(ItemInfo itemInfo)
+        {
+            this.name = itemInfo.name;
+            this.item = "Items/" + itemInfo.item.item_path + itemInfo.item.name;
+            print(item);
+            this.amount = itemInfo.amount;
+            this.durability = itemInfo.durability;
+            this.ammo = itemInfo.ammo;
+            insideItems = new List<NetworkItemInfo>();
+        }
+        public NetworkItemInfo()
+        {
+
         }
     }
 }

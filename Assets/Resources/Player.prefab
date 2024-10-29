@@ -721,6 +721,7 @@ MonoBehaviour:
   timeInteract: 0
   INTERACT: 0
   playerNetwork: {fileID: 3585477976171384407}
+  repeate: 2
   bodyskin_idle:
   - {fileID: 0}
   - {fileID: 0}
@@ -1206,6 +1207,7 @@ MonoBehaviour:
   networkManager: {fileID: 0}
   MyWeaponController: {fileID: 3585477976171384406}
   playerAnimator: {fileID: 5381595791526305392}
+  itemObjectPrefab: {fileID: 5862067665477259060, guid: 12d0a6f496fe0204bb2ce01a480f6f61, type: 3}
 --- !u!114 &3585477976171384424
 MonoBehaviour:
   m_ObjectHideFlags: 0

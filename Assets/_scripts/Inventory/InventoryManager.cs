@@ -1,5 +1,6 @@
 using Assets._scripts;
 using Assets._scripts.Menu;
+using Mirror;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -22,11 +23,12 @@ public class InventoryManager : MonoBehaviour
     [SerializeField] private GameObject dropItemSlotPrefab;
     public bool InventoryOpen;
     private WeaponManager weaponManager;
+    private PlayerNetwork playerNetwork;
     public void Init(Transform player)
     {
         Instance = this;
         this.player = player;
-
+        playerNetwork = player.GetComponent<PlayerNetwork>();
         weaponManager = FindObjectOfType<WeaponManager>();
         foreach (var slot in slots)
         {
@@ -109,8 +111,18 @@ public class InventoryManager : MonoBehaviour
     }
     public static void Drop(InventorySlot inventorySlot)
     {
-        ItemObject itemObject = Instantiate(Instance.itemObjectPrefab, Instance.player.position, Quaternion.identity).GetComponent<ItemObject>();
-        itemObject.Set(inventorySlot);
+        if (!NetworkClient.active)
+        {
+            ItemObject itemObject = Instantiate(Instance.itemObjectPrefab, Instance.player.position, Quaternion.identity).GetComponent<ItemObject>();
+            itemObject.Set(inventorySlot);
+        }
+        else
+        {
+            if (Instance.playerNetwork.isLocalPlayer)
+            {
+                Instance.playerNetwork.CMDSpawnItemObject(Instance.player.position, new NetworkItemInfo(inventorySlot.itemInfo));
+            }
+        }
     }
     public static void InstantiateItem(Item item, int amount = 1, int durability = 100, int ammo = 0)
     {
@@ -121,6 +133,11 @@ public class InventoryManager : MonoBehaviour
     {
         ItemObject itemObject = Instantiate(Instance.itemObjectPrefab, Instance.player.position, Quaternion.identity).GetComponent<ItemObject>();
         itemObject.Set(itemInfo);
+    }
+    public static Item GetItemByName(string name)
+    {
+        print(name);
+        return Resources.Load<Item>(name);
     }
     public void OpenClose()
     {
