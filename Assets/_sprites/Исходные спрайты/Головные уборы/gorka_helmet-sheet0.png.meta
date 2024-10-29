@@ -51,7 +51,7 @@ TextureImporter:
       213: -2338535938390802365
     second: gorka_helmet-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      gorka_helmet-sheet0_3: 103468232778029593
+      gorka_helmet-sheet0_9: -7676673044784486893
+      gorka_helmet-sheet0_6: -6650114732933630659
+      gorka_helmet-sheet0_10: 7225221398261321761
+      gorka_helmet-sheet0_4: 6352338285969210364
+      gorka_helmet-sheet0_11: 2953834093715642503
+      gorka_helmet-sheet0_15: -2338535938390802365
+      gorka_helmet-sheet0_2: -869215563709053380
+      gorka_helmet-sheet0_5: 6797363616386982507
+      gorka_helmet-sheet0_1: 5075166453150366913
+      gorka_helmet-sheet0_0: 76550851151728011
+      gorka_helmet-sheet0_13: -5993239820408858575
+      gorka_helmet-sheet0_12: 228986916051054406
+      gorka_helmet-sheet0_8: 2042904238492890534
+      gorka_helmet-sheet0_7: -1010775712824772775
+      gorka_helmet-sheet0_14: -8128568059697412685
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

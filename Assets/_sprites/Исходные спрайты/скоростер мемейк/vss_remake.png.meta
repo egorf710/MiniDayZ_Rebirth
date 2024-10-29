@@ -75,7 +75,7 @@ TextureImporter:
       213: -68981275520347467
     second: vss_remake_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -688,6 +702,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      vss_remake_14: 8517178462625853038
+      vss_remake_11: -8225208436668809607
+      vss_remake_21: 4431870069807357002
+      vss_remake_16: 3331200206880734136
+      vss_remake_3: -2201365784944103616
+      vss_remake_0: 5100219662224328434
+      vss_remake_2: -7738535831609835570
+      vss_remake_17: 4386689858824932920
+      vss_remake_18: 8840985322313882465
+      vss_remake_7: -7066955887234982444
+      vss_remake_22: -2679566840175549869
+      vss_remake_9: -91818455935142674
+      vss_remake_15: -3642756273010994091
+      vss_remake_5: 5075922493091880343
+      vss_remake_13: -8098379366244134983
+      vss_remake_4: 8180528186701884566
+      vss_remake_23: -68981275520347467
+      vss_remake_10: 294762486429193788
+      vss_remake_19: -5690944758515269211
+      vss_remake_20: 7405642230893943257
+      vss_remake_6: -8036170155584856330
+      vss_remake_8: 4675898346856665899
+      vss_remake_1: 5394024554112747268
+      vss_remake_12: 8150214361980375821
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

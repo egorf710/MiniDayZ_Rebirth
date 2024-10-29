@@ -51,7 +51,7 @@ TextureImporter:
       213: -2295840592615387772
     second: zed_screamer_skin-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -125,6 +127,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -484,6 +498,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      zed_screamer_skin-sheet0_14: -4855745297788456050
+      zed_screamer_skin-sheet0_9: 7166623761576036569
+      zed_screamer_skin-sheet0_12: -7074830901727108245
+      zed_screamer_skin-sheet0_7: 4077611687104631265
+      zed_screamer_skin-sheet0_6: 8349506511635003421
+      zed_screamer_skin-sheet0_10: 4082655374962392134
+      zed_screamer_skin-sheet0_3: 3039749435595683141
+      zed_screamer_skin-sheet0_1: 4155288740565029108
+      zed_screamer_skin-sheet0_15: -2295840592615387772
+      zed_screamer_skin-sheet0_13: -5030167440688442459
+      zed_screamer_skin-sheet0_11: 3520596529204576453
+      zed_screamer_skin-sheet0_5: -6804767403927169759
+      zed_screamer_skin-sheet0_4: 3762768629895067498
+      zed_screamer_skin-sheet0_2: -5727113741927148432
+      zed_screamer_skin-sheet0_8: 3670720905619673263
+      zed_screamer_skin-sheet0_0: -1591979157305125172
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

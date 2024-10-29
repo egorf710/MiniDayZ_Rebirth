@@ -87,7 +87,7 @@ TextureImporter:
       213: 8870696884761687524
     second: fncal_remake_27
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -108,6 +108,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -146,6 +147,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -173,6 +175,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -784,6 +798,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      fncal_remake_17: -4147907179620263686
+      fncal_remake_20: 5943184120858362679
+      fncal_remake_23: -142815986070331169
+      fncal_remake_24: 200225389277658074
+      fncal_remake_27: 8870696884761687524
+      fncal_remake_14: 1864090687560144554
+      fncal_remake_22: -3500443369822398967
+      fncal_remake_12: 5943892601985270026
+      fncal_remake_4: 8402932311710372187
+      fncal_remake_1: 7630389960385447842
+      fncal_remake_18: 8356974677862097074
+      fncal_remake_21: -7517980173422529589
+      fncal_remake_5: 8105197874454414446
+      fncal_remake_26: -4207573684420557749
+      fncal_remake_9: 1880123297762640853
+      fncal_remake_0: 4056395343139123931
+      fncal_remake_6: 1542654584381040262
+      fncal_remake_15: 3908677643170375815
+      fncal_remake_25: -4069365669860714965
+      fncal_remake_13: -6586671204352957819
+      fncal_remake_3: -7976069602524937169
+      fncal_remake_11: 662754807588090960
+      fncal_remake_19: -3653527944323924249
+      fncal_remake_8: 5100991520474576293
+      fncal_remake_7: -999829525304049076
+      fncal_remake_10: -1373536107444059982
+      fncal_remake_2: 7857539803192089974
+      fncal_remake_16: -2302840300541500418
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

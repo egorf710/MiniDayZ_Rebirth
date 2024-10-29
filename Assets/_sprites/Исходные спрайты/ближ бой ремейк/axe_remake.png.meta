@@ -63,7 +63,7 @@ TextureImporter:
       213: 8699869280283004547
     second: axe_remake_19
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -84,6 +84,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,6 +123,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -149,6 +151,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -592,6 +606,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      axe_remake_14: 1622370294547313137
+      axe_remake_6: 8257230047737892371
+      axe_remake_16: -3678929167102441623
+      axe_remake_1: 4110973571678383358
+      axe_remake_11: -8215419894106014827
+      axe_remake_2: 231723887016081707
+      axe_remake_8: -5911958266658046999
+      axe_remake_3: 5040207802766488621
+      axe_remake_12: -3031176043523183980
+      axe_remake_13: 1138276596445843054
+      axe_remake_18: 5263951873752601754
+      axe_remake_0: -9164339161551221549
+      axe_remake_10: -8890832886250308429
+      axe_remake_19: 8699869280283004547
+      axe_remake_4: 5829520164839257540
+      axe_remake_9: -4479731265915507932
+      axe_remake_7: -8605051042247037575
+      axe_remake_15: -3361630865075478167
+      axe_remake_5: 5739880764368364923
+      axe_remake_17: 8471499527606072349
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

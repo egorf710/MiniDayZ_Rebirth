@@ -81,7 +81,7 @@ TextureImporter:
       213: 4221481523774337639
     second: gui_firearm-sheet0 slot_icon_25
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -102,6 +102,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -140,6 +141,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -167,6 +169,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -736,6 +750,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      gui_firearm-sheet0 slot_icon_1: -9173723148986522492
+      gui_firearm-sheet0 slot_icon_9: 55474062429668272
+      gui_firearm-sheet0 slot_icon_2: 2508755755091616327
+      gui_firearm-sheet0 slot_icon_17: -7536654022063615298
+      gui_firearm-sheet0 slot_icon_5: 1897390282939071804
+      gui_firearm-sheet0 slot_icon_22: 5913622922154086352
+      gui_firearm-sheet0 slot_icon_18: 798285003264188048
+      gui_firearm-sheet0 slot_icon_23: 4183134038365898607
+      gui_firearm-sheet0 slot_icon_15: 5765666724293290201
+      gui_firearm-sheet0 slot_icon_25: 4221481523774337639
+      gui_firearm-sheet0 slot_icon_16: -5558328281144556632
+      gui_firearm-sheet0 slot_icon_8: 208363232963045497
+      gui_firearm-sheet0 slot_icon_0: -7889357126814827880
+      gui_firearm-sheet0 slot_icon_11: -812767510560238178
+      gui_firearm-sheet0 slot_icon_7: -4717223969170256900
+      gui_firearm-sheet0 slot_icon_19: -3640177681916508271
+      gui_firearm-sheet0 slot_icon_3: 492692527403145705
+      gui_firearm-sheet0 slot_icon_6: 1219363091754823127
+      gui_firearm-sheet0 slot_icon_14: -6236669803742965914
+      gui_firearm-sheet0 slot_icon_20: 375239580150261684
+      gui_firearm-sheet0 slot_icon_21: -9144486014720269021
+      gui_firearm-sheet0 slot_icon_24: 3378124214244145929
+      gui_firearm-sheet0 slot_icon_12: -1431973458398511202
+      gui_firearm-sheet0 slot_icon_10: -2762773431558275814
+      gui_firearm-sheet0 slot_icon_13: 6888609599128650599
+      gui_firearm-sheet0 slot_icon_4: 53784004848522918
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

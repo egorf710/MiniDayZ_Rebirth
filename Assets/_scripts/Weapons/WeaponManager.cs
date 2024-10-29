@@ -22,7 +22,11 @@ public class WeaponManager : MonoBehaviour
     //{
     //    weaponController = args[0];
     //}
-
+    public void Init(Transform player)
+    {
+        weaponController = player.GetComponent<WeaponController>();
+        weaponController.aimOutline = FindObjectOfType<CanvasManager>().aimOutline;
+    }
     public void SwitchWeapon()
     {
         //0 melee, 1 pistol, 2 rifle

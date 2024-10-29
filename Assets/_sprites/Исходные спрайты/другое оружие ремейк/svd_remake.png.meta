@@ -75,7 +75,7 @@ TextureImporter:
       213: 5667637347610196519
     second: svd_remake_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -688,6 +702,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      svd_remake_14: 7382822244182384871
+      svd_remake_0: 5302630122335737438
+      svd_remake_7: -2150387346964884881
+      svd_remake_12: -2850353346619352763
+      svd_remake_17: -2537225521244199398
+      svd_remake_19: 1560893258939934565
+      svd_remake_11: 5631177652085038875
+      svd_remake_4: 2825367506090729450
+      svd_remake_3: 3138074134647433150
+      svd_remake_20: 9008038108708828079
+      svd_remake_6: -3600226049541226703
+      svd_remake_15: 5956495035783820301
+      svd_remake_1: -6385396514298850580
+      svd_remake_8: -2890479342173586306
+      svd_remake_9: -1390812317447780738
+      svd_remake_10: -4336481351008511587
+      svd_remake_5: 3659917147071385640
+      svd_remake_13: -9088724235305293060
+      svd_remake_2: 6935979005593247462
+      svd_remake_23: 5667637347610196519
+      svd_remake_16: -8152237415108384932
+      svd_remake_22: 5400121107990601351
+      svd_remake_21: -5808635277851697510
+      svd_remake_18: 2968895026379326468
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

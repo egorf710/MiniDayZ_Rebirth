@@ -42,7 +42,7 @@ TextureImporter:
       213: 5558649564801780965
     second: tilemap_water_12
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -101,6 +102,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -152,6 +154,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -448,6 +462,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      tilemap_water_1: -5476292446715104621
+      tilemap_water_12: 5558649564801780965
+      tilemap_water_2: -7740698627802890423
+      tilemap_water_8: -2632941299470996659
+      tilemap_water_3: 8551557165407706328
+      tilemap_water_7: -2428418093091809222
+      tilemap_water_4: -1717894946499219918
+      tilemap_water_5: 985319074814708569
+      tilemap_water_10: -1694309215051475637
+      tilemap_water_9: -2473195560560638624
+      tilemap_water_0: -6677769054971951815
+      tilemap_water_11: -4126596142045816174
+      tilemap_water_6: 850669986604593135
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

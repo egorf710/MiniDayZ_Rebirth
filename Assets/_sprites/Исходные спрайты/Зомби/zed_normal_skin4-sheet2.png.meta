@@ -45,7 +45,7 @@ TextureImporter:
       213: 8793755540303781385
     second: zed_normal_skin4-sheet2_13
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -66,6 +66,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -104,6 +105,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -119,6 +121,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -436,6 +450,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      zed_normal_skin4-sheet2_12: 3642079499425798551
+      zed_normal_skin4-sheet2_1: -6266715507509675622
+      zed_normal_skin4-sheet2_4: -5073456768781557038
+      zed_normal_skin4-sheet2_2: -6417563919454896298
+      zed_normal_skin4-sheet2_6: -1205390686837677677
+      zed_normal_skin4-sheet2_5: 1446178050202603074
+      zed_normal_skin4-sheet2_8: 1436315207405204127
+      zed_normal_skin4-sheet2_7: -4530472296628228338
+      zed_normal_skin4-sheet2_10: -1321968594874815842
+      zed_normal_skin4-sheet2_13: 8793755540303781385
+      zed_normal_skin4-sheet2_3: 4328424492345670210
+      zed_normal_skin4-sheet2_9: 4262883443722508727
+      zed_normal_skin4-sheet2_0: -1369515277293447914
+      zed_normal_skin4-sheet2_11: 9053632291802010375
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

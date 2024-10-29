@@ -51,7 +51,7 @@ TextureImporter:
       213: -1299724967760746979
     second: razgruz-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      razgruz-sheet1_10: 1861610582284973052
+      razgruz-sheet1_3: 28501382586266692
+      razgruz-sheet1_11: -1323848532934442326
+      razgruz-sheet1_6: 693401510801596883
+      razgruz-sheet1_7: 9064792557298242987
+      razgruz-sheet1_4: 1079840963287816265
+      razgruz-sheet1_13: 2953067073278975868
+      razgruz-sheet1_12: 638850456089302561
+      razgruz-sheet1_2: -8112243186120833734
+      razgruz-sheet1_0: -7892571692474149755
+      razgruz-sheet1_8: 8965417642009989776
+      razgruz-sheet1_14: -1729093023557349637
+      razgruz-sheet1_5: 6831026495316471362
+      razgruz-sheet1_9: -2272491884837741136
+      razgruz-sheet1_1: 7112410892044069452
+      razgruz-sheet1_15: -1299724967760746979
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

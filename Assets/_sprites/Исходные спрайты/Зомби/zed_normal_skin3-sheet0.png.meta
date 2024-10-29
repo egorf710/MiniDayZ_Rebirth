@@ -51,7 +51,7 @@ TextureImporter:
       213: -1975574238395009002
     second: zed_normal_skin3-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -125,6 +127,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -484,6 +498,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      zed_normal_skin3-sheet0_13: 6579560074633911010
+      zed_normal_skin3-sheet0_9: -6032512393007195141
+      zed_normal_skin3-sheet0_6: 5736072681550504598
+      zed_normal_skin3-sheet0_2: 5421648083587371648
+      zed_normal_skin3-sheet0_4: -7570010466754613050
+      zed_normal_skin3-sheet0_3: 7783502440170655712
+      zed_normal_skin3-sheet0_11: 7637399238407615083
+      zed_normal_skin3-sheet0_8: 3698189222813246213
+      zed_normal_skin3-sheet0_10: -8993503413603241360
+      zed_normal_skin3-sheet0_5: 6976923944798562852
+      zed_normal_skin3-sheet0_14: -8497657195688735595
+      zed_normal_skin3-sheet0_1: -5166972721309656642
+      zed_normal_skin3-sheet0_12: 3994858713459218847
+      zed_normal_skin3-sheet0_7: 3151260028883611661
+      zed_normal_skin3-sheet0_0: 6441682188235635334
+      zed_normal_skin3-sheet0_15: -1975574238395009002
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

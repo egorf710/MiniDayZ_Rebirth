@@ -4,13 +4,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CanvasManager : MonoBehaviour
+public class CanvasManager : MonoBehaviour, Initable
 {
     [SerializeField] private Button interactButton;
     [SerializeField] private Sprite FellingTreeSprite;
     private Sprite defaultInteractSprite;
     public static CanvasManager Instance;
     public PlayerInteract playerInteract;
+
+
+    [Space]
+    [Header("Initer")]
+    [SerializeField] private Slider healthField;
+    [SerializeField] private Slider waterField;
+    [SerializeField] private Slider foodField;
+    [SerializeField] private Slider heatField;
+    [Space]
+    [SerializeField] private Image healthImage;
+    [SerializeField] private Image bleedingImage;
+    [SerializeField] private Image speedUpImage;
+    [SerializeField] private Image sickImage;
+    [SerializeField] public ZedAimOutline aimOutline;
+
     private void Awake()
     {
         Instance = this;
@@ -20,8 +35,13 @@ public class CanvasManager : MonoBehaviour
     public void Init(Transform player)
     {
         playerInteract = player.transform.GetChild(1).GetComponent<PlayerInteract>();
-        FindObjectOfType<InventoryManager>().Init(player);
+        player.transform.GetComponent<PlayerCharacteristics>().InitUI
+            (healthField, waterField, foodField, heatField, 
+            healthImage, bleedingImage, speedUpImage, sickImage);
         interactButton.onClick.AddListener(Interact);
+        FindObjectOfType<WeaponManager>().Init(player);
+        FindObjectOfType<InventoryManager>().Init(player);
+
     }
     public static void SetActiveInteractButton(bool b)
     {
@@ -36,5 +56,10 @@ public class CanvasManager : MonoBehaviour
     public static void SetActiveFellingTreeButton(bool v)
     {
         Instance.interactButton.GetComponent<Image>().sprite = v ? Instance.FellingTreeSprite : Instance.defaultInteractSprite;
+    }
+
+    public void NetUpdate()
+    {
+
     }
 }

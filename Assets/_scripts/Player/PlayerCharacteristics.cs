@@ -72,9 +72,31 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
     public int blockChanse = 10;
     public int handCritChanse = 10;
 
+    private bool IsLocalPlayer()
+    {
+        return GetComponent<PlayerNetwork>().isLocalPlayer;
+    }
+    public void InitUI
+        
+        (Slider healthField, Slider waterSlider, Slider foodField, Slider heatField,
+        Image healthImage, Image bleedingImage, Image speedUpImage, Image sickImage
+        )
+    {
+        if (!IsLocalPlayer()) { enabled = false; return; }
+        this.healthField = healthField;
+        this.waterField = waterSlider;
+        this.foodField = foodField;
+        this.heatField = heatField;
+
+        this.speedUpImage = speedUpImage;
+        this.sickImage = sickImage;
+        this.healthImage = healthImage;
+        this.bleedingImage = bleedingImage;
+    }
 
     private void Refresh()
     {
+        IsLocalPlayer();
         //UI
         currentHealth = Mathf.Clamp(currentHealth, 0, 100);
         currentWater = Mathf.Clamp(currentWater, 0, 100);
@@ -198,6 +220,7 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
     }
     private void Start()
     {
+        if(!GetComponent<PlayerNetwork>().isLocalPlayer) { return; }
         playerHealth = 100;
         playerFood = 100;
         playerWater = 100;

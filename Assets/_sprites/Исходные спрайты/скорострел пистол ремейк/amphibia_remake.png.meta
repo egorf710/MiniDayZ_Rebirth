@@ -75,7 +75,7 @@ TextureImporter:
       213: -6159832603155615750
     second: amphibia_remake_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -688,6 +702,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      amphibia_remake_17: -2687942982702583880
+      amphibia_remake_22: 95111934526075103
+      amphibia_remake_0: -810987126576494713
+      amphibia_remake_8: 7083611652166358717
+      amphibia_remake_11: 8018169107309975390
+      amphibia_remake_12: 3069914983286541978
+      amphibia_remake_10: 7697372544603897281
+      amphibia_remake_19: 4182851330589808335
+      amphibia_remake_13: -8222532788967590573
+      amphibia_remake_9: -1539432229126367698
+      amphibia_remake_20: 4452335625089779968
+      amphibia_remake_18: -2006055655182803463
+      amphibia_remake_23: -6159832603155615750
+      amphibia_remake_6: 3943915046707423398
+      amphibia_remake_14: 4263241309872544998
+      amphibia_remake_5: -7135992557372310014
+      amphibia_remake_2: 2157653577957580192
+      amphibia_remake_1: -7194420357148539855
+      amphibia_remake_21: 1458064500002720238
+      amphibia_remake_15: -5771635262460523157
+      amphibia_remake_7: -3743691763146281150
+      amphibia_remake_4: -5126896247158189148
+      amphibia_remake_3: -4813082385492336369
+      amphibia_remake_16: -4388197700889158884
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

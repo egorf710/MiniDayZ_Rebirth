@@ -51,7 +51,7 @@ TextureImporter:
       213: -3940688904180097169
     second: orel_pants-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      orel_pants-sheet1_7: -3979155007724427009
+      orel_pants-sheet1_3: -3510721255239049141
+      orel_pants-sheet1_12: -6747304177232325805
+      orel_pants-sheet1_13: -4288363857233291927
+      orel_pants-sheet1_1: -8382255442563370188
+      orel_pants-sheet1_9: -6155693477151294389
+      orel_pants-sheet1_4: -1111447131882945549
+      orel_pants-sheet1_10: 9004679942937780253
+      orel_pants-sheet1_11: -3483300950072168268
+      orel_pants-sheet1_15: -3940688904180097169
+      orel_pants-sheet1_14: 1866951075704776631
+      orel_pants-sheet1_0: 6563216119006581484
+      orel_pants-sheet1_6: -5413109452232068689
+      orel_pants-sheet1_5: 697359150876063378
+      orel_pants-sheet1_2: 6546352915692496467
+      orel_pants-sheet1_8: -3395901362554974582
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

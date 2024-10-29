@@ -63,7 +63,7 @@ TextureImporter:
       213: 5372496076817544319
     second: crowbar_remake_19
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -84,6 +84,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,6 +123,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -149,6 +151,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -592,6 +606,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      crowbar_remake_8: 813402338912892938
+      crowbar_remake_16: 46062232728914364
+      crowbar_remake_11: 2636691823898898618
+      crowbar_remake_5: -1764800432200741729
+      crowbar_remake_7: -7055279081994230344
+      crowbar_remake_17: -1412951803532824696
+      crowbar_remake_14: -3226598203767747136
+      crowbar_remake_10: 8218043339634876761
+      crowbar_remake_15: -5891380639190960918
+      crowbar_remake_13: -692938300399959829
+      crowbar_remake_4: -7327029480075836472
+      crowbar_remake_1: 7695767775764311928
+      crowbar_remake_6: -6830746664317069915
+      crowbar_remake_3: 2103715453107588934
+      crowbar_remake_9: 2526274481447072316
+      crowbar_remake_0: 7041353600220490581
+      crowbar_remake_2: -5989953526133634660
+      crowbar_remake_12: 5529290297204137758
+      crowbar_remake_19: 5372496076817544319
+      crowbar_remake_18: -1590953886661819026
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

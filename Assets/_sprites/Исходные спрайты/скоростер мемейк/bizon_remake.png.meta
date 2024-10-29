@@ -75,7 +75,7 @@ TextureImporter:
       213: -4970050375930084854
     second: bizon_remake_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -688,6 +702,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      bizon_remake_3: 2335193457849352244
+      bizon_remake_15: 8860341621882836543
+      bizon_remake_4: -7616769622281418788
+      bizon_remake_21: 7935198841148210555
+      bizon_remake_10: 1294348974979637705
+      bizon_remake_17: 5172373149514756125
+      bizon_remake_11: 5814530550518248546
+      bizon_remake_16: -4613648782111754185
+      bizon_remake_20: 7060199088075181788
+      bizon_remake_7: 3038023674323050051
+      bizon_remake_8: -1613460581766107120
+      bizon_remake_0: 7773105224614107899
+      bizon_remake_5: 1460953953050875159
+      bizon_remake_12: 220553819134039961
+      bizon_remake_2: -2408715143571526420
+      bizon_remake_9: 1983124716370113665
+      bizon_remake_6: -2383425891336693881
+      bizon_remake_19: 5214842103103070728
+      bizon_remake_13: 1576105267990706558
+      bizon_remake_22: 5925997590122056256
+      bizon_remake_23: -4970050375930084854
+      bizon_remake_1: -303658221421018039
+      bizon_remake_14: 2594073982183050541
+      bizon_remake_18: 5767912527260933467
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

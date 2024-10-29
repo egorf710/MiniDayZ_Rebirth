@@ -51,7 +51,7 @@ TextureImporter:
       213: 4951306187556577048
     second: r670_shotgun-sheet2_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      r670_shotgun-sheet2_4: 2241147117855126143
+      r670_shotgun-sheet2_13: 3706840608716767322
+      r670_shotgun-sheet2_6: -9021847770098394114
+      r670_shotgun-sheet2_10: -1538154382537741485
+      r670_shotgun-sheet2_5: -5086386374154625442
+      r670_shotgun-sheet2_1: 5752348880357905893
+      r670_shotgun-sheet2_8: -1482354920446649886
+      r670_shotgun-sheet2_0: -8359106920429856659
+      r670_shotgun-sheet2_9: -4252293507722291354
+      r670_shotgun-sheet2_11: 5158635797782733688
+      r670_shotgun-sheet2_3: 847454644517371003
+      r670_shotgun-sheet2_14: -3878843755645143606
+      r670_shotgun-sheet2_15: 4951306187556577048
+      r670_shotgun-sheet2_12: -8799481005961596405
+      r670_shotgun-sheet2_2: -2810308684741021964
+      r670_shotgun-sheet2_7: 1167936613796653291
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

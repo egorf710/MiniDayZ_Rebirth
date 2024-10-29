@@ -51,7 +51,7 @@ TextureImporter:
       213: -3666510228461754206
     second: orel_jacket-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      orel_jacket-sheet1_6: 7974260016959426687
+      orel_jacket-sheet1_0: -4346322692029150746
+      orel_jacket-sheet1_2: 6997189399932260506
+      orel_jacket-sheet1_8: -5527792431416206119
+      orel_jacket-sheet1_15: -3666510228461754206
+      orel_jacket-sheet1_10: 4861550514217500866
+      orel_jacket-sheet1_5: 5096568042685882417
+      orel_jacket-sheet1_3: 8522467849069338731
+      orel_jacket-sheet1_7: 8086383847265244871
+      orel_jacket-sheet1_11: 4207763857737901766
+      orel_jacket-sheet1_12: -5172759152388681727
+      orel_jacket-sheet1_14: 4406229723153184747
+      orel_jacket-sheet1_13: 8608314830942113186
+      orel_jacket-sheet1_1: -2656842496026250718
+      orel_jacket-sheet1_4: 3947433296336285053
+      orel_jacket-sheet1_9: -4238588146119244254
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

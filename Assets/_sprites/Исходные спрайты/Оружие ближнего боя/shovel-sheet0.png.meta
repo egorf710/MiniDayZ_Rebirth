@@ -150,7 +150,7 @@ TextureImporter:
       213: 1457653772743845322
     second: shovel-sheet0_48
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -171,6 +171,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -209,6 +210,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -236,6 +238,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1288,6 +1302,56 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      shovel-sheet0_15: -4167892675415387310
+      shovel-sheet0_45: -2284975736583680063
+      shovel-sheet0_19: -9143715405870682696
+      shovel-sheet0_7: 2751527445893051465
+      shovel-sheet0_21: -952241564387629163
+      shovel-sheet0_42: -1893146832354927372
+      shovel-sheet0_0: 247513195870707379
+      shovel-sheet0_36: -3382309065604696737
+      shovel-sheet0_24: -4070142479352230255
+      shovel-sheet0_28: -1811415980423038716
+      shovel-sheet0_27: 159561170140347773
+      shovel-sheet0_23: 1166300179374653489
+      shovel-sheet0_29: 8403012433127593991
+      shovel-sheet0_17: 6426435159797549698
+      shovel-sheet0_38: 877302233522967608
+      shovel-sheet0_43: -4360683837677075700
+      shovel-sheet0_2: -2486782785282146831
+      shovel-sheet0_3: 6834239083976183122
+      shovel-sheet0_31: -2863713778057089668
+      shovel-sheet0_30: 1488405689649623592
+      shovel-sheet0_6: -886617117542965490
+      shovel-sheet0_35: -6805982914611582126
+      shovel-sheet0_37: -5484877486362823373
+      shovel-sheet0_25: 7062382748515334749
+      shovel-sheet0_18: 444412727748760829
+      shovel-sheet0_33: -8962096552966404200
+      shovel-sheet0_14: 51595879398813437
+      shovel-sheet0_1: 6211529980505883067
+      shovel-sheet0_10: 6878013744605435166
+      shovel-sheet0_20: 4226264715858684081
+      shovel-sheet0_39: -2200739011562458995
+      shovel-sheet0_4: -1965086244674327307
+      shovel-sheet0_8: -2472840761950007042
+      shovel-sheet0_32: 2443113401331914863
+      shovel-sheet0_16: 6602919447125448671
+      shovel-sheet0_12: 5851679187224995618
+      shovel-sheet0_5: 7550636869528523964
+      shovel-sheet0_34: 2854971536080511398
+      shovel-sheet0_41: 8041705834831578667
+      shovel-sheet0_22: -6576561882451015181
+      shovel-sheet0_26: -2869806994277516483
+      shovel-sheet0_48: 1457653772743845322
+      shovel-sheet0_44: 8641402116164808151
+      shovel-sheet0_47: 1772019745486999981
+      shovel-sheet0_13: -2241334358992745261
+      shovel-sheet0_9: -5120888838895565181
+      shovel-sheet0_40: 1756237973195114818
+      shovel-sheet0_46: 7474119298532884971
+      shovel-sheet0_11: 7241601439355593708
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -63,7 +63,7 @@ TextureImporter:
       213: -3194296708887588691
     second: pan_remake_19
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -84,6 +84,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,6 +123,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -149,6 +151,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -592,6 +606,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      pan_remake_15: -111327464096856899
+      pan_remake_4: 1178385764109652552
+      pan_remake_5: -3726672947711289378
+      pan_remake_8: -3541051591315462243
+      pan_remake_16: -5163139471768418610
+      pan_remake_9: -2468156763581166274
+      pan_remake_14: -4196787780311384244
+      pan_remake_12: -5163614310760151880
+      pan_remake_11: -9117722536377656831
+      pan_remake_0: -85384116155875605
+      pan_remake_13: 335192052934235629
+      pan_remake_7: 5850506859798621043
+      pan_remake_10: 7849888470728200915
+      pan_remake_19: -3194296708887588691
+      pan_remake_2: -9005530089800944650
+      pan_remake_3: 4717196137065173740
+      pan_remake_17: 5861655607936358365
+      pan_remake_18: 2451078627259285119
+      pan_remake_1: 3385142921049391898
+      pan_remake_6: 2036832525396740195
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

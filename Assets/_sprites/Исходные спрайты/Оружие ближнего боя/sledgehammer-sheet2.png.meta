@@ -48,7 +48,7 @@ TextureImporter:
       213: 5812051746204458736
     second: sledgehammer-sheet2_14
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -69,6 +69,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -107,6 +108,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -134,6 +136,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -472,6 +486,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      sledgehammer-sheet2_5: 7729465784488407415
+      sledgehammer-sheet2_3: -3496295124531298938
+      sledgehammer-sheet2_4: -4943002707968040240
+      sledgehammer-sheet2_0: -8864556687686767569
+      sledgehammer-sheet2_1: -3033391370285818595
+      sledgehammer-sheet2_14: 5812051746204458736
+      sledgehammer-sheet2_7: 8223037611793595938
+      sledgehammer-sheet2_11: -3879874280871298780
+      sledgehammer-sheet2_2: -8589209238567969762
+      sledgehammer-sheet2_9: 9097954721434266846
+      sledgehammer-sheet2_6: 2544079486458804652
+      sledgehammer-sheet2_8: -6504642599296349302
+      sledgehammer-sheet2_10: 3519689985117597789
+      sledgehammer-sheet2_13: -1030940250353625939
+      sledgehammer-sheet2_12: -1359799900059264792
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

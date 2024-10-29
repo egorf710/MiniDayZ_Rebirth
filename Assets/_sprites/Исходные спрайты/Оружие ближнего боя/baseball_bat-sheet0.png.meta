@@ -150,7 +150,7 @@ TextureImporter:
       213: 8603952115451989087
     second: baseball_bat-sheet0_48
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -171,6 +171,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -209,6 +210,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -236,6 +238,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1288,6 +1302,56 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      baseball_bat-sheet0_11: 2743483319810208831
+      baseball_bat-sheet0_30: 4981803862542362936
+      baseball_bat-sheet0_16: -517597437221814998
+      baseball_bat-sheet0_28: 7326316033505369317
+      baseball_bat-sheet0_46: 6878495062103182242
+      baseball_bat-sheet0_40: 7305867998880627469
+      baseball_bat-sheet0_23: -9068249176193366712
+      baseball_bat-sheet0_39: -6627180384291544935
+      baseball_bat-sheet0_34: 3789035924730855296
+      baseball_bat-sheet0_6: -538459409387919411
+      baseball_bat-sheet0_15: 1689504865894785412
+      baseball_bat-sheet0_18: 5916457807050245871
+      baseball_bat-sheet0_25: -7950416410292956773
+      baseball_bat-sheet0_21: -1037862172898193517
+      baseball_bat-sheet0_48: 8603952115451989087
+      baseball_bat-sheet0_24: -3766071134292694841
+      baseball_bat-sheet0_20: -3620938179775062804
+      baseball_bat-sheet0_47: -8059589236277496055
+      baseball_bat-sheet0_36: -9217344210751659837
+      baseball_bat-sheet0_26: 8415744911893733676
+      baseball_bat-sheet0_0: -14696646487300577
+      baseball_bat-sheet0_41: 4917724231181910644
+      baseball_bat-sheet0_9: -5176352939444990929
+      baseball_bat-sheet0_14: 1561357403026342474
+      baseball_bat-sheet0_1: 6837377836240065942
+      baseball_bat-sheet0_22: -1717167305112946207
+      baseball_bat-sheet0_12: -5935179615702698812
+      baseball_bat-sheet0_7: -8674929239963480116
+      baseball_bat-sheet0_42: 5351073619520166072
+      baseball_bat-sheet0_19: -8565818827033948750
+      baseball_bat-sheet0_45: 5977608041891554115
+      baseball_bat-sheet0_8: -2728746776256491651
+      baseball_bat-sheet0_27: 3010103303319685364
+      baseball_bat-sheet0_33: -1614997233156978475
+      baseball_bat-sheet0_37: -409947582384894949
+      baseball_bat-sheet0_10: 2919907205787310212
+      baseball_bat-sheet0_13: 8221558270120423436
+      baseball_bat-sheet0_32: 4006609465753615371
+      baseball_bat-sheet0_44: 6407620971086189772
+      baseball_bat-sheet0_31: -3751359393334210218
+      baseball_bat-sheet0_38: 381918609666480367
+      baseball_bat-sheet0_3: 6543238858697656297
+      baseball_bat-sheet0_2: 5329236115514012683
+      baseball_bat-sheet0_5: 8439894649209499650
+      baseball_bat-sheet0_4: 5442888423237441743
+      baseball_bat-sheet0_43: -1196599244742608158
+      baseball_bat-sheet0_17: 7132559151665740259
+      baseball_bat-sheet0_29: -1244549968829485827
+      baseball_bat-sheet0_35: 2353269802403830417
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

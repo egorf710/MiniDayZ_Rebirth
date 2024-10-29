@@ -51,7 +51,7 @@ TextureImporter:
       213: 7897204060804436237
     second: welding_mask-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      welding_mask-sheet0_8: 2613866021443411143
+      welding_mask-sheet0_3: 8189020223743869092
+      welding_mask-sheet0_0: -7155583624862953919
+      welding_mask-sheet0_4: 6788774188467489334
+      welding_mask-sheet0_15: 7897204060804436237
+      welding_mask-sheet0_10: -477818046769303244
+      welding_mask-sheet0_2: -859895562724966140
+      welding_mask-sheet0_5: -414245799397318284
+      welding_mask-sheet0_9: 8053388438886370800
+      welding_mask-sheet0_7: 7952480925813283549
+      welding_mask-sheet0_6: -7484534297529584415
+      welding_mask-sheet0_1: 7168515557609163368
+      welding_mask-sheet0_11: 6787295943617502477
+      welding_mask-sheet0_12: 148104882458454789
+      welding_mask-sheet0_14: -8812990359805165795
+      welding_mask-sheet0_13: 3044137470095048289
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -51,7 +51,7 @@ TextureImporter:
       213: -2617877929941697887
     second: paramedic_pants-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      paramedic_pants-sheet0_2: 6118889936040362963
+      paramedic_pants-sheet0_6: -1568625860916273111
+      paramedic_pants-sheet0_14: 6408548970854708185
+      paramedic_pants-sheet0_7: 822588633274340513
+      paramedic_pants-sheet0_8: -7022532604983856868
+      paramedic_pants-sheet0_3: -4969735143529463984
+      paramedic_pants-sheet0_12: -4461522737560233248
+      paramedic_pants-sheet0_4: 7460824000235647397
+      paramedic_pants-sheet0_5: -7123980567800237125
+      paramedic_pants-sheet0_15: -2617877929941697887
+      paramedic_pants-sheet0_9: 4919495230416282314
+      paramedic_pants-sheet0_0: 3416201993804580397
+      paramedic_pants-sheet0_11: 2620948173236361735
+      paramedic_pants-sheet0_1: -8910730445708427823
+      paramedic_pants-sheet0_13: -6721511954889959714
+      paramedic_pants-sheet0_10: -1289667804441777309
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

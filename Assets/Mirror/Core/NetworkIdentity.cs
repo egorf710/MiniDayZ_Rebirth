@@ -356,8 +356,9 @@ namespace Mirror
                 Destroy(gameObject);
             }
             hasSpawned = true;
-        }
 
+        }
+ 
         void OnValidate()
         {
             // OnValidate is not called when using Instantiate, so we can use

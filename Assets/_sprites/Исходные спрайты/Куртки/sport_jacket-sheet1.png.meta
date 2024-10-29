@@ -51,7 +51,7 @@ TextureImporter:
       213: -7333853438735174732
     second: sport_jacket-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      sport_jacket-sheet1_10: 3400125222931561308
+      sport_jacket-sheet1_5: 8184271394292918783
+      sport_jacket-sheet1_6: -2735771260193086660
+      sport_jacket-sheet1_2: 6975345925228011100
+      sport_jacket-sheet1_9: -2657148798112788177
+      sport_jacket-sheet1_15: -7333853438735174732
+      sport_jacket-sheet1_4: -5794824699900946844
+      sport_jacket-sheet1_11: 4216390285021850356
+      sport_jacket-sheet1_7: -3071845807589611342
+      sport_jacket-sheet1_14: -8305963211956395511
+      sport_jacket-sheet1_12: 126368597572759018
+      sport_jacket-sheet1_8: -8655941187755568570
+      sport_jacket-sheet1_13: 7127348277585676285
+      sport_jacket-sheet1_3: -4836243508036036072
+      sport_jacket-sheet1_0: 2601723867088208494
+      sport_jacket-sheet1_1: 5000751390980234184
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

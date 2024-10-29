@@ -150,7 +150,7 @@ TextureImporter:
       213: 4996937295709788931
     second: gui_btn_perks-sheet-unlock_48
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -171,6 +171,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -209,6 +210,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -260,6 +262,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1312,6 +1326,56 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      gui_btn_perks-sheet-unlock_12: 4217651609264743461
+      gui_btn_perks-sheet-unlock_34: 7667099006296383867
+      gui_btn_perks-sheet-unlock_14: -1966813728316651708
+      gui_btn_perks-sheet-unlock_30: -8376468023591030936
+      gui_btn_perks-sheet-unlock_46: 5448295205890374485
+      gui_btn_perks-sheet-unlock_21: 1327104166050678462
+      gui_btn_perks-sheet-unlock_29: -7955328323455989251
+      gui_btn_perks-sheet-unlock_23: -8739192590270414943
+      gui_btn_perks-sheet-unlock_0: -2226077605311033097
+      gui_btn_perks-sheet-unlock_7: -2065544345916428052
+      gui_btn_perks-sheet-unlock_45: 4533485192993347277
+      gui_btn_perks-sheet-unlock_44: -7995266459071878186
+      gui_btn_perks-sheet-unlock_6: -7553734156491446106
+      gui_btn_perks-sheet-unlock_9: -5162451844130500121
+      gui_btn_perks-sheet-unlock_2: -6694019313777951115
+      gui_btn_perks-sheet-unlock_39: 4389851411401020581
+      gui_btn_perks-sheet-unlock_48: 4996937295709788931
+      gui_btn_perks-sheet-unlock_16: 2537020367954779691
+      gui_btn_perks-sheet-unlock_41: 2347977437922838017
+      gui_btn_perks-sheet-unlock_22: -6798262255684122661
+      gui_btn_perks-sheet-unlock_15: -8137684122871398124
+      gui_btn_perks-sheet-unlock_33: 4823368828548779418
+      gui_btn_perks-sheet-unlock_40: 4279032159773844940
+      gui_btn_perks-sheet-unlock_42: -384234940243142420
+      gui_btn_perks-sheet-unlock_28: -5543398637304661318
+      gui_btn_perks-sheet-unlock_4: 558087496894384237
+      gui_btn_perks-sheet-unlock_32: 8498153280418623436
+      gui_btn_perks-sheet-unlock_38: 3454688609183428168
+      gui_btn_perks-sheet-unlock_25: -5558466201378885656
+      gui_btn_perks-sheet-unlock_47: 8867572556843267831
+      gui_btn_perks-sheet-unlock_5: -3758462610164606469
+      gui_btn_perks-sheet-unlock_27: 7240169798671259962
+      gui_btn_perks-sheet-unlock_20: 2185274533012534723
+      gui_btn_perks-sheet-unlock_13: 4670926989102892663
+      gui_btn_perks-sheet-unlock_18: -3880158070990834173
+      gui_btn_perks-sheet-unlock_24: 3572161328202826128
+      gui_btn_perks-sheet-unlock_35: 3938103416851075561
+      gui_btn_perks-sheet-unlock_19: -1574641405606429655
+      gui_btn_perks-sheet-unlock_8: 9039633269735765392
+      gui_btn_perks-sheet-unlock_11: 7226784785694473366
+      gui_btn_perks-sheet-unlock_31: 1294242631095785526
+      gui_btn_perks-sheet-unlock_3: -8053995338575334502
+      gui_btn_perks-sheet-unlock_17: 862628111041353859
+      gui_btn_perks-sheet-unlock_1: 2849930293953181016
+      gui_btn_perks-sheet-unlock_37: -6118898615093947846
+      gui_btn_perks-sheet-unlock_43: -426308885069724198
+      gui_btn_perks-sheet-unlock_36: -8697139348150500353
+      gui_btn_perks-sheet-unlock_26: 346584988322874710
+      gui_btn_perks-sheet-unlock_10: -5010308857176689025
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -75,7 +75,7 @@ TextureImporter:
       213: -5035826845521548727
     second: glock_remake_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -688,6 +702,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      glock_remake_22: 5657070544013507520
+      glock_remake_23: -5035826845521548727
+      glock_remake_21: -8762815196786943103
+      glock_remake_8: -5205723986233721630
+      glock_remake_11: 5466439927039016970
+      glock_remake_17: 6955248835599807266
+      glock_remake_1: -3110057598596537409
+      glock_remake_2: -4898486708870119496
+      glock_remake_19: 4370515455499566351
+      glock_remake_6: -6741120378684383255
+      glock_remake_4: 2716795640594552377
+      glock_remake_13: 6141670489877653766
+      glock_remake_5: 2496308452613006526
+      glock_remake_12: 4808872410840836624
+      glock_remake_18: 5088070691678184454
+      glock_remake_0: -3688472108606850911
+      glock_remake_15: 2893247327585650978
+      glock_remake_14: -1763257979381274063
+      glock_remake_16: -8864109296805148529
+      glock_remake_9: -2575830185397784519
+      glock_remake_20: -6325151161261020585
+      glock_remake_3: -5338692135854934637
+      glock_remake_10: 9134015837171722085
+      glock_remake_7: 6630059794155462181
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -51,7 +51,7 @@ TextureImporter:
       213: -5069656380146052200
     second: gui_item_outerwear-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      gui_item_outerwear-sheet0_4: 8504721187248274496
+      gui_item_outerwear-sheet0_15: -5069656380146052200
+      gui_item_outerwear-sheet0_1: -8888660117406236719
+      gui_item_outerwear-sheet0_3: -9043844393789355888
+      gui_item_outerwear-sheet0_11: 7974537621103712366
+      gui_item_outerwear-sheet0_9: -3243409974392623636
+      gui_item_outerwear-sheet0_10: 2395896686156327078
+      gui_item_outerwear-sheet0_2: 1996277705950448758
+      gui_item_outerwear-sheet0_13: 4149564797089809867
+      gui_item_outerwear-sheet0_14: -4454887356342745223
+      gui_item_outerwear-sheet0_8: -3307259611215542652
+      gui_item_outerwear-sheet0_5: 1468786221218874565
+      gui_item_outerwear-sheet0_6: -362381841924943666
+      gui_item_outerwear-sheet0_0: -1279821253607794344
+      gui_item_outerwear-sheet0_12: -7560475640386776531
+      gui_item_outerwear-sheet0_7: -1353257467302339591
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

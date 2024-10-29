@@ -38,7 +38,8 @@ public class ItemObject : MonoBehaviour, Interactable
     }
     public void Set(ItemInfo itemInfo)
     {
-        itemInfo = new ItemInfo
+
+        this.itemInfo = new ItemInfo
         {
             name = itemInfo.item.name,
             item = itemInfo.item,

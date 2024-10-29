@@ -48,7 +48,7 @@ TextureImporter:
       213: -6245482521369703131
     second: mountain_backpack-sheet1_14
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -69,6 +69,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -107,6 +108,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -134,6 +136,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -472,6 +486,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      mountain_backpack-sheet1_14: -6245482521369703131
+      mountain_backpack-sheet1_2: -841940870980730104
+      mountain_backpack-sheet1_8: 5643358394166114239
+      mountain_backpack-sheet1_9: 3562579838920169235
+      mountain_backpack-sheet1_1: 5231437256537811836
+      mountain_backpack-sheet1_3: 4789074073648438357
+      mountain_backpack-sheet1_7: 1889086596436222665
+      mountain_backpack-sheet1_10: 7328189173112426674
+      mountain_backpack-sheet1_6: 2058148155986168727
+      mountain_backpack-sheet1_0: 8244340213080544673
+      mountain_backpack-sheet1_12: 8387431538858560578
+      mountain_backpack-sheet1_4: -2342337347255756193
+      mountain_backpack-sheet1_5: -8488756493408968272
+      mountain_backpack-sheet1_11: 9013614143782263330
+      mountain_backpack-sheet1_13: -2896207364422069454
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

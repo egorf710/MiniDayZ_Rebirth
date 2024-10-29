@@ -75,7 +75,7 @@ TextureImporter:
       213: 6130421665083995238
     second: saiga_remake_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -688,6 +702,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      saiga_remake_9: -558501349103971798
+      saiga_remake_11: 2255698238065229251
+      saiga_remake_10: -8259891319736625255
+      saiga_remake_6: 1303059833709277868
+      saiga_remake_13: 1263811530766809724
+      saiga_remake_2: 1183765673619148421
+      saiga_remake_15: 3207803026126132072
+      saiga_remake_16: -5787797446816165795
+      saiga_remake_7: 8955359223658063834
+      saiga_remake_19: -7849767549298298027
+      saiga_remake_22: 7946863854762186800
+      saiga_remake_5: 7603518737125084236
+      saiga_remake_14: 8673213987503853176
+      saiga_remake_21: 953612663811057103
+      saiga_remake_18: 28971258014088888
+      saiga_remake_0: 7016386847716782027
+      saiga_remake_1: 8905321322861860163
+      saiga_remake_8: -6493021925013941631
+      saiga_remake_23: 6130421665083995238
+      saiga_remake_12: 2836367424011783506
+      saiga_remake_20: 7902416038289042494
+      saiga_remake_4: -6700917804965888900
+      saiga_remake_3: 2414179137949293575
+      saiga_remake_17: 6868137026561360848
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

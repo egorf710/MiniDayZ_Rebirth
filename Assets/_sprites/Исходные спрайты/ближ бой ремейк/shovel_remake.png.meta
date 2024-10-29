@@ -63,7 +63,7 @@ TextureImporter:
       213: -4200661107021650601
     second: shovel_remake_19
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -84,6 +84,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,6 +123,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -149,6 +151,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -592,6 +606,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      shovel_remake_7: 523137253494063368
+      shovel_remake_18: -1280983897200853993
+      shovel_remake_11: -6217821348156383626
+      shovel_remake_10: -6043875010529529119
+      shovel_remake_1: 7382230017245339764
+      shovel_remake_0: -3270954411372462902
+      shovel_remake_19: -4200661107021650601
+      shovel_remake_16: -7697266788930347114
+      shovel_remake_5: -6038558218940582860
+      shovel_remake_6: -734850435908522221
+      shovel_remake_12: -3192767615907317034
+      shovel_remake_9: -4060277559701315342
+      shovel_remake_4: -8706774376941598966
+      shovel_remake_14: -351174155521826352
+      shovel_remake_17: 8874847685343918216
+      shovel_remake_15: -8723066661792040919
+      shovel_remake_2: -1026400445790433311
+      shovel_remake_8: -6362268433439907167
+      shovel_remake_13: 8839009771828440438
+      shovel_remake_3: -250505592379660397
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

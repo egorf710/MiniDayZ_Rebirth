@@ -150,7 +150,7 @@ TextureImporter:
       213: 2220712554089902767
     second: bm16_shotgun-sheet0_48
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -171,6 +171,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -209,6 +210,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -236,6 +238,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1288,6 +1302,56 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      bm16_shotgun-sheet0_38: 3651120327067244162
+      bm16_shotgun-sheet0_43: 1723969870804270168
+      bm16_shotgun-sheet0_23: -6666154964037132119
+      bm16_shotgun-sheet0_14: 6100205456453888253
+      bm16_shotgun-sheet0_29: 958685684614922760
+      bm16_shotgun-sheet0_36: -1945333455669549087
+      bm16_shotgun-sheet0_10: -155317257741328208
+      bm16_shotgun-sheet0_16: 374089161603198893
+      bm16_shotgun-sheet0_34: 4932429770249535152
+      bm16_shotgun-sheet0_21: 982524819158384836
+      bm16_shotgun-sheet0_26: 2571843008252417995
+      bm16_shotgun-sheet0_20: -5924754343515767741
+      bm16_shotgun-sheet0_13: 8740778174859230753
+      bm16_shotgun-sheet0_39: 7826811042622088858
+      bm16_shotgun-sheet0_31: -3624031111108538700
+      bm16_shotgun-sheet0_33: -4312549910501666708
+      bm16_shotgun-sheet0_40: 8331966565220962618
+      bm16_shotgun-sheet0_22: -1302429202374648066
+      bm16_shotgun-sheet0_6: 5356985686940213552
+      bm16_shotgun-sheet0_30: -4976450407976742374
+      bm16_shotgun-sheet0_4: -2649371547997455042
+      bm16_shotgun-sheet0_5: -8972699881272955047
+      bm16_shotgun-sheet0_3: -2905241657009116878
+      bm16_shotgun-sheet0_11: 1421182013426824852
+      bm16_shotgun-sheet0_47: 5584827028731607732
+      bm16_shotgun-sheet0_18: 6007947226315033303
+      bm16_shotgun-sheet0_45: 3762289389507041502
+      bm16_shotgun-sheet0_8: 4651933997730294190
+      bm16_shotgun-sheet0_12: 7479359491149469684
+      bm16_shotgun-sheet0_7: -5120386722796337437
+      bm16_shotgun-sheet0_32: 1619099334386146686
+      bm16_shotgun-sheet0_19: -2457700892422565044
+      bm16_shotgun-sheet0_15: -5612332487626388675
+      bm16_shotgun-sheet0_44: -8198240480798761135
+      bm16_shotgun-sheet0_2: 6501903687557206370
+      bm16_shotgun-sheet0_1: 5407249346952166001
+      bm16_shotgun-sheet0_25: -4673133889057486293
+      bm16_shotgun-sheet0_28: 8810106618508432976
+      bm16_shotgun-sheet0_37: -3198167024958935833
+      bm16_shotgun-sheet0_41: -3082179057788971547
+      bm16_shotgun-sheet0_9: -3433936306738179177
+      bm16_shotgun-sheet0_27: -3206663734736048965
+      bm16_shotgun-sheet0_42: -834754585044071955
+      bm16_shotgun-sheet0_17: 5269449345220165197
+      bm16_shotgun-sheet0_24: -6893780470076797165
+      bm16_shotgun-sheet0_35: 4528007536404616501
+      bm16_shotgun-sheet0_0: 5625664584589727651
+      bm16_shotgun-sheet0_48: 2220712554089902767
+      bm16_shotgun-sheet0_46: -6400334250811759043
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

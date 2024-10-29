@@ -51,7 +51,7 @@ TextureImporter:
       213: 4347343007323618160
     second: bandit_skin-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -520,6 +534,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      bandit_skin-sheet0_9: -7367326654252095185
+      bandit_skin-sheet0_3: -9118742499147256687
+      bandit_skin-sheet0_7: -7218446057566767052
+      bandit_skin-sheet0_14: 8085673428173133780
+      bandit_skin-sheet0_10: 7523135831794909314
+      bandit_skin-sheet0_0: 7935379685749791037
+      bandit_skin-sheet0_15: 4347343007323618160
+      bandit_skin-sheet0_6: -7619006255113960621
+      bandit_skin-sheet0_13: 2892240104302099719
+      bandit_skin-sheet0_1: -7007981045297580658
+      bandit_skin-sheet0_11: 6074512227109534653
+      bandit_skin-sheet0_12: 744026255228271010
+      bandit_skin-sheet0_2: 6864107435918509444
+      bandit_skin-sheet0_4: -4240249407563576247
+      bandit_skin-sheet0_5: 9067901520484215341
+      bandit_skin-sheet0_8: -9045206409647131921
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -10,6 +10,7 @@ public struct DropLootMassage
     public ItemLootData[] loot;
     public Vector2 pos;
 }
+[Serializable]
 public struct ItemLoot
 {
     public Item item;
@@ -31,6 +32,7 @@ public struct ItemLoot
         chance = itemLoot.chance;
     }
 }
+[Serializable]
 public struct ItemLootData
 {
     public string itemPath;

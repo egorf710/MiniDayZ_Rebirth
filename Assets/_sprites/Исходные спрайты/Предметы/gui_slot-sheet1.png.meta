@@ -120,7 +120,7 @@ TextureImporter:
       213: 8343139572497736569
     second: gui_slot-sheet1_38
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -141,6 +141,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -179,6 +180,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -206,6 +208,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1048,6 +1062,46 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      gui_slot-sheet1_1: -7662424649280061127
+      gui_slot-sheet1_25: 5642615462974540917
+      gui_slot-sheet1_29: 5957285049333539696
+      gui_slot-sheet1_31: -1983507961571359560
+      gui_slot-sheet1_5: -3107449985046160233
+      gui_slot-sheet1_34: 2526856615559446057
+      gui_slot-sheet1_33: -7366815046190870179
+      gui_slot-sheet1_28: -1040510789754508341
+      gui_slot-sheet1_18: -100718026646710685
+      gui_slot-sheet1_14: 8362411891713548651
+      gui_slot-sheet1_0: -1286026659268329734
+      gui_slot-sheet1_9: -6541652807415872882
+      gui_slot-sheet1_3: 3983432166870880852
+      gui_slot-sheet1_6: 8869247957097424058
+      gui_slot-sheet1_15: -1014058806726697756
+      gui_slot-sheet1_13: -7191306138934023590
+      gui_slot-sheet1_19: -1689976070034846976
+      gui_slot-sheet1_22: -8516978025089986278
+      gui_slot-sheet1_10: -8332276317077793858
+      gui_slot-sheet1_11: -2242800368804190696
+      gui_slot-sheet1_16: -6278068510404397157
+      gui_slot-sheet1_21: 1382753754711612463
+      gui_slot-sheet1_26: 576042534636274484
+      gui_slot-sheet1_32: -4746423788189452867
+      gui_slot-sheet1_2: -453489514888429766
+      gui_slot-sheet1_17: 4833525846659229785
+      gui_slot-sheet1_36: -404935149605439530
+      gui_slot-sheet1_37: -8109923448918147418
+      gui_slot-sheet1_38: 8343139572497736569
+      gui_slot-sheet1_24: -2895054668556823074
+      gui_slot-sheet1_35: -2478578155743688844
+      gui_slot-sheet1_12: 7105588501764853655
+      gui_slot-sheet1_4: 5433185744689589273
+      gui_slot-sheet1_8: -3302164833142338068
+      gui_slot-sheet1_20: -8775575246836617491
+      gui_slot-sheet1_23: -1055115980565756289
+      gui_slot-sheet1_30: -7783732188882821745
+      gui_slot-sheet1_27: 4743392265220233477
+      gui_slot-sheet1_7: 539934229299430742
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

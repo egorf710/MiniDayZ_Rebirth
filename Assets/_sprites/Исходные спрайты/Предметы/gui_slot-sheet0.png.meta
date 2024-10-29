@@ -195,7 +195,7 @@ TextureImporter:
       213: 8661632606378938152
     second: gui_slot-sheet0_63
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -216,6 +216,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -254,6 +255,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -281,6 +283,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1648,6 +1662,71 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      gui_slot-sheet0_21: 6846698452003274236
+      gui_slot-sheet0_57: -757971538717967244
+      gui_slot-sheet0_52: -2399414854398980753
+      gui_slot-sheet0_13: -7030322659629983071
+      gui_slot-sheet0_28: 9192850006099372804
+      gui_slot-sheet0_45: -6173035282852623857
+      gui_slot-sheet0_27: -7943897637415715048
+      gui_slot-sheet0_15: -2167404035625051228
+      gui_slot-sheet0_46: -6117658194008514689
+      gui_slot-sheet0_25: -7065742733491734885
+      gui_slot-sheet0_7: -7255640921457124984
+      gui_slot-sheet0_8: 6781087306997824357
+      gui_slot-sheet0_41: 7825598608713792506
+      gui_slot-sheet0_35: 3283131332438598766
+      gui_slot-sheet0_22: 8333471095082013409
+      gui_slot-sheet0_51: 6669500025707560840
+      gui_slot-sheet0_1: -4348319565394858936
+      gui_slot-sheet0_11: 5211051010276371107
+      gui_slot-sheet0_30: -1134045893796129013
+      gui_slot-sheet0_14: -9022917318866206627
+      gui_slot-sheet0_16: -946631052732961604
+      gui_slot-sheet0_32: -8395275187848344800
+      gui_slot-sheet0_55: 1705072973396824796
+      gui_slot-sheet0_42: 3260380659686401263
+      gui_slot-sheet0_59: -110933399995255545
+      gui_slot-sheet0_36: -8365527318490586725
+      gui_slot-sheet0_17: 1808143498472481642
+      gui_slot-sheet0_23: 6712503780837892960
+      gui_slot-sheet0_9: 661473748425853785
+      gui_slot-sheet0_20: 8487065530617972102
+      gui_slot-sheet0_33: -2903624981128879387
+      gui_slot-sheet0_49: 2471221715812730953
+      gui_slot-sheet0_10: -5607423516430751940
+      gui_slot-sheet0_44: 1759159166234172328
+      gui_slot-sheet0_6: -6101731657378451220
+      gui_slot-sheet0_43: 943230148323294618
+      gui_slot-sheet0_50: -2315292936686357389
+      gui_slot-sheet0_48: -4400870958148051036
+      gui_slot-sheet0_40: -6220416250074791963
+      gui_slot-sheet0_54: 2362173086265417924
+      gui_slot-sheet0_5: -5027471985529374418
+      gui_slot-sheet0_12: 5674099969287870375
+      gui_slot-sheet0_38: 1234844662019387841
+      gui_slot-sheet0_2: 6349750105251081866
+      gui_slot-sheet0_19: 3037710509380300973
+      gui_slot-sheet0_58: 3722732800145433500
+      gui_slot-sheet0_63: 8661632606378938152
+      gui_slot-sheet0_62: -7995908627391041042
+      gui_slot-sheet0_37: 2360950324913561509
+      gui_slot-sheet0_53: 7913643299061128045
+      gui_slot-sheet0_0: 2712959710701991671
+      gui_slot-sheet0_24: 3671388094017076314
+      gui_slot-sheet0_31: -8509622210996886618
+      gui_slot-sheet0_56: -8372851876709073947
+      gui_slot-sheet0_4: -8343900808556431402
+      gui_slot-sheet0_39: -7627438852503998356
+      gui_slot-sheet0_47: -6341838013808975943
+      gui_slot-sheet0_29: 3476727929863465104
+      gui_slot-sheet0_3: 7959753182498538450
+      gui_slot-sheet0_60: 7241686465167746602
+      gui_slot-sheet0_18: -3026234477847975727
+      gui_slot-sheet0_34: 830001363536783648
+      gui_slot-sheet0_26: -1291969932070043989
+      gui_slot-sheet0_61: 102554724548862722
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

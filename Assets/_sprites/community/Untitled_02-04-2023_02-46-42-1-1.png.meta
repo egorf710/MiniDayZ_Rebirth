@@ -12,7 +12,7 @@ TextureImporter:
       213: -4225793177793548212
     second: Untitled_02-04-2023_02-46-42-1-1_2
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -33,6 +33,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -71,6 +72,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -122,6 +124,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -649,6 +663,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Untitled_02-04-2023_02-46-42-1-1_23: 1752818261826612631
+      Untitled_02-04-2023_02-46-42-1-1_25: 2432688051481598615
+      Untitled_02-04-2023_02-46-42-1-1_1: 4794415882438300440
+      Untitled_02-04-2023_02-46-42-1-1_14: -2874370616081998688
+      Untitled_02-04-2023_02-46-42-1-1_39: -5572099852296373625
+      Untitled_02-04-2023_02-46-42-1-1_0: 2984465793993779298
+      Untitled_02-04-2023_02-46-42-1-1_18: 6659392201608900421
+      Untitled_02-04-2023_02-46-42-1-1_22: -2338676759871045495
+      Untitled_02-04-2023_02-46-42-1-1_40: -2524153798574633551
+      Untitled_02-04-2023_02-46-42-1-1_5: 6636854138281485580
+      Untitled_02-04-2023_02-46-42-1-1_4: 3577432215440019741
+      Untitled_02-04-2023_02-46-42-1-1_16: -6828072525565350035
+      Untitled_02-04-2023_02-46-42-1-1_11: 498939015806879107
+      Untitled_02-04-2023_02-46-42-1-1_20: 3190625217381915766
+      Untitled_02-04-2023_02-46-42-1-1_19: 2971566455249964143
+      Untitled_02-04-2023_02-46-42-1-1_8: -2632691957667994866
+      Untitled_02-04-2023_02-46-42-1-1_21: -3311180437851532760
+      Untitled_02-04-2023_02-46-42-1-1_24: -4181478482181575796
+      Untitled_02-04-2023_02-46-42-1-1_26: 5422375983809579640
+      Untitled_02-04-2023_02-46-42-1-1_10: 8698309028620399562
+      Untitled_02-04-2023_02-46-42-1-1_17: 4400374284851840863
+      Untitled_02-04-2023_02-46-42-1-1_9: 2775216217361561105
+      Untitled_02-04-2023_02-46-42-1-1_2: -4225793177793548212
+      Untitled_02-04-2023_02-46-42-1-1_15: 4329203709482278733
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -10,7 +10,7 @@ using UnityEngineInternal;
 
 public class WeaponController : MonoBehaviour
 {
-    [SerializeField] private ZedAimOutline aimOutline;
+    [SerializeField] public ZedAimOutline aimOutline;
     [SerializeField] private float noticedRadius;
     [SerializeField] private InventorySlot currentWeaponSlot;
     [SerializeField] private weaponItem weaponItem;

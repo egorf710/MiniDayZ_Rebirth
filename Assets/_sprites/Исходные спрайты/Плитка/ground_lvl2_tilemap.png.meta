@@ -60,7 +60,7 @@ TextureImporter:
       213: -2706151701516134269
     second: ground_lvl2_tilemap_18
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -81,6 +81,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -119,6 +120,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -170,6 +172,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -592,6 +606,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ground_lvl2_tilemap_18: -2706151701516134269
+      ground_lvl2_tilemap_2: -3516935338926929339
+      ground_lvl2_tilemap_12: -1617586921181088048
+      ground_lvl2_tilemap_16: 6538296092404260496
+      ground_lvl2_tilemap_17: 4452093013753981569
+      ground_lvl2_tilemap_10: 785668129592801314
+      ground_lvl2_tilemap_5: -6906580625135620132
+      ground_lvl2_tilemap_3: 1137566182693506765
+      ground_lvl2_tilemap_1: 2077872926209119013
+      ground_lvl2_tilemap_4: 7269382027365738795
+      ground_lvl2_tilemap_8: 1080879365153314014
+      ground_lvl2_tilemap_0: -818710493179983149
+      ground_lvl2_tilemap_13: -5734431504951402992
+      ground_lvl2_tilemap_15: 5698834614347841888
+      ground_lvl2_tilemap_6: -4791062183582031065
+      ground_lvl2_tilemap_11: 3807722962467549662
+      ground_lvl2_tilemap_9: 1309788545470192388
+      ground_lvl2_tilemap_7: -8946810499342337707
+      ground_lvl2_tilemap_14: 920700937530903144
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -93,7 +93,7 @@ TextureImporter:
       213: 2839802499491731231
     second: tilemap_road_29
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -114,6 +114,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -152,6 +153,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -203,6 +205,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -856,6 +870,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      tilemap_road_6: 4165282753461135144
+      tilemap_road_18: -6855970697814457500
+      tilemap_road_21: 3969807516204410098
+      tilemap_road_5: 7832663731293901117
+      tilemap_road_11: 501853504347212887
+      tilemap_road_12: 3107308643846467598
+      tilemap_road_29: 2839802499491731231
+      tilemap_road_24: 34714869917771406
+      tilemap_road_23: -1064699152011005555
+      tilemap_road_25: 469191644800107757
+      tilemap_road_2: 6466062109673248864
+      tilemap_road_8: 426500955199347665
+      tilemap_road_1: -314206374868082690
+      tilemap_road_20: -6832420818251874234
+      tilemap_road_26: -6045021528751958146
+      tilemap_road_28: -6317388778823284591
+      tilemap_road_4: -1382943341811324754
+      tilemap_road_27: 2361280074798115056
+      tilemap_road_9: 1739966372778411304
+      tilemap_road_3: -7129521883459671210
+      tilemap_road_0: -6434004626457245489
+      tilemap_road_19: -4105664989300747662
+      tilemap_road_14: 4296887806876333307
+      tilemap_road_10: -6003205485123235194
+      tilemap_road_16: 6599283309559880955
+      tilemap_road_13: -9182765899321131408
+      tilemap_road_17: -6821646772319265622
+      tilemap_road_15: 5317258534724873157
+      tilemap_road_7: 8687132747051985239
+      tilemap_road_22: 3477306829162310519
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

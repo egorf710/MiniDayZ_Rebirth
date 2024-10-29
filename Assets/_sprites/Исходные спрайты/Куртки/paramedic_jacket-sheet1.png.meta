@@ -51,7 +51,7 @@ TextureImporter:
       213: -551928832307032921
     second: paramedic_jacket-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      paramedic_jacket-sheet1_15: -551928832307032921
+      paramedic_jacket-sheet1_7: -9118487575816909119
+      paramedic_jacket-sheet1_1: -2471618260987487380
+      paramedic_jacket-sheet1_9: 4525107963989483171
+      paramedic_jacket-sheet1_14: 3512324323069793097
+      paramedic_jacket-sheet1_8: -1982511047382173279
+      paramedic_jacket-sheet1_2: 2427835421629040200
+      paramedic_jacket-sheet1_12: 7240713133583349590
+      paramedic_jacket-sheet1_0: 8484644409845796453
+      paramedic_jacket-sheet1_10: 1249521835429692468
+      paramedic_jacket-sheet1_5: -4012362130703650619
+      paramedic_jacket-sheet1_11: 6191414131365624695
+      paramedic_jacket-sheet1_13: 3811385130691023106
+      paramedic_jacket-sheet1_6: -6097233044446182274
+      paramedic_jacket-sheet1_4: 1868784452733759254
+      paramedic_jacket-sheet1_3: -6967937372556284233
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

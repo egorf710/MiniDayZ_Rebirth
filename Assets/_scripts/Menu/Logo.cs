@@ -61,6 +61,7 @@ public class Logo : MonoBehaviour
             yield return new WaitForSeconds(0.02f);
         }
         mainButtons.SetActive(true);
+        mainButtons.GetComponent<menu>().enabled = true;
         yield return null;
     }
     IEnumerator IEMoveBG()
@@ -73,6 +74,7 @@ public class Logo : MonoBehaviour
             yield return new WaitForSeconds(0.02f);
         }
         mainButtons.SetActive(true);
+        mainButtons.GetComponent<menu>().enabled = true;
         yield return null;
     }
 

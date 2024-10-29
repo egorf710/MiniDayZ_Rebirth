@@ -75,7 +75,7 @@ TextureImporter:
       213: 6030340339490351283
     second: mac-10_remake_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -688,6 +702,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      mac-10_remake_13: 1644231106864307127
+      mac-10_remake_8: 2802819564287604617
+      mac-10_remake_6: 2929361808388447729
+      mac-10_remake_17: -5646170150166512810
+      mac-10_remake_18: 8201855289890596532
+      mac-10_remake_15: -306513535453388077
+      mac-10_remake_3: 303723557313986219
+      mac-10_remake_4: 8772735611659305108
+      mac-10_remake_1: -3908999434197782986
+      mac-10_remake_20: -5103529538618061169
+      mac-10_remake_9: 7325883797457392769
+      mac-10_remake_0: -1858511703894366062
+      mac-10_remake_5: -8142019629980827598
+      mac-10_remake_12: -2747040295634687483
+      mac-10_remake_7: 2002592090537413906
+      mac-10_remake_16: -5390100690144934659
+      mac-10_remake_23: 6030340339490351283
+      mac-10_remake_2: 4877872306212252176
+      mac-10_remake_19: -6879563557204104409
+      mac-10_remake_14: -6135230701543619778
+      mac-10_remake_10: -8250450960228832515
+      mac-10_remake_11: -1346804898370502902
+      mac-10_remake_22: 4927307923890670370
+      mac-10_remake_21: -2025477490534450056
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

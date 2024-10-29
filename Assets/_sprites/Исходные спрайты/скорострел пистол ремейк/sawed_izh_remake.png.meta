@@ -75,7 +75,7 @@ TextureImporter:
       213: -2017145034700877767
     second: sawed_izh_remake_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -688,6 +702,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      sawed_izh_remake_7: -3126071851013403608
+      sawed_izh_remake_12: -3575134617814837341
+      sawed_izh_remake_14: -6755578089837236554
+      sawed_izh_remake_21: -810696546677598793
+      sawed_izh_remake_5: -5502917553070016353
+      sawed_izh_remake_0: -7211309060031681537
+      sawed_izh_remake_20: 175196613252397739
+      sawed_izh_remake_18: 2431563318416620417
+      sawed_izh_remake_22: 8750120234783248997
+      sawed_izh_remake_8: 5573756915041432499
+      sawed_izh_remake_9: 2859868227896748169
+      sawed_izh_remake_23: -2017145034700877767
+      sawed_izh_remake_13: 3967817334471499188
+      sawed_izh_remake_19: 48381065391789550
+      sawed_izh_remake_10: -21522583260474503
+      sawed_izh_remake_15: 3501464483129602337
+      sawed_izh_remake_4: 5828661804348181196
+      sawed_izh_remake_6: -263282489633542632
+      sawed_izh_remake_17: 553684807817143764
+      sawed_izh_remake_16: 1629775573828964795
+      sawed_izh_remake_2: -5379356663614219938
+      sawed_izh_remake_11: 4470876105704581568
+      sawed_izh_remake_1: -100076292087526716
+      sawed_izh_remake_3: -2305406230243340222
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

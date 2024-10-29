@@ -51,7 +51,7 @@ TextureImporter:
       213: -141207581806001454
     second: raider_jacket-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      raider_jacket-sheet1_12: -8525218314599951929
+      raider_jacket-sheet1_14: -3166420985490615046
+      raider_jacket-sheet1_3: 1944837406360649510
+      raider_jacket-sheet1_9: -3621268711426487179
+      raider_jacket-sheet1_5: -4540105971941249444
+      raider_jacket-sheet1_15: -141207581806001454
+      raider_jacket-sheet1_6: 410242835155986241
+      raider_jacket-sheet1_8: -2754396757872747379
+      raider_jacket-sheet1_10: 6826415029967375432
+      raider_jacket-sheet1_1: -4077685159674068557
+      raider_jacket-sheet1_11: -2230056169004880126
+      raider_jacket-sheet1_4: 4218712502492226923
+      raider_jacket-sheet1_7: -241065775924854699
+      raider_jacket-sheet1_0: 4526703836196637894
+      raider_jacket-sheet1_13: -4281138684027787880
+      raider_jacket-sheet1_2: 1108422881876242862
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

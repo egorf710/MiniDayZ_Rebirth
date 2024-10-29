@@ -45,7 +45,7 @@ TextureImporter:
       213: -752981637730042602
     second: school_backpack-sheet1_13
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -66,6 +66,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -104,6 +105,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -131,6 +133,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -448,6 +462,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      school_backpack-sheet1_12: -2207699666165799877
+      school_backpack-sheet1_11: 5326798653065189847
+      school_backpack-sheet1_0: 5627256338708802972
+      school_backpack-sheet1_8: -1607088884834095766
+      school_backpack-sheet1_1: 524132192184471971
+      school_backpack-sheet1_9: 5144557565142168982
+      school_backpack-sheet1_5: 3873725335006515168
+      school_backpack-sheet1_4: -5421966302119435131
+      school_backpack-sheet1_7: -5036373894538185405
+      school_backpack-sheet1_3: -2243969170081474207
+      school_backpack-sheet1_6: -4667635121143818136
+      school_backpack-sheet1_2: -497473637759817031
+      school_backpack-sheet1_10: 2154938239547591761
+      school_backpack-sheet1_13: -752981637730042602
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

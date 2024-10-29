@@ -75,7 +75,7 @@ TextureImporter:
       213: 7416339080583451567
     second: izh43_remake_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -688,6 +702,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      izh43_remake_0: -5387192300214013164
+      izh43_remake_12: 2171336144766595965
+      izh43_remake_1: -369241290625198407
+      izh43_remake_5: 3727855485671265940
+      izh43_remake_15: 5694420631771343827
+      izh43_remake_23: 7416339080583451567
+      izh43_remake_14: 1007168376665955552
+      izh43_remake_6: 8388989134008002446
+      izh43_remake_4: -3580710327547703598
+      izh43_remake_20: -423872694665028992
+      izh43_remake_8: -4634546976000078018
+      izh43_remake_22: 111836057834709716
+      izh43_remake_21: -7327073291936876487
+      izh43_remake_11: -2406019864585765489
+      izh43_remake_9: -2404595292549877541
+      izh43_remake_18: 8441610662695717367
+      izh43_remake_19: 2979635869934147033
+      izh43_remake_3: -3644343205283533025
+      izh43_remake_2: 4334917093593675854
+      izh43_remake_17: -6262636382377779378
+      izh43_remake_16: 8879006058393243893
+      izh43_remake_10: 7087112229343134966
+      izh43_remake_7: -611102007657896241
+      izh43_remake_13: -5754904632822983053
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -51,7 +51,7 @@ TextureImporter:
       213: -821106956398025678
     second: vest-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      vest-sheet1_13: -2810461629929143903
+      vest-sheet1_2: -4803766166354626877
+      vest-sheet1_4: -626974559452363837
+      vest-sheet1_15: -821106956398025678
+      vest-sheet1_9: 5367940632919902464
+      vest-sheet1_11: -6142471867237130804
+      vest-sheet1_6: 6741117595858621163
+      vest-sheet1_12: -3682694199070997187
+      vest-sheet1_3: -4747794928108247226
+      vest-sheet1_1: -7253529488581278098
+      vest-sheet1_14: -4834780260085376060
+      vest-sheet1_7: -5226300065914600678
+      vest-sheet1_10: -296446252635866269
+      vest-sheet1_8: -2831854449530139223
+      vest-sheet1_0: 6986421876783724783
+      vest-sheet1_5: 802787736847489859
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

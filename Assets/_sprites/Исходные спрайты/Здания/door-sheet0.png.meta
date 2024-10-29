@@ -96,7 +96,7 @@ TextureImporter:
       213: 3923877726978284959
     second: door-sheet0_31
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -117,6 +117,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -155,6 +156,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -206,6 +208,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -901,6 +915,39 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      door-sheet0_6: 8362824885658666728
+      door-sheet0_0: -7301763079374671403
+      door-sheet0_8: -6467343821196545730
+      door-sheet0_18: 7405374304898481603
+      door-sheet0_15: -7926185491210666665
+      door-sheet0_21: -4079240453194182840
+      door-sheet0_4: 1678732094457632898
+      village green door: 9075134335451489077
+      door-sheet0_1: -3248149185026546659
+      door-sheet0_3: 1156229652453764312
+      door-sheet0_12: -2076536662615040616
+      door-sheet0_10: 3296771039169812969
+      door-sheet0_14: -2914369154096133
+      red_pixel: -2453056403482071671
+      door-sheet0_16: -3589229052454016395
+      door-sheet0_19: -7779988457697474692
+      door-sheet0_24: -2803900602722295521
+      door-sheet0_29: -6864679932017409828
+      door-sheet0_9: -8098034509899617340
+      door-sheet0_27: -1680269110113309634
+      door-sheet0_23: 5863252922599799915
+      door-sheet0_20: 6851908786518053556
+      door-sheet0_17: -1175133352939846023
+      b_military_barrack2_int-sheet0: -3122345982407127060
+      door-sheet0_30: 3394147186695829346
+      door-sheet0_7: -424014172347894569
+      door-sheet0_31: 3923877726978284959
+      door-sheet0_2: 6895793139468085065
+      door-sheet0_25: 1752196505773458218
+      door-sheet0_5: -8065810119114774809
+      door-sheet0_13: 3907698353072890667
+      door-sheet0_22: 8712326367767955769
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

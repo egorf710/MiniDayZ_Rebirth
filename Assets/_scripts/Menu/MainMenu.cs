@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
     public menu[] menus;
     public GameObject currentMenu;
     private int i;
+    [SerializeField] private InputField addresFiled;
 
     public AudioSource mySource;
 
@@ -19,5 +21,9 @@ public class MainMenu : MonoBehaviour
     {
         currentMenu = menus[i].gameObject;
         currentMenu.SetActive(true);
+    }
+    public void Connect()
+    {
+        FindObjectOfType<GameManager>().Connect(addresFiled.text);
     }
 }

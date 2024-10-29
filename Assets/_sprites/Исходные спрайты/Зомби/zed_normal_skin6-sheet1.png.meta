@@ -51,7 +51,7 @@ TextureImporter:
       213: -9176131357359360096
     second: zed_normal_skin6-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -125,6 +127,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -484,6 +498,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      zed_normal_skin6-sheet1_10: 244929402687475449
+      zed_normal_skin6-sheet1_1: -5289267162425979880
+      zed_normal_skin6-sheet1_11: -3318601017896511978
+      zed_normal_skin6-sheet1_4: -4996796045241152879
+      zed_normal_skin6-sheet1_14: -7753306299648691283
+      zed_normal_skin6-sheet1_8: 5457239571185158121
+      zed_normal_skin6-sheet1_12: 2691988784641163047
+      zed_normal_skin6-sheet1_0: 7379260592303980748
+      zed_normal_skin6-sheet1_7: 3677468290131506687
+      zed_normal_skin6-sheet1_15: -9176131357359360096
+      zed_normal_skin6-sheet1_13: 5357877768507835565
+      zed_normal_skin6-sheet1_5: -3335258093444203591
+      zed_normal_skin6-sheet1_3: -7037115771518345939
+      zed_normal_skin6-sheet1_6: -287177542840419489
+      zed_normal_skin6-sheet1_9: 5443630775423010889
+      zed_normal_skin6-sheet1_2: 7112979289249289043
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

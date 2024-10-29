@@ -51,7 +51,7 @@ TextureImporter:
       213: -5366078414247063111
     second: flare_hand-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      flare_hand-sheet0_9: -6671790516039808360
+      flare_hand-sheet0_5: 5823328496313543698
+      flare_hand-sheet0_15: -5366078414247063111
+      flare_hand-sheet0_12: -25202559429160788
+      flare_hand-sheet0_4: 5046499914812729822
+      flare_hand-sheet0_8: 6977403859303170009
+      flare_hand-sheet0_13: -6366162771410012278
+      flare_hand-sheet0_7: -8358716783314850201
+      flare_hand-sheet0_10: 1217041724653577912
+      flare_hand-sheet0_0: -4475350496921489847
+      flare_hand-sheet0_14: 5662478655390507640
+      flare_hand-sheet0_2: 1382906362184611561
+      flare_hand-sheet0_1: -6854482955334226877
+      flare_hand-sheet0_3: -2924440602493522258
+      flare_hand-sheet0_6: 430311440630513940
+      flare_hand-sheet0_11: -5015497042682545850
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

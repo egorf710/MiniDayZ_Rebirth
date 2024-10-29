@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
 
-public class TargetManager : MonoBehaviour
+public class TargetManager : MonoBehaviour, Initable
 {
     [SerializeField] public List<AliveTarget> targetsBases = new List<AliveTarget>();
     [SerializeField] private AliveTarget myplayer;
@@ -15,10 +15,14 @@ public class TargetManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+    }
+    public void Init(Transform player)
+    {
+
+
+        mytransformplayer = player;
 
         myplayer = mytransformplayer.GetComponent<PlayerNetwork>();
-
-
 
         PlayerNetwork[] targets = FindObjectsOfType<PlayerNetwork>();
 
@@ -32,10 +36,13 @@ public class TargetManager : MonoBehaviour
 
     public static AliveTarget[] GetTargetsAtPoint(Vector3 point, float radius, bool onlyNoticedPlayers = true)
     {
+        if (!Instance.Init()) { return new AliveTarget[0]; }
         return Instance.InstanceGetTargetsAtPoint(point, radius, onlyNoticedPlayers);
     }
     private AliveTarget[] InstanceGetTargetsAtPoint(Vector3 point, float radius, bool onlyNoticedPlayers = true)
     {
+        if(mytransformplayer == null && (this as Initable).CanInit()) { return null; }
+
         AliveTarget[] _playerBases = null;
         if (onlyNoticedPlayers)
         {
@@ -49,6 +56,7 @@ public class TargetManager : MonoBehaviour
     }
     public static void SetTargets(AliveTarget[] playerBase)
     {
+        if (!Instance.Init()) { return; }
         for (int i = 0; i < playerBase.Length; i++)
         {
             if (Instance.myplayer == playerBase[i]) { continue; }
@@ -57,21 +65,30 @@ public class TargetManager : MonoBehaviour
     }
     public static void AddTarget(AliveTarget playerBase)
     {
-        if (Instance.myplayer == playerBase || Instance.targetsBases.Contains(playerBase)) { return; }
+        if (!Instance.Init() || Instance.myplayer == playerBase || Instance.targetsBases.Contains(playerBase)) { return; }
         Instance.targetsBases.Add(playerBase);
         //print("add " + playerBase.getTransform().name);
     }
     public static void RemoveTarget(AliveTarget playerBase)
     {
-        if (Instance.myplayer == playerBase) { return; }
+        if (!Instance.Init() || Instance.myplayer == playerBase) { return; }
         Instance.targetsBases.Remove(playerBase);
         //print("remove " + playerBase.getTransform().name);
     }
 
+    public bool Init()
+    {
+        return (this as Initable).CanInit();
+    }
     #endregion
 
     private float GetDistance(Vector2 v1, Vector3 v2)
     {
         return Vector2.Distance(v1, v2);
+    }
+
+    public void NetUpdate()
+    {
+
     }
 }

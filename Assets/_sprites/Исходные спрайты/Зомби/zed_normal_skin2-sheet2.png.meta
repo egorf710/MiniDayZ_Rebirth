@@ -39,7 +39,7 @@ TextureImporter:
       213: 5854953375614130743
     second: zed_normal_skin2-sheet2_11
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -60,6 +60,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -98,6 +99,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -113,6 +115,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -388,6 +402,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      zed_normal_skin2-sheet2_7: 7601675845387279948
+      zed_normal_skin2-sheet2_10: 1126197548735221813
+      zed_normal_skin2-sheet2_9: 453957797459706846
+      zed_normal_skin2-sheet2_11: 5854953375614130743
+      zed_normal_skin2-sheet2_1: -1528601994989345186
+      zed_normal_skin2-sheet2_3: 6766963479400786834
+      zed_normal_skin2-sheet2_2: -7855493709400239288
+      zed_normal_skin2-sheet2_6: 3038132371224410818
+      zed_normal_skin2-sheet2_4: -7406648756874398120
+      zed_normal_skin2-sheet2_0: 851678529083958535
+      zed_normal_skin2-sheet2_5: -9041641937342358814
+      zed_normal_skin2-sheet2_8: 6940869442366288667
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

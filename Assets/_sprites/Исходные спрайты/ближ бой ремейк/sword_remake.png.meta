@@ -63,7 +63,7 @@ TextureImporter:
       213: -6712367964731572824
     second: sword_remake_19
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -84,6 +84,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,6 +123,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -149,6 +151,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -592,6 +606,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      sword_remake_15: 3950214283165642908
+      sword_remake_1: 3527403081529448271
+      sword_remake_18: -1226587445975991936
+      sword_remake_5: 4637397005882161267
+      sword_remake_4: 6333584918546742488
+      sword_remake_2: 1044575621086487180
+      sword_remake_13: -8937018776803148
+      sword_remake_8: -3739878335169375282
+      sword_remake_16: 773282583328536904
+      sword_remake_17: -728821959270281679
+      sword_remake_0: 3330230379976028426
+      sword_remake_14: 5065604572193047845
+      sword_remake_12: 5361375763371606371
+      sword_remake_10: 5217641309075083533
+      sword_remake_19: -6712367964731572824
+      sword_remake_9: 3867338635521083589
+      sword_remake_3: -467156730376366958
+      sword_remake_7: 8104663053816397295
+      sword_remake_11: 626438489184047753
+      sword_remake_6: -7333766953228726804
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

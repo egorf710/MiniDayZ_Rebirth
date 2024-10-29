@@ -150,7 +150,7 @@ TextureImporter:
       213: -5346451544807769227
     second: gui_btn_perks-sheet0_48
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -171,6 +171,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -209,6 +210,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -260,6 +262,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1312,6 +1326,56 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      gui_btn_perks-sheet0_32: -768489803230961706
+      gui_btn_perks-sheet0_48: -5346451544807769227
+      gui_btn_perks-sheet0_30: 8267386287016239582
+      gui_btn_perks-sheet0_9: 4659865153508025007
+      gui_btn_perks-sheet0_44: 7275647944975223840
+      gui_btn_perks-sheet0_3: -5964042065200975851
+      gui_btn_perks-sheet0_4: -2354097893161421212
+      gui_btn_perks-sheet0_28: -6338303466577956909
+      gui_btn_perks-sheet0_34: 2060524611848492454
+      gui_btn_perks-sheet0_31: 7197592201649041817
+      gui_btn_perks-sheet0_20: 540078145453067958
+      gui_btn_perks-sheet0_42: 3360691611608532743
+      gui_btn_perks-sheet0_17: -1809454196646982117
+      gui_btn_perks-sheet0_37: -2014113520537150394
+      gui_btn_perks-sheet0_45: -6450097201469795724
+      gui_btn_perks-sheet0_11: 7759086735815133867
+      gui_btn_perks-sheet0_26: -3111839706538604842
+      gui_btn_perks-sheet0_27: 2092571043424687536
+      gui_btn_perks-sheet0_0: -5865395224314882279
+      gui_btn_perks-sheet0_35: 8217037630939085254
+      gui_btn_perks-sheet0_18: -6467789118053795396
+      gui_btn_perks-sheet0_29: 4428534572790755133
+      gui_btn_perks-sheet0_47: 6529623260748785661
+      gui_btn_perks-sheet0_10: -7950937450066445474
+      gui_btn_perks-sheet0_15: 6367651802630832029
+      gui_btn_perks-sheet0_2: -411310283963604424
+      gui_btn_perks-sheet0_41: -5008170999826921533
+      gui_btn_perks-sheet0_36: 8013542235927896975
+      gui_btn_perks-sheet0_6: -859278944575600842
+      gui_btn_perks-sheet0_39: 7407195003112340989
+      gui_btn_perks-sheet0_14: 112383737285495140
+      gui_btn_perks-sheet0_7: -7350691053380490659
+      gui_btn_perks-sheet0_5: 6596749224525841552
+      gui_btn_perks-sheet0_24: 6742647326328120438
+      gui_btn_perks-sheet0_8: -8334011269958058257
+      gui_btn_perks-sheet0_46: 5420497440822711606
+      gui_btn_perks-sheet0_38: -744555300453884560
+      gui_btn_perks-sheet0_1: 2152371015892599253
+      gui_btn_perks-sheet0_43: 1152993233725080439
+      gui_btn_perks-sheet0_19: 1378929677271014272
+      gui_btn_perks-sheet0_12: 5756858398533926742
+      gui_btn_perks-sheet0_13: -4577486430242568119
+      gui_btn_perks-sheet0_22: -3785061027250110657
+      gui_btn_perks-sheet0_33: -8494891367745303936
+      gui_btn_perks-sheet0_25: -8435946117910672244
+      gui_btn_perks-sheet0_16: -3986176502304050392
+      gui_btn_perks-sheet0_21: 3260026809286987424
+      gui_btn_perks-sheet0_40: -1376072999941224152
+      gui_btn_perks-sheet0_23: -5691912412734268803
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

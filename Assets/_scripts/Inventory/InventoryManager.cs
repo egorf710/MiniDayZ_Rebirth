@@ -26,6 +26,7 @@ public class InventoryManager : MonoBehaviour
     {
         Instance = this;
         this.player = player;
+
         weaponManager = FindObjectOfType<WeaponManager>();
         foreach (var slot in slots)
         {
@@ -252,6 +253,7 @@ public class InventoryManager : MonoBehaviour
                 amount = loot.amount,
                 durability = loot.durability
             };
+
             Instantiate(itemObjectPrefab, pos + MyInstance.RandomVector(0.5f), Quaternion.identity).GetComponent<ItemObject>().Set(itemInfo);
         }
     }

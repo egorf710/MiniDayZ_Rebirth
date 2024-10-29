@@ -51,7 +51,7 @@ TextureImporter:
       213: -153686100395439859
     second: zed_shooter_skin2-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -125,6 +127,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -484,6 +498,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      zed_shooter_skin2-sheet0_15: -153686100395439859
+      zed_shooter_skin2-sheet0_9: -7563557918560944622
+      zed_shooter_skin2-sheet0_8: 5190507297554132041
+      zed_shooter_skin2-sheet0_3: 8391777128510214148
+      zed_shooter_skin2-sheet0_4: 2456250710372414246
+      zed_shooter_skin2-sheet0_5: -1002863948674572362
+      zed_shooter_skin2-sheet0_1: -9164323892766080381
+      zed_shooter_skin2-sheet0_10: 6763635999277368508
+      zed_shooter_skin2-sheet0_2: 1286692911985127083
+      zed_shooter_skin2-sheet0_6: -2658397001833307599
+      zed_shooter_skin2-sheet0_11: 7611974033923179228
+      zed_shooter_skin2-sheet0_13: 224301903082549166
+      zed_shooter_skin2-sheet0_14: -7044398324968436846
+      zed_shooter_skin2-sheet0_0: 2222151446141691055
+      zed_shooter_skin2-sheet0_7: -4358816841275065661
+      zed_shooter_skin2-sheet0_12: -7365604441031617920
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

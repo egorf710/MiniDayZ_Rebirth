@@ -60,7 +60,7 @@ TextureImporter:
       213: -8709465357090793168
     second: 231742f92a732903_20
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -81,6 +81,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -119,6 +120,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -170,6 +172,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -592,6 +606,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      231742f92a732903_14: -37064193364875488
+      231742f92a732903_12: -3280593079135253794
+      231742f92a732903_13: -9199137970537072286
+      231742f92a732903_1: 5367888762357027815
+      231742f92a732903_19: -2743698798549785490
+      231742f92a732903_10: -8660037513940210012
+      231742f92a732903_6: -6875954885596115593
+      231742f92a732903_8: -2257348174254656331
+      231742f92a732903_16: 5424054449330854195
+      231742f92a732903_17: 4904301291581905168
+      231742f92a732903_3: -5145194146395372257
+      231742f92a732903_18: -8469327282587100924
+      231742f92a732903_9: 6312066501023250566
+      231742f92a732903_20: -8709465357090793168
+      231742f92a732903_5: 8128556053530228856
+      231742f92a732903_2: -8647220306992483660
+      231742f92a732903_0: -5383537981686072472
+      231742f92a732903_15: 609360059708463693
+      231742f92a732903_7: -3561534479723043298
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

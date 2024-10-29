@@ -51,7 +51,7 @@ TextureImporter:
       213: 995254419579316099
     second: razgruz_big-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      razgruz_big-sheet1_14: -7035029152484810294
+      razgruz_big-sheet1_10: 6261012815044410550
+      razgruz_big-sheet1_7: 3496111081859230150
+      razgruz_big-sheet1_8: -6490947731187502777
+      razgruz_big-sheet1_5: 5692769627791470404
+      razgruz_big-sheet1_9: -4099638302928092653
+      razgruz_big-sheet1_15: 995254419579316099
+      razgruz_big-sheet1_2: -688543480507910634
+      razgruz_big-sheet1_3: -3962894624701288487
+      razgruz_big-sheet1_6: -463329192174094018
+      razgruz_big-sheet1_11: -8011256278676038092
+      razgruz_big-sheet1_13: -2781763964691053506
+      razgruz_big-sheet1_1: 2312369893243243781
+      razgruz_big-sheet1_4: -3970311894808798110
+      razgruz_big-sheet1_12: -889754539941652303
+      razgruz_big-sheet1_0: -7337294360597052966
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

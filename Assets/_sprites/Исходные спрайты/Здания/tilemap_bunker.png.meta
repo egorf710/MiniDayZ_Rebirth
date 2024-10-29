@@ -126,7 +126,7 @@ TextureImporter:
       213: -8356473104467196029
     second: tilemap_bunker_40
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -147,6 +147,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -185,6 +186,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -236,6 +238,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1120,6 +1134,48 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      tilemap_bunker_17: -1929120472966828770
+      tilemap_bunker_23: 7498129623895127118
+      tilemap_bunker_13: 4352985776644571286
+      tilemap_bunker_18: -5738828379290787975
+      tilemap_bunker_27: 2281335603513543775
+      tilemap_bunker_33: 5544167372360788083
+      tilemap_bunker_7: -2450352674705238891
+      tilemap_bunker_22: 3586393595158469897
+      tilemap_bunker_1: -1165390019008372638
+      tilemap_bunker_3: 996307132787284411
+      tilemap_bunker_11: -6625137617556344100
+      tilemap_bunker_10: 1072754109409316919
+      tilemap_bunker_39: 3036019043945394601
+      tilemap_bunker_31: 408482956297760021
+      tilemap_bunker_15: 1448022711540926491
+      tilemap_bunker_4: 4448068353474770439
+      tilemap_bunker_34: -8082818143151722249
+      tilemap_bunker_21: 6023069988899345059
+      tilemap_bunker_35: -1297684025739891829
+      tilemap_bunker_5: -4927673651285831360
+      tilemap_bunker_12: -6879006629970595047
+      tilemap_bunker_16: -4725584965280239994
+      tilemap_bunker_26: -8786910996991667608
+      tilemap_bunker_40: -8356473104467196029
+      tilemap_bunker_8: -1343371769467735538
+      tilemap_bunker_38: -8826584512625845732
+      tilemap_bunker_25: -30572685877594651
+      tilemap_bunker_2: -7841543284492118384
+      tilemap_bunker_24: 6643837235295535379
+      tilemap_bunker_29: 4147800901218244799
+      tilemap_bunker_9: -5368832074623595055
+      tilemap_bunker_6: 2175169936824069000
+      tilemap_bunker_37: 65045454633001710
+      tilemap_bunker_30: -7834091266508905781
+      tilemap_bunker_28: 1856897031235988174
+      tilemap_bunker_19: -1360750735417097624
+      tilemap_bunker_20: -1143861317935483440
+      tilemap_bunker_0: -4219205983079967737
+      tilemap_bunker_14: -8070922887710604963
+      tilemap_bunker_36: -654049305840735727
+      tilemap_bunker_32: 9145289600726033123
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

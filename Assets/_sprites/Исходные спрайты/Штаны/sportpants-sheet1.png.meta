@@ -51,7 +51,7 @@ TextureImporter:
       213: -3231738837017547957
     second: sportpants-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      sportpants-sheet1_8: 8383338785771460174
+      sportpants-sheet1_0: 5908912768191162936
+      sportpants-sheet1_4: -1765658452005543251
+      sportpants-sheet1_9: -7637695587477061776
+      sportpants-sheet1_10: -858375193266207418
+      sportpants-sheet1_13: 8178046132724462574
+      sportpants-sheet1_12: -629699254645230570
+      sportpants-sheet1_2: 7097522592864225377
+      sportpants-sheet1_7: -1165446993490760353
+      sportpants-sheet1_11: -9049334604653182108
+      sportpants-sheet1_15: -3231738837017547957
+      sportpants-sheet1_1: -1027722675922922687
+      sportpants-sheet1_5: -5452979577200763170
+      sportpants-sheet1_14: -7003368361394352080
+      sportpants-sheet1_3: -6510611338747391739
+      sportpants-sheet1_6: -9002071479858217113
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

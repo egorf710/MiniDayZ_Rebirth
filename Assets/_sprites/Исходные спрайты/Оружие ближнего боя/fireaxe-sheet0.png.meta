@@ -150,7 +150,7 @@ TextureImporter:
       213: -7537557547137384359
     second: fireaxe-sheet0_48
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -171,6 +171,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -209,6 +210,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -236,6 +238,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1288,6 +1302,56 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      fireaxe-sheet0_39: -6866264358812137317
+      fireaxe-sheet0_47: 596636526620657817
+      fireaxe-sheet0_27: -1792117468049084670
+      fireaxe-sheet0_41: 7162865407804445018
+      fireaxe-sheet0_45: 523517195369125354
+      fireaxe-sheet0_28: -7162204750447347052
+      fireaxe-sheet0_1: -8079296735371892984
+      fireaxe-sheet0_7: 3499533342820312416
+      fireaxe-sheet0_26: 3650457955709586991
+      fireaxe-sheet0_11: 161785223481151589
+      fireaxe-sheet0_17: -2135716062860260509
+      fireaxe-sheet0_32: -7569326997949547430
+      fireaxe-sheet0_44: -173014438403972181
+      fireaxe-sheet0_10: -6695788409047181218
+      fireaxe-sheet0_35: -6813533833126334776
+      fireaxe-sheet0_16: -1863768920743063468
+      fireaxe-sheet0_43: -5866732227599360995
+      fireaxe-sheet0_23: 1028625209346201764
+      fireaxe-sheet0_12: 7665710408255685100
+      fireaxe-sheet0_30: -1831315985057829223
+      fireaxe-sheet0_33: 3713562037643773259
+      fireaxe-sheet0_8: 9205874786356759281
+      fireaxe-sheet0_40: -7119697191893574595
+      fireaxe-sheet0_9: -4274145202440241776
+      fireaxe-sheet0_0: -1670970834887980176
+      fireaxe-sheet0_19: 6623271836299515144
+      fireaxe-sheet0_31: -5955272893254492263
+      fireaxe-sheet0_4: -6652227471739093679
+      fireaxe-sheet0_22: 3594523417824703493
+      fireaxe-sheet0_29: 4156660151805826610
+      fireaxe-sheet0_42: -1945923306977524489
+      fireaxe-sheet0_5: 4268333106590508696
+      fireaxe-sheet0_2: -3182580690175869409
+      fireaxe-sheet0_24: 7758362353625029302
+      fireaxe-sheet0_20: -3806699950517627516
+      fireaxe-sheet0_34: 1024916310954002004
+      fireaxe-sheet0_46: -5108309608408376587
+      fireaxe-sheet0_37: 2038950903291930807
+      fireaxe-sheet0_3: 2574180149961086990
+      fireaxe-sheet0_15: 8932086749538546290
+      fireaxe-sheet0_25: -8379911183027050935
+      fireaxe-sheet0_6: 8302805212560955899
+      fireaxe-sheet0_14: -6508899318989570204
+      fireaxe-sheet0_36: 7659769247022167950
+      fireaxe-sheet0_18: -7818682140052659415
+      fireaxe-sheet0_13: 6442461474090701007
+      fireaxe-sheet0_21: 2810875910516141668
+      fireaxe-sheet0_38: 8108689742626730428
+      fireaxe-sheet0_48: -7537557547137384359
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

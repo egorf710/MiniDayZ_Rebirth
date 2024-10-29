@@ -75,7 +75,7 @@ TextureImporter:
       213: -3098253617590217554
     second: l85_remake_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -688,6 +702,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      l85_remake_4: -4920280751980905817
+      l85_remake_16: 678068882670563119
+      l85_remake_2: -2536471037151031588
+      l85_remake_21: 3601147807793030421
+      l85_remake_14: 4376021745084252158
+      l85_remake_13: 6868350782697330823
+      l85_remake_19: -7349245275883574263
+      l85_remake_11: -1775850633229901659
+      l85_remake_15: -7905415983408616773
+      l85_remake_1: -4897639164216698940
+      l85_remake_0: -5885764454707049380
+      l85_remake_18: 9142842181315428010
+      l85_remake_20: -4766759764498303172
+      l85_remake_23: -3098253617590217554
+      l85_remake_6: -5732482860533910487
+      l85_remake_9: 4997167045422182738
+      l85_remake_3: -1693047020130120576
+      l85_remake_10: -6360867093585560020
+      l85_remake_8: 6435464133653233546
+      l85_remake_17: 1387924077146296038
+      l85_remake_7: 6061356271731259791
+      l85_remake_5: -6603552494247037924
+      l85_remake_22: 1072935947515782892
+      l85_remake_12: 6302426702144592626
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

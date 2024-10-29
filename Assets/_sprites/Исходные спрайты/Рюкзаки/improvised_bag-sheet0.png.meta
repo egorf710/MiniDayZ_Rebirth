@@ -51,7 +51,7 @@ TextureImporter:
       213: -5976889703946224650
     second: improvised_bag-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      improvised_bag-sheet0_0: -4351918721774147754
+      improvised_bag-sheet0_11: -3582320767207636800
+      improvised_bag-sheet0_5: -7191499168628014774
+      improvised_bag-sheet0_1: 3283727564360912468
+      improvised_bag-sheet0_9: -803764161252970441
+      improvised_bag-sheet0_6: 1584154016580643896
+      improvised_bag-sheet0_7: 1683011092394226458
+      improvised_bag-sheet0_10: -325236604242345530
+      improvised_bag-sheet0_2: -4592043460582030271
+      improvised_bag-sheet0_15: -5976889703946224650
+      improvised_bag-sheet0_3: 7778687662266245578
+      improvised_bag-sheet0_14: -4790365634830277032
+      improvised_bag-sheet0_12: 5162009324492040917
+      improvised_bag-sheet0_8: 6943237955300069731
+      improvised_bag-sheet0_13: -4220827485478351479
+      improvised_bag-sheet0_4: 1206942799169696477
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

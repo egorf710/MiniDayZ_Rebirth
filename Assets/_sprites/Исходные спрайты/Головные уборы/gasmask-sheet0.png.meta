@@ -51,7 +51,7 @@ TextureImporter:
       213: 2734560568116495421
     second: gasmask-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      gasmask-sheet0_15: 2734560568116495421
+      gasmask-sheet0_7: -2313160090536356750
+      gasmask-sheet0_2: -1782434727365710645
+      gasmask-sheet0_12: 6550893734142980105
+      gasmask-sheet0_1: -8660442701781032036
+      gasmask-sheet0_0: 3681790371672724742
+      gasmask-sheet0_10: -6098882210414739989
+      gasmask-sheet0_11: -2774433211824571043
+      gasmask-sheet0_13: -6762659449061521957
+      gasmask-sheet0_6: 3584162296012164904
+      gasmask-sheet0_9: 6316471883576717540
+      gasmask-sheet0_8: -8521070783249584254
+      gasmask-sheet0_14: -8453361514049418759
+      gasmask-sheet0_3: -4601700356960994521
+      gasmask-sheet0_4: -2805801886551604871
+      gasmask-sheet0_5: -2090265247927930903
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

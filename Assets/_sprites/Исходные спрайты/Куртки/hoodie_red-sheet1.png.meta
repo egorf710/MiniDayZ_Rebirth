@@ -51,7 +51,7 @@ TextureImporter:
       213: 670217148611535854
     second: hoodie_red-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      hoodie_red-sheet1_9: 1605788548062852833
+      hoodie_red-sheet1_8: 6072683565893446078
+      hoodie_red-sheet1_3: 8096332236802213900
+      hoodie_red-sheet1_13: -6878864493484679329
+      hoodie_red-sheet1_10: 7758503249039770150
+      hoodie_red-sheet1_4: 5655723045682845396
+      hoodie_red-sheet1_0: -6774511174420596990
+      hoodie_red-sheet1_1: -8075279264104482043
+      hoodie_red-sheet1_5: 4822826021648575890
+      hoodie_red-sheet1_11: -2794183800545730107
+      hoodie_red-sheet1_6: 1320272995041242892
+      hoodie_red-sheet1_14: -8334968185689705191
+      hoodie_red-sheet1_7: -4924532253939154053
+      hoodie_red-sheet1_2: -6885030543979101945
+      hoodie_red-sheet1_15: 670217148611535854
+      hoodie_red-sheet1_12: -5429699376928980555
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

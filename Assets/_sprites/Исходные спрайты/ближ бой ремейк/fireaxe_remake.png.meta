@@ -63,7 +63,7 @@ TextureImporter:
       213: 2134549239565602470
     second: fireaxe_remake_19
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -84,6 +84,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,6 +123,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -149,6 +151,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -592,6 +606,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      fireaxe_remake_7: -7004936537477881958
+      fireaxe_remake_4: 1292157613077130471
+      fireaxe_remake_1: -3571656485435989230
+      fireaxe_remake_19: 2134549239565602470
+      fireaxe_remake_16: 1658257490547640778
+      fireaxe_remake_5: -5135488241598152174
+      fireaxe_remake_18: 4797152990259311489
+      fireaxe_remake_3: -6224190761437713740
+      fireaxe_remake_9: -3364368015781369198
+      fireaxe_remake_14: 1410708581346352851
+      fireaxe_remake_11: -7554889347656198885
+      fireaxe_remake_12: -1796909298364646531
+      fireaxe_remake_13: 5102556708581409492
+      fireaxe_remake_8: 9012851279091130164
+      fireaxe_remake_17: -7475533041068598640
+      fireaxe_remake_15: -1590668615671079266
+      fireaxe_remake_6: 8388978110162038600
+      fireaxe_remake_2: -6622000755571288039
+      fireaxe_remake_10: 6807407253635617185
+      fireaxe_remake_0: 3109680039847721781
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -42,7 +42,7 @@ TextureImporter:
       213: -5452149811715390396
     second: mosin_nagant-sheet2_12
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -101,6 +102,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -128,6 +130,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -424,6 +438,20 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      mosin_nagant-sheet2_5: 986135927046020424
+      mosin_nagant-sheet2_7: 3175132337348476001
+      mosin_nagant-sheet2_11: 3038184636299436662
+      mosin_nagant-sheet2_1: -8235181716848558964
+      mosin_nagant-sheet2_9: 4548034167827135323
+      mosin_nagant-sheet2_10: 2613428600242953290
+      mosin_nagant-sheet2_2: 6052509691160159760
+      mosin_nagant-sheet2_12: -5452149811715390396
+      mosin_nagant-sheet2_8: -5741986793381709910
+      mosin_nagant-sheet2_3: 2443622869989749903
+      mosin_nagant-sheet2_0: 8920616582850968958
+      mosin_nagant-sheet2_4: -4496849313097499464
+      mosin_nagant-sheet2_6: 3361781480377259461
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

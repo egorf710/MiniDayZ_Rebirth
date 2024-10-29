@@ -51,7 +51,7 @@ TextureImporter:
       213: -1819584500143302951
     second: ak74_rifle-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ak74_rifle-sheet0_14: -2672255919430037551
+      ak74_rifle-sheet0_1: 7262318767899057928
+      ak74_rifle-sheet0_4: 306659161668318876
+      ak74_rifle-sheet0_2: 2364325468827218261
+      ak74_rifle-sheet0_8: 5238257291030040367
+      ak74_rifle-sheet0_5: -664438421450658057
+      ak74_rifle-sheet0_11: -6867094922575891406
+      ak74_rifle-sheet0_9: -3220292439401379997
+      ak74_rifle-sheet0_3: 1212637907925427685
+      ak74_rifle-sheet0_10: 397849294185368754
+      ak74_rifle-sheet0_13: -132349240455528426
+      ak74_rifle-sheet0_15: -1819584500143302951
+      ak74_rifle-sheet0_7: 8905403176928444035
+      ak74_rifle-sheet0_0: 7489432586585571062
+      ak74_rifle-sheet0_6: 2577395872558473109
+      ak74_rifle-sheet0_12: 1175122183940119024
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

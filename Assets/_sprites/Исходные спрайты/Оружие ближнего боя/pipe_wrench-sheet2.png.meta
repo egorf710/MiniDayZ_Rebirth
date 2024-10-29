@@ -51,7 +51,7 @@ TextureImporter:
       213: -3296972144768229244
     second: pipe_wrench-sheet2_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      pipe_wrench-sheet2_8: -1963957649080689044
+      pipe_wrench-sheet2_3: 9044007725010122082
+      pipe_wrench-sheet2_11: 6853508463811242931
+      pipe_wrench-sheet2_12: -2058974660252797717
+      pipe_wrench-sheet2_15: -3296972144768229244
+      pipe_wrench-sheet2_9: 2233535368515476868
+      pipe_wrench-sheet2_4: -7789153253202627905
+      pipe_wrench-sheet2_5: 4171462095544436800
+      pipe_wrench-sheet2_14: -1228320668709585102
+      pipe_wrench-sheet2_7: -3157565098861229874
+      pipe_wrench-sheet2_1: -4265095858572281125
+      pipe_wrench-sheet2_10: 153272181492740623
+      pipe_wrench-sheet2_6: -949042341417860696
+      pipe_wrench-sheet2_2: 3743901714221569219
+      pipe_wrench-sheet2_0: 7975043401049055827
+      pipe_wrench-sheet2_13: 6642294536171887165
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

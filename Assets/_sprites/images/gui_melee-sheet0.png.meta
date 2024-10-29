@@ -51,7 +51,7 @@ TextureImporter:
       213: 8098812001478502537
     second: gui_melee-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -520,6 +534,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      gui_melee-sheet0_3: 5295035014054880971
+      gui_melee-sheet0_5: -7690238977593088769
+      gui_melee-sheet0_1: -8715237068673655358
+      gui_melee-sheet0_10: -410571196334524751
+      gui_melee-sheet0_12: 5832801755791683356
+      gui_melee-sheet0_2: -2480362485405262777
+      gui_melee-sheet0_7: 3334220989197310428
+      gui_melee-sheet0_8: 3755336430204912652
+      gui_melee-sheet0_14: 2866063624749710238
+      gui_melee-sheet0_11: -4353831625508176824
+      gui_melee-sheet0_15: 8098812001478502537
+      gui_melee-sheet0_13: 1433940232081441619
+      gui_melee-sheet0_6: 5971773342124128190
+      gui_melee-sheet0_9: -8334610342394830608
+      gui_melee-sheet0_0: 1492939337980110206
+      gui_melee-sheet0_4: 620282717939018127
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -51,7 +51,7 @@ TextureImporter:
       213: -262585639709355131
     second: tortilla_backpack-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      tortilla_backpack-sheet0_9: 1851509534192721118
+      tortilla_backpack-sheet0_8: -4768145917681000735
+      tortilla_backpack-sheet0_10: 5594056699709456821
+      tortilla_backpack-sheet0_11: 3441922761728311420
+      tortilla_backpack-sheet0_1: -8519571954849285244
+      tortilla_backpack-sheet0_5: -4400444608859136429
+      tortilla_backpack-sheet0_2: -5692386318503709163
+      tortilla_backpack-sheet0_14: -3082561867098414793
+      tortilla_backpack-sheet0_3: 2305177143373489592
+      tortilla_backpack-sheet0_6: -7472801660735926468
+      tortilla_backpack-sheet0_4: -3512034273775369093
+      tortilla_backpack-sheet0_13: 8386503813834146015
+      tortilla_backpack-sheet0_0: -2633384367632630038
+      tortilla_backpack-sheet0_12: -4758872045156199695
+      tortilla_backpack-sheet0_15: -262585639709355131
+      tortilla_backpack-sheet0_7: 6060268312557393011
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

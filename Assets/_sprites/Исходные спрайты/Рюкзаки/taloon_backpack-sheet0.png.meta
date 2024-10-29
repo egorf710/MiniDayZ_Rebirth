@@ -51,7 +51,7 @@ TextureImporter:
       213: 2403466612244488793
     second: taloon_backpack-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      taloon_backpack-sheet0_10: -1103277199825161823
+      taloon_backpack-sheet0_7: 3312532432703988339
+      taloon_backpack-sheet0_15: 2403466612244488793
+      taloon_backpack-sheet0_11: -8222850120457970394
+      taloon_backpack-sheet0_12: 923778008779646547
+      taloon_backpack-sheet0_3: 1518438769336900295
+      taloon_backpack-sheet0_1: -9071571175278766599
+      taloon_backpack-sheet0_9: -3628618687345332090
+      taloon_backpack-sheet0_8: 6521473587247736406
+      taloon_backpack-sheet0_0: 8822047038997144676
+      taloon_backpack-sheet0_4: -8511477207385767353
+      taloon_backpack-sheet0_5: 1497253982030931033
+      taloon_backpack-sheet0_6: 8172438219194601351
+      taloon_backpack-sheet0_14: 506500772350671935
+      taloon_backpack-sheet0_2: 5398549764375782750
+      taloon_backpack-sheet0_13: -5981792975134651595
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

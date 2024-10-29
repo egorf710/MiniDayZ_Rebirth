@@ -51,7 +51,7 @@ TextureImporter:
       213: 2609413839530789427
     second: zed_army_skin3-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -125,6 +127,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -484,6 +498,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      zed_army_skin3-sheet0_1: -3631970484967851007
+      zed_army_skin3-sheet0_15: 2609413839530789427
+      zed_army_skin3-sheet0_13: 5100306172218195127
+      zed_army_skin3-sheet0_11: 7252425127607945325
+      zed_army_skin3-sheet0_10: 3730355165408839274
+      zed_army_skin3-sheet0_9: -4842072449002907080
+      zed_army_skin3-sheet0_5: -2546791400193528345
+      zed_army_skin3-sheet0_7: 3594692539454691878
+      zed_army_skin3-sheet0_0: -7004225071390294510
+      zed_army_skin3-sheet0_6: 5852153669507105608
+      zed_army_skin3-sheet0_4: -6948895970246600322
+      zed_army_skin3-sheet0_14: 2232128382269194909
+      zed_army_skin3-sheet0_12: -8114912482851061698
+      zed_army_skin3-sheet0_3: 6105208904846372576
+      zed_army_skin3-sheet0_8: -2000921203672748755
+      zed_army_skin3-sheet0_2: 8953219296588780284
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

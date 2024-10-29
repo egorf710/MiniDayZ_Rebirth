@@ -51,7 +51,7 @@ TextureImporter:
       213: -4606137426788157578
     second: shirt_green-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      shirt_green-sheet0_9: 3844890442859638222
+      shirt_green-sheet0_4: -8750955093252023595
+      shirt_green-sheet0_7: -7744329393055493724
+      shirt_green-sheet0_2: -4178884405146298380
+      shirt_green-sheet0_5: -2525311329495706054
+      shirt_green-sheet0_10: 3936799297652603508
+      shirt_green-sheet0_8: 8483420819148201520
+      shirt_green-sheet0_0: -7343832451416722998
+      shirt_green-sheet0_12: -5529883305089213626
+      shirt_green-sheet0_1: -2106397381102660165
+      shirt_green-sheet0_3: -4129309593331922388
+      shirt_green-sheet0_13: 3428550729604010231
+      shirt_green-sheet0_11: -6490891618010321858
+      shirt_green-sheet0_6: -677813726496387452
+      shirt_green-sheet0_15: -4606137426788157578
+      shirt_green-sheet0_14: 4415396054294715155
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

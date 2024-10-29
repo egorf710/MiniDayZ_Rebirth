@@ -28,6 +28,7 @@ namespace Mirror.Authenticators
             public string authPassword;
         }
 
+
         public struct AuthResponseMessage : NetworkMessage
         {
             public byte code;

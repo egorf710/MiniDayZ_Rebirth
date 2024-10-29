@@ -39,7 +39,7 @@ TextureImporter:
       213: 2938208571920133936
     second: saiga_shotgun-sheet2_11
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -60,6 +60,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -98,6 +99,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -125,6 +127,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -400,6 +414,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      saiga_shotgun-sheet2_3: -3084451822894260317
+      saiga_shotgun-sheet2_11: 2938208571920133936
+      saiga_shotgun-sheet2_4: 8616540633245160290
+      saiga_shotgun-sheet2_5: 5846031626306170618
+      saiga_shotgun-sheet2_10: -4702861559463275644
+      saiga_shotgun-sheet2_7: 6965627606482074967
+      saiga_shotgun-sheet2_6: 5781498066984401638
+      saiga_shotgun-sheet2_0: 6273506862058319278
+      saiga_shotgun-sheet2_9: 8764800260650422880
+      saiga_shotgun-sheet2_8: -7131939038840650283
+      saiga_shotgun-sheet2_1: 8912850493008976180
+      saiga_shotgun-sheet2_2: -4223269914507040356
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

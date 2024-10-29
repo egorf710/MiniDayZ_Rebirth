@@ -150,7 +150,7 @@ TextureImporter:
       213: 3283797711756400920
     second: axe_red-sheet0_48
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -171,6 +171,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -209,6 +210,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -236,6 +238,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1288,6 +1302,56 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      axe_red-sheet0_4: -6671489487357909225
+      axe_red-sheet0_26: -5311313073002181618
+      axe_red-sheet0_30: -6527688208581648051
+      axe_red-sheet0_41: 6986045753213638473
+      axe_red-sheet0_25: 4629922207824367679
+      axe_red-sheet0_45: 4390642221979114521
+      axe_red-sheet0_40: -234365761799532060
+      axe_red-sheet0_15: -1864830431972909288
+      axe_red-sheet0_17: 9205660400879148656
+      axe_red-sheet0_9: 6968397125192415220
+      axe_red-sheet0_32: 3401160000670498681
+      axe_red-sheet0_5: -1752570702526624339
+      axe_red-sheet0_18: 1664486421943185398
+      axe_red-sheet0_47: 1048258218656004470
+      axe_red-sheet0_31: 1897419934563562379
+      axe_red-sheet0_21: 2873259534920804023
+      axe_red-sheet0_38: -1087503279536505163
+      axe_red-sheet0_13: 2844438467245547299
+      axe_red-sheet0_24: -8368198523222755431
+      axe_red-sheet0_43: 1322432197636938166
+      axe_red-sheet0_7: 3027827048147796754
+      axe_red-sheet0_11: 4460187782167945090
+      axe_red-sheet0_36: -3221836865202757915
+      axe_red-sheet0_16: 410222018477892193
+      axe_red-sheet0_20: 4675618174843067740
+      axe_red-sheet0_10: 2407429097248487892
+      axe_red-sheet0_14: 8332515490519890609
+      axe_red-sheet0_46: -4359597822234938501
+      axe_red-sheet0_44: 8605976227296431334
+      axe_red-sheet0_1: -6209129315796194310
+      axe_red-sheet0_33: 2660927382046356903
+      axe_red-sheet0_23: -8119917660560085254
+      axe_red-sheet0_39: 1696264791434577543
+      axe_red-sheet0_35: -8190137263544436850
+      axe_red-sheet0_19: 7975860496301285626
+      axe_red-sheet0_6: -6892086636927814480
+      axe_red-sheet0_27: -4852239769356454517
+      axe_red-sheet0_0: -8952111964096316333
+      axe_red-sheet0_2: -8612413272485712980
+      axe_red-sheet0_3: -6456121891119877547
+      axe_red-sheet0_37: -6057877120025820460
+      axe_red-sheet0_34: -4059856525144616762
+      axe_red-sheet0_48: 3283797711756400920
+      axe_red-sheet0_12: 5926337802802903221
+      axe_red-sheet0_29: -5578494261898000935
+      axe_red-sheet0_42: -2300648963452302737
+      axe_red-sheet0_22: 3614163169142833394
+      axe_red-sheet0_8: -2847541086617005261
+      axe_red-sheet0_28: 2524925157800518350
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

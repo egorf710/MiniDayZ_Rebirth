@@ -51,7 +51,7 @@ TextureImporter:
       213: -108157250403854728
     second: hunter_jacket-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      hunter_jacket-sheet1_12: 8059221686525559994
+      hunter_jacket-sheet1_5: -5760273164018956963
+      hunter_jacket-sheet1_11: 6165315993335610166
+      hunter_jacket-sheet1_13: 8616359632478894364
+      hunter_jacket-sheet1_3: -7714427944680972052
+      hunter_jacket-sheet1_9: 3552800125926028317
+      hunter_jacket-sheet1_7: -127804171690360342
+      hunter_jacket-sheet1_14: 2353721103542410847
+      hunter_jacket-sheet1_6: 7310523291029088124
+      hunter_jacket-sheet1_8: -3054370436599726065
+      hunter_jacket-sheet1_4: -8305786430834152080
+      hunter_jacket-sheet1_2: 6652553218056497076
+      hunter_jacket-sheet1_10: 5815464122877913572
+      hunter_jacket-sheet1_15: -108157250403854728
+      hunter_jacket-sheet1_0: 7212591257920365116
+      hunter_jacket-sheet1_1: 8562097121088241039
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

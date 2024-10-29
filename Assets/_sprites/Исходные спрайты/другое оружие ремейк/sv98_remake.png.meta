@@ -75,7 +75,7 @@ TextureImporter:
       213: 2261319185705138061
     second: sv98_remake_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -688,6 +702,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      sv98_remake_5: -3607754977913197683
+      sv98_remake_3: -8399249371392394211
+      sv98_remake_23: 2261319185705138061
+      sv98_remake_8: 2269641534435106672
+      sv98_remake_22: -1724082677085299347
+      sv98_remake_17: 758142167616489542
+      sv98_remake_21: -289507698102845121
+      sv98_remake_1: -3051029742724979507
+      sv98_remake_16: 8425012142353376594
+      sv98_remake_10: -4096555951515695706
+      sv98_remake_2: 4216424948573449868
+      sv98_remake_11: 5032073356513451159
+      sv98_remake_6: 172494773156204028
+      sv98_remake_7: -3843338548809309269
+      sv98_remake_13: 2546693151676918430
+      sv98_remake_9: -2277331545059213535
+      sv98_remake_12: -8776440594445049484
+      sv98_remake_15: 1246358170539882699
+      sv98_remake_19: -3296654139784238190
+      sv98_remake_18: -3928570532070858016
+      sv98_remake_4: 7796555634682780637
+      sv98_remake_0: 8436268098002271747
+      sv98_remake_20: -8539435822155161877
+      sv98_remake_14: 352240841540441551
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

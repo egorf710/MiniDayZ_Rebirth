@@ -180,6 +180,8 @@ namespace Mirror
             RegisterHandler<RpcBufferMessage>(OnRPCBufferMessage);
         }
 
+
+
         // connect /////////////////////////////////////////////////////////////
         // initialize is called before every connect
         static void Initialize(bool hostMode)
@@ -1680,6 +1682,11 @@ namespace Mirror
             GUILayout.EndHorizontal();
 
             GUILayout.EndArea();
+        }
+
+        public static void RegisterHandler<T>()
+        {
+            throw new NotImplementedException();
         }
     }
 }

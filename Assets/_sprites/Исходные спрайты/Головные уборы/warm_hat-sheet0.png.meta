@@ -51,7 +51,7 @@ TextureImporter:
       213: 1383338845666870760
     second: warm_hat-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      warm_hat-sheet0_15: 1383338845666870760
+      warm_hat-sheet0_8: -6737960162033662480
+      warm_hat-sheet0_2: -2637543133068159040
+      warm_hat-sheet0_6: 4015683546572143943
+      warm_hat-sheet0_3: -2853507716962797670
+      warm_hat-sheet0_10: -4225620469948650144
+      warm_hat-sheet0_14: 5910295642269228541
+      warm_hat-sheet0_7: -6108267936093021939
+      warm_hat-sheet0_12: 4340877020705424177
+      warm_hat-sheet0_5: -4070047996247902350
+      warm_hat-sheet0_1: 4746525657710381250
+      warm_hat-sheet0_4: -6244395348979910108
+      warm_hat-sheet0_13: -1667193795043269513
+      warm_hat-sheet0_9: 6258098623628566490
+      warm_hat-sheet0_0: -4503212849915264940
+      warm_hat-sheet0_11: 7397431642715033743
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

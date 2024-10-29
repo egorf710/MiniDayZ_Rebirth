@@ -45,7 +45,7 @@ TextureImporter:
       213: 3626364154500819335
     second: hunter_backpack-sheet1_13
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -66,6 +66,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -104,6 +105,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -131,6 +133,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -448,6 +462,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      hunter_backpack-sheet1_0: -5967858656345193962
+      hunter_backpack-sheet1_6: -2646775572901980480
+      hunter_backpack-sheet1_5: -249783317001644329
+      hunter_backpack-sheet1_10: -6454031870328833297
+      hunter_backpack-sheet1_1: -3551389129979820647
+      hunter_backpack-sheet1_9: -623048755715068951
+      hunter_backpack-sheet1_4: -4624835421652555306
+      hunter_backpack-sheet1_8: -4945623922721095985
+      hunter_backpack-sheet1_7: -1715999351602197889
+      hunter_backpack-sheet1_11: -4818459900534520473
+      hunter_backpack-sheet1_3: 2184275652098698711
+      hunter_backpack-sheet1_2: -5054096916114759385
+      hunter_backpack-sheet1_13: 3626364154500819335
+      hunter_backpack-sheet1_12: -2705271145302927850
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

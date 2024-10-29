@@ -48,7 +48,7 @@ TextureImporter:
       213: 6500084423697275109
     second: sword-sheet2_14
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -69,6 +69,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -107,6 +108,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -134,6 +136,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -472,6 +486,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      sword-sheet2_1: 3932524996641047981
+      sword-sheet2_0: 1839943372847154742
+      sword-sheet2_2: -4134215189827147612
+      sword-sheet2_12: 6912665067885596544
+      sword-sheet2_5: -4161867220535121723
+      sword-sheet2_10: 4839851512305335482
+      sword-sheet2_8: -481039490300522718
+      sword-sheet2_11: 445803778568714528
+      sword-sheet2_6: -1664924360932185182
+      sword-sheet2_7: 1917441146203060769
+      sword-sheet2_13: 3750752282354526468
+      sword-sheet2_9: -854121167864554813
+      sword-sheet2_14: 6500084423697275109
+      sword-sheet2_3: -6479781054301112481
+      sword-sheet2_4: 6846715141406179989
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

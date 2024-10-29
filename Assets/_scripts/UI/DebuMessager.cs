@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 public class DebuMessager : MonoBehaviour
 {
     [SerializeField] private Text TextPrefab;
-    [SerializeField] private float delta = 1f;
+    //[SerializeField] private float delta = 1f;
     public static DebuMessager Instance;
 
     private void Awake()
@@ -61,7 +61,7 @@ public class DebuMessager : MonoBehaviour
 
         float end = text.transform.position.y + 69;
         Vector3 y = Vector3.zero;
-        while (text.transform.position.y + 15 <= end && text.gameObject != null)
+        while (text != null && text.transform.position.y + 15 <= end && text.gameObject != null)
         {
             //15-69
             text.transform.position = Camera.main.WorldToScreenPoint(startPos) + y;

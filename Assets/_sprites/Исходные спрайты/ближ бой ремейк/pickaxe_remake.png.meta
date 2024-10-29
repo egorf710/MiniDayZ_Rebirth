@@ -63,7 +63,7 @@ TextureImporter:
       213: 6836196671984195968
     second: pickaxe_remake_19
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -84,6 +84,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,6 +123,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -149,6 +151,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -592,6 +606,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      pickaxe_remake_18: 4445366802548358018
+      pickaxe_remake_6: 805785617376039024
+      pickaxe_remake_16: 6114421425469721636
+      pickaxe_remake_5: 7110817046222821979
+      pickaxe_remake_12: -8010419102163208786
+      pickaxe_remake_4: -7577019523090023270
+      pickaxe_remake_10: 3112040585957042733
+      pickaxe_remake_0: -802040228234959352
+      pickaxe_remake_2: -3232771557500784593
+      pickaxe_remake_7: 8128891560160630687
+      pickaxe_remake_19: 6836196671984195968
+      pickaxe_remake_17: -157638439978146119
+      pickaxe_remake_1: -4072288227239099201
+      pickaxe_remake_14: -7516222429921654127
+      pickaxe_remake_11: -5112880674524737465
+      pickaxe_remake_9: 8932820033806343047
+      pickaxe_remake_13: 928859637693568849
+      pickaxe_remake_15: -8068879753612147577
+      pickaxe_remake_3: -8009841561266664733
+      pickaxe_remake_8: -3761068746149524331
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

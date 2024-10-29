@@ -237,7 +237,7 @@ TextureImporter:
       213: -3174238415223080306
     second: ground_enviroment_tilemap_77
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -258,6 +258,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -296,6 +297,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -347,6 +349,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1987,6 +2001,84 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ground_enviroment_tilemap_47: 3900788056267335337
+      ground_enviroment_tilemap_18: -5747393987876446714
+      ground_enviroment_tilemap_19: 14207328919734761
+      ground_enviroment_tilemap_56: -1178007387895727836
+      ground_enviroment_tilemap_39: 8166448519102854241
+      ground_enviroment_tilemap_22: 794870979358509276
+      ground_enviroment_tilemap_28: -5692320591519134043
+      ground_enviroment_tilemap_24: 8931101632957820198
+      ground_enviroment_tilemap_31: 1152574351888256378
+      ground_enviroment_tilemap_63: -7444536617904150829
+      ground_enviroment_tilemap_11: 3116740888830324144
+      ground_enviroment_tilemap_52: -5016819982979125348
+      ground_enviroment_tilemap_17: -9104964706234241913
+      ground_enviroment_tilemap_30: -474969010624639090
+      ground_enviroment_tilemap_12: 3061819171761468394
+      ground_enviroment_tilemap_32: 1627756119964940085
+      ground_enviroment_tilemap_15: -7498318692115938613
+      ground_enviroment_tilemap_66: 5315844124317150003
+      ground_enviroment_tilemap_41: 2643686578611534108
+      ground_enviroment_tilemap_60: 7633372956548617194
+      ground_enviroment_tilemap_33: -891683948950377450
+      ground_enviroment_tilemap_65: 2031338006611908575
+      ground_enviroment_tilemap_23: -121368191015785216
+      ground_enviroment_tilemap_74: 8559123509994389185
+      ground_enviroment_tilemap_34: -4801556475214979472
+      ground_enviroment_tilemap_48: 1505094133171269132
+      ground_enviroment_tilemap_1: -3656958938052793506
+      ground_enviroment_tilemap_25: -6613282647251235537
+      ground_enviroment_tilemap_53: -2591647771470433542
+      ground_enviroment_tilemap_40: -2309388033649079417
+      ground_enviroment_tilemap_10: -8474778120264631351
+      ground_enviroment_tilemap_68: -7409054882288594264
+      ground_enviroment_tilemap_38: 2512975171078169398
+      ground_enviroment_tilemap_61: 8350495381617682122
+      ground_enviroment_tilemap_5: 128950881364255556
+      ground_enviroment_tilemap_7: -6191414503900207039
+      ground_enviroment_tilemap_42: 6986671202402037036
+      ground_enviroment_tilemap_71: -7364037578102439522
+      ground_enviroment_tilemap_57: -7831457376026481369
+      ground_enviroment_tilemap_59: 905437390166300050
+      ground_enviroment_tilemap_73: 2476913351052163236
+      ground_enviroment_tilemap_43: 23927815497605902
+      ground_enviroment_tilemap_70: 6448923988651804589
+      ground_enviroment_tilemap_75: -1325614092767176250
+      ground_enviroment_tilemap_26: 2942089111012995912
+      ground_enviroment_tilemap_72: -5325302185454566519
+      ground_enviroment_tilemap_13: 8802172527263113613
+      ground_enviroment_tilemap_55: -5014969122049584756
+      ground_enviroment_tilemap_62: -6191414744863465903
+      ground_enviroment_tilemap_69: 7085876891063013400
+      ground_enviroment_tilemap_35: 6041354693821133292
+      ground_enviroment_tilemap_45: 6527448802595807804
+      ground_enviroment_tilemap_8: 4290990553150517970
+      ground_enviroment_tilemap_14: 232750177351858680
+      ground_enviroment_tilemap_3: -6953289651588041222
+      ground_enviroment_tilemap_0: -1216465292099985569
+      ground_enviroment_tilemap_20: 3442960463936254789
+      ground_enviroment_tilemap_36: -5308009709316583347
+      ground_enviroment_tilemap_67: 2196505994595670333
+      ground_enviroment_tilemap_49: 344510950066147928
+      ground_enviroment_tilemap_54: 4364697833402656354
+      ground_enviroment_tilemap_9: 4654887167988502443
+      ground_enviroment_tilemap_64: -2916140897176932450
+      ground_enviroment_tilemap_58: 5042779259281950111
+      ground_enviroment_tilemap_4: 2267645384399058020
+      ground_enviroment_tilemap_46: -6736812655819922563
+      ground_enviroment_tilemap_27: -4564142869667854314
+      ground_enviroment_tilemap_6: 3944435684634887805
+      ground_enviroment_tilemap_29: 5086144249747346968
+      ground_enviroment_tilemap_37: -5099131421050647562
+      ground_enviroment_tilemap_50: 5397299514149726173
+      ground_enviroment_tilemap_44: 8462253239431950358
+      ground_enviroment_tilemap_51: 3358221579355393181
+      ground_enviroment_tilemap_2: 4657341052778997437
+      ground_enviroment_tilemap_21: 694438897194357674
+      ground_enviroment_tilemap_76: -6776019601063753032
+      ground_enviroment_tilemap_16: -1893267074283415116
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

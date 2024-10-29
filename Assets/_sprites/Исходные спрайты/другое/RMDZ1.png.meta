@@ -477,7 +477,7 @@ TextureImporter:
       213: -4262385902291218165
     second: RMDZ1_11
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -498,6 +498,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -536,6 +537,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -563,6 +565,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 3
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 1024
     resizeAlgorithm: 1
     textureFormat: -1
@@ -1279,6 +1293,40 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      RMDZ1_12: -4763561745630130265
+      RMDZ1_26: 1791126663902624574
+      RMDZ1_15: -8775433952022594303
+      RMDZ1_31: 1239798235003671372
+      RMDZ1_8: 1055438705924786942
+      RMDZ1_32: 8365656218222917688
+      RMDZ1_28: 4252807360183691074
+      RMDZ1_4: -7583324861002828608
+      RMDZ1_1: 6438481574888957889
+      RMDZ1_2: -614856152299447484
+      RMDZ1_30: 303440630144985168
+      RMDZ1_14: -5726291793665083800
+      RMDZ1_29: -4477404777238827404
+      RMDZ1_18: 4749002702368674820
+      RMDZ1_27: 5612644344007609948
+      RMDZ1_9: 7215853440859453343
+      RMDZ1_21: -9094916128548770300
+      RMDZ1_16: 4986546020240470064
+      RMDZ1_13: -4797590336340008366
+      RMDZ1_24: 339364807528423201
+      RMDZ1_10: -3571335856697995113
+      RMDZ1_6: 6966816596463523653
+      RMDZ1_23: -934470860153286628
+      RMDZ1_22: 8473793037118388470
+      RMDZ1_5: 2872177431218768325
+      RMDZ1_3: -4281418900559368114
+      RMDZ1_17: -2585922951980169978
+      RMDZ1_25: 4507653163039787118
+      RMDZ1_20: -7936261314561994988
+      RMDZ1_7: 3216494888440960529
+      RMDZ1_0: -3483338124159216872
+      RMDZ1_19: 9106828083935911858
+      RMDZ1_11: -4262385902291218165
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

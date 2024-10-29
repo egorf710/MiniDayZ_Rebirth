@@ -75,7 +75,7 @@ TextureImporter:
       213: 5710444486735998859
     second: le-mas_remake_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -688,6 +702,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      le-mas_remake_8: -4859654794131614538
+      le-mas_remake_0: 7119180191916579936
+      le-mas_remake_1: 6553406935122897560
+      le-mas_remake_15: 1580030363363344692
+      le-mas_remake_11: -4492222050999851743
+      le-mas_remake_7: -178023703642023247
+      le-mas_remake_14: 8028339816562614421
+      le-mas_remake_13: 2841731199411812441
+      le-mas_remake_22: -8201184526943040503
+      le-mas_remake_5: -8117065895878389198
+      le-mas_remake_10: 379856957476888972
+      le-mas_remake_9: 1824235562917755646
+      le-mas_remake_19: 1808821348437222721
+      le-mas_remake_4: -8057749046678896813
+      le-mas_remake_18: -8274890440985250309
+      le-mas_remake_21: -654508500969686869
+      le-mas_remake_12: 2012261160904499119
+      le-mas_remake_16: -1025860787398128999
+      le-mas_remake_2: 4729299553623051390
+      le-mas_remake_17: 7306406326780419870
+      le-mas_remake_23: 5710444486735998859
+      le-mas_remake_6: -6898210576797255733
+      le-mas_remake_20: -3476692178064407038
+      le-mas_remake_3: -3428832009752015381
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

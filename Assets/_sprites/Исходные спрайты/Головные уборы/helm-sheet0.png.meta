@@ -54,7 +54,7 @@ TextureImporter:
       213: 8073573315042328883
     second: helm-sheet0_16
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -75,6 +75,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -113,6 +114,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -140,6 +142,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -520,6 +534,24 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      helm-sheet0_12: 2179876969797282932
+      helm-sheet0_1: -3702600016203794875
+      helm-sheet0_0: -7485976374352201704
+      helm-sheet0_11: -7904464546509870909
+      helm-sheet0_2: -7391905593433414727
+      helm-sheet0_3: 8607482447466770050
+      helm-sheet0_15: -1791288712208291169
+      helm-sheet0_6: 4953152178047159986
+      helm-sheet0_14: -2131564568384606204
+      helm-sheet0_13: 6864448477261034647
+      helm-sheet0_5: -2040199297150023137
+      helm-sheet0_7: 6032516000475289546
+      helm-sheet0_8: 5978331821834857016
+      helm-sheet0_10: 5335864659963282719
+      helm-sheet0_9: 2913437236477481415
+      helm-sheet0_16: 8073573315042328883
+      helm-sheet0_4: 2065471349059978963
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

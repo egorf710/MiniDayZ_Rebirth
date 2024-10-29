@@ -51,7 +51,7 @@ TextureImporter:
       213: 2819812285952367479
     second: vest_press-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      vest_press-sheet1_2: -4110222234504240107
+      vest_press-sheet1_5: 3172682670877121890
+      vest_press-sheet1_7: -8920660687829020914
+      vest_press-sheet1_6: -6062244763864050195
+      vest_press-sheet1_14: 1073945258448322185
+      vest_press-sheet1_4: -711545515429101080
+      vest_press-sheet1_1: -7469525291187170449
+      vest_press-sheet1_12: -4790675380146606218
+      vest_press-sheet1_13: -6252917533183869237
+      vest_press-sheet1_3: -8127245071982034685
+      vest_press-sheet1_10: 5445108510009912335
+      vest_press-sheet1_8: 6442594672265670608
+      vest_press-sheet1_15: 2819812285952367479
+      vest_press-sheet1_0: 3252598124364716484
+      vest_press-sheet1_9: -2644450220796164529
+      vest_press-sheet1_11: 4522767621833076586
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -51,7 +51,7 @@ TextureImporter:
       213: 7596768865415351531
     second: helmet_nvg-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      helmet_nvg-sheet0_6: 3844896253676305918
+      helmet_nvg-sheet0_9: 3260120551739777628
+      helmet_nvg-sheet0_8: -8097760719558455677
+      helmet_nvg-sheet0_2: 6458657342442637821
+      helmet_nvg-sheet0_12: 6043123729549039321
+      helmet_nvg-sheet0_14: 7281810200662325063
+      helmet_nvg-sheet0_4: -6889607689172420543
+      helmet_nvg-sheet0_3: -7937839662297474004
+      helmet_nvg-sheet0_0: -2805563656135009082
+      helmet_nvg-sheet0_7: -7790292365534187626
+      helmet_nvg-sheet0_10: -1629970232041798328
+      helmet_nvg-sheet0_15: 7596768865415351531
+      helmet_nvg-sheet0_11: -2176924803624429646
+      helmet_nvg-sheet0_5: -7258939983370947163
+      helmet_nvg-sheet0_13: 281841510282945259
+      helmet_nvg-sheet0_1: -7424556221426144684
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

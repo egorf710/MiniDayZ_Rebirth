@@ -51,7 +51,7 @@ TextureImporter:
       213: 2439955132836186932
     second: cloak_brown-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      cloak_brown-sheet0_5: 4363953389998201952
+      cloak_brown-sheet0_9: -2857550153879351101
+      cloak_brown-sheet0_1: -4927031157819993556
+      cloak_brown-sheet0_11: 7708869546421226152
+      cloak_brown-sheet0_7: -4089264541047312795
+      cloak_brown-sheet0_8: -5592411933158464610
+      cloak_brown-sheet0_6: -2682682853862713757
+      cloak_brown-sheet0_10: 8086126658524616628
+      cloak_brown-sheet0_12: 2158840292540959585
+      cloak_brown-sheet0_2: -5162367972867606037
+      cloak_brown-sheet0_15: 2439955132836186932
+      cloak_brown-sheet0_0: 6400629599969028461
+      cloak_brown-sheet0_13: -4609378969560116509
+      cloak_brown-sheet0_14: 5941849948315855383
+      cloak_brown-sheet0_3: 244149826281219173
+      cloak_brown-sheet0_4: -8894127705723675670
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

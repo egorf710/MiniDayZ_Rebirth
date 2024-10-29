@@ -51,7 +51,7 @@ TextureImporter:
       213: -122241795150270117
     second: wolf_skin-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -520,6 +534,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      wolf_skin-sheet1_6: 6281323710076419647
+      wolf_skin-sheet1_10: 4036547529441048087
+      wolf_skin-sheet1_7: -8706133316336718148
+      wolf_skin-sheet1_12: -2361339887672812308
+      wolf_skin-sheet1_4: -6332387077385446812
+      wolf_skin-sheet1_8: 1597309919688724000
+      wolf_skin-sheet1_0: -4269996500707196101
+      wolf_skin-sheet1_9: 6636492719267107894
+      wolf_skin-sheet1_13: -5246703284174153783
+      wolf_skin-sheet1_14: 437708719643872862
+      wolf_skin-sheet1_1: 997341944353913334
+      wolf_skin-sheet1_3: 9178991652819783702
+      wolf_skin-sheet1_5: 7659112987542991169
+      wolf_skin-sheet1_2: -1185777080481643321
+      wolf_skin-sheet1_15: -122241795150270117
+      wolf_skin-sheet1_11: -8351320794129024745
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

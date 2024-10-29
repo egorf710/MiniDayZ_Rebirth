@@ -51,7 +51,7 @@ TextureImporter:
       213: 3955497573831176683
     second: raincoat_blue-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      raincoat_blue-sheet1_8: 1257549442448357395
+      raincoat_blue-sheet1_13: -2162335832660316924
+      raincoat_blue-sheet1_14: -566524122334274137
+      raincoat_blue-sheet1_4: -3973982294656572356
+      raincoat_blue-sheet1_5: -3999380143487213805
+      raincoat_blue-sheet1_11: 6331479509360795294
+      raincoat_blue-sheet1_2: -2585076615292392347
+      raincoat_blue-sheet1_9: -5143862386548072411
+      raincoat_blue-sheet1_15: 3955497573831176683
+      raincoat_blue-sheet1_10: -7361102624926512644
+      raincoat_blue-sheet1_3: 90501173504859078
+      raincoat_blue-sheet1_0: -5435673622589528562
+      raincoat_blue-sheet1_1: 1313843921700200474
+      raincoat_blue-sheet1_6: 7030096332328333842
+      raincoat_blue-sheet1_7: 7914844868818386984
+      raincoat_blue-sheet1_12: 3507857602704774239
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,3 +1,4 @@
+using Mirror;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -49,40 +50,42 @@ public class PlayerAnimator : MonoBehaviour
     public float timeInteract;
     public bool INTERACT;
 
-    private void Update()
-    {
-        if (SET)
-        {
-            SET = false;
-            SetClothByName(itemName);
-        }
-        if (CLEAR)
-        {
-            CLEAR = false;
-            if (itemName == "")
-            {
-                ClearClothByType(animationType);
-            }
-            else
-            {
-                ClearClothByName(itemName);
-            }
-        }
-        if (SHOOT)
-        {
-            SHOOT = false;
-            Shoot(ShootDir);
-        }
-        if (SHOOTING)
-        {
-            Shoot(ShootDir);
-        }
-        if (INTERACT)
-        {
-            INTERACT = false;
-            Interact(timeInteract);
-        }
-    }
+    public PlayerNetwork playerNetwork;
+
+    //private void Update()
+    //{
+    //    if (SET)
+    //    {
+    //        SET = false;
+    //        SetClothByName(itemName);
+    //    }
+    //    if (CLEAR)
+    //    {
+    //        CLEAR = false;
+    //        if (itemName == "")
+    //        {
+    //            ClearClothByType(animationType);
+    //        }
+    //        else
+    //        {
+    //            ClearClothByName(itemName);
+    //        }
+    //    }
+    //    if (SHOOT)
+    //    {
+    //        SHOOT = false;
+    //        Shoot(ShootDir);
+    //    }
+    //    if (SHOOTING)
+    //    {
+    //        Shoot(ShootDir);
+    //    }
+    //    if (INTERACT)
+    //    {
+    //        INTERACT = false;
+    //        Interact(timeInteract);
+    //    }
+    //}
     private void Start()
     {
         SetClothByName("default_skin");
@@ -114,6 +117,11 @@ public class PlayerAnimator : MonoBehaviour
                     AnimIdle(ref index);
                     shoot = false;
                 }
+
+            }
+            if (playerNetwork.isLocalPlayer)
+            {
+                playerNetwork.CMDAnimSync(interact, shoot, speed, animationDir);
             }
             yield return new WaitForSeconds(1 / AnimationSpeed);
         }

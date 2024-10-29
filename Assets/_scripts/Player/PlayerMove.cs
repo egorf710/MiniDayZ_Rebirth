@@ -13,10 +13,13 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private PlayerAnimator playerAnimator;
     [SerializeField] private bool IsGoToPoint;
-
-    private void Awake()
+    [SerializeField] private PlayerNetwork playerNetwork;
+    private void Start()
     {
-        FindObjectOfType<CanvasManager>().Init(transform);
+        if(!playerNetwork.isLocalPlayer)
+        {
+            enabled = false;
+        }
     }
     private void Update()
     {

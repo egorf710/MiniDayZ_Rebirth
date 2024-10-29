@@ -51,7 +51,7 @@ TextureImporter:
       213: 695697159599207668
     second: beret_red-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      beret_red-sheet0_5: -4434009578209250299
+      beret_red-sheet0_15: 695697159599207668
+      beret_red-sheet0_10: 5238479798772661430
+      beret_red-sheet0_1: -4858577466533187650
+      beret_red-sheet0_13: -3306033455934999194
+      beret_red-sheet0_4: 7248239655121502792
+      beret_red-sheet0_0: -3073813323337554325
+      beret_red-sheet0_6: -7958237437156915312
+      beret_red-sheet0_8: 7645572582234866474
+      beret_red-sheet0_9: -3026091004187302020
+      beret_red-sheet0_11: 7404241189288588016
+      beret_red-sheet0_7: 753591666941317723
+      beret_red-sheet0_12: 6718347026532132678
+      beret_red-sheet0_3: -6757876039431757836
+      beret_red-sheet0_2: -4791129486079053701
+      beret_red-sheet0_14: 1591640744264100021
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

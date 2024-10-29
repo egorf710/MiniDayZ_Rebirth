@@ -51,7 +51,7 @@ TextureImporter:
       213: -2294649101830933470
     second: workpants-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      workpants-sheet0_7: 1111763146351514863
+      workpants-sheet0_6: -6335215188496587923
+      workpants-sheet0_2: -3163349764953289379
+      workpants-sheet0_8: 1968791417690659440
+      workpants-sheet0_15: -2294649101830933470
+      workpants-sheet0_12: 9043987204192424892
+      workpants-sheet0_1: -6428927708369103629
+      workpants-sheet0_11: -1361475294979977420
+      workpants-sheet0_3: 5578084763836111568
+      workpants-sheet0_5: -6005478778274928570
+      workpants-sheet0_9: -5594170307340420342
+      workpants-sheet0_14: -6875691703343964892
+      workpants-sheet0_10: 3468454967776295412
+      workpants-sheet0_0: 4797562139450476641
+      workpants-sheet0_4: -669749774856916573
+      workpants-sheet0_13: 4141081513678880526
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

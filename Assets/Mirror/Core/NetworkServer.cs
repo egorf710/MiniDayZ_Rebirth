@@ -788,6 +788,7 @@ namespace Mirror
             // Debug.Log($"Adding new playerGameObject object netId: {identity.netId} asset ID: {identity.assetId}");
 
             Respawn(identity);
+
             return true;
         }
 
@@ -897,6 +898,8 @@ namespace Mirror
             // client is ready to start spawning objects
             if (conn.identity != null)
                 SpawnObserversForConnection(conn);
+
+
         }
 
         /// <summary>Marks the client of the connection to be not-ready.</summary>

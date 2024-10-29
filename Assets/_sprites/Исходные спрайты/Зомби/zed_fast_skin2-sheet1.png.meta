@@ -51,7 +51,7 @@ TextureImporter:
       213: -3381138346138796069
     second: zed_fast_skin2-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -125,6 +127,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -484,6 +498,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      zed_fast_skin2-sheet1_4: -5016020917776777343
+      zed_fast_skin2-sheet1_9: -3218235560173262160
+      zed_fast_skin2-sheet1_0: 2160406353739443592
+      zed_fast_skin2-sheet1_12: 3155554700148528379
+      zed_fast_skin2-sheet1_6: 2103913793718433349
+      zed_fast_skin2-sheet1_5: 8603824104399389547
+      zed_fast_skin2-sheet1_8: -4086293687197210448
+      zed_fast_skin2-sheet1_10: -7237505467477299865
+      zed_fast_skin2-sheet1_15: -3381138346138796069
+      zed_fast_skin2-sheet1_11: -6417973575977029827
+      zed_fast_skin2-sheet1_14: -2958174291869354666
+      zed_fast_skin2-sheet1_13: 3537924943297966218
+      zed_fast_skin2-sheet1_2: 2046605070571948447
+      zed_fast_skin2-sheet1_3: 9175532312668731624
+      zed_fast_skin2-sheet1_7: 1806517921726597279
+      zed_fast_skin2-sheet1_1: -1757300541588406985
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

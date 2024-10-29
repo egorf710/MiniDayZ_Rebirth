@@ -75,7 +75,7 @@ TextureImporter:
       213: 5153923524836070097
     second: aug_remake_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -688,6 +702,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      aug_remake_4: -3905396846713685069
+      aug_remake_11: -7920389453998588814
+      aug_remake_7: -2021048537365168171
+      aug_remake_3: -8036294761398849239
+      aug_remake_19: -7379330835713674035
+      aug_remake_17: -8066391593874584493
+      aug_remake_20: -128104946058693527
+      aug_remake_23: 5153923524836070097
+      aug_remake_13: -8271004106283201773
+      aug_remake_15: 7453355014974971377
+      aug_remake_8: -7531942016738995177
+      aug_remake_1: 6412392852955675631
+      aug_remake_22: 4460639859154244501
+      aug_remake_12: -3476270514191404827
+      aug_remake_18: 2405003740742146762
+      aug_remake_5: -3116676792520442098
+      aug_remake_16: -558713537569551898
+      aug_remake_10: -4824888261352852287
+      aug_remake_2: 6168177280380658070
+      aug_remake_9: -4451823305474824883
+      aug_remake_14: -5492548188905850960
+      aug_remake_0: -2593739688639015107
+      aug_remake_21: 280966877524527926
+      aug_remake_6: 3231981525587187811
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

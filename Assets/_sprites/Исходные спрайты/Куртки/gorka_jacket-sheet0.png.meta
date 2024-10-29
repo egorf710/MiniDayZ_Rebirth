@@ -51,7 +51,7 @@ TextureImporter:
       213: -4740230954310363506
     second: gorka_jacket-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      gorka_jacket-sheet0_7: -1176132813861295642
+      gorka_jacket-sheet0_15: -4740230954310363506
+      gorka_jacket-sheet0_5: -1172853622001566327
+      gorka_jacket-sheet0_8: -8268703598938697761
+      gorka_jacket-sheet0_13: 4740682218738007112
+      gorka_jacket-sheet0_3: -171009583535858678
+      gorka_jacket-sheet0_12: 569955186177700412
+      gorka_jacket-sheet0_0: -4536327444258083199
+      gorka_jacket-sheet0_10: -1348548796104395669
+      gorka_jacket-sheet0_14: 6287495559432424939
+      gorka_jacket-sheet0_11: 3692559264033600990
+      gorka_jacket-sheet0_6: 8703829774740502674
+      gorka_jacket-sheet0_4: -4170726957680605265
+      gorka_jacket-sheet0_1: -3671858972624831188
+      gorka_jacket-sheet0_9: 5084110917962630950
+      gorka_jacket-sheet0_2: -1190815250801654372
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

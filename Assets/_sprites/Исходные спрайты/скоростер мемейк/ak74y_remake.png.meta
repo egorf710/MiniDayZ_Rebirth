@@ -87,7 +87,7 @@ TextureImporter:
       213: -3679500936713074355
     second: ak74y_remake_27
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -108,6 +108,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -146,6 +147,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -173,6 +175,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -784,6 +798,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ak74y_remake_14: -263185433040703253
+      ak74y_remake_7: -1055994519128502111
+      ak74y_remake_8: 8092537985128644315
+      ak74y_remake_21: -2537303205006649901
+      ak74y_remake_5: 3250385400419024441
+      ak74y_remake_9: -3578129860381545180
+      ak74y_remake_17: -3280125824710334664
+      ak74y_remake_20: -6286232207726279027
+      ak74y_remake_18: -2813215465696877606
+      ak74y_remake_11: 7115794974762995065
+      ak74y_remake_25: 7426469781051501069
+      ak74y_remake_2: -6349371533356542457
+      ak74y_remake_27: -3679500936713074355
+      ak74y_remake_23: 3459896775666695230
+      ak74y_remake_4: -1188345316060469967
+      ak74y_remake_3: -7089140425784089842
+      ak74y_remake_16: -5565750500855420570
+      ak74y_remake_19: 481786408300782143
+      ak74y_remake_26: -7174855846985083923
+      ak74y_remake_13: 942884101648700166
+      ak74y_remake_0: 4206034594367757068
+      ak74y_remake_24: 4519008940312157573
+      ak74y_remake_10: 8363439470717480970
+      ak74y_remake_1: 4007655499388180322
+      ak74y_remake_22: 7245144696293810599
+      ak74y_remake_6: -3873439164990206245
+      ak74y_remake_15: 8743070009833853745
+      ak74y_remake_12: -4719942587781847916
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

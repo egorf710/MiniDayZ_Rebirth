@@ -75,7 +75,7 @@ TextureImporter:
       213: -4322396574843356839
     second: akm_remake_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -161,6 +163,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -688,6 +702,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      akm_remake_23: -4322396574843356839
+      akm_remake_7: 8340457335588705629
+      akm_remake_21: -1148671509671376237
+      akm_remake_9: -3953550612317859035
+      akm_remake_5: 4886102198516463450
+      akm_remake_15: -3186438212652152551
+      akm_remake_13: 4493687737434003973
+      akm_remake_6: 1261034023108946838
+      akm_remake_0: -123047109613091270
+      akm_remake_20: 116335910255996740
+      akm_remake_4: -6992380766389475572
+      akm_remake_18: 5021871614554425383
+      akm_remake_11: 1348447879597345790
+      akm_remake_10: -6669694855368227897
+      akm_remake_8: -5887593445654658281
+      akm_remake_12: 7523694580990418103
+      akm_remake_17: 1832842418807281979
+      akm_remake_16: 5036673815302084079
+      akm_remake_14: -2524556885760575912
+      akm_remake_22: 9017616531824049975
+      akm_remake_2: -5482571986293850707
+      akm_remake_19: -775730449858669944
+      akm_remake_3: -8432376040572009560
+      akm_remake_1: -4097813499902213019
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

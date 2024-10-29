@@ -51,7 +51,7 @@ TextureImporter:
       213: -398191875559538065
     second: player_skin_def_1-sheet1_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      player_skin_def_1-sheet1_6: -662421028714451611
+      player_skin_def_1-sheet1_4: -4503338967279551759
+      player_skin_def_1-sheet1_15: -398191875559538065
+      player_skin_def_1-sheet1_8: 8129912182745546005
+      player_skin_def_1-sheet1_10: 7437959742163050452
+      player_skin_def_1-sheet1_14: 4982469974588596281
+      player_skin_def_1-sheet1_3: -6059469258209976813
+      player_skin_def_1-sheet1_2: -7487510744718640818
+      player_skin_def_1-sheet1_1: 8788715438105120002
+      player_skin_def_1-sheet1_5: 8701203863633520459
+      player_skin_def_1-sheet1_9: -3098111282613161447
+      player_skin_def_1-sheet1_7: -1484867127750088930
+      player_skin_def_1-sheet1_11: 638496426413811766
+      player_skin_def_1-sheet1_0: 3518874911474880951
+      player_skin_def_1-sheet1_12: 3727059501863105273
+      player_skin_def_1-sheet1_13: 1639938088657232704
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

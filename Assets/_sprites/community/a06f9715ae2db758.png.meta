@@ -66,7 +66,7 @@ TextureImporter:
       213: -3113539394398770097
     second: a06f9715ae2db758_20
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -87,6 +87,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -125,6 +126,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -176,6 +178,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -640,6 +654,28 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      a06f9715ae2db758_9: -6451312005970207863
+      a06f9715ae2db758_4: -3389276492161067928
+      a06f9715ae2db758_7: 6695144179763279841
+      a06f9715ae2db758_12: 6316474675666788119
+      a06f9715ae2db758_14: -2280721324029470128
+      a06f9715ae2db758_10: 2267101753959534805
+      a06f9715ae2db758_0: 3644228724842143679
+      a06f9715ae2db758_3: -7304726792435005192
+      a06f9715ae2db758_16: -7865761715153297487
+      a06f9715ae2db758_19: 6992260239326648847
+      a06f9715ae2db758_6: 8540748708282690260
+      a06f9715ae2db758_17: -1202166189673560019
+      a06f9715ae2db758_11: 1875239506966569865
+      a06f9715ae2db758_18: -1856309731932898597
+      a06f9715ae2db758_13: 3806638049639029930
+      a06f9715ae2db758_2: 164604293365520381
+      a06f9715ae2db758_15: -3727985893206887608
+      a06f9715ae2db758_20: -3113539394398770097
+      a06f9715ae2db758_5: -4764747223538447352
+      a06f9715ae2db758_1: 5970459393962987095
+      a06f9715ae2db758_8: -1869057443114136328
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

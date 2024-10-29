@@ -51,7 +51,7 @@ TextureImporter:
       213: 9199765543478369114
     second: helmet_army-sheet0_15
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -110,6 +111,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -137,6 +139,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -496,6 +510,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      helmet_army-sheet0_13: -2781251659152986638
+      helmet_army-sheet0_7: -7224118643682870277
+      helmet_army-sheet0_11: 2930807796531056577
+      helmet_army-sheet0_9: -8694055755328155851
+      helmet_army-sheet0_12: -7177889771103011564
+      helmet_army-sheet0_0: -2926047994599184723
+      helmet_army-sheet0_2: -727165034763735652
+      helmet_army-sheet0_4: 1588076790255778675
+      helmet_army-sheet0_10: 6421962255756547856
+      helmet_army-sheet0_6: -8067394815487763043
+      helmet_army-sheet0_5: 5762317779576632660
+      helmet_army-sheet0_3: 2197174102628915671
+      helmet_army-sheet0_1: -6077490297571831605
+      helmet_army-sheet0_14: -8747015639275902194
+      helmet_army-sheet0_8: 1119796425715402182
+      helmet_army-sheet0_15: 9199765543478369114
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

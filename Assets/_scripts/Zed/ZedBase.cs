@@ -27,8 +27,8 @@ public class ZedBase : NetworkBehaviour, AliveTarget
     [SerializeField] private Vector2 idleTimeInterval;
     [SerializeField] private float idleDistance;
     [Space]
-    [SerializeField] [SyncVar] private VulnerabledData vulnerabledData;
-    [HideInInspector] public VulnerableObject myVulController;
+    [SerializeField] private VulnerabledData vulnerabledData;
+    public VulnerableObject myVulController;
     private float nextTime;
     private float idleNextTime;
     private float searchNextTime;
@@ -79,7 +79,7 @@ public class ZedBase : NetworkBehaviour, AliveTarget
                     }
                     else
                     {
-                        Attak();
+                        Attak(hit.collider.transform);
                         yield return new WaitForSeconds(0.1f);
                     }
                     lastTargetPos = target.position;
@@ -196,12 +196,13 @@ public class ZedBase : NetworkBehaviour, AliveTarget
             TargetManager.RemoveTarget(this);
         }
     }
-    private void Attak()
+    private void Attak(Transform vulTarget)
     {
         if(Time.time >= nextTime)
         {
             nextTime = Time.time + attak—ooldown;
             rb.velocity = Vector2.zero;
+            print("attack vul: " + vulTarget.name);
         }
     }
 
@@ -217,7 +218,17 @@ public class ZedBase : NetworkBehaviour, AliveTarget
         DebuMessager.Mess("-" + damage, Color.red, transform.position, true);
         if(vulnerabledData.health <= 0)
         {
+            StopAllCoroutines();
+            speed = 0;
+            enable = false;
+            target = null;
+            rb.simulated = false;
+            TargetManager.RemoveTarget(this);
+
+
             myVulController.DropLoot();
+            animator.AnimDie();
+            enabled = false;
         }
     }
 

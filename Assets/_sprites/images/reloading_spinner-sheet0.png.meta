@@ -57,7 +57,7 @@ TextureImporter:
       213: 3065527944417241666
     second: reloading_spinner-sheet0_17
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -78,6 +78,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -116,6 +117,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -167,6 +169,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -568,6 +582,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      reloading_spinner-sheet0_8: -6848462178334698440
+      reloading_spinner-sheet0_4: -5052475996250834152
+      reloading_spinner-sheet0_5: -3398569876751986003
+      reloading_spinner-sheet0_1: -1421997310784720933
+      reloading_spinner-sheet0_15: -7688399032953639672
+      reloading_spinner-sheet0_13: -7573009011731670946
+      reloading_spinner-sheet0_6: 7023723788186592958
+      reloading_spinner-sheet0_17: 3065527944417241666
+      reloading_spinner-sheet0_0: -4774232083358588994
+      reloading_spinner-sheet0_2: 9101965665377754342
+      reloading_spinner-sheet0_10: -6021775062968236309
+      reloading_spinner-sheet0_9: 6188220030086018305
+      reloading_spinner-sheet0_12: -1568687796630354055
+      reloading_spinner-sheet0_14: -1069464593561279115
+      reloading_spinner-sheet0_11: -8530295075739983786
+      reloading_spinner-sheet0_7: 9001715941903542463
+      reloading_spinner-sheet0_3: -211139137038557796
+      reloading_spinner-sheet0_16: -3029599488596028782
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

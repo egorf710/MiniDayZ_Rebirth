@@ -45,7 +45,7 @@ TextureImporter:
       213: -2813859491467771684
     second: mp5_smg-sheet2_13
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -66,6 +66,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -104,6 +105,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -131,6 +133,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -448,6 +462,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      mp5_smg-sheet2_2: -4961280583822812117
+      mp5_smg-sheet2_11: 963528011615857784
+      mp5_smg-sheet2_6: 2037209694133080579
+      mp5_smg-sheet2_0: -3830214555448529225
+      mp5_smg-sheet2_8: 4021561821079026186
+      mp5_smg-sheet2_4: -3947115619584006312
+      mp5_smg-sheet2_7: -8669787238641578913
+      mp5_smg-sheet2_5: 5555330975605100209
+      mp5_smg-sheet2_3: -742636552878587729
+      mp5_smg-sheet2_13: -2813859491467771684
+      mp5_smg-sheet2_9: 1072352618675675203
+      mp5_smg-sheet2_1: 1862232346850396758
+      mp5_smg-sheet2_10: 6186234303303754552
+      mp5_smg-sheet2_12: 5995888509170052465
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

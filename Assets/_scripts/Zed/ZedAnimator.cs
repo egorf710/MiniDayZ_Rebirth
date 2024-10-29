@@ -65,6 +65,10 @@ public class ZedAnimator : MonoBehaviour
     }
     public void AnimDie()
     {
-
+        anim.SetTrigger("die1");
+    }
+    public void Dest()
+    {
+        Destroy(gameObject);
     }
 }

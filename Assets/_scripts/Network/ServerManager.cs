@@ -1,4 +1,5 @@
 using Mirror;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,28 +8,32 @@ public class ServerManager : NetworkBehaviour
 {
     [SerializeField] private TargetManager targetManager;
     public static ServerManager instance;
-
-    private void Start()
+    public List<NetPlayerCase> netPlayers = new List<NetPlayerCase>();
+    private void Awake()
     {
         instance = this;
     }
-    [Command]
+    public void Init(Transform player)
+    {
+        targetManager.Init(player);
+    }
+    //[Command]
     public void TakeDamage(uint targetNetID, int damage)
     {
         TakeDamageSM(targetNetID, damage);
     }
-    [ClientRpc]
+    //[ClientRpc]
     private void TakeDamageSM(uint targetNetID, int damage)
     {
         //if (netIdentity.isServer) { return; }
         targetManager.targetsBases.Find(x => x.getNetID() == targetNetID).TakeDamage(damage);
     }
-    [Command]
+    //[Command]
     public void DropLoot(DropLootMassage dropLootMassage)
     {
         DropLootSM(dropLootMassage);
     }
-    [ClientRpc]
+    //[ClientRpc]
     private void DropLootSM(DropLootMassage dropLootMassage)
     {
         Vector2 pos = dropLootMassage.pos;
@@ -38,4 +43,10 @@ public class ServerManager : NetworkBehaviour
             InventoryManager.SpawnLoot(itemLoots, pos);
         }
     }
+}
+[Serializable]
+public struct NetPlayerCase
+{
+    public NetworkConnectionToClient conn;
+    public GameObject player;
 }
