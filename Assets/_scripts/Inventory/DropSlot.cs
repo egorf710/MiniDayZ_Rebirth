@@ -169,7 +169,8 @@ public class DropSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
             {
                 if (InventoryManager.AddItem(itemInfo))
                 {
-                    Destroy(myObject.gameObject);
+                    ServerManager.DestroyItemObjectAtID(myObject.gameObject.GetComponent<IdentityObject>().ID);
+                    //Destroy(myObject.gameObject);
                     Destroy(gameObject);
                 }
             }
@@ -194,7 +195,9 @@ public class DropSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         {
             if (InventoryManager.AddItem(itemInfo))
             {
-                Destroy(myObject.gameObject);
+                ServerManager.DestroyItemObjectAtID(myObject.gameObject.GetComponent<IdentityObject>().ID);
+
+                //Destroy(myObject.gameObject);
                 Destroy(gameObject);
             }
         }

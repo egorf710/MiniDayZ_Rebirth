@@ -61,21 +61,21 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     {
         if(isServer)
         {
-            print("server update net status");
+            //print("server update net status");
             RefreshMyStatus();
         }
     }
     [Command]
     public void CMDUpdateMyClohes(string clotheData)
     {
-        SetMyClothes(playerAnimator.GetAnimClothesData());
+        SetMyClothes(clotheData);
     }
     [ClientRpc]
     public void RefreshMyStatus()
     {
         if (isServer)
         {
-            print("server player send data");
+            //print("server player send data");
             SetMyClothes(playerAnimator.GetAnimClothesData());
         }
     }
@@ -84,14 +84,13 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     [ClientRpc]
     public void SetMyClothes(string cloches)
     {
-        print(name + " is set clothes");
+        //print(name + " is set clothes");
         playerAnimator.SetAnimClohesData(cloches);
-        
     }
     [Command]
     public void CMDAnimSync(bool interact, bool shoot, float speed, Vector2 animDir) //TO DO if server => playerAnimator.interact, playerAnimator.shoot, playerAnimator.speed, playerAnimator.animationDir
     {
-        print(name + " sync my anim pls :(");
+        //print(name + " sync my anim pls :(");
         CRAnimSyncs(interact, shoot, speed, animDir);
     }
     [ClientRpc]
@@ -99,7 +98,7 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     {
         if (!isLocalPlayer)
         {
-            print(name + " ok i synced :/ ");
+            //print(name + " ok i synced :/ ");
             playerAnimator.interact = interact;
             playerAnimator.shoot = shoot;
             playerAnimator.speed = speed;
@@ -111,13 +110,51 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     [Command]
     public void CMDSpawnItemObject(Vector3 position, ItemObject.NetworkItemInfo itemInfo)
     {
-        CLTSpawnItemObject(position, itemInfo);
-    }
-    [ClientRpc]
-    public void CLTSpawnItemObject(Vector3 position, ItemObject.NetworkItemInfo itemInfo)
-    {
         ItemObject itemObject = Instantiate(itemObjectPrefab, position, Quaternion.identity).GetComponent<ItemObject>();
         itemObject.Set(itemInfo);
+        IdentityObject identityObject = itemObject.GetComponent<IdentityObject>();
+        IdentityManager.SetObjectID(ref identityObject);
+
+        CLTSpawnItemObject(position, itemInfo, identityObject.ID);
+    }
+    [ClientRpc]
+    public void CLTSpawnItemObject(Vector3 position, ItemObject.NetworkItemInfo itemInfo, int ID)
+    {
+        if (isServer) { return; }
+        ItemObject itemObject = Instantiate(itemObjectPrefab, position, Quaternion.identity).GetComponent<ItemObject>();
+        itemObject.Set(itemInfo);
+        IdentityObject identityObject = itemObject.GetComponent<IdentityObject>();
+        identityObject.ID = ID;
+
+    }
+
+    [Command]
+    public void CMDSynceItemObjects(List<ItemObjectData> itemObjectDatas)
+    {
+        //print("send IO datas");
+        CLTSynceItemObjects(itemObjectDatas);
+    }
+    [ClientRpc]
+    public void CLTSynceItemObjects(List<ItemObjectData> itemObjectDatas)
+    {
+        //print("recive IO datas");
+        ItemObjectSyncer.InitItemObjects(itemObjectDatas);
+    }
+
+
+    [Command]
+    public void CMDDestroyItemObjectAtID(int ID)
+    {
+        CLTDestroyItemObjectAtID(ID);
+    }
+    [ClientRpc]
+    public void CLTDestroyItemObjectAtID(int ID)
+    {
+        IdentityManager.TryGetAtID(ID, out GameObject go);
+        if (go != null)
+        { 
+            Destroy(go);
+        }
     }
 }
 public class PlayerData

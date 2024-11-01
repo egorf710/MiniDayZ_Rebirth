@@ -44,3 +44,7 @@ public interface Initable
         return Initializer.canInit;
     }
 }
+public interface SyncGameObject
+{
+    public bool AlsoSaveMe();
+}

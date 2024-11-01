@@ -21,7 +21,7 @@ public class InventorySlot : MonoBehaviour
     [SerializeField] private TMP_Text durabilityText;
     [SerializeField] private TMP_Text ammoText;
     [SerializeField] private TMP_Text heatText;
-
+    public bool added;
     public void Init()
     {
         if (itemInfo == null || (itemInfo != null && itemInfo.item == null))
@@ -73,14 +73,36 @@ public class InventorySlot : MonoBehaviour
 
         if (itemInfo.insideItems != null)
         {
+            this.itemInfo.insideItems = new List<ItemInfo>();
             for (int i = 0; i < itemInfo.insideItems.Count; i++)
             {
-                if (!insideSlots[i].IsLocked)
+                if (!insideSlots[i].IsLocked && itemInfo.insideItems[i] != null)
                 {
                     insideSlots[i].SetSlot(itemInfo.insideItems[i]);
+                    insideSlots[i].added = true;
+                    this.itemInfo.insideItems.Add(itemInfo.insideItems[i]);
                 }
             }
         }
+
+        if(slotType == ItemType.def && !added)
+        {
+            InventorySlot ps = transform.parent.parent.GetComponent<InventorySlot>();
+            if (ps != null)
+            {
+                if (ps.insideSlots != null)
+                {
+                    ps.itemInfo.insideItems.Add(itemInfo);
+                }
+                else
+                {
+                    ps.itemInfo.insideItems = new List<ItemInfo>();
+                    ps.itemInfo.insideItems.Add(itemInfo);
+                }
+                added = true;
+            }
+        }
+
         itemIcon.sprite = itemInfo.item.item_sprite;
         itemIcon.color = new Color(1, 1, 1, 1);
 
@@ -138,12 +160,24 @@ public class InventorySlot : MonoBehaviour
     public void DropSlot()
     {
         if (IsSlotBlocked) { return; }
+
+        if (slotType == ItemType.def)
+        {
+            InventorySlot ps = transform.parent.parent.GetComponent<InventorySlot>();
+            if (ps != null && added)
+            {
+                ps.itemInfo.insideItems.Clear();
+            }
+        }
+
         InventoryManager.Drop(this);
         InventoryManager.SetActiveDropPanel(false);
         ClearSlot();
     }
     public void ClearSlot()
     {
+        added = false;
+
         bool isWeapon = false;
         if (itemInfo != null && itemInfo.item != null)
         {

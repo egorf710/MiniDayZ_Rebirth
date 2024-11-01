@@ -45,7 +45,8 @@ public class ItemObject : MonoBehaviour, Interactable
             item = itemInfo.item,
             amount = itemInfo.amount,
             durability = itemInfo.durability,
-            ammo = itemInfo.ammo
+            ammo = itemInfo.ammo,
+            insideItems = itemInfo.insideItems
         };
         if (spriteRender != null)
         {
@@ -55,14 +56,22 @@ public class ItemObject : MonoBehaviour, Interactable
     public void Set(NetworkItemInfo itemInfo)
     {
         Item item = InventoryManager.GetItemByName(itemInfo.item);
-        print(item.name);
+        //print(item.name);
+
+        List<ItemInfo> insideItems = new List<ItemInfo>();
+        foreach (var itemJ in itemInfo.insideItems)
+        {
+            insideItems.Add(new ItemInfo(itemJ));
+        }
+
         this.itemInfo = new ItemInfo
         {
             name = item.name,
             item = item,
             amount = itemInfo.amount,
             durability = itemInfo.durability,
-            ammo = itemInfo.ammo
+            ammo = itemInfo.ammo,
+            insideItems = insideItems
         };
         if (spriteRender != null)
         {
@@ -118,7 +127,8 @@ public class ItemObject : MonoBehaviour, Interactable
     {
         if (InventoryManager.AddItem(itemInfo))
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            ServerManager.DestroyItemObjectAtID(GetComponent<IdentityObject>().ID);
         }
     }
 
@@ -148,6 +158,11 @@ public class ItemObject : MonoBehaviour, Interactable
         return true;
     }
 
+    public bool AlsoSaveMe()
+    {
+        return true;
+    }
+
     [Serializable]
     public class ItemInfo
     {
@@ -165,7 +180,20 @@ public class ItemObject : MonoBehaviour, Interactable
             this.amount = itemInfo.amount;
             this.durability = itemInfo.durability;
             this.ammo = itemInfo.ammo;
+            insideItems = itemInfo.insideItems;
+        }
+        public ItemInfo(NetworkItemInfo itemInfo)
+        {
+            this.name = itemInfo.name;
+            this.item = Resources.Load<Item>(itemInfo.item);
+            this.amount = itemInfo.amount;
+            this.durability = itemInfo.durability;
+            this.ammo = itemInfo.ammo;
             insideItems = new List<ItemInfo>();
+            foreach (var itemJ in itemInfo.insideItems)
+            {
+                insideItems.Add(new ItemInfo(itemJ));
+            }
         }
         public ItemInfo()
         {
@@ -187,17 +215,23 @@ public class ItemObject : MonoBehaviour, Interactable
             this.amount = itemInfo.amount;
             this.durability = itemInfo.durability;
             this.ammo = itemInfo.ammo;
-            insideItems = new List<NetworkItemInfo>();
+            insideItems = itemInfo.insideItems;
         }
         public NetworkItemInfo(ItemInfo itemInfo)
         {
             this.name = itemInfo.name;
             this.item = "Items/" + itemInfo.item.item_path + itemInfo.item.name;
-            print(item);
+            //print(item);
             this.amount = itemInfo.amount;
             this.durability = itemInfo.durability;
             this.ammo = itemInfo.ammo;
-            insideItems = new List<NetworkItemInfo>();
+            insideItems =  new List<NetworkItemInfo>();
+            foreach (var itemJ in itemInfo.insideItems)
+            {
+                NetworkItemInfo item = new NetworkItemInfo(itemJ);
+                print(item.item);
+                insideItems.Add(item);
+            }
         }
         public NetworkItemInfo()
         {

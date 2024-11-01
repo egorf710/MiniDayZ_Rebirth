@@ -136,7 +136,7 @@ public class InventoryManager : MonoBehaviour
     }
     public static Item GetItemByName(string name)
     {
-        print(name);
+        //print(name);
         return Resources.Load<Item>(name);
     }
     public void OpenClose()

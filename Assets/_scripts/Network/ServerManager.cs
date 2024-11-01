@@ -4,19 +4,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ServerManager : NetworkBehaviour
+public class ServerManager : NetworkBehaviour, Initable
 {
     [SerializeField] private TargetManager targetManager;
     public static ServerManager instance;
     public List<NetPlayerCase> netPlayers = new List<NetPlayerCase>();
+    public PlayerNetwork playerNetwork;
     private void Awake()
     {
         instance = this;
     }
     public void Init(Transform player)
     {
-        targetManager.Init(player);
+        playerNetwork = player.GetComponent<PlayerNetwork>();
     }
+
     //[Command]
     public void TakeDamage(uint targetNetID, int damage)
     {
@@ -42,6 +44,15 @@ public class ServerManager : NetworkBehaviour
         {
             InventoryManager.SpawnLoot(itemLoots, pos);
         }
+    }
+
+    public void NetUpdate()
+    {
+    }
+
+    public static void DestroyItemObjectAtID(int ID)
+    {
+        instance.playerNetwork.CMDDestroyItemObjectAtID(ID);
     }
 }
 [Serializable]
