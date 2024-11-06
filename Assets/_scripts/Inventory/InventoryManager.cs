@@ -61,18 +61,21 @@ public class InventoryManager : MonoBehaviour
 
                     if (diff < 0)
                     {
-                        slot.SetSlot(itemInfo);
-                        itemInfo.amount = Mathf.Abs(diff);
                         if (!OptionsData.autoDistributeItem)
                         {
                             return false;
+                        }
+                        else
+                        {
+                            slot.SetSlot(itemInfo);
+                            itemInfo.amount = Mathf.Abs(diff);
                         }
                     }
                     else
                     {
                         slot.SetSlot(itemInfo);
                         itemInfo.amount = Mathf.Abs(diff);
-                        //print("add " + itemInfo.item.item_name);
+                        print("add " + itemInfo.item.item_name);
                         return true;
                     }
                 }
@@ -121,6 +124,16 @@ public class InventoryManager : MonoBehaviour
             if (Instance.playerNetwork.isLocalPlayer)
             {
                 Instance.playerNetwork.CMDSpawnItemObject(Instance.player.position, new NetworkItemInfo(inventorySlot.itemInfo));
+            }
+        }
+    }
+    public static void DropAllInventory()
+    {
+        foreach (var slot in Instance.slots)
+        {
+            if (slot.itemInfo != null && slot.itemInfo.item != null && !slot.IsEmpty)
+            {
+                slot.DropSlot();
             }
         }
     }

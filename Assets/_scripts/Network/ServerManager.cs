@@ -54,6 +54,11 @@ public class ServerManager : NetworkBehaviour, Initable
     {
         instance.playerNetwork.CMDDestroyItemObjectAtID(ID);
     }
+
+    public static void TeleportToSpawn()
+    {
+        FindObjectOfType<GameManager>().TeleportToSpawn();
+    }
 }
 [Serializable]
 public struct NetPlayerCase

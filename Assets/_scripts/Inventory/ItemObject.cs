@@ -1,5 +1,4 @@
 using Assets._scripts.Interfaces;
-using Newtonsoft.Json.Linq;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,7 +11,6 @@ public class ItemObject : MonoBehaviour, Interactable
 {
     [SerializeField] private SpriteRenderer spriteRender;
     public ItemInfo itemInfo;
-
     private void Awake()
     {
         spriteRender = GetComponent<SpriteRenderer>();
@@ -226,11 +224,13 @@ public class ItemObject : MonoBehaviour, Interactable
             this.durability = itemInfo.durability;
             this.ammo = itemInfo.ammo;
             insideItems =  new List<NetworkItemInfo>();
-            foreach (var itemJ in itemInfo.insideItems)
+            if (itemInfo.item.slot_count > 0 && itemInfo.insideItems != null)
             {
-                NetworkItemInfo item = new NetworkItemInfo(itemJ);
-                print(item.item);
-                insideItems.Add(item);
+                foreach (var itemJ in itemInfo.insideItems)
+                {
+                    NetworkItemInfo item = new NetworkItemInfo(itemJ);
+                    insideItems.Add(item);
+                }
             }
         }
         public NetworkItemInfo()

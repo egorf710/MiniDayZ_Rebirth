@@ -47,7 +47,7 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
     public int playerHealth
     {
         get { return currentHealth; }
-        set { currentHealth = value; Refresh(); }
+        set { currentHealth = value; Refresh(); if (value <= 0) { RestartPlayer(); } }
     }
     public int playerWater
     {
@@ -294,5 +294,16 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
             playerHealth -= (damage - armor);
         }
         InventoryManager.ClothesDamage(damage <= 10 ? 1 : 2);
+    }
+    public void RestartPlayer()
+    {
+        InventoryManager.DropAllInventory();
+        effectCases.Clear();
+        playerHealth = 100;
+        playerFood = 100;
+        playerWater = 100;
+        playerHeat = 100;
+
+        ServerManager.TeleportToSpawn();
     }
 }

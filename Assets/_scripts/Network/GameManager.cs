@@ -102,6 +102,12 @@ public class GameManager : NetworkManager
 
         Initializer.UpdateNetState();
     }
+
+    public void TeleportToSpawn()
+    {
+        Transform startPos = GameObject.Find("SPAWNPOINT").transform;
+        NetworkClient.localPlayer.transform.position = startPos.position;
+    }
 }
 public struct HellowWorldMessage : NetworkMessage
 {
