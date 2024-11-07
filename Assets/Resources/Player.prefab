@@ -1184,7 +1184,7 @@ MonoBehaviour:
   nextTime: 0
   fireRate: 0
   aim_range: 0
-  playerAnimator: {fileID: 0}
+  playerAnimator: {fileID: 5381595791526305392}
   force: 0
   myPlayerNetwork: {fileID: 3585477976171384407}
   bulletPrefab: {fileID: 0}
@@ -1208,6 +1208,9 @@ MonoBehaviour:
   MyWeaponController: {fileID: 3585477976171384406}
   playerAnimator: {fileID: 5381595791526305392}
   itemObjectPrefab: {fileID: 5862067665477259060, guid: 12d0a6f496fe0204bb2ce01a480f6f61, type: 3}
+  weaponItem: {fileID: 0}
+  bulletPrefab: {fileID: 5780931969531164569, guid: 07f0480a50d750848813582053b3d21f, type: 3}
+  force: 0
 --- !u!114 &3585477976171384424
 MonoBehaviour:
   m_ObjectHideFlags: 0

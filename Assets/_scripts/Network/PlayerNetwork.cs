@@ -4,7 +4,9 @@ using Mirror;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
+using static ItemObject;
 
 public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
 {
@@ -155,6 +157,30 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
         { 
             Destroy(go);
         }
+    }
+
+    [SerializeField] private weaponItem weaponItem;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private float force;
+
+    [Command]
+    public void CMDSetWeapon(string weaponItemName)
+    {
+        weaponItem = InventoryManager.GetItemByName(weaponItemName) as weaponItem;
+        //bulletPrefab = weaponItem.ammo.prefabAmmo;
+        force = weaponItem.force;
+    }
+    [Command]
+    public void CMDShoot(Vector2 targetPos)
+    {
+        CLTShoot(targetPos);
+    }
+    [ClientRpc]
+    public void CLTShoot(Vector2 targetPos)
+    {
+        if (isLocalPlayer) { return; }
+        Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Bullet>();
+        bullet.Init(targetPos, Vector2.Distance(transform.position, targetPos));
     }
 }
 public class PlayerData

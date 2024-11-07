@@ -51,6 +51,10 @@ public class WeaponController : MonoBehaviour
         force = (currentWeaponSlot.itemInfo.item as weaponItem).force;
         bullet_damage = weaponItem.damage;
 
+        if (myPlayerNetwork.isLocalPlayer)
+        {
+            myPlayerNetwork.CMDSetWeapon("Items/" + weaponItem.item_path + weaponItem.name);
+        }
         StartCoroutine(WeaponUpdate());
 
     }
@@ -180,6 +184,7 @@ public class WeaponController : MonoBehaviour
                     //hit
                     Bullet bullet = Instantiate(bulletPrefab2, transform.position, Quaternion.identity).GetComponent<Bullet>();
                     bullet.Init(hit.point, distanceToTarget);
+                    myPlayerNetwork.CMDShoot(hit.point);
                 }
                 else
                 {
@@ -188,10 +193,12 @@ public class WeaponController : MonoBehaviour
                     if (target == null)
                     {
                         bullet.Init(goal, distanceToTarget);
+                        myPlayerNetwork.CMDShoot(goal);
                     }
                     else
                     {
                         bullet.Init(targetPos, target.GetComponent<VulnerableObject>(), bullet_damage, distanceToTarget);
+                        myPlayerNetwork.CMDShoot(targetPos);
                     }
                 }
 
