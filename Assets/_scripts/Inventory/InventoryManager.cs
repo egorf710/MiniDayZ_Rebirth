@@ -5,7 +5,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEditorInternal.Profiling.Memory.Experimental;
+
 using UnityEngine;
 using UnityEngine.UI;
 using static ItemObject;
@@ -38,6 +38,7 @@ public class InventoryManager : MonoBehaviour
                 clothesSlots.ToList().Add(slot);
             }
         }
+        print(clothesSlots.Length);
         SetActiveInventory(true);
         SetActiveInventory(false);
     }
@@ -250,7 +251,7 @@ public class InventoryManager : MonoBehaviour
         return (list.Length > 0 ? list.First() : null);
     }
 
-    private InventorySlot[] clothesSlots = new InventorySlot[5];
+    [ShowInInspector] public InventorySlot[] clothesSlots = new InventorySlot[5];
 
     public static void ClothesDamage(int damage = 1)
     {
@@ -260,7 +261,10 @@ public class InventoryManager : MonoBehaviour
     {
         foreach (var slot in clothesSlots)
         {
-            slot.itemInfo.durability -= damage;
+            if (slot != null && !slot.IsEmpty)
+            {
+                slot.itemInfo.durability -= damage;
+            }
         }
     }
     

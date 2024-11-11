@@ -1,4 +1,5 @@
 
+using Mirror;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,13 +13,14 @@ public class Bullet : MonoBehaviour
         GetComponent<TrailRenderer>().time = distance / speed;
         StartCoroutine(IEUpdate(pos));
     }
-    VulnerableObject target;
+    GameObject target;
     int damage;
-    public void Init(Vector3 pos, VulnerableObject zedBase, int damage, float distance)
+    public void Init(Vector3 pos, GameObject zedBase, int damage, float distance)
     {
         GetComponent<TrailRenderer>().time = distance / speed / 2;
         this.damage = damage;
-        this.target = zedBase;
+        this.target = zedBase.gameObject;
+        print("my target is " + target.name);
         StartCoroutine(IEUpdate(pos));
     }
     IEnumerator IEUpdate(Vector3 pos)
@@ -30,7 +32,15 @@ public class Bullet : MonoBehaviour
         }
         if(target != null)
         {
-            target.TakeDamage(damage);
+            if(target.TryGetComponent<PlayerNetwork>(out PlayerNetwork playerNetwork))
+            {
+                print("i try damage player");
+                NetworkClient.localPlayer.GetComponent<PlayerNetwork>().TakeDamageTo(damage, playerNetwork.netId);
+            }
+            if (target.TryGetComponent(out VulnerableObject component))
+            {
+                component.TakeDamage(damage);
+            }
         }
         Destroy(gameObject);
         yield return null;

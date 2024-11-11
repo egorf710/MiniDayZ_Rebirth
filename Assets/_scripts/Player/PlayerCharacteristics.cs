@@ -292,6 +292,20 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
                 return;
             }
             playerHealth -= (damage - armor);
+            if(!GetComponent<PlayerNetwork>().isLocalPlayer)
+            {
+                DebuMessager.Mess((damage - armor).ToString(), Color.red);
+            }
+        }
+        else
+        {
+            if (UnityEngine.Random.Range(0, 100) <= blockChanse)
+            {
+                //block
+                DebuMessager.Mess("blocked", Color.gray);
+                return;
+            }
+            playerHealth -= damage;
         }
         InventoryManager.ClothesDamage(damage <= 10 ? 1 : 2);
     }

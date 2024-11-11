@@ -1,9 +1,11 @@
 using Assets._scripts.World;
+using Mirror;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
+using static UnityEngine.GraphicsBuffer;
 
 public class TargetManager : MonoBehaviour, Initable
 {
@@ -15,21 +17,15 @@ public class TargetManager : MonoBehaviour, Initable
     private void Awake()
     {
         Instance = this;
+
     }
     public void Init(Transform player)
     {
-
-
         mytransformplayer = player;
 
         myplayer = mytransformplayer.GetComponent<PlayerNetwork>();
 
         PlayerNetwork[] targets = FindObjectsOfType<PlayerNetwork>();
-
-        foreach (var target in targets)
-        {
-            AddTarget(target);
-        }
     }
 
     #region Target
@@ -67,7 +63,7 @@ public class TargetManager : MonoBehaviour, Initable
     {
         if (!Instance.Init() || Instance.myplayer == playerBase || Instance.targetsBases.Contains(playerBase)) { return; }
         Instance.targetsBases.Add(playerBase);
-        //print("add " + playerBase.getTransform().name);
+        print("add " + playerBase.getTransform().name);
     }
     public static void RemoveTarget(AliveTarget playerBase)
     {

@@ -179,27 +179,43 @@ public class WeaponController : MonoBehaviour
 
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, force, 3);
 
-                if(hit.collider != null && GetDistance(transform.position, hit.point) < GetDistance(transform.position, targetPos))
+                if (hit.collider != null && GetDistance(transform.position, hit.point) < GetDistance(transform.position, targetPos))
                 {
                     //hit
-                    Bullet bullet = Instantiate(bulletPrefab2, transform.position, Quaternion.identity).GetComponent<Bullet>();
-                    bullet.Init(hit.point, distanceToTarget);
-                    myPlayerNetwork.CMDShoot(hit.point);
+                    if (target != null && target.TryGetComponent<PlayerNetwork>(out PlayerNetwork pn))
+                    {
+                        Bullet bullet = Instantiate(bulletPrefab2, transform.position, Quaternion.identity).GetComponent<Bullet>();
+                        bullet.Init(hit.point, pn.gameObject, bullet_damage, distanceToTarget);
+                        myPlayerNetwork.CMDShoot(hit.point, bullet_damage, pn.netId);
+                    }
+                    else
+                    {
+                        Bullet bullet = Instantiate(bulletPrefab2, transform.position, Quaternion.identity).GetComponent<Bullet>();
+                        bullet.Init(hit.point, distanceToTarget);
+                        myPlayerNetwork.CMDShoot(hit.point);
+                    }
+                    //print("hit");
                 }
                 else
                 {
                     //miss
-                    Bullet bullet = Instantiate(bulletPrefab2, transform.position, Quaternion.identity).GetComponent<Bullet>();
+                    //Bullet bullet = Instantiate(bulletPrefab2, transform.position, Quaternion.identity).GetComponent<Bullet>();
                     if (target == null)
                     {
-                        bullet.Init(goal, distanceToTarget);
+                        //print("miss");
+                        //bullet.Init(goal, distanceToTarget);
                         myPlayerNetwork.CMDShoot(goal);
                     }
                     else
                     {
-                        bullet.Init(targetPos, target.GetComponent<VulnerableObject>(), bullet_damage, distanceToTarget);
-                        myPlayerNetwork.CMDShoot(targetPos);
+                        if (target.TryGetComponent<PlayerNetwork>(out PlayerNetwork pn))
+                        {
+                            //print("to target");
+                            //bullet.Init(targetPos, pn.gameObject, bullet_damage, distanceToTarget);
+                            myPlayerNetwork.CMDShoot(targetPos, bullet_damage, pn.netId);
+                        }
                     }
+
                 }
 
 /*                Vector2 dir;

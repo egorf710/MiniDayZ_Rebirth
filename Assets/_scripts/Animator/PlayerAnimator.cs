@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Runtime.InteropServices.ComTypes;
 using UnityEngine;
 using UnityEngine.UIElements;
-using static UnityEditor.Progress;
+
 
 public enum AnimationControllerState { none, rifle, pistol}
 public class PlayerAnimator : MonoBehaviour
@@ -2223,7 +2223,7 @@ public class PlayerAnimator : MonoBehaviour
     }
     public string GetAnimClothesData()
     {
-        string data = $"{cur_bodyskin},{cur_head},{cur_body},{cur_pants},{cur_backpack},{cur_hand},{cur_vest}";
+        string data = $"{cur_bodyskin},{cur_head},{cur_body},{cur_pants},{cur_backpack},{cur_hand},{cur_vest},{controllerState == AnimationControllerState.none}";
         return data;
     }
     public void SetAnimClohesData(string data)
@@ -2236,7 +2236,7 @@ public class PlayerAnimator : MonoBehaviour
         cur_backpack = _data[4];
         cur_hand = _data[5];
         cur_vest = _data[6];
-
+        
         //print("RECIVE DATA: " + data);
 
         if (cur_bodyskin == "")
@@ -2295,6 +2295,8 @@ public class PlayerAnimator : MonoBehaviour
         {
             SetNetClothByName(cur_vest);
         }
+
+        controllerState = (_data[7] == "true") ? AnimationControllerState.none : AnimationControllerState.rifle;
     }
     public void ResetAll()
     {

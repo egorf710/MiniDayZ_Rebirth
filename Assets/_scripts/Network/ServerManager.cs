@@ -1,7 +1,9 @@
+using Assets._scripts.World;
 using Mirror;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ServerManager : NetworkBehaviour, Initable
@@ -24,6 +26,17 @@ public class ServerManager : NetworkBehaviour, Initable
     {
         TakeDamageSM(targetNetID, damage);
     }
+    public PlayerNetwork GetPlayer(uint targetNetID)
+    {
+        //print("i find: " + targetNetID);
+        var s = netPlayers.Where(x => x.player.GetComponent<PlayerNetwork>().netId == targetNetID).FirstOrDefault().player.GetComponent<PlayerNetwork>();
+        //print("i finded s: " + s.netId);
+        return s;
+    }
+    public PlayerNetwork GetPlayer(NetworkConnectionToClient conn)
+    {
+        return netPlayers.Where(x => x.conn == conn).FirstOrDefault().player.GetComponent<PlayerNetwork>();
+    }
     //[ClientRpc]
     private void TakeDamageSM(uint targetNetID, int damage)
     {
@@ -45,7 +58,10 @@ public class ServerManager : NetworkBehaviour, Initable
             InventoryManager.SpawnLoot(itemLoots, pos);
         }
     }
-
+    public void TakePlayerDamage(int netID, int damage)
+    {
+        (netPlayers.Where(x => x.player.GetComponent<PlayerNetwork>().netId == netID).FirstOrDefault().player.GetComponent<PlayerNetwork>() as AliveTarget).TakeDamage(damage); 
+    }
     public void NetUpdate()
     {
     }

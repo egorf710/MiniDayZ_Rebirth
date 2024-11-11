@@ -11,15 +11,28 @@ using static ItemObject;
 public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
 {
     [SerializeField] private NetworkManager networkManager;
+    [SerializeField] public ServerManager serverManager;
     [SerializeField] WeaponController MyWeaponController;
     [Space]
     [Header("SyncData")]
     public PlayerAnimator playerAnimator;
 
+    private void Start()
+    {
+        if (!isLocalPlayer)
+        {
+            TargetManager.AddTarget(this);
+            gameObject.layer = 8;
+        }
+        serverManager = FindObjectOfType<ServerManager>();
+    }
     public void Init(WeaponController myWeaponController)
     {
         networkManager = FindObjectOfType<NetworkManager>();
+
         MyWeaponController = myWeaponController;
+
+
     }
     //ClientPRC
     public void ServerPlayerShoot()
@@ -44,7 +57,10 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
         return transform;
     }
 
-    public void TakeDamage(int damage) { }
+    public void TakeDamage(int damage)
+    {
+        GetComponent<PlayerCharacteristics>().TakeDamage(damage);
+    }
 
     public uint getNetID()
     {
@@ -173,14 +189,40 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     [Command]
     public void CMDShoot(Vector2 targetPos)
     {
+        Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Bullet>();
+        bullet.Init(targetPos, Vector2.Distance(transform.position, targetPos));
+
+        CLTShoot(targetPos);
+    }
+    [Command]
+    public void CMDShoot(Vector2 targetPos, int damage, uint targetNetID)
+    {
+        Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Bullet>();
+        GameObject targetPlayer = serverManager.GetPlayer(targetNetID).gameObject;
+        //print("target on serve is: " + targetPlayer.name);
+        bullet.Init(targetPos, targetPlayer, damage, Vector2.Distance(transform.position, targetPos));
+
         CLTShoot(targetPos);
     }
     [ClientRpc]
     public void CLTShoot(Vector2 targetPos)
     {
-        if (isLocalPlayer) { return; }
+        if (isServer) { return; }
         Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Bullet>();
         bullet.Init(targetPos, Vector2.Distance(transform.position, targetPos));
+    }
+
+    [Command]
+    public void TakeDamageTo(int damage, uint netId)
+    {
+        //print("on server: damages to " + netId);
+        serverManager.GetPlayer(netId).TRTakeDame(damage);
+    }
+    [TargetRpc]
+    public void TRTakeDame(int damage)
+    {
+        //print("i take a damage " + damage);
+        TakeDamage(damage);
     }
 }
 public class PlayerData
