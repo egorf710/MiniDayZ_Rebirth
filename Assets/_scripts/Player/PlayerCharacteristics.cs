@@ -1,4 +1,5 @@
 using Assets._scripts.Interfaces;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -197,10 +198,12 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
                         if (effect.effectTime >= Time.time)
                         {
                             playerHealthRegen = 0;
+                            stopRegeneration = true;
                         }
                         else
                         {
                             sickImage.gameObject.SetActive(false);
+                            stopRegeneration = false;
                         }
                     }
                 }
@@ -281,7 +284,7 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
         });
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, int code = 0)
     {
         if(armor < damage)
         {
@@ -291,7 +294,19 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
                 DebuMessager.Mess("blocked", Color.gray);
                 return;
             }
-            playerHealth -= (damage - armor);
+            if(code == 1)
+            {
+                SetBleedingParticle(5);
+                if (UnityEngine.Random.Range(0, 5) <= 1)
+                {
+                    SetEffect(Effect.Bleeding, 30);
+                }
+                playerHealth -= (damage - armor);
+            }
+            else
+            {
+                playerHealth -= (damage - armor);
+            }
             if(!GetComponent<PlayerNetwork>().isLocalPlayer)
             {
                 DebuMessager.Mess((damage - armor).ToString(), Color.red);
@@ -305,7 +320,19 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
                 DebuMessager.Mess("blocked", Color.gray);
                 return;
             }
-            playerHealth -= damage;
+            if (code == 1)
+            {
+                SetBleedingParticle(5);
+                if (UnityEngine.Random.Range(0, 5) <= 1)
+                {
+                    SetEffect(Effect.Bleeding, 30);
+                }
+                playerHealth -= damage;
+            }
+            else
+            {
+                playerHealth -= damage;
+            }
         }
         InventoryManager.ClothesDamage(damage <= 10 ? 1 : 2);
     }
@@ -318,6 +345,24 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
         playerWater = 100;
         playerHeat = 100;
 
-        ServerManager.TeleportToSpawn();
+        ServerManager.SetActivePlayer(false);
+        ServerManager.TeleportToSpawn(10);
+    }
+    public void SetBleedingParticle(int power)
+    {
+        StartCoroutine(IESpawnBleed(power));
+    }
+    private IEnumerator IESpawnBleed(int power)
+    {
+        for (int i = 0; i < power; i++)
+        {
+            ParticleSystem particleSystem = Instantiate(bleedingParticlePrefab, transform).GetComponent<ParticleSystem>();
+            var main = particleSystem.main;
+            main.duration = 4;
+            particleSystem.Play();
+            Destroy(particleSystem.gameObject, 9);
+
+            yield return new WaitForSeconds(0.05f);
+        }
     }
 }

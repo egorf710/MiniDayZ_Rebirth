@@ -35,7 +35,7 @@ public class Bullet : MonoBehaviour
             if(target.TryGetComponent<PlayerNetwork>(out PlayerNetwork playerNetwork))
             {
                 print("i try damage player");
-                NetworkClient.localPlayer.GetComponent<PlayerNetwork>().TakeDamageTo(damage, playerNetwork.netId);
+                NetworkClient.localPlayer.GetComponent<PlayerNetwork>().TakeDamageTo(damage, playerNetwork.netId, 1);
             }
             if (target.TryGetComponent(out VulnerableObject component))
             {

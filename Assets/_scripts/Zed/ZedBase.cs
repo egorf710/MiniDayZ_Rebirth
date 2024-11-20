@@ -206,7 +206,7 @@ public class ZedBase : NetworkBehaviour, AliveTarget
         }
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, int code = 0)
     {
         int attackChanse = Random.Range(0, 100);
         if(attackChanse <= vulnerabledData.blockChanse)

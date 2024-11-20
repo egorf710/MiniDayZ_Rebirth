@@ -57,9 +57,9 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
         return transform;
     }
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, int code = 0)
     {
-        GetComponent<PlayerCharacteristics>().TakeDamage(damage);
+        GetComponent<PlayerCharacteristics>().TakeDamage(damage, code);
     }
 
     public uint getNetID()
@@ -213,16 +213,41 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     }
 
     [Command]
-    public void TakeDamageTo(int damage, uint netId)
+    public void TakeDamageTo(int damage, uint netId, int code)
     {
         //print("on server: damages to " + netId);
-        serverManager.GetPlayer(netId).TRTakeDame(damage);
+        serverManager.GetPlayer(netId).TRTakeDame(damage, code);
     }
     [TargetRpc]
-    public void TRTakeDame(int damage)
+    public void TRTakeDame(int damage, int code)
     {
         //print("i take a damage " + damage);
-        TakeDamage(damage);
+        TakeDamage(damage, code);
+    }
+
+    public void SetActivePlayerSkin(bool b)
+    {
+        CMDSetActivePlayerSkin(b);
+    }
+    [Command]
+    public void CMDSetActivePlayerSkin(bool b)
+    {
+        CLTSetActivePlayerSkin(b);
+    }
+    [ClientRpc]
+    public void CLTSetActivePlayerSkin(bool b)
+    {
+        transform.GetChild(0).gameObject.GetComponent<PlayerAnimator>().SetActive(b);
+        GetComponent<PlayerMove>().enabled = b;
+        GetComponent<WeaponController>().enabled = b;
+        if(!b)
+        {
+            TargetManager.RemoveTarget(this);
+        }
+        else
+        {
+            TargetManager.AddTarget(this);
+        }
     }
 }
 public class PlayerData

@@ -1,9 +1,11 @@
 using Assets._scripts.World;
+using Microsoft.VisualBasic;
 using Mirror;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.VersionControl;
 using UnityEngine;
 
 public class ServerManager : NetworkBehaviour, Initable
@@ -71,9 +73,25 @@ public class ServerManager : NetworkBehaviour, Initable
         instance.playerNetwork.CMDDestroyItemObjectAtID(ID);
     }
 
-    public static void TeleportToSpawn()
+    public static void TeleportToSpawn(int secondRestart)
     {
+        instance.StartCoroutine(instance.IEStartFunAtTime(secondRestart));
+    }
+    private IEnumerator IEStartFunAtTime(float time)
+    {
+
+        yield return new WaitForSeconds(time);
         FindObjectOfType<GameManager>().TeleportToSpawn();
+        SetActivePlayer(true);
+    }
+
+    public static void SetActivePlayer(bool b)
+    {
+        instance.ISetActivePlayer(b);
+    }
+    private void ISetActivePlayer(bool b)
+    {
+        playerNetwork.SetActivePlayerSkin(b);
     }
 }
 [Serializable]

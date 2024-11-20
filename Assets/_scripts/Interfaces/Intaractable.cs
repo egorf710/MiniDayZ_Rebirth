@@ -31,7 +31,7 @@ namespace Assets._scripts.Interfaces
     }
     public interface Vulnerable
     {
-        public void TakeDamage(int damage);
+        public void TakeDamage(int damage, int code = 0); //code - Unified ID target
     }
     public interface Initializable
     {
