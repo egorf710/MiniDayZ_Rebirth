@@ -125,6 +125,10 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     }
     [Header("Inventory")]
     [SerializeField] private GameObject itemObjectPrefab;
+    public void TOCMDSpawnItemObject(Vector3 position, ItemObject.NetworkItemInfo itemInfo)
+    {
+        CMDSpawnItemObject(position, itemInfo);
+    }
     [Command]
     public void CMDSpawnItemObject(Vector3 position, ItemObject.NetworkItemInfo itemInfo)
     {
@@ -248,6 +252,22 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
         {
             TargetManager.AddTarget(this);
         }
+    }
+
+    public void TOCMDSetBleedingParticle(int power)
+    {
+        CMDSetBleedingParticle(power);
+    }
+    [Command]
+    private void CMDSetBleedingParticle(int power)
+    {
+        CLTSetBleedingParticle(power);
+    }
+    [ClientRpc]
+    private void CLTSetBleedingParticle(int power)
+    {
+        if (isServer) { return; }
+        GetComponent<PlayerCharacteristics>().SetBleedingParticle(power);
     }
 }
 public class PlayerData

@@ -1,9 +1,10 @@
 using Assets._scripts.Interfaces;
+using Mirror;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Tree : MonoBehaviour, Interactable, Revivedable
+public class Tree : NetworkBehaviour, Interactable, Revivedable
 {
     private int strength;
     [SerializeField] private AudioClip[] treeFallClip;
@@ -31,14 +32,29 @@ public class Tree : MonoBehaviour, Interactable, Revivedable
                 InventoryManager.InstantiateItem(item, loot.amount);
             }
 
-            mySpriteRenderer.color = new Color(1, 1, 1, 0);
-            deathTreeObject.SetActive(true);
-            IsAlive = false;
+            //mySpriteRenderer.color = new Color(1, 1, 1, 0);
+            //deathTreeObject.SetActive(true);
+            if (ServerManager.GetMyPlayer().isLocalPlayer)
+            {
+                CMDSetAlive(false);
+            }
+            //IsAlive = false;
         }
 
-        InventoryManager.Instance.player.GetComponent<PlayerMove>().GoToPoint(myparent.transform.position);
+        //InventoryManager.Instance.player.GetComponent<PlayerMove>().GoToPoint(myparent.transform.position);
     }
-
+    [Command(requiresAuthority = false)]
+    private void CMDSetAlive(bool b)
+    {
+        CLTSetAlive(b);
+    }
+    [ClientRpc]
+    private void CLTSetAlive(bool b)
+    {
+        mySpriteRenderer.color = new Color(1, 1, 1, b ? 1 : 0);
+        deathTreeObject.SetActive(!b);
+        IsAlive = b;
+    }
     public bool IsInteractable(out string message)
     {
         message = "(OK) игрок может срубить дерево: " + gameObject.name;
@@ -55,16 +71,18 @@ public class Tree : MonoBehaviour, Interactable, Revivedable
         {
             myparent = transform;
         }
-
-        Revived();
     }
 
     public void Revived()
     {
         strength = Random.Range(2, 3);
-        deathTreeObject.SetActive(false);
-        mySpriteRenderer.color = new Color(1, 1, 1, 1);
-        IsAlive = true;
+        //deathTreeObject.SetActive(false);
+        if (ServerManager.GetMyPlayer().isLocalPlayer)
+        {
+            CMDSetAlive(true);
+        }
+        //mySpriteRenderer.color = new Color(1, 1, 1, 1);
+        //IsAlive = true;
     }
 
     public Vector2 GetPosition()

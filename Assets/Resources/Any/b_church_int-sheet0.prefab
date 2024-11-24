@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 5.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1988199208615613745}
   m_RootOrder: 0
@@ -42,6 +43,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -109,6 +111,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -1.3200002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1988199207995968750}
   m_Father: {fileID: 7450271541707603323}
@@ -152,6 +155,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -4.176, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 533048336296335420}
   m_Father: {fileID: 7450271541707603323}
@@ -180,7 +184,6 @@ GameObject:
   - component: {fileID: 7471082340573188380}
   - component: {fileID: 929581909265547210}
   - component: {fileID: 5815654023477311102}
-  - component: {fileID: 3854824032915634114}
   - component: {fileID: 4289744647093498190}
   m_Layer: 0
   m_Name: door
@@ -199,6 +202,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7461464181690415944}
   m_RootOrder: 0
@@ -214,6 +218,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -306,24 +311,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7083282, y: 0.765903}
   m_EdgeRadius: 0
---- !u!114 &3854824032915634114
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3854484156230259540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c06672b8f1025c4da81338bd7efe1fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  door_collision: {fileID: 929581909265547210}
-  door_sprites:
-  - {fileID: -2076536662615040616, guid: b84d42488cac2854f98c817ce4b9dd0c, type: 3}
-  - {fileID: 3907698353072890667, guid: b84d42488cac2854f98c817ce4b9dd0c, type: 3}
-  opened: 0
-  bunker: 0
 --- !u!208 &4289744647093498190
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -367,6 +354,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.7999878, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7450271540077986578}
   m_Father: {fileID: 7450271541707603323}
@@ -394,7 +382,6 @@ GameObject:
   - component: {fileID: 7450271539896823571}
   - component: {fileID: 7450271539896823568}
   - component: {fileID: 7450271539896823569}
-  - component: {fileID: 7450271539896823582}
   m_Layer: 16
   m_Name: roof
   m_TagString: Untagged
@@ -412,6 +399,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 8.046, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7450271541130290144}
   m_RootOrder: 0
@@ -427,6 +415,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -509,29 +498,6 @@ PolygonCollider2D:
       - {x: -2.4439888, y: -7.002923}
       - {x: -1.1639252, y: -7.003194}
       - {x: -0.9382458, y: -7.828662}
---- !u!114 &7450271539896823582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7450271539896823570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0aef92f953ba05043a57ec75bb4f64f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roof:
-  - {fileID: 7450271539896823568}
-  - {fileID: 1988199207995968751}
-  - {fileID: 7471082340573188380}
-  darck_fog: {fileID: 0}
-  mecamera: {fileID: 0}
-  min_alpha: 0.15
-  size_range: 4
-  normal_size: 5
-  player: {fileID: 0}
-  conctrete: 0
 --- !u!1 &7450271540077986581
 GameObject:
   m_ObjectHideFlags: 0
@@ -571,6 +537,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -1.7999878, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2140060987985547269}
   m_RootOrder: 0
@@ -586,6 +553,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -892,6 +860,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -4.166, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7450271539896823571}
   m_Father: {fileID: 7450271541707603323}
@@ -917,7 +886,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7450271541707603323}
-  - component: {fileID: 7450271541707603320}
   m_Layer: 0
   m_Name: b_church_int-sheet0
   m_TagString: Untagged
@@ -935,6 +903,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2140060987985547269}
   - {fileID: 7450271541130290144}
@@ -944,77 +913,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7450271541707603320
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7450271541707603322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a98b3f950ff5c943a5bc49e15e5e350, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loot_point:
-  - {fileID: 7450271541893553974}
-  spawn_offset: {x: -3, y: 3, z: -0.6, w: 0.6}
-  loot_list:
-  - name: "\u042F\u0431\u043B\u043E\u043A\u043E"
-    chanse: 90
-    item: {fileID: 11400000, guid: 286c698cca1cbf44d946b5f8a7839730, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u0411\u0430\u043D\u0430\u043D"
-    chanse: 90
-    item: {fileID: 11400000, guid: bb619eb27c8f5c040bf4dd5049d9f618, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u0426\u0443\u043A\u0438\u043D\u0438"
-    chanse: 90
-    item: {fileID: 11400000, guid: 701780d8f51dcfa4ba9866e91cd8ba46, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u0410\u043F\u0435\u043B\u044C\u0441\u0438\u043D"
-    chanse: 90
-    item: {fileID: 11400000, guid: 6798d82dab4cd774789e554868ff1897, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u0422\u0440\u044F\u043F\u043A\u0430"
-    chanse: 80
-    item: {fileID: 11400000, guid: 0c8060a92b8d18940adfc9ce8ac15f45, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u041F\u043B\u0430\u0442\u044C\u0435"
-    chanse: 60
-    item: {fileID: 11400000, guid: e70c0b18d49923c42b7d1e14e8992316, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 20, y: 80}
-    ammo: {x: 0, y: 0}
-  - name: "\u041A\u0443\u0440\u0442\u043A\u0430"
-    chanse: 50
-    item: {fileID: 11400000, guid: c7effad74864adf47b8ed3ba4fe7c37b, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 20, y: 80}
-    ammo: {x: 0, y: 0}
-  - name: "\u0420\u0435\u043C\u0438\u043D\u0433\u0442\u043E\u043D"
-    chanse: 40
-    item: {fileID: 11400000, guid: f1ba3a8cb8cc63e4e85aef19507ad3cf, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 20, y: 80}
-    ammo: {x: 0, y: 7}
-  - name: "\u041F\u0430\u0442\u0440\u043E\u043D\u044B 12 \u043A\u0430\u043B\u0438\u0431\u0440\u0430"
-    chanse: 40
-    item: {fileID: 11400000, guid: bba2f31819f95444f9c3b0dacdd7efd8, type: 2}
-    amount: {x: 1, y: 7}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  spawn_count: 2
 --- !u!1 &7450271541893553865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1041,6 +939,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.03, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7450271541707603323}
   m_RootOrder: 3

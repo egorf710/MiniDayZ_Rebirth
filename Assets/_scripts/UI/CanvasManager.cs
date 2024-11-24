@@ -25,6 +25,7 @@ public class CanvasManager : MonoBehaviour, Initable
     [SerializeField] private Image speedUpImage;
     [SerializeField] private Image sickImage;
     [SerializeField] public ZedAimOutline aimOutline;
+    [SerializeField] public GameObject deathPanel;
 
     private void Awake()
     {
@@ -47,6 +48,10 @@ public class CanvasManager : MonoBehaviour, Initable
     {
         Instance.interactButton.GetComponent<Image>().sprite = Instance.defaultInteractSprite;
         Instance.interactButton.GetComponent<Image>().color = new Color(1, 1, 1, b ? 1 : 0.6f);
+    }
+    public static void SetActiveDeathPanel(bool b)
+    {
+        Instance.deathPanel.SetActive(b);
     }
     private void Interact()
     {

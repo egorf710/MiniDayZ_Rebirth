@@ -127,8 +127,11 @@ public class WeaponManager : MonoBehaviour
     /// Switch to pistol when pislot and rifle == null
     /// Switch to rifle when pistol != null or pistol == null
     /// </summary>
+    /// 
+    public bool playerHasWeapon;
     public void SwitchToNew()
     {
+        playerHasWeapon = true;
         if (!weaponSlots[2].SlotIsNull())
         {
             SwitchWeapon(weaponSlots[2]);
@@ -146,6 +149,7 @@ public class WeaponManager : MonoBehaviour
             {
                 InventoryManager.SetClothes(weaponSlots[0].itemInfo.item);
             }
+            playerHasWeapon = false;
         }
     }
     public bool PlayerHasAxeInHand()

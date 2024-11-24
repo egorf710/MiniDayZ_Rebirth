@@ -160,7 +160,7 @@ public class InventorySlot : MonoBehaviour
 
             InventoryManager.SetClothes(this.itemInfo.item, true);
 
-            InventoryManager.SwitchToNewWeapon();
+            InventoryManager.SwitchToNewWeapon(false);
         }
 
         IsEmpty = false;
@@ -238,7 +238,7 @@ public class InventorySlot : MonoBehaviour
 
         if (isWeapon)
         {
-            InventoryManager.SwitchToNewWeapon();
+            InventoryManager.SwitchToNewWeapon(false);
         }
 
         IsEmpty = true;

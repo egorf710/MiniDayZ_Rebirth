@@ -11,8 +11,6 @@ GameObject:
   - component: {fileID: 5518163290074495373}
   - component: {fileID: 5518163290074495375}
   - component: {fileID: 5518163290074495372}
-  - component: {fileID: 5681390265076987905}
-  - component: {fileID: 2082385583607874937}
   m_Layer: 0
   m_Name: tree_pine2-sheet0
   m_TagString: Untagged
@@ -30,6 +28,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.04901123, y: 1.6319885, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5518163291563452844}
   m_RootOrder: 0
@@ -45,6 +44,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -111,34 +111,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.43439865, y: 0.22973514}
   m_EdgeRadius: 0
---- !u!114 &5681390265076987905
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5518163290074495370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 612312841895ea9448401b4a4eab672f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2082385583607874937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5518163290074495370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_OverrideArea: 1
-  m_Area: 1
-  m_IgnoreFromBuild: 0
-  m_AffectedAgents: ffffffff
 --- !u!1 &5518163291563452845
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,6 +138,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5518163290074495373}
   m_Father: {fileID: 0}

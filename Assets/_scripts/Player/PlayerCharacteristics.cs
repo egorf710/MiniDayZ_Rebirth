@@ -11,6 +11,7 @@ public enum Effect { Bleeding, Regeneration, SickProtection, Sick, Adrinaline, E
 
 public class PlayerCharacteristics : MonoBehaviour, Vulnerable
 {
+    [SerializeField] private PlayerNetwork playerNetwork;
     [SerializeField] private Slider healthField;
     [SerializeField] private Slider waterField;
     [SerializeField] private Slider foodField;
@@ -223,7 +224,8 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
     }
     private void Start()
     {
-        if(!GetComponent<PlayerNetwork>().isLocalPlayer) { return; }
+        playerNetwork = GetComponent<PlayerNetwork>();
+        if (!playerNetwork.isLocalPlayer) { return; }
         playerHealth = 100;
         playerFood = 100;
         playerWater = 100;
@@ -297,6 +299,8 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
             if(code == 1)
             {
                 SetBleedingParticle(5);
+                playerNetwork.TOCMDSetBleedingParticle(5);
+
                 if (UnityEngine.Random.Range(0, 5) <= 1)
                 {
                     SetEffect(Effect.Bleeding, 30);
@@ -323,6 +327,8 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
             if (code == 1)
             {
                 SetBleedingParticle(5);
+                playerNetwork.TOCMDSetBleedingParticle(5);
+
                 if (UnityEngine.Random.Range(0, 5) <= 1)
                 {
                     SetEffect(Effect.Bleeding, 30);
@@ -345,6 +351,7 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
         playerWater = 100;
         playerHeat = 100;
 
+        CanvasManager.SetActiveDeathPanel(true);
         ServerManager.SetActivePlayer(false);
         ServerManager.TeleportToSpawn(10);
     }

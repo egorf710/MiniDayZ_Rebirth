@@ -140,8 +140,16 @@ public class InventoryManager : MonoBehaviour
     }
     public static void InstantiateItem(Item item, int amount = 1, int durability = 100, int ammo = 0)
     {
-        ItemObject itemObject = Instantiate(Instance.itemObjectPrefab, Instance.player.position, Quaternion.identity).GetComponent<ItemObject>();
-        itemObject.Set(item, amount, durability, ammo);
+        ItemInfo itemInfo = new ItemInfo
+        {
+            name = item.name,
+            item = item,
+            amount = amount,
+            durability = durability,
+            ammo = ammo
+        };
+
+        Instance.playerNetwork.TOCMDSpawnItemObject(Instance.player.position, new NetworkItemInfo(itemInfo));
     }
     public static void InstantiateItem(ItemInfo itemInfo)
     {
@@ -235,8 +243,9 @@ public class InventoryManager : MonoBehaviour
     /// Switch to pistol when pislot and rifle == null
     /// Switch to rifle when pistol != null or pistol == null
     /// </summary>
-    public static void SwitchToNewWeapon()
+    public static void SwitchToNewWeapon(bool mainSwitch = false)
     {
+        if(Instance.weaponManager.playerHasWeapon && mainSwitch) { return; }
         Instance.weaponManager.SwitchToNew();
     }
     public static InventorySlot GetSlotByItem(Item item)

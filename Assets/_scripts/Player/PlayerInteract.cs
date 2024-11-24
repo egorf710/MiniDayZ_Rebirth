@@ -13,8 +13,11 @@ public class PlayerInteract : MonoBehaviour
     private List<ItemObject> itemObjects = new List<ItemObject>();
     [SerializeField] private Tree aroundTree;
     [SerializeField] private InventorySlot handSlot;
+    [SerializeField] private PlayerNetwork playerNetwork;
     private void Start()
     {
+        playerNetwork = playerMove.GetComponent<PlayerNetwork>();
+        if (!playerNetwork.isLocalPlayer) { return; }
         StartCoroutine(IEInteractChecker());
     }
     public void Interact()

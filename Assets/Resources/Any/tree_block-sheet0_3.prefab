@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2434118115605406996}
   - component: {fileID: 2434118115605406999}
-  - component: {fileID: 2434118115605406998}
   - component: {fileID: 2434118115605406997}
   - component: {fileID: 6247404281882341258}
   m_Layer: 0
@@ -30,6 +29,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.16601562, y: 1.8289585, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2434118116178855423}
   m_RootOrder: 0
@@ -45,6 +45,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -85,18 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2434118115605406998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2434118115605407019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 612312841895ea9448401b4a4eab672f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &2434118115605406997
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -170,6 +159,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.23, y: -9.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2434118115605406996}
   m_Father: {fileID: 0}

@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4556024121506521959}
-  - component: {fileID: 4556024121506521956}
   m_Layer: 0
   m_Name: b_deer_stand-sheet0
   m_TagString: Untagged
@@ -27,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7981829719985334471}
   - {fileID: 1970132558961355489}
@@ -34,121 +34,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4556024121506521956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4556024121506521958}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a98b3f950ff5c943a5bc49e15e5e350, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  loot_point:
-  - {fileID: 4556024121597313322}
-  spawn_offset: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
-  loot_list:
-  - name: "\u042F\u0431\u043B\u043E\u043A\u043E"
-    chanse: 90
-    item: {fileID: 11400000, guid: 286c698cca1cbf44d946b5f8a7839730, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u0411\u0430\u043D\u0430\u043D"
-    chanse: 90
-    item: {fileID: 11400000, guid: bb619eb27c8f5c040bf4dd5049d9f618, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u0410\u043F\u0435\u043B\u044C\u0441\u0438\u043D"
-    chanse: 90
-    item: {fileID: 11400000, guid: 6798d82dab4cd774789e554868ff1897, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u0426\u0443\u043A\u0438\u043D\u0438"
-    chanse: 85
-    item: {fileID: 11400000, guid: 701780d8f51dcfa4ba9866e91cd8ba46, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u041A\u043E\u043D\u0441\u0435\u0440\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435
-      \u0431\u043E\u0431\u044B"
-    chanse: 70
-    item: {fileID: 11400000, guid: 9663ffe70b386754c846a310b6d3a5f6, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u041F\u0435\u043F\u0441\u0438"
-    chanse: 70
-    item: {fileID: 11400000, guid: f0b92e2af50bc2a4fb9a8bbeb229e8f1, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u041A\u043E\u043A\u0430 \u043A\u043E\u043B\u0430"
-    chanse: 70
-    item: {fileID: 11400000, guid: d159aec597301bc468a1e3e6b4797c01, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u041A\u0432\u0430\u0441"
-    chanse: 68
-    item: {fileID: 11400000, guid: b75b46448488d9c448055bd6671eaab6, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u0420\u0438\u0441"
-    chanse: 68
-    item: {fileID: 11400000, guid: 03cccd9139a15d14a96cd811c6f51d20, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u0420\u0438\u0441"
-    chanse: 70
-    item: {fileID: 11400000, guid: 03cccd9139a15d14a96cd811c6f51d20, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u0421\u043F\u0440\u0430\u0439\u0442"
-    chanse: 70
-    item: {fileID: 11400000, guid: 0b6236e7b094008448190d6573e1ecd4, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u0421\u043F\u0440\u0430\u0439\u0442"
-    chanse: 70
-    item: {fileID: 11400000, guid: 0b6236e7b094008448190d6573e1ecd4, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u0411\u043E\u043B\u0433\u0430\u0440\u0441\u043A\u0438\u0439 \u043F\u0435\u0440\u0435\u0446"
-    chanse: 70
-    item: {fileID: 11400000, guid: b9d695ead86bbfe4a9dba766a9ca4a30, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u041F\u0438\u0432\u043E"
-    chanse: 60
-    item: {fileID: 11400000, guid: dc13255da95b02f448393e5128bf3d0f, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u041A\u043E\u043D\u0441\u0435\u0440\u0432\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439
-      \u0422\u0443\u043D\u0435\u0446"
-    chanse: 60
-    item: {fileID: 11400000, guid: 89393273d8714c64b8dd590a21e05a19, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  - name: "\u0414\u0436\u0438\u043D\u0441\u044B"
-    chanse: 60
-    item: {fileID: 11400000, guid: 90cbcdf55407ed141bad90900fbe7b7b, type: 2}
-    amount: {x: 1, y: 1}
-    durability: {x: 1, y: 1}
-    ammo: {x: 0, y: 0}
-  spawn_count: 1
 --- !u!1 &4556024121597313237
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,6 +60,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.15, y: -1.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4556024121506521959}
   m_RootOrder: 2
@@ -208,6 +94,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7981829719985334471}
   m_RootOrder: 0
@@ -223,6 +110,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -332,6 +220,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4556024121506521959}
   m_RootOrder: 1
@@ -347,6 +236,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -414,6 +304,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4556024122062281998}
   m_Father: {fileID: 4556024121506521959}
