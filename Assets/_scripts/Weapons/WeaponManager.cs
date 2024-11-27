@@ -178,15 +178,29 @@ public class WeaponManager : MonoBehaviour
         }
         return false;
     }
-    public void ReloadFor(InventorySlot ammoSlot, int weaponSlotIndex)
+    public void ReloadFor(ref InventorySlot ammoSlot, int weaponSlotIndex)
     {
-        weaponController.ReloadWeaponFor(ammoSlot, weaponSlots[weaponSlotIndex]);
+        var reloadedWeaponSlot = weaponSlots[weaponSlotIndex];
+        if (weaponController.FullAmmo(reloadedWeaponSlot) || reloading || reloadedWeaponSlot.IsSlotBlocked) { return; }
+        ReloadImageAnimator.gameObject.SetActive(true);
+        ReloadImageAnimator.speed = 1 / (reloadedWeaponSlot.itemInfo.item as weaponItem).reload_time;
+        reloadedWeaponSlot.IsSlotBlocked = true;
+        reloading = true;
+
+        StartCoroutine(IEEndReload(reloadedWeaponSlot, (reloadedWeaponSlot.itemInfo.item as weaponItem).reload_time));
+
+        weaponController.ReloadWeaponFor(ref ammoSlot, ref reloadedWeaponSlot);
+
+        weaponSlots[weaponSlotIndex] = reloadedWeaponSlot;
     }
     public void RefreshWeaponUI()
     {
         foreach (var slot in weaponSlots)
         {
-            slot.RefreshAmmo();
+            if (!slot.IsEmpty)
+            {
+                slot.RefreshAmmo();
+            }
         }
     }
     public void ShootButtonDown()
@@ -208,6 +222,14 @@ public class WeaponManager : MonoBehaviour
     private void EndReload()
     {
         currentWeaponSlot.IsSlotBlocked = false;
+        reloading = false;
+        ReloadImageAnimator.gameObject.SetActive(false);
+    }
+    private IEnumerator IEEndReload(InventorySlot weaponSlot, float time)
+    {
+        yield return new WaitForSeconds(time);
+        weaponSlot.IsSlotBlocked = false;
+        print("dall");
         reloading = false;
         ReloadImageAnimator.gameObject.SetActive(false);
     }

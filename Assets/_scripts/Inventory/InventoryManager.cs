@@ -253,10 +253,10 @@ public class InventoryManager : MonoBehaviour
         if (Instance.slots.Count == 0) { return null; }
 
         var list = Instance.slots.Where(x => !x.SlotIsNull() && x.itemInfo.item == item).ToArray();
-        foreach (var itemv in list)
-        {
-            Debug.Log(itemv.itemInfo.item.item_name);
-        }
+        //foreach (var itemv in list)
+        //{
+        //    Debug.Log(itemv.itemInfo.item.item_name);
+        //}
         return (list.Length > 0 ? list.First() : null);
     }
 

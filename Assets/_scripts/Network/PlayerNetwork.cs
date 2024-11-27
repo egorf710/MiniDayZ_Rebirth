@@ -44,11 +44,11 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     }
 
     //Command
-    public void ReloadMe(int ammo, float realoadTime, bool clearSlot = false)
+    public void ReloadMe(int ammo, float realoadTime, bool clearSlot = false, InventorySlot ammSlot = null, InventorySlot weaponSlot = null)
     {
         if (MyWeaponController.PlayerReadyToRealod())
         {
-            StartCoroutine(MyWeaponController.FeelAmmo(ammo, realoadTime, clearSlot));
+            StartCoroutine(MyWeaponController.FeelAmmo(ammo, realoadTime, clearSlot, ammSlot, weaponSlot));
         }
     }
 

@@ -132,14 +132,14 @@ public class WeaponController : MonoBehaviour
             myPlayerNetwork.ReloadMe(feeledAmmo, weaponItem.reload_time, clearSlot);
         }
     }
-    public void ReloadWeaponFor(InventorySlot ammSlot, InventorySlot weaponSlot)
+    public void ReloadWeaponFor(ref InventorySlot ammSlot, ref InventorySlot weaponSlot)
     {
         {
             included_ammo = weaponSlot.itemInfo.ammo;
 
             InventorySlot ammo_slot = ammSlot;
             int ammo_in_slot = ammo_slot.itemInfo.amount; //скок есть в инвентаре 18
-            int need_ammo = weaponItem.mag_size - weaponSlot.itemInfo.ammo; //скоко нужно зарядить 6-2 = 4
+            int need_ammo = (weaponSlot.itemInfo.item as weaponItem).mag_size - weaponSlot.itemInfo.ammo; //скоко нужно зарядить 6-2 = 4
             int feeledAmmo = 0;
             bool clearSlot = false;
             if (ammo_in_slot > need_ammo)
@@ -148,7 +148,7 @@ public class WeaponController : MonoBehaviour
                 ammo_slot.itemInfo.amount = colled; // 14
                 //included_ammo = weaponItem.mag_size; //full
 
-                feeledAmmo = weaponItem.mag_size;
+                feeledAmmo = (weaponSlot.itemInfo.item as weaponItem).mag_size;
 
 
             }
@@ -160,21 +160,52 @@ public class WeaponController : MonoBehaviour
                 ammo_slot.ClearSlot();
             }
             ammo_slot.Refresh();
-            weaponSlot.itemInfo.ammo = included_ammo;
+
             weaponSlot.RefreshAmmo();
-            myPlayerNetwork.ReloadMe(feeledAmmo, weaponItem.reload_time, clearSlot);
+            myPlayerNetwork.ReloadMe(feeledAmmo, (weaponSlot.itemInfo.item as weaponItem).reload_time, clearSlot, ammSlot, weaponSlot);
         }
     }
-    public IEnumerator FeelAmmo(int ammo, float realodTime, bool clearSlot)
+    public IEnumerator FeelAmmo(int ammo, float realodTime, bool clearSlot, InventorySlot ammoSlot = null, InventorySlot weaponSlot = null)
     {
         yield return new WaitForSeconds(realodTime);
         included_ammo = ammo;
         FindAnyObjectByType<WeaponManager>().RefreshWeaponUI();
-        if (clearSlot) { InventoryManager.GetSlotByItem(weaponItem.ammo).ClearSlot(); }
+        if(weaponSlot != null)
+        {
+            weaponSlot.itemInfo.ammo = included_ammo;
+            weaponSlot.RefreshAmmo();
+        }
+        else
+        {
+            currentWeaponSlot.itemInfo.ammo = included_ammo;
+            currentWeaponSlot.RefreshAmmo();
+        }
+        if (clearSlot)
+        {
+            if (ammoSlot == null)
+            {
+                InventoryManager.GetSlotByItem(weaponItem.ammo).ClearSlot();
+            }
+            else
+            {
+                ammoSlot.ClearSlot();
+            }
+        }
+        else if(ammoSlot != null)
+        {
+            ammoSlot.Refresh();
+        }
     }
-    public bool FullAmmo()
+    public bool FullAmmo(InventorySlot weaponSlot = null)
     {
-        return (weaponItem != null && weaponItem.mag_size == included_ammo);
+        if (weaponSlot != null)
+        {
+            return ((weaponSlot.itemInfo.item as weaponItem).mag_size == included_ammo);
+        }
+        else
+        {
+            return (weaponItem != null && weaponItem.mag_size == included_ammo);
+        }
     }
     public bool PlayerHaveAmmo()
     {

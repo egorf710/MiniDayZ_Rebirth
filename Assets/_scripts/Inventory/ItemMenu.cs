@@ -15,12 +15,21 @@ public class ItemMenu : MonoBehaviour
     [SerializeField] private TMP_Text mainInteractText;
     [SerializeField] private TMP_Text secondInteractText;
     [SerializeField] private GameObject itemInfoPanel;
+    [SerializeField] private GameObject unFocusedCloserPanel;
     private WeaponManager weaponManager;
     private InventorySlot usesSlot;
     private Item usesItem;
     private void Start()
     {
         weaponManager = FindAnyObjectByType<WeaponManager>();
+    }
+    private void OnEnable()
+    {
+        unFocusedCloserPanel.SetActive(true);
+    }
+    private void OnDisable()
+    {
+        unFocusedCloserPanel.SetActive(false);
     }
     public void Set(InventorySlot slot)
     {
@@ -71,7 +80,7 @@ public class ItemMenu : MonoBehaviour
             string debugMess;
             if (weaponManager.canReload(usesItem as ammoItem, true, out debugMess))
             {
-                weaponManager.ReloadFor(usesSlot, 2);
+                weaponManager.ReloadFor(ref usesSlot, 2);
             }
             else
             {
@@ -86,7 +95,8 @@ public class ItemMenu : MonoBehaviour
             string debugMess;
             if (weaponManager.canReload(usesItem as ammoItem, false, out debugMess))
             {
-                weaponManager.ReloadFor(usesSlot, 1);
+                weaponManager.ReloadFor(ref usesSlot, 1);
+                gameObject.SetActive(false);
             }
             else
             {

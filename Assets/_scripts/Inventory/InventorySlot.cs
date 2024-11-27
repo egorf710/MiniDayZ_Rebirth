@@ -147,7 +147,10 @@ public class InventorySlot : MonoBehaviour
             else if (itemInfo.item is weaponItem)
             {
                 durabilityText.text = ((this.itemInfo.item as weaponItem).durability / 100 * itemInfo.durability) + "%";
-                ammoText.text = this.itemInfo.ammo.ToString();
+                if((this.itemInfo.item as weaponItem).ammo != null)
+                {
+                    ammoText.text = this.itemInfo.ammo.ToString();
+                }
             }
 
 
