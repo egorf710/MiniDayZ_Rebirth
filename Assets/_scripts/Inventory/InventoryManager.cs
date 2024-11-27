@@ -76,7 +76,7 @@ public class InventoryManager : MonoBehaviour
                     {
                         slot.SetSlot(itemInfo);
                         itemInfo.amount = Mathf.Abs(diff);
-                        print("add " + itemInfo.item.item_name);
+                        //print("add " + itemInfo.item.item_name);
                         return true;
                     }
                 }

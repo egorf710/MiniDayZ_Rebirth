@@ -71,6 +71,24 @@ public class WeaponManager : MonoBehaviour
         RefreshUI(index);
     }
 
+    public bool canReload(ammoItem ammoItem, bool mainWeapon, out string message)
+    {
+        message = "Не подходит.";
+        if (mainWeapon && weaponSlots[2].SlotIsNull())
+        {
+            message = "У меня нет основного оружия.";
+            return false;
+        }
+        if (!mainWeapon && weaponSlots[1].SlotIsNull())
+        {
+            message = "У меня нет доп оружия.";
+            return false;
+        }
+        return mainWeapon ? (weaponSlots[2].itemInfo.item as weaponItem).ammo == ammoItem
+            :
+            (weaponSlots[1].itemInfo.item as weaponItem).ammo == ammoItem;
+    }
+
     /// <summary>
     /// index - current weapon slot index
     /// </summary>
@@ -159,6 +177,17 @@ public class WeaponManager : MonoBehaviour
             return currentWeaponSlot.itemInfo.item.name.Contains("axe");
         }
         return false;
+    }
+    public void ReloadFor(InventorySlot ammoSlot, int weaponSlotIndex)
+    {
+        weaponController.ReloadWeaponFor(ammoSlot, weaponSlots[weaponSlotIndex]);
+    }
+    public void RefreshWeaponUI()
+    {
+        foreach (var slot in weaponSlots)
+        {
+            slot.RefreshAmmo();
+        }
     }
     public void ShootButtonDown()
     {

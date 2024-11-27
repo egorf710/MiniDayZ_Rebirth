@@ -15,8 +15,13 @@ public class ItemMenu : MonoBehaviour
     [SerializeField] private TMP_Text mainInteractText;
     [SerializeField] private TMP_Text secondInteractText;
     [SerializeField] private GameObject itemInfoPanel;
+    private WeaponManager weaponManager;
     private InventorySlot usesSlot;
     private Item usesItem;
+    private void Start()
+    {
+        weaponManager = FindAnyObjectByType<WeaponManager>();
+    }
     public void Set(InventorySlot slot)
     {
         itemIcon.sprite = slot.itemInfo.item.item_sprite;
@@ -28,6 +33,8 @@ public class ItemMenu : MonoBehaviour
         if(usesItem is ammoItem)
         {
             secondInteractButton.gameObject.SetActive(true);
+            mainInteractText.text = "Зарядить в основное";
+            secondInteractText.text = "Зарядить в дополнительное";
         }
         else
         {
@@ -59,10 +66,33 @@ public class ItemMenu : MonoBehaviour
         {
             foodItem fi = usesItem as foodItem;
         }
+        else if(usesItem is ammoItem)
+        {
+            string debugMess;
+            if (weaponManager.canReload(usesItem as ammoItem, true, out debugMess))
+            {
+                weaponManager.ReloadFor(usesSlot, 2);
+            }
+            else
+            {
+                DebuMessager.Mess(debugMess, Color.red);
+            }
+        }
     }
     public void SecondInteract()
     {
-
+        if (usesItem is ammoItem)
+        {
+            string debugMess;
+            if (weaponManager.canReload(usesItem as ammoItem, false, out debugMess))
+            {
+                weaponManager.ReloadFor(usesSlot, 1);
+            }
+            else
+            {
+                DebuMessager.Mess(debugMess, Color.red);
+            }
+        }
     }
     public void Drop()
     {
