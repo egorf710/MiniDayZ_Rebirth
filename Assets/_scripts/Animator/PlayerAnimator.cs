@@ -143,6 +143,9 @@ public class PlayerAnimator : MonoBehaviour
 
         yield return new WaitForSeconds(time);
 
+        playerNetwork.GetComponent<PlayerMove>().enabled = true;
+        playerNetwork.GetComponent<WeaponController>().itsEnable = true;
+
         interact = false;
     } 
     private IEnumerator IEInteractAnimating()
@@ -433,6 +436,8 @@ public class PlayerAnimator : MonoBehaviour
     public bool Interact(float time = 1)
     {
         if (interact) { return false; }
+        playerNetwork.GetComponent<PlayerMove>().enabled = false;
+        playerNetwork.GetComponent<WeaponController>().itsEnable = false;
         StartCoroutine(IEInteract(time));
         return true;
     }

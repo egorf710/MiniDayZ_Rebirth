@@ -17,11 +17,13 @@ public class ItemMenu : MonoBehaviour
     [SerializeField] private GameObject itemInfoPanel;
     [SerializeField] private GameObject unFocusedCloserPanel;
     private WeaponManager weaponManager;
+    private PlayerNetwork playerNetwork;
     private InventorySlot usesSlot;
     private Item usesItem;
     private void Start()
     {
         weaponManager = FindAnyObjectByType<WeaponManager>();
+        playerNetwork = weaponManager.weaponController.GetComponent<PlayerNetwork>();//TODO
     }
     private void OnEnable()
     {
@@ -39,6 +41,7 @@ public class ItemMenu : MonoBehaviour
         itemTitle.text = slot.itemInfo.item.item_name;
         usesSlot = slot;
         usesItem = slot.itemInfo.item;
+
         if(usesItem is ammoItem)
         {
             secondInteractButton.gameObject.SetActive(true);
@@ -74,13 +77,33 @@ public class ItemMenu : MonoBehaviour
         if(usesItem is foodItem)
         {
             foodItem fi = usesItem as foodItem;
+
+            if (!playerNetwork.playerAnimator.interact)
+            {
+                playerNetwork.playerAnimator.Interact(2f);
+
+                var ph = playerNetwork.GetComponent<PlayerCharacteristics>();
+                InventoryManager.SetActiveInventory(false);
+
+                ph.playerFood += fi.food_point;
+                ph.playerHealth += fi.heal_point;
+                ph.playerWater += fi.water_point;
+                ph.playerHeat += fi.temperature_point;
+
+                usesSlot.itemInfo.amount--;
+                if(usesSlot.itemInfo.amount <= 0)
+                {
+                    usesSlot.ClearSlot();
+                    gameObject.SetActive(false);
+                }
+            }
         }
         else if(usesItem is ammoItem)
         {
             string debugMess;
             if (weaponManager.canReload(usesItem as ammoItem, true, out debugMess))
             {
-                weaponManager.ReloadFor(ref usesSlot, 2);
+                weaponManager.ReloadFor(usesSlot, 2);
             }
             else
             {
@@ -95,7 +118,7 @@ public class ItemMenu : MonoBehaviour
             string debugMess;
             if (weaponManager.canReload(usesItem as ammoItem, false, out debugMess))
             {
-                weaponManager.ReloadFor(ref usesSlot, 1);
+                weaponManager.ReloadFor(usesSlot, 1);
                 gameObject.SetActive(false);
             }
             else

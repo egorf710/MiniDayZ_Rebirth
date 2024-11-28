@@ -15,7 +15,7 @@ public class WeaponManager : MonoBehaviour
     [SerializeField] private List<InventorySlot> weaponSlots;
     [SerializeField] private InventorySlot currentWeaponSlot;
     [SerializeField] private GameObject[] weaponUI;
-    [SerializeField] private WeaponController weaponController;
+    [SerializeField] public WeaponController weaponController;
     [SerializeField] private Animator ReloadImageAnimator;
     private bool reloading;
     //public void Init(params dynamic[] args)
@@ -74,19 +74,41 @@ public class WeaponManager : MonoBehaviour
     public bool canReload(ammoItem ammoItem, bool mainWeapon, out string message)
     {
         message = "Не подходит.";
-        if (mainWeapon && weaponSlots[2].SlotIsNull())
+        if (weaponSlots[1].SlotIsNull() && weaponSlots[2].SlotIsNull())
         {
-            message = "У меня нет основного оружия.";
-            return false;
+            message = "У меня нет огнестрельного оружия";
         }
-        if (!mainWeapon && weaponSlots[1].SlotIsNull())
+        else if (mainWeapon)
         {
-            message = "У меня нет доп оружия.";
-            return false;
+            if (weaponSlots[2].SlotIsNull())
+            {
+                message = "У меня нет основного оружия.";
+            }
+            else
+            {
+                if (weaponController.FullAmmo(weaponSlots[2]))
+                {
+                    message = "Уже полностью заряжено."; return false;
+                }
+                return ((weaponSlots[2].itemInfo.item as weaponItem).ammo == ammoItem);
+            }
         }
-        return mainWeapon ? (weaponSlots[2].itemInfo.item as weaponItem).ammo == ammoItem
-            :
-            (weaponSlots[1].itemInfo.item as weaponItem).ammo == ammoItem;
+        else if (!mainWeapon)
+        {
+            if (weaponSlots[1].SlotIsNull())
+            {
+                message = "У меня нет доп оружия.";
+            }
+            else
+            {
+                if (weaponController.FullAmmo(weaponSlots[1]))
+                {
+                    message = "Уже полностью заряжено."; return false;
+                }
+                return ((weaponSlots[1].itemInfo.item as weaponItem).ammo == ammoItem);
+            }
+        }
+        return false;
     }
 
     /// <summary>
@@ -178,10 +200,11 @@ public class WeaponManager : MonoBehaviour
         }
         return false;
     }
-    public void ReloadFor(ref InventorySlot ammoSlot, int weaponSlotIndex)
+    public void ReloadFor(InventorySlot ammoSlot, int weaponSlotIndex)
     {
         var reloadedWeaponSlot = weaponSlots[weaponSlotIndex];
-        if (weaponController.FullAmmo(reloadedWeaponSlot) || reloading || reloadedWeaponSlot.IsSlotBlocked) { return; }
+
+        if (!weaponController.itsEnable || weaponController.FullAmmo(reloadedWeaponSlot) || reloading || reloadedWeaponSlot.IsSlotBlocked) { return; }
         ReloadImageAnimator.gameObject.SetActive(true);
         ReloadImageAnimator.speed = 1 / (reloadedWeaponSlot.itemInfo.item as weaponItem).reload_time;
         reloadedWeaponSlot.IsSlotBlocked = true;
@@ -189,10 +212,11 @@ public class WeaponManager : MonoBehaviour
 
         StartCoroutine(IEEndReload(reloadedWeaponSlot, (reloadedWeaponSlot.itemInfo.item as weaponItem).reload_time));
 
-        weaponController.ReloadWeaponFor(ref ammoSlot, ref reloadedWeaponSlot);
+        weaponController.ReloadWeaponFor(ammoSlot, reloadedWeaponSlot);
 
         weaponSlots[weaponSlotIndex] = reloadedWeaponSlot;
     }
+
     public void RefreshWeaponUI()
     {
         foreach (var slot in weaponSlots)
@@ -229,7 +253,6 @@ public class WeaponManager : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         weaponSlot.IsSlotBlocked = false;
-        print("dall");
         reloading = false;
         ReloadImageAnimator.gameObject.SetActive(false);
     }

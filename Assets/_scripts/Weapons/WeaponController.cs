@@ -28,7 +28,7 @@ public class WeaponController : MonoBehaviour
     [Space]
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private GameObject bulletPrefab2;
-
+    [HideInInspector] public bool itsEnable;
     private Vector3 TARGET_OFFSET = new Vector3(0, 0.5f);
     private int bullet_damage = 0;
     public void SetWeapon(InventorySlot inventorySlot)
@@ -86,7 +86,7 @@ public class WeaponController : MonoBehaviour
                 aimOutline.HideAndStop();
                 this.target = null;
             }
-            if (shootButtonDown)
+            if (shootButtonDown && itsEnable)
             {
                 PlayerShoot();
             }
@@ -101,6 +101,7 @@ public class WeaponController : MonoBehaviour
     }
     public void ReloadWeapon()
     {
+        if (!itsEnable) { return; }
         {
             included_ammo = currentWeaponSlot.itemInfo.ammo;
 
@@ -132,10 +133,10 @@ public class WeaponController : MonoBehaviour
             myPlayerNetwork.ReloadMe(feeledAmmo, weaponItem.reload_time, clearSlot);
         }
     }
-    public void ReloadWeaponFor(ref InventorySlot ammSlot, ref InventorySlot weaponSlot)
+    public void ReloadWeaponFor(InventorySlot ammSlot, InventorySlot weaponSlot)
     {
         {
-            included_ammo = weaponSlot.itemInfo.ammo;
+            //included_ammo = weaponSlot.itemInfo.ammo;
 
             InventorySlot ammo_slot = ammSlot;
             int ammo_in_slot = ammo_slot.itemInfo.amount; //скок есть в инвентаре 18
@@ -147,10 +148,7 @@ public class WeaponController : MonoBehaviour
                 int colled = ammo_in_slot - need_ammo; // 18-4 = 14
                 ammo_slot.itemInfo.amount = colled; // 14
                 //included_ammo = weaponItem.mag_size; //full
-
                 feeledAmmo = (weaponSlot.itemInfo.item as weaponItem).mag_size;
-
-
             }
             else
             {
@@ -168,15 +166,19 @@ public class WeaponController : MonoBehaviour
     public IEnumerator FeelAmmo(int ammo, float realodTime, bool clearSlot, InventorySlot ammoSlot = null, InventorySlot weaponSlot = null)
     {
         yield return new WaitForSeconds(realodTime);
-        included_ammo = ammo;
-        FindAnyObjectByType<WeaponManager>().RefreshWeaponUI();
+
         if(weaponSlot != null)
         {
-            weaponSlot.itemInfo.ammo = included_ammo;
+            if(weaponSlot == currentWeaponSlot)
+            {
+                included_ammo = ammo;
+            }
+            weaponSlot.itemInfo.ammo = ammo;
             weaponSlot.RefreshAmmo();
         }
         else
         {
+            included_ammo = ammo;
             currentWeaponSlot.itemInfo.ammo = included_ammo;
             currentWeaponSlot.RefreshAmmo();
         }
@@ -200,7 +202,7 @@ public class WeaponController : MonoBehaviour
     {
         if (weaponSlot != null)
         {
-            return ((weaponSlot.itemInfo.item as weaponItem).mag_size == included_ammo);
+            return ((weaponSlot.itemInfo.item as weaponItem).mag_size == weaponSlot.itemInfo.ammo);
         }
         else
         {
@@ -218,7 +220,7 @@ public class WeaponController : MonoBehaviour
     }
     public void Shoot()
     {
-        if (Time.time > nextTime && included_ammo > 0)
+        if (Time.time > nextTime && included_ammo > 0 && itsEnable)
         {
             nextTime = Time.time + fireRate;
             included_ammo--;
@@ -345,6 +347,10 @@ public class WeaponController : MonoBehaviour
         return (Time.time > nextTime && included_ammo > 0);
     }
     public bool PlayerReadyToRealod()
+    {
+        return (InventoryManager.GetSlotByItem(weaponItem.ammo) != null) && InventoryManager.GetSlotByItem(weaponItem.ammo).itemInfo.amount > 0;
+    }
+    public bool PlayerReadyToRealod(weaponItem weaponItem)
     {
         return (InventoryManager.GetSlotByItem(weaponItem.ammo) != null) && InventoryManager.GetSlotByItem(weaponItem.ammo).itemInfo.amount > 0;
     }

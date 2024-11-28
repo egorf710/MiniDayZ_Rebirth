@@ -46,9 +46,19 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     //Command
     public void ReloadMe(int ammo, float realoadTime, bool clearSlot = false, InventorySlot ammSlot = null, InventorySlot weaponSlot = null)
     {
-        if (MyWeaponController.PlayerReadyToRealod())
+        if (weaponSlot != null)
         {
-            StartCoroutine(MyWeaponController.FeelAmmo(ammo, realoadTime, clearSlot, ammSlot, weaponSlot));
+            if (MyWeaponController.PlayerReadyToRealod(weaponSlot.itemInfo.item as weaponItem))
+            {
+                StartCoroutine(MyWeaponController.FeelAmmo(ammo, realoadTime, clearSlot, ammSlot, weaponSlot));
+            }
+        }
+        else
+        {
+            if (MyWeaponController.PlayerReadyToRealod())
+            {
+                StartCoroutine(MyWeaponController.FeelAmmo(ammo, realoadTime, clearSlot));
+            }
         }
     }
 
