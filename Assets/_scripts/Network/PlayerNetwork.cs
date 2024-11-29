@@ -127,7 +127,7 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
         if (!isLocalPlayer)
         {
             //print(name + " ok i synced :/ ");
-            playerAnimator.interact = interact;
+            playerAnimator.INTERACT = interact;
             playerAnimator.shoot = shoot;
             playerAnimator.speed = speed;
             playerAnimator.animationDir = animDir;

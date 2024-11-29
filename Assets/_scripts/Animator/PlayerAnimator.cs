@@ -132,6 +132,14 @@ public class PlayerAnimator : MonoBehaviour
                 rep = 0;
             }
             rep++;
+
+            while (INTERACT)
+            {
+                if (index > 3) { index = 0; }
+                AnimInteract(ref index);
+                yield return new WaitForSeconds(1 / AnimationSpeed);
+            }
+
             yield return new WaitForSeconds(1 / AnimationSpeed);
         }
     }
