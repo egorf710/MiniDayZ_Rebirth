@@ -18,7 +18,7 @@ public class WeaponController : MonoBehaviour
     [SerializeField] private Transform target;
     [SerializeField] private int included_ammo;
     public bool shootButtonDown;
-    [SerializeField] private float spread;
+    //[SerializeField] private float spread;
     [SerializeField] private float nextTime = 0f;
     [SerializeField] private float fireRate;
     [SerializeField] private float aim_range;
@@ -28,11 +28,12 @@ public class WeaponController : MonoBehaviour
     [Space]
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private GameObject bulletPrefab2;
-    [HideInInspector] public bool itsEnable;
+    public bool itsEnable;
     private Vector3 TARGET_OFFSET = new Vector3(0, 0.5f);
     private int bullet_damage = 0;
     public void SetWeapon(InventorySlot inventorySlot)
     {
+        itsEnable = true;
         if(inventorySlot == null || (inventorySlot != null && inventorySlot.slotType == ItemType.melee))
         {
             currentWeaponSlot = null;
@@ -86,10 +87,7 @@ public class WeaponController : MonoBehaviour
                 aimOutline.HideAndStop();
                 this.target = null;
             }
-            if (shootButtonDown && itsEnable)
-            {
-                PlayerShoot();
-            }
+
 
             aim_range -= Time.deltaTime * weaponItem.aim_speed * 9;
             aim_range = Mathf.Clamp(aim_range, 0f, weaponItem.spread.y);
@@ -98,6 +96,13 @@ public class WeaponController : MonoBehaviour
             yield return new WaitForSeconds(0.35f);
         }
         aimOutline.HideAndStop();
+    }
+    private void Update()
+    {
+        if (shootButtonDown && itsEnable)
+        {
+            PlayerShoot();
+        }
     }
     public void ReloadWeapon()
     {
@@ -216,7 +221,8 @@ public class WeaponController : MonoBehaviour
     }
     public void PlayerShoot()
     {
-        myPlayerNetwork.ServerPlayerShoot();
+        Shoot();
+        //myPlayerNetwork.ServerPlayerShoot();
     }
     public void Shoot()
     {
@@ -233,6 +239,7 @@ public class WeaponController : MonoBehaviour
                 Vector3 dir = playerAnimator.animationDir;
                 Vector3 targetPos = Vector3.zero;
                 float distanceToTarget = force;
+
                 if (target != null)
                 {
 
@@ -240,16 +247,23 @@ public class WeaponController : MonoBehaviour
                     dir = new Vector2(targetPos.x - transform.position.x, targetPos.y - transform.position.y);
 
                     distanceToTarget = GetDistance(transform.position, targetPos); //TODO неправильно задаЄтс€ точка остановки пули когда стрел€ю во врага
+
                 }
+                Vector3 shootDir = dir;
+
+                float randomAngle = UnityEngine.Random.Range(-aim_range, aim_range);
+
+                Vector3 randomPerpendicular = Quaternion.Euler(0, 0, randomAngle) * shootDir;
+                dir = new Vector3(randomPerpendicular.x, randomPerpendicular.y, 0);
+
 
                 Vector2 goal = dir.normalized * distanceToTarget + transform.position;
-
                 RaycastHit2D hit = Physics2D.Raycast(transform.position, dir, force, 3);
 
-                if (hit.collider != null && GetDistance(transform.position, hit.point) < GetDistance(transform.position, targetPos))
+                if (hit.collider != null)
                 {
                     //hit
-                    if (target != null && target.TryGetComponent<PlayerNetwork>(out PlayerNetwork pn))
+                    if (target != null && target.TryGetComponent<PlayerNetwork>(out PlayerNetwork pn) && GetDistance(transform.position, hit.point) < GetDistance(transform.position, targetPos))
                     {
                         Bullet bullet = Instantiate(bulletPrefab2, transform.position, Quaternion.identity).GetComponent<Bullet>();
                         bullet.Init(hit.point, pn.gameObject, bullet_damage, distanceToTarget);
@@ -279,7 +293,7 @@ public class WeaponController : MonoBehaviour
                         {
                             //print("to target");
                             //bullet.Init(targetPos, pn.gameObject, bullet_damage, distanceToTarget);
-                            myPlayerNetwork.CMDShoot(targetPos, bullet_damage, pn.netId);
+                            myPlayerNetwork.CMDShoot(goal, bullet_damage, pn.netId);
                         }
                     }
 

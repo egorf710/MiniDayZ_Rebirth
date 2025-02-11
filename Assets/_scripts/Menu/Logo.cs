@@ -13,12 +13,16 @@ public class Logo : MonoBehaviour
     [SerializeField] private GameObject mainButtons;
 
     [SerializeField] private Vector3 _upPos, _downPos, _logoPos;
+    [SerializeField] private Vector3 _upPos2, _downPos2, _logoPos2;
 
     private void Start()
     {
         _upPos = up.transform.position;
         _downPos = down.transform.position;
         _logoPos = logo.transform.position;
+        _upPos2 = upPos.transform.position;
+        _downPos2 = downPos.transform.position;
+        _logoPos2 = logoPos.transform.position;
         StartCoroutine(IEMoveLogo());
         StartCoroutine(IEMoveBG());
     }
@@ -67,8 +71,9 @@ public class Logo : MonoBehaviour
     IEnumerator IEMoveBG()
     {
         yield return new WaitForSeconds(2);
-        while (up.transform.position != upPos.position || down.transform.position != downPos.position)
+        while ((int)up.transform.position.y != (int)_upPos2.y || (int)down.transform.position.y != (int)_downPos2.y)
         {
+
             up.transform.position = Vector2.MoveTowards(up.transform.position, upPos.transform.position, speed * Time.deltaTime);
             down.transform.position = Vector2.MoveTowards(down.transform.position, downPos.transform.position, speed * Time.deltaTime);
             yield return new WaitForSeconds(0.02f);

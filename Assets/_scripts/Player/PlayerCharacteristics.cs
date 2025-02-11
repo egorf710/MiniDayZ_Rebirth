@@ -345,11 +345,12 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
     public void RestartPlayer()
     {
         InventoryManager.DropAllInventory();
-        effectCases.Clear();
+
         playerHealth = 100;
         playerFood = 100;
         playerWater = 100;
         playerHeat = 100;
+        effectCases.Clear();
 
         CanvasManager.SetActiveDeathPanel(true);
         ServerManager.SetActivePlayer(false);

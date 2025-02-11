@@ -20,7 +20,7 @@ public class Bullet : MonoBehaviour
         GetComponent<TrailRenderer>().time = distance / speed / 2;
         this.damage = damage;
         this.target = zedBase.gameObject;
-        print("my target is " + target.name);
+        //print("my target is " + target.name);
         StartCoroutine(IEUpdate(pos));
     }
     IEnumerator IEUpdate(Vector3 pos)
@@ -30,11 +30,11 @@ public class Bullet : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, pos, (delta * Time.deltaTime));
             yield return new WaitForFixedUpdate();
         }
-        if(target != null)
+        if(target != null && Vector2.Distance(transform.position, target.transform.position) < 0.5f)
         {
             if(target.TryGetComponent<PlayerNetwork>(out PlayerNetwork playerNetwork))
             {
-                print("i try damage player");
+                //print("i try damage player");
                 NetworkClient.localPlayer.GetComponent<PlayerNetwork>().TakeDamageTo(damage, playerNetwork.netId, 1);
             }
             if (target.TryGetComponent(out VulnerableObject component))

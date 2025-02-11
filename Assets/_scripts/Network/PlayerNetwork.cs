@@ -37,10 +37,11 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     //ClientPRC
     public void ServerPlayerShoot()
     {
-        if (MyWeaponController.PlayerReadyToShoot())
-        {
-            MyWeaponController.Shoot();
-        }
+        MyWeaponController.Shoot();
+        //if (MyWeaponController.PlayerReadyToShoot())
+        //{
+        //    MyWeaponController.Shoot();
+        //}
     }
 
     //Command
