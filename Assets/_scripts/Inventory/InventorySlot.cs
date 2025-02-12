@@ -250,7 +250,7 @@ public class InventorySlot : MonoBehaviour
 
     public void Refresh()
     {
-        if(this.itemInfo == null) { ClearSlot(); return; }
+        if(this.itemInfo == null || this.itemInfo.amount <= 0) { ClearSlot(); return; }//what?? :|
         {
             if (this.itemInfo.amount > this.itemInfo.item.item_max_amount)
             {
@@ -258,11 +258,11 @@ public class InventorySlot : MonoBehaviour
             }
             if (this.itemInfo.durability > 100)
             {
-                this.itemInfo.amount = 100;
+                this.itemInfo.durability = 100;
             }
             if (this.itemInfo.durability < 0)
             {
-                this.itemInfo.amount = 0;
+                this.itemInfo.durability = 0;
             }
         }
 
@@ -287,6 +287,7 @@ public class InventorySlot : MonoBehaviour
         if (itemInfo.item.item_type == ItemType.pants || itemInfo.item.item_type == ItemType.body || itemInfo.item.item_type == ItemType.head || itemInfo.item.item_type == ItemType.shield)
         {
             armorItem item = itemInfo.item as armorItem;
+            heatText.text = "";
             if (item.heat > 0)
             {
                 heatText.text += "Тепло +" + item.heat.ToString();

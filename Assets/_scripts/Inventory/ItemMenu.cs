@@ -1,10 +1,11 @@
+using Assets._scripts.Interfaces;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemMenu : MonoBehaviour
+public class ItemMenu : MonoBehaviour, Initable
 {
     [SerializeField] private Button mainInteractButton;
     [SerializeField] private Button secondInteractButton;
@@ -19,11 +20,15 @@ public class ItemMenu : MonoBehaviour
     private WeaponManager weaponManager;
     private PlayerNetwork playerNetwork;
     private InventorySlot usesSlot;
+    private InventorySlot targetSlot;
     private Item usesItem;
-    private void Start()
+    public static ItemMenu Instance;
+    public void Init(Transform player)
     {
+        Instance = this;
         weaponManager = FindAnyObjectByType<WeaponManager>();
-        playerNetwork = weaponManager.weaponController.GetComponent<PlayerNetwork>();//TODO
+        playerNetwork = player.GetComponent<PlayerNetwork>();//TODO
+        gameObject.SetActive(false);
     }
     private void OnEnable()
     {
@@ -71,9 +76,25 @@ public class ItemMenu : MonoBehaviour
             }
             mainInteractText.text = food ? "Съесть" : "Выпить";
         }
+        if(usesSlot.itemInfo.item.name == "duct tape")
+        {
+            if (targetSlot != null && !targetSlot.SlotIsNull())
+            {
+                mainInteractText.text = "Починить +15%";
+                mainInteractButton.gameObject.SetActive(true);
+                secondInteractButton.gameObject.SetActive(false);
+            }
+            else
+            {
+                mainInteractButton.gameObject.SetActive(false);
+                secondInteractButton.gameObject.SetActive(false);
+            }
+            gameObject.SetActive(true);
+        }
     }
     public void Interact()
     {
+        if(usesSlot == null || usesSlot.SlotIsNull()) { gameObject.SetActive(false); return; }
         if(usesItem is foodItem)
         {
             foodItem fi = usesItem as foodItem;
@@ -91,7 +112,7 @@ public class ItemMenu : MonoBehaviour
                 ph.playerHeat += fi.temperature_point;
 
                 usesSlot.itemInfo.amount--;
-                if(usesSlot.itemInfo.amount <= 0)
+                if(usesSlot.itemInfo.amount <= 0)//TODO {set: get;}
                 {
                     usesSlot.ClearSlot();
                     gameObject.SetActive(false);
@@ -110,6 +131,18 @@ public class ItemMenu : MonoBehaviour
                 DebuMessager.Mess(debugMess, Color.red);
             }
         }
+        else if(usesSlot.itemInfo.item.name == "duct tape")
+        {
+            if (targetSlot == null || targetSlot.SlotIsNull()) { gameObject.SetActive(false); return; }
+            if (targetSlot.itemInfo.item is armorItem && targetSlot.itemInfo.durability < 100)
+            {
+                targetSlot.itemInfo.durability += 15;
+                usesSlot.itemInfo.amount--;
+            }
+            gameObject.SetActive(false);
+            targetSlot.Refresh();
+            usesSlot.Refresh();
+        }
     }
     public void SecondInteract()
     {
@@ -127,6 +160,17 @@ public class ItemMenu : MonoBehaviour
             }
         }
     }
+    public static bool CanSlotInteract(InventorySlot interactSlot, InventorySlot targetSlot)
+    {
+        if(interactSlot.itemInfo.item.name == "duct tape")
+        {
+            Instance.targetSlot = targetSlot;
+            Instance.usesSlot = interactSlot;
+            Instance.Set(interactSlot);
+            return true;
+        }
+        return false;
+    }
     public void Drop()
     {
         usesSlot.DropSlot();
@@ -135,5 +179,10 @@ public class ItemMenu : MonoBehaviour
     public void ShowItemInfo()
     {
         itemInfoPanel.SetActive(true);
+    }
+
+    public void NetUpdate()
+    {
+        return;
     }
 }

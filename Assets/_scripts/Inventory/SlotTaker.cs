@@ -93,6 +93,11 @@ public class SlotTaker : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
             //}
             if (eventData.pointerCurrentRaycast.gameObject.TryGetComponent(out SlotTaker slotTaker) && slotTaker != this)
             {
+                if(ItemMenu.CanSlotInteract(mySlot, slotTaker.mySlot))
+                {
+                    return;
+                }
+
                 if (mySlot.slotType == slotTaker.mySlot.slotType)
                 {
                     if (slotTaker.mySlot.itemInfo != null)
