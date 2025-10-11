@@ -265,7 +265,6 @@ public class WeaponController : MonoBehaviour
                 {
                     //Bullet bullet = Instantiate(bulletPrefab2, transform.position, Quaternion.identity).GetComponent<Bullet>();
                     //bullet.Init(hit.point, bullet_damage);
-                    print("conteroller: " + bullet_damage);
                     myPlayerNetwork.CMDShoot(hit.point, bullet_damage);
                     //print("hit");
                 }
@@ -274,7 +273,6 @@ public class WeaponController : MonoBehaviour
                     //miss
                     //Bullet bullet = Instantiate(bulletPrefab2, transform.position, Quaternion.identity).GetComponent<Bullet>();
                     //bullet.Init(hit.point, bullet_damage);
-                    print("conteroller: " + bullet_damage);
                     myPlayerNetwork.CMDShoot(goal, bullet_damage);
 
                 }

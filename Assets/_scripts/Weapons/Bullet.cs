@@ -18,6 +18,7 @@ public class Bullet : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, angle);
 
+        this.damage = damage;
 
         // Применяем силу
         rb.AddForce(direction * speed, ForceMode2D.Impulse);
@@ -35,11 +36,9 @@ public class Bullet : MonoBehaviour
         }
         if (collision.TryGetComponent(out VulnerableObject component))
         {
-            print("sada  " + damage);
+          
             component.TakeDamage(damage);
         }
-
-        print(collision.gameObject.name);
 
         Destroy(gameObject);
     }
@@ -53,10 +52,8 @@ public class Bullet : MonoBehaviour
         }
         if (collision.collider.TryGetComponent(out VulnerableObject component))
         {
-            print("sada  " + damage);
             component.TakeDamage(damage);
         }
-        print(collision.gameObject.name);
         Destroy(gameObject);
     }
 }

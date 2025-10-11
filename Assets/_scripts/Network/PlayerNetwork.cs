@@ -205,7 +205,6 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     {
         Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Bullet>();
         bullet.Init(targetPos, damage);
-        print("|server damage:" + damage);
         CLTShoot(targetPos, damage);
     }
     [ClientRpc]
@@ -214,7 +213,6 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
         if (isServer) { return; }
         Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Bullet>();
         bullet.Init(targetPos, damage);
-        print("|server damage:" + damage);
     }
 
     [Command]
