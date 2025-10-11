@@ -26,7 +26,7 @@ public class ItemMenu : MonoBehaviour, Initable
     public void Init(Transform player)
     {
         Instance = this;
-        weaponManager = FindAnyObjectByType<WeaponManager>();
+        weaponManager = FindObjectOfType<WeaponManager>();
         playerNetwork = player.GetComponent<PlayerNetwork>();//TODO
         gameObject.SetActive(false);
     }

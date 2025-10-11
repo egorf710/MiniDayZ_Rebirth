@@ -34,7 +34,7 @@ public class Logo : MonoBehaviour
         while(logo.transform.position != logoPos.position)
         {
             logo.transform.position = Vector2.MoveTowards(logo.transform.position, logoPos.transform.position, speed * Time.deltaTime);
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForEndOfFrame();
         }
         yield return null;
     }
@@ -52,7 +52,7 @@ public class Logo : MonoBehaviour
         while (logo.transform.position != _logoPos)
         {
             logo.transform.position = Vector2.MoveTowards(logo.transform.position, _logoPos, speed * Time.deltaTime);
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForEndOfFrame();
         }
         yield return null;
     }
@@ -62,7 +62,7 @@ public class Logo : MonoBehaviour
         {
             up.transform.position = Vector2.MoveTowards(up.transform.position, _upPos, speed * Time.deltaTime);
             down.transform.position = Vector2.MoveTowards(down.transform.position, _downPos, speed * Time.deltaTime);
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForEndOfFrame();
         }
         mainButtons.SetActive(true);
         mainButtons.GetComponent<menu>().enabled = true;
@@ -76,7 +76,7 @@ public class Logo : MonoBehaviour
 
             up.transform.position = Vector2.MoveTowards(up.transform.position, upPos.transform.position, speed * Time.deltaTime);
             down.transform.position = Vector2.MoveTowards(down.transform.position, downPos.transform.position, speed * Time.deltaTime);
-            yield return new WaitForSeconds(0.02f);
+            yield return new WaitForEndOfFrame();
         }
         mainButtons.SetActive(true);
         mainButtons.GetComponent<menu>().enabled = true;

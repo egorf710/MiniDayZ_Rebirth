@@ -254,6 +254,6 @@ public class WeaponManager : MonoBehaviour
         yield return new WaitForSeconds(time);
         weaponSlot.IsSlotBlocked = false;
         reloading = false;
-        ReloadImageAnimator.gameObject.SetActive(false);
+        ReloadImageAnimator.gameObject.SetActive(false);//choto za huiny i pisal 3 goda nazad? Zachem mne dma odinakovih metoda????
     }
 }

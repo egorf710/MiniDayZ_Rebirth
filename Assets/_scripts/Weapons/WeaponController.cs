@@ -104,13 +104,14 @@ public class WeaponController : MonoBehaviour
             PlayerShoot();
         }
     }
+    public InventorySlot ammo_slot;
     public void ReloadWeapon()
     {
         if (!itsEnable) { return; }
         {
             included_ammo = currentWeaponSlot.itemInfo.ammo;
 
-            InventorySlot ammo_slot = InventoryManager.GetSlotByItem(weaponItem.ammo);
+            ammo_slot = InventoryManager.GetSlotByItem(weaponItem.ammo);
             int ammo_in_slot = ammo_slot.itemInfo.amount; //скок есть в инвентаре 18
             int need_ammo = weaponItem.mag_size - currentWeaponSlot.itemInfo.ammo; //скоко нужно зарядить 6-2 = 4
             int feeledAmmo = 0;
@@ -128,15 +129,17 @@ public class WeaponController : MonoBehaviour
             else
             {
                 //included_ammo = ammo_in_slot;
-                feeledAmmo = ammo_in_slot;
+                
+                feeledAmmo = currentWeaponSlot.itemInfo.ammo + ammo_in_slot;
                 clearSlot = true;
-                ammo_slot.ClearSlot();
+                //ammo_slot.ClearSlot();
             }
-            ammo_slot.Refresh();
-            currentWeaponSlot.itemInfo.ammo = included_ammo;
-            currentWeaponSlot.RefreshAmmo();
-            myPlayerNetwork.ReloadMe(feeledAmmo, weaponItem.reload_time, clearSlot);
+            //ammo_slot.Refresh();
+            //currentWeaponSlot.itemInfo.ammo = included_ammo;
+            //currentWeaponSlot.RefreshAmmo();
+            StartCoroutine(FeelAmmo(feeledAmmo, weaponItem.reload_time, clearSlot, ammo_slot, currentWeaponSlot));
         }
+
     }
     public void ReloadWeaponFor(InventorySlot ammSlot, InventorySlot weaponSlot)
     {
@@ -158,14 +161,14 @@ public class WeaponController : MonoBehaviour
             else
             {
                 //included_ammo = ammo_in_slot;
-                feeledAmmo = ammo_in_slot;
+                feeledAmmo = currentWeaponSlot.itemInfo.ammo + ammo_in_slot;
                 clearSlot = true;
-                ammo_slot.ClearSlot();
+                //ammo_slot.ClearSlot();
             }
-            ammo_slot.Refresh();
+            //ammo_slot.Refresh();
 
-            weaponSlot.RefreshAmmo();
-            myPlayerNetwork.ReloadMe(feeledAmmo, (weaponSlot.itemInfo.item as weaponItem).reload_time, clearSlot, ammSlot, weaponSlot);
+            //weaponSlot.RefreshAmmo();
+           StartCoroutine(FeelAmmo(feeledAmmo, (weaponSlot.itemInfo.item as weaponItem).reload_time, clearSlot, ammSlot, weaponSlot));
         }
     }
     public IEnumerator FeelAmmo(int ammo, float realodTime, bool clearSlot, InventorySlot ammoSlot = null, InventorySlot weaponSlot = null)

@@ -62,7 +62,7 @@ public class menu : MonoBehaviour
                     texts[i].color = new Color(texts[i].color.r, texts[i].color.g, texts[i].color.b, texts[i].color.a - (speed * (!b ? 1 : -1)) * Time.deltaTime);
                 }
             }
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForEndOfFrame();
         }
         if (!b)
         {
