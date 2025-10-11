@@ -208,11 +208,13 @@ public class ZedBase : NetworkBehaviour, AliveTarget
 
     public void TakeDamage(int damage, int code = 0)
     {
+        print("i take a damage: " + damage);
         int attackChanse = Random.Range(0, 100);
         if(attackChanse <= vulnerabledData.blockChanse)
         {
             return;
         }
+        print("SYKA: " + (damage - vulnerabledData.armor));
         vulnerabledData.health -= Mathf.Clamp(damage - vulnerabledData.armor, 
             1, damage);
         DebuMessager.Mess("-" + damage, Color.red, transform.position, true);

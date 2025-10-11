@@ -1438,7 +1438,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!95 &180840835
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1455,8 +1455,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &189639281
 GameObject:
   m_ObjectHideFlags: 0
@@ -5556,6 +5555,71 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &717526975
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2466472044541577187, guid: 18f9fbcdefcbc7f4292ef49faeb7058a, type: 3}
+      propertyPath: sceneId
+      value: 85594870
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466472044541577193, guid: 18f9fbcdefcbc7f4292ef49faeb7058a, type: 3}
+      propertyPath: m_Name
+      value: zedNormal1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466472044541577193, guid: 18f9fbcdefcbc7f4292ef49faeb7058a, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466472044541577199, guid: 18f9fbcdefcbc7f4292ef49faeb7058a, type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466472044541577199, guid: 18f9fbcdefcbc7f4292ef49faeb7058a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.887605
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466472044541577199, guid: 18f9fbcdefcbc7f4292ef49faeb7058a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.8491914
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466472044541577199, guid: 18f9fbcdefcbc7f4292ef49faeb7058a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466472044541577199, guid: 18f9fbcdefcbc7f4292ef49faeb7058a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466472044541577199, guid: 18f9fbcdefcbc7f4292ef49faeb7058a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466472044541577199, guid: 18f9fbcdefcbc7f4292ef49faeb7058a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466472044541577199, guid: 18f9fbcdefcbc7f4292ef49faeb7058a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466472044541577199, guid: 18f9fbcdefcbc7f4292ef49faeb7058a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466472044541577199, guid: 18f9fbcdefcbc7f4292ef49faeb7058a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2466472044541577199, guid: 18f9fbcdefcbc7f4292ef49faeb7058a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 18f9fbcdefcbc7f4292ef49faeb7058a, type: 3}
 --- !u!1001 &724716415
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10994,7 +11058,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!95 &1371782893
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11011,8 +11075,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1373183732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11354,7 +11417,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!95 &1387837292
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11371,8 +11434,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1395800084
 GameObject:
   m_ObjectHideFlags: 0
@@ -11624,7 +11686,7 @@ CanvasRenderer:
   m_CullTransparentMesh: 1
 --- !u!95 &1445312854
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11641,8 +11703,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1447290649
 GameObject:
   m_ObjectHideFlags: 0

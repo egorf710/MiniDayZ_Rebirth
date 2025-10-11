@@ -18,6 +18,7 @@ public class VulnerableObject : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        print("pereday: " + damage);    
         (controller as Vulnerable).TakeDamage(damage);
     }
     public void DropLoot()

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Item
   - Interact
+  - door
+  - bullet
+  - Vul
   layers:
   - Default
   - TransparentFX

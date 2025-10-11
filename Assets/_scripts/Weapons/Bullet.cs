@@ -6,43 +6,57 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private const float delta = 60f;
-    private const float speed = 1.5294f;
-    public void Init(Vector3 pos, float distance)
+    public float speed = 1.5294f;
+    public void Init(Vector3 pos, int damage)
     {
-        GetComponent<TrailRenderer>().time = distance / speed;
-        StartCoroutine(IEUpdate(pos));
+        var rb = GetComponent<Rigidbody2D>();
+        // Обнуляем текущую скорость
+        rb.velocity = Vector2.zero;
+        rb.angularVelocity = 0f;
+
+        Vector2 direction = (pos - transform.position).normalized;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, angle);
+
+
+        // Применяем силу
+        rb.AddForce(direction * speed, ForceMode2D.Impulse);
+
     }
-    GameObject target;
-    int damage;
-    public void Init(Vector3 pos, GameObject zedBase, int damage, float distance)
+    public int damage;
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        GetComponent<TrailRenderer>().time = distance / speed / 2;
-        this.damage = damage;
-        this.target = zedBase.gameObject;
-        //print("my target is " + target.name);
-        StartCoroutine(IEUpdate(pos));
-    }
-    IEnumerator IEUpdate(Vector3 pos)
-    {
-        while (transform.position != pos)
+        if (collision.TryGetComponent<PlayerNetwork>(out PlayerNetwork playerNetwork))
         {
-            transform.position = Vector2.MoveTowards(transform.position, pos, (delta * Time.deltaTime));
-            yield return new WaitForFixedUpdate();
+            //print("i try damage player");
+            if(NetworkClient.localPlayer.netId == playerNetwork.netId) { return; }
+            NetworkClient.localPlayer.GetComponent<PlayerNetwork>().TakeDamageTo(damage, playerNetwork.netId, 1);
         }
-        if(target != null && Vector2.Distance(transform.position, target.transform.position) < 0.5f)
+        if (collision.TryGetComponent(out VulnerableObject component))
         {
-            if(target.TryGetComponent<PlayerNetwork>(out PlayerNetwork playerNetwork))
-            {
-                //print("i try damage player");
-                NetworkClient.localPlayer.GetComponent<PlayerNetwork>().TakeDamageTo(damage, playerNetwork.netId, 1);
-            }
-            if (target.TryGetComponent(out VulnerableObject component))
-            {
-                component.TakeDamage(damage);
-            }
+            print("sada  " + damage);
+            component.TakeDamage(damage);
         }
+
+        print(collision.gameObject.name);
+
         Destroy(gameObject);
-        yield return null;
-    }    
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.TryGetComponent<PlayerNetwork>(out PlayerNetwork playerNetwork))
+        {
+            //print("i try damage player");
+            if (NetworkClient.localPlayer.netId == playerNetwork.netId) { return; }
+            NetworkClient.localPlayer.GetComponent<PlayerNetwork>().TakeDamageTo(damage, playerNetwork.netId, 1);
+        }
+        if (collision.collider.TryGetComponent(out VulnerableObject component))
+        {
+            print("sada  " + damage);
+            component.TakeDamage(damage);
+        }
+        print(collision.gameObject.name);
+        Destroy(gameObject);
+    }
 }

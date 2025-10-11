@@ -4,7 +4,6 @@ using Mirror;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Burst.CompilerServices;
 using UnityEngine;
 using static ItemObject;
 
@@ -198,33 +197,24 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     public void CMDSetWeapon(string weaponItemName)
     {
         weaponItem = InventoryManager.GetItemByName(weaponItemName) as weaponItem;
-        //bulletPrefab = weaponItem.ammo.prefabAmmo;
+        bulletPrefab = weaponItem.ammo.prefabAmmo;
         force = weaponItem.force;
     }
     [Command]
-    public void CMDShoot(Vector2 targetPos)
+    public void CMDShoot(Vector2 targetPos, int damage)
     {
         Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Bullet>();
-        bullet.Init(targetPos, Vector2.Distance(transform.position, targetPos));
-
-        CLTShoot(targetPos);
-    }
-    [Command]
-    public void CMDShoot(Vector2 targetPos, int damage, uint targetNetID)
-    {
-        Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Bullet>();
-        GameObject targetPlayer = serverManager.GetPlayer(targetNetID).gameObject;
-        //print("target on serve is: " + targetPlayer.name);
-        bullet.Init(targetPos, targetPlayer, damage, Vector2.Distance(transform.position, targetPos));
-
-        CLTShoot(targetPos);
+        bullet.Init(targetPos, damage);
+        print("|server damage:" + damage);
+        CLTShoot(targetPos, damage);
     }
     [ClientRpc]
-    public void CLTShoot(Vector2 targetPos)
+    public void CLTShoot(Vector2 targetPos, int damage)
     {
         if (isServer) { return; }
         Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Bullet>();
-        bullet.Init(targetPos, Vector2.Distance(transform.position, targetPos));
+        bullet.Init(targetPos, damage);
+        print("|server damage:" + damage);
     }
 
     [Command]

@@ -4,7 +4,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngineInternal;
 
@@ -27,10 +26,9 @@ public class WeaponController : MonoBehaviour
     [SerializeField] private PlayerNetwork myPlayerNetwork;
     [Space]
     [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private GameObject bulletPrefab2;
     public bool itsEnable;
     private Vector3 TARGET_OFFSET = new Vector3(0, 0.5f);
-    private int bullet_damage = 0;
+    [SerializeField] private int bullet_damage = 0;
     public void SetWeapon(InventorySlot inventorySlot)
     {
         itsEnable = true;
@@ -265,40 +263,19 @@ public class WeaponController : MonoBehaviour
 
                 if (hit.collider != null)
                 {
-                    //hit
-                    if (target != null && target.TryGetComponent<PlayerNetwork>(out PlayerNetwork pn) && GetDistance(transform.position, hit.point) < GetDistance(transform.position, targetPos))
-                    {
-                        Bullet bullet = Instantiate(bulletPrefab2, transform.position, Quaternion.identity).GetComponent<Bullet>();
-                        bullet.Init(hit.point, pn.gameObject, bullet_damage, distanceToTarget);
-                        myPlayerNetwork.CMDShoot(hit.point, bullet_damage, pn.netId);
-                    }
-                    else
-                    {
-                        Bullet bullet = Instantiate(bulletPrefab2, transform.position, Quaternion.identity).GetComponent<Bullet>();
-                        bullet.Init(hit.point, distanceToTarget);
-                        myPlayerNetwork.CMDShoot(hit.point);
-                    }
+                    //Bullet bullet = Instantiate(bulletPrefab2, transform.position, Quaternion.identity).GetComponent<Bullet>();
+                    //bullet.Init(hit.point, bullet_damage);
+                    print("conteroller: " + bullet_damage);
+                    myPlayerNetwork.CMDShoot(hit.point, bullet_damage);
                     //print("hit");
                 }
                 else
                 {
                     //miss
                     //Bullet bullet = Instantiate(bulletPrefab2, transform.position, Quaternion.identity).GetComponent<Bullet>();
-                    if (target == null)
-                    {
-                        //print("miss");
-                        //bullet.Init(goal, distanceToTarget);
-                        myPlayerNetwork.CMDShoot(goal);
-                    }
-                    else
-                    {
-                        if (target.TryGetComponent<PlayerNetwork>(out PlayerNetwork pn))
-                        {
-                            //print("to target");
-                            //bullet.Init(targetPos, pn.gameObject, bullet_damage, distanceToTarget);
-                            myPlayerNetwork.CMDShoot(goal, bullet_damage, pn.netId);
-                        }
-                    }
+                    //bullet.Init(hit.point, bullet_damage);
+                    print("conteroller: " + bullet_damage);
+                    myPlayerNetwork.CMDShoot(goal, bullet_damage);
 
                 }
 
