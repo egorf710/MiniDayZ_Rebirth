@@ -5,7 +5,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-
 using UnityEngine;
 using UnityEngine.UI;
 using static ItemObject;
@@ -124,7 +123,7 @@ public class InventoryManager : MonoBehaviour
         {
             if (Instance.playerNetwork.isLocalPlayer)
             {
-                Instance.playerNetwork.CMDSpawnItemObject(Instance.player.position, new NetworkItemInfo(inventorySlot.itemInfo));
+                Instance.playerNetwork.TOCMDSpawnItemObject(Instance.player.position, new NetworkItemInfo(inventorySlot.itemInfo));
             }
         }
     }

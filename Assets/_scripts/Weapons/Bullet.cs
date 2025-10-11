@@ -22,35 +22,35 @@ public class Bullet : MonoBehaviour
 
         // Применяем силу
         rb.AddForce(direction * speed, ForceMode2D.Impulse);
-
     }
     public int damage;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (!NetworkClient.localPlayer.isServer) { return; }
         if (collision.TryGetComponent<PlayerNetwork>(out PlayerNetwork playerNetwork))
         {
-            //print("i try damage player");
-            if(NetworkClient.localPlayer.netId == playerNetwork.netId) { return; }
-            NetworkClient.localPlayer.GetComponent<PlayerNetwork>().TakeDamageTo(damage, playerNetwork.netId, 1);
+            if(playerNetwork.name == NetworkClient.localPlayer.name) { return; }
+
+            print(playerNetwork.name); 
+            //playerNetwork.CMDTakeDamage(damage, 1);
         }
-        if (collision.TryGetComponent(out VulnerableObject component))
+        else if (collision.TryGetComponent(out VulnerableObject component))
         {
-          
-            component.TakeDamage(damage);
+            //component.TakeDamage(damage);
         }
 
         Destroy(gameObject);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (!NetworkClient.localPlayer.isServer) { return; }
         if (collision.collider.TryGetComponent<PlayerNetwork>(out PlayerNetwork playerNetwork))
         {
-            //print("i try damage player");
-            if (NetworkClient.localPlayer.netId == playerNetwork.netId) { return; }
-            NetworkClient.localPlayer.GetComponent<PlayerNetwork>().TakeDamageTo(damage, playerNetwork.netId, 1);
+            if (playerNetwork.name == NetworkClient.localPlayer.name) { return; }
+            playerNetwork.CMDTakeDamage(damage, 1);
         }
-        if (collision.collider.TryGetComponent(out VulnerableObject component))
+        else if (collision.collider.TryGetComponent(out VulnerableObject component))
         {
             component.TakeDamage(damage);
         }

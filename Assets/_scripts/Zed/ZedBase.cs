@@ -202,7 +202,6 @@ public class ZedBase : NetworkBehaviour, AliveTarget
         {
             nextTime = Time.time + attak—ooldown;
             rb.velocity = Vector2.zero;
-            print("attack vul: " + vulTarget.name);
         }
     }
 

@@ -303,6 +303,7 @@ MonoBehaviour:
   playerMove: {fileID: 3585477976171384402}
   aroundTree: {fileID: 0}
   handSlot: {fileID: 0}
+  playerNetwork: {fileID: 0}
 --- !u!1 &3585477975232413050
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,6 +1139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2696829e66797ff4890fc2b51537584f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerNetwork: {fileID: 0}
   healthField: {fileID: 0}
   waterField: {fileID: 0}
   foodField: {fileID: 0}
@@ -1180,7 +1182,6 @@ MonoBehaviour:
   target: {fileID: 0}
   included_ammo: 0
   shootButtonDown: 0
-  spread: 0
   nextTime: 0
   fireRate: 0
   aim_range: 0
@@ -1188,7 +1189,9 @@ MonoBehaviour:
   force: 0
   myPlayerNetwork: {fileID: 3585477976171384407}
   bulletPrefab: {fileID: 0}
-  bulletPrefab2: {fileID: 5780931969531164569, guid: 07f0480a50d750848813582053b3d21f, type: 3}
+  itsEnable: 0
+  bullet_damage: 0
+  ammo_slot: {fileID: 0}
 --- !u!114 &3585477976171384407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1205,11 +1208,12 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   networkManager: {fileID: 0}
+  serverManager: {fileID: 0}
   MyWeaponController: {fileID: 3585477976171384406}
   playerAnimator: {fileID: 5381595791526305392}
   itemObjectPrefab: {fileID: 5862067665477259060, guid: 12d0a6f496fe0204bb2ce01a480f6f61, type: 3}
   weaponItem: {fileID: 0}
-  bulletPrefab: {fileID: 5780931969531164569, guid: 07f0480a50d750848813582053b3d21f, type: 3}
+  bulletPrefab: {fileID: 0}
   force: 0
 --- !u!114 &3585477976171384424
 MonoBehaviour:

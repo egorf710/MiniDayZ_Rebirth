@@ -37,29 +37,6 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     public void ServerPlayerShoot()
     {
         MyWeaponController.Shoot();
-        //if (MyWeaponController.PlayerReadyToShoot())
-        //{
-        //    MyWeaponController.Shoot();
-        //}
-    }
-
-    //Command
-    public void ReloadMe(int ammo, float realoadTime, bool clearSlot = false, InventorySlot ammSlot = null, InventorySlot weaponSlot = null)
-    {
-        if (weaponSlot != null)
-        {
-            if (MyWeaponController.PlayerReadyToRealod(weaponSlot.itemInfo.item as weaponItem))
-            {
-                StartCoroutine(MyWeaponController.FeelAmmo(ammo, realoadTime, clearSlot, ammSlot, weaponSlot));
-            }
-        }
-        else
-        {
-            if (MyWeaponController.PlayerReadyToRealod())
-            {
-                StartCoroutine(MyWeaponController.FeelAmmo(ammo, realoadTime, clearSlot));
-            }
-        }
     }
 
     public Transform getTransform()
@@ -89,7 +66,6 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     {
         if(isServer)
         {
-            //print("server update net status");
             RefreshMyStatus();
         }
     }
@@ -103,7 +79,6 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     {
         if (isServer)
         {
-            //print("server player send data");
             SetMyClothes(playerAnimator.GetAnimClothesData());
         }
     }
@@ -112,13 +87,12 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     [ClientRpc]
     public void SetMyClothes(string cloches)
     {
-        //print(name + " is set clothes");
         playerAnimator.SetAnimClohesData(cloches);
     }
     [Command]
     public void CMDAnimSync(bool interact, bool shoot, float speed, Vector2 animDir) //TO DO if server => playerAnimator.interact, playerAnimator.shoot, playerAnimator.speed, playerAnimator.animationDir
     {
-        //print(name + " sync my anim pls :(");
+
         CRAnimSyncs(interact, shoot, speed, animDir);
     }
     [ClientRpc]
@@ -163,13 +137,11 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     [Command]
     public void CMDSynceItemObjects(List<ItemObjectData> itemObjectDatas)
     {
-        //print("send IO datas");
         CLTSynceItemObjects(itemObjectDatas);
     }
     [ClientRpc]
     public void CLTSynceItemObjects(List<ItemObjectData> itemObjectDatas)
     {
-        //print("recive IO datas");
         ItemObjectSyncer.InitItemObjects(itemObjectDatas);
     }
 
@@ -199,6 +171,15 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
         weaponItem = InventoryManager.GetItemByName(weaponItemName) as weaponItem;
         bulletPrefab = weaponItem.ammo.prefabAmmo;
         force = weaponItem.force;
+        CLTSetWeapon(weaponItemName);
+    }
+    [ClientRpc]
+    private void CLTSetWeapon(string weaponItemName)
+    {
+        if (isServer) { return; }
+        weaponItem = InventoryManager.GetItemByName(weaponItemName) as weaponItem;
+        bulletPrefab = weaponItem.ammo.prefabAmmo;
+        force = weaponItem.force;
     }
     [Command]
     public void CMDShoot(Vector2 targetPos, int damage)
@@ -206,6 +187,7 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
         Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Bullet>();
         bullet.Init(targetPos, damage);
         CLTShoot(targetPos, damage);
+        print("BAM SERVER");
     }
     [ClientRpc]
     public void CLTShoot(Vector2 targetPos, int damage)
@@ -213,19 +195,27 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
         if (isServer) { return; }
         Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Bullet>();
         bullet.Init(targetPos, damage);
+        print("BAM");
     }
 
     [Command]
     public void TakeDamageTo(int damage, uint netId, int code)
     {
-        //print("on server: damages to " + netId);
-        serverManager.GetPlayer(netId).TRTakeDame(damage, code);
+        //serverManager.GetPlayer(netId).TRTakeDame(damage, code);
     }
-    [TargetRpc]
-    public void TRTakeDame(int damage, int code)
+    [Command]
+    public void CMDTakeDamage(int damage, int code)
     {
-        //print("i take a damage " + damage);
+        print("damage " + gameObject.name);
         TakeDamage(damage, code);
+        CLTTakeDame(damage, code);
+    }
+    [ClientRpc]
+    private void CLTTakeDame(int damage, int code)
+    {
+        if (isServer) { return; }
+        TakeDamage(damage, code);
+        print("damage " + gameObject.name);
     }
 
     public void SetActivePlayerSkin(bool b)
@@ -233,7 +223,7 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
         CMDSetActivePlayerSkin(b);
     }
     [Command]
-    public void CMDSetActivePlayerSkin(bool b)
+    private void CMDSetActivePlayerSkin(bool b)
     {
         CLTSetActivePlayerSkin(b);
     }
