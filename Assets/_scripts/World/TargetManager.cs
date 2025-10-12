@@ -42,7 +42,7 @@ public class TargetManager : MonoBehaviour, Initable
         AliveTarget[] _playerBases = null;
         if (onlyNoticedPlayers)
         {
-            _playerBases = targetsBases.Where(x => GetDistance(mytransformplayer.position, x.getTransform().position) < 30).ToArray();
+            _playerBases = targetsBases.Where(x => x != null && GetDistance(mytransformplayer.position, x.getTransform().position) < 30).ToArray();
         }
         else
         {

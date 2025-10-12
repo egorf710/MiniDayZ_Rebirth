@@ -185,17 +185,15 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     public void CMDShoot(Vector2 targetPos, int damage)
     {
         Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Bullet>();
-        bullet.Init(targetPos, damage);
+        bullet.Init(targetPos, damage, true, netId); 
         CLTShoot(targetPos, damage);
-        print("BAM SERVER");
     }
     [ClientRpc]
     public void CLTShoot(Vector2 targetPos, int damage)
     {
         if (isServer) { return; }
         Bullet bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity).GetComponent<Bullet>();
-        bullet.Init(targetPos, damage);
-        print("BAM");
+        bullet.Init(targetPos, damage, false, netId);
     }
 
     [Command]
@@ -203,19 +201,16 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     {
         //serverManager.GetPlayer(netId).TRTakeDame(damage, code);
     }
-    [Command]
+    [Command(requiresAuthority = false)]
     public void CMDTakeDamage(int damage, int code)
     {
-        print("damage " + gameObject.name);
-        TakeDamage(damage, code);
         CLTTakeDame(damage, code);
     }
     [ClientRpc]
     private void CLTTakeDame(int damage, int code)
     {
-        if (isServer) { return; }
+        if (!isLocalPlayer) { return; }
         TakeDamage(damage, code);
-        print("damage " + gameObject.name);
     }
 
     public void SetActivePlayerSkin(bool b)

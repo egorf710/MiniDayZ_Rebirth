@@ -1,5 +1,6 @@
 using Assets._scripts.Interfaces;
 using Microsoft.VisualBasic;
+using Mirror;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -98,7 +99,7 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
 
     private void Refresh()
     {
-        IsLocalPlayer();
+        if (!IsLocalPlayer()) { return; }
         //UI
         currentHealth = Mathf.Clamp(currentHealth, 0, 100);
         currentWater = Mathf.Clamp(currentWater, 0, 100);
@@ -285,7 +286,58 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
             effectTime = (int)(Time.time + time)
         });
     }
+    public void TakeDamageLocal(int damage, int code = 0)
+    {
+        if (armor < damage)
+        {
+            if (UnityEngine.Random.Range(0, 100) <= blockChanse)
+            {
+                //block
+                //DebuMessager.Mess("blocked", Color.gray);
+                return;
+            }
+            if (code == 1)
+            {
+                SetBleedingParticle(5);
+                playerNetwork.TOCMDSetBleedingParticle(5);
 
+                if (UnityEngine.Random.Range(0, 5) <= 1)
+                {
+                    SetEffect(Effect.Bleeding, 30);
+                }
+                playerHealth -= (damage - armor);
+            }
+            else
+            {
+                playerHealth -= (damage - armor);
+            }
+        }
+        else
+        {
+            if (UnityEngine.Random.Range(0, 100) <= blockChanse)
+            {
+                //block
+                DebuMessager.Mess("blocked", Color.gray);
+                return;
+            }
+            if (code == 1)
+            {
+                SetBleedingParticle(5);
+                playerNetwork.TOCMDSetBleedingParticle(5);
+
+                if (UnityEngine.Random.Range(0, 5) <= 1)
+                {
+                    SetEffect(Effect.Bleeding, 30);
+                }
+                playerHealth -= damage;
+            }
+            else
+            {
+                playerHealth -= damage;
+            }
+        }
+        InventoryManager.ClothesDamage(damage <= 10 ? 1 : 2);
+    }
     public void TakeDamage(int damage, int code = 0)
     {
         if(armor < damage)
@@ -344,6 +396,7 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
     }
     public void RestartPlayer()
     {
+        if (!IsLocalPlayer()) { return; }
         InventoryManager.DropAllInventory();
 
         playerHealth = 100;
