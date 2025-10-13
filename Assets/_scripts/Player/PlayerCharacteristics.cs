@@ -162,6 +162,12 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
                             playerHealth--;
                             playerHealthRegen = 0;
                             stopRegeneration = true;
+                            if(playerHealth <= 0)
+                            {
+                                bleedingImage.gameObject.SetActive(false);
+                                effectsToRemove.Add(effect);
+                                stopRegeneration = false;
+                            }
                         }
                         else
                         {
@@ -350,7 +356,7 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
             }
             if(code == 1)
             {
-                SetBleedingParticle(5);
+                
                 playerNetwork.TOCMDSetBleedingParticle(5);
 
                 if (UnityEngine.Random.Range(0, 5) <= 1)
@@ -358,6 +364,11 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
                     SetEffect(Effect.Bleeding, 30);
                 }
                 playerHealth -= (damage - armor);
+
+                if(playerHealth > 0)
+                {
+                    SetBleedingParticle(5);
+                }
             }
             else
             {
