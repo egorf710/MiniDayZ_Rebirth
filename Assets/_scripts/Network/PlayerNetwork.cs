@@ -16,6 +16,7 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     [Header("SyncData")]
     public PlayerAnimator playerAnimator;
 
+
     private void Start()
     {
         if (!isLocalPlayer)
@@ -24,6 +25,7 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
             gameObject.layer = 8;
         }
         serverManager = FindObjectOfType<ServerManager>();
+
     }
     public void Init(WeaponController myWeaponController)
     {
@@ -143,6 +145,7 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     public void CLTSynceItemObjects(List<ItemObjectData> itemObjectDatas)
     {
         ItemObjectSyncer.InitItemObjects(itemObjectDatas);
+        print("try sync");
     }
 
 

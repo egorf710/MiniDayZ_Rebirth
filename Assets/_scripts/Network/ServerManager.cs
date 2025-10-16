@@ -81,9 +81,14 @@ public class ServerManager : NetworkBehaviour, Initable
     {
 
         yield return new WaitForSeconds(time);
-        FindObjectOfType<GameManager>().TeleportToSpawn();
-        SetActivePlayer(true);
-        CanvasManager.SetActiveDeathPanel(false);
+        var GM = FindObjectOfType<GameManager>();
+        GM.TeleportToSpawn();
+        if (!GM.vanishMode)
+        {
+
+            SetActivePlayer(true);
+            CanvasManager.SetActiveDeathPanel(false);
+        }
     }
 
     public static void SetActivePlayer(bool b)

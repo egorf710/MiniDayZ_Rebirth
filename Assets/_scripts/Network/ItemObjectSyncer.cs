@@ -6,12 +6,13 @@ using System.Linq;
 using UnityEngine;
 using static ItemObject;
 
-public class ItemObjectSyncer : MonoBehaviour, Initable
+public class ItemObjectSyncer : NetworkBehaviour, Initable
 {
     public List<ItemObject> regItemObject;
     public PlayerNetwork playerNetwork;
     public static ItemObjectSyncer instance;
     public GameObject itemObjectPrefab;
+    public ServerManager serverManager;
     void Awake()
     {
         instance = this;
@@ -19,25 +20,25 @@ public class ItemObjectSyncer : MonoBehaviour, Initable
 
     public void Init(Transform player)
     {
-        playerNetwork = player.GetComponent<PlayerNetwork>();
-        if (playerNetwork.isServer)
+        print("NetworkServer.active: " + NetworkServer.active);
+        if(!NetworkServer.active) { return; }
+
+        regItemObject = FindObjectsOfType<ItemObject>(true).ToList();
+        for (int i = 0; i < regItemObject.Count; i++)
         {
-            regItemObject = FindObjectsOfType<ItemObject>(true).ToList();
-            for (int i = 0; i < regItemObject.Count; i++)
-            {
-                IdentityObject identityObject = regItemObject[i].GetComponent<IdentityObject>();
-                IdentityManager.SetObjectID(ref identityObject);
-            }
+            IdentityObject identityObject = regItemObject[i].GetComponent<IdentityObject>();
+            IdentityManager.SetObjectID(ref identityObject);
         }
     }
 
     public void NetUpdate()
     {
+        //if (Session.dedicatedServerMode) { return; }
         if(playerNetwork == null)
         {
             playerNetwork = NetworkClient.localPlayer.GetComponent<PlayerNetwork>();
         }
-        if(NetworkClient.localPlayer.isServer)
+        if(NetworkServer.active)
         {
             regItemObject = FindObjectsOfType<ItemObject>(true).ToList();
             List<ItemObjectData> itemObjectDatas = new List<ItemObjectData>();
@@ -52,7 +53,7 @@ public class ItemObjectSyncer : MonoBehaviour, Initable
                 });
             }
 
-            playerNetwork.CMDSynceItemObjects(itemObjectDatas);
+            playerNetwork.CLTSynceItemObjects(itemObjectDatas);
 
         }
     }
@@ -82,6 +83,7 @@ public class ItemObjectSyncer : MonoBehaviour, Initable
             Destroy(regObj.gameObject);
         }
     }
+
 }
 [Serializable]
 public class ItemObjectData

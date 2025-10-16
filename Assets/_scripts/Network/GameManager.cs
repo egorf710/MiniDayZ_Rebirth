@@ -10,6 +10,7 @@ public class GameManager : NetworkManager
 {
     public ServerManager serverManager;
     public WorldData worldData;
+    public bool vanishMode;
 
     private new void Start()
     {
@@ -85,6 +86,7 @@ public class GameManager : NetworkManager
         if (player.GetComponent<NetworkIdentity>().isServer)
         {
             player.name = $"HOST - {playerPrefab.name} [connId={conn.connectionId}]";
+
         }
         NetworkServer.AddPlayerForConnection(conn, player);
         conn.Send(new InitPlayerMessage());
@@ -101,6 +103,13 @@ public class GameManager : NetworkManager
 
 
         Initializer.UpdateNetState();
+    
+        if(vanishMode && NetworkServer.active && player.GetComponent<PlayerNetwork>().isLocalPlayer)
+        {
+            player.SetActive(false);
+            print("server vanish active");
+        }
+
     }
 
     public void TeleportToSpawn()

@@ -16853,6 +16853,7 @@ MonoBehaviour:
   regItemObject: []
   playerNetwork: {fileID: 0}
   itemObjectPrefab: {fileID: 5862067665477259060, guid: 12d0a6f496fe0204bb2ce01a480f6f61, type: 3}
+  serverManager: {fileID: 7227851256076854096}
 --- !u!114 &7227851256076854105
 MonoBehaviour:
   m_ObjectHideFlags: 0

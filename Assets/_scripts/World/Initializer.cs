@@ -33,6 +33,7 @@ public class Initializer : MonoBehaviour
         {
             initable.NetUpdate();
         }
+        print("init");
     }
 }
 public interface Initable
