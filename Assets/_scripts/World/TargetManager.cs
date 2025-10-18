@@ -63,7 +63,6 @@ public class TargetManager : MonoBehaviour, Initable
     {
         if (!Instance.Init() || Instance.myplayer == playerBase || Instance.targetsBases.Contains(playerBase)) { return; }
         Instance.targetsBases.Add(playerBase);
-        print("add " + playerBase.getTransform().name);
     }
     public static void RemoveTarget(AliveTarget playerBase)
     {

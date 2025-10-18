@@ -1,4 +1,5 @@
 using Assets._scripts.Interfaces;
+using Mirror;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -23,7 +24,7 @@ public class VulnerableObject : MonoBehaviour
     public void DropLoot()
     {
         ItemLootData[] itemToDrop = ItemRandomizer.GetItems(itemLoots, 1, true);
-        ServerManager.instance.DropLoot(new DropLootMassage()
+        NetworkClient.Send(new DropLootMessage()
         {
             loot = itemToDrop,
             pos = transform.position

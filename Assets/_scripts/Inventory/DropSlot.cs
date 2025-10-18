@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Mirror;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -169,8 +170,8 @@ public class DropSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
             {
                 if (InventoryManager.AddItem(itemInfo))
                 {
-                    ServerManager.DestroyItemObjectAtID(myObject.gameObject.GetComponent<IdentityObject>().ID);
-                    //Destroy(myObject.gameObject);
+                    NetworkClient.Send(new DestroyItemObjectMessage { ID = myObject.gameObject.GetComponent<IdentityObject>().ID });
+
                     Destroy(gameObject);
                 }
             }
@@ -195,7 +196,7 @@ public class DropSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         {
             if (InventoryManager.AddItem(itemInfo))
             {
-                ServerManager.DestroyItemObjectAtID(myObject.gameObject.GetComponent<IdentityObject>().ID);
+                NetworkClient.Send(new DestroyItemObjectMessage { ID = myObject.gameObject.GetComponent<IdentityObject>().ID });
 
                 //Destroy(myObject.gameObject);
                 Destroy(gameObject);

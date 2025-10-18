@@ -27,6 +27,14 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
         serverManager = FindObjectOfType<ServerManager>();
 
     }
+    private void OnDisable()
+    {
+        TargetManager.RemoveTarget(this);
+    }
+    private void OnEnable()
+    {
+        TargetManager.AddTarget(this);
+    }
     public void Init(WeaponController myWeaponController)
     {
         networkManager = FindObjectOfType<NetworkManager>();
@@ -54,6 +62,10 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     public uint getNetID()
     {
         return netId;
+    }
+    public bool isActive()
+    {
+        return gameObject.activeSelf;
     }
 
     public void Init(Transform player)
@@ -108,44 +120,6 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
             playerAnimator.speed = speed;
             playerAnimator.animationDir = animDir;
         }
-    }
-    [Header("Inventory")]
-    [SerializeField] private GameObject itemObjectPrefab;
-    public void TOCMDSpawnItemObject(Vector3 position, ItemObject.NetworkItemInfo itemInfo)
-    {
-        CMDSpawnItemObject(position, itemInfo);
-    }
-    [Command]
-    public void CMDSpawnItemObject(Vector3 position, ItemObject.NetworkItemInfo itemInfo)
-    {
-        ItemObject itemObject = Instantiate(itemObjectPrefab, position, Quaternion.identity).GetComponent<ItemObject>();
-        itemObject.Set(itemInfo);
-        IdentityObject identityObject = itemObject.GetComponent<IdentityObject>();
-        IdentityManager.SetObjectID(ref identityObject);
-
-        CLTSpawnItemObject(position, itemInfo, identityObject.ID);
-    }
-    [ClientRpc]
-    public void CLTSpawnItemObject(Vector3 position, ItemObject.NetworkItemInfo itemInfo, int ID)
-    {
-        if (isServer) { return; }
-        ItemObject itemObject = Instantiate(itemObjectPrefab, position, Quaternion.identity).GetComponent<ItemObject>();
-        itemObject.Set(itemInfo);
-        IdentityObject identityObject = itemObject.GetComponent<IdentityObject>();
-        identityObject.ID = ID;
-
-    }
-
-    [Command]
-    public void CMDSynceItemObjects(List<ItemObjectData> itemObjectDatas)
-    {
-        CLTSynceItemObjects(itemObjectDatas);
-    }
-    [ClientRpc]
-    public void CLTSynceItemObjects(List<ItemObjectData> itemObjectDatas)
-    {
-        ItemObjectSyncer.InitItemObjects(itemObjectDatas);
-        print("try sync");
     }
 
 
@@ -204,15 +178,15 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     {
         //serverManager.GetPlayer(netId).TRTakeDame(damage, code);
     }
-    [Command(requiresAuthority = false)]
+
     public void CMDTakeDamage(int damage, int code)
     {
+        if (!isServer) { return; }
         CLTTakeDame(damage, code);
     }
     [ClientRpc]
     private void CLTTakeDame(int damage, int code)
     {
-        if (!isLocalPlayer) { return; }
         TakeDamage(damage, code);
     }
 

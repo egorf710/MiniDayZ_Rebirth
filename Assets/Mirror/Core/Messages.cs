@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 namespace Mirror
 {
     // need to send time every sendInterval.
@@ -34,7 +35,8 @@ namespace Mirror
     public struct NotReadyMessage : NetworkMessage {}
 
     public struct AddPlayerMessage : NetworkMessage {}
-    public struct InitPlayerMessage : NetworkMessage {}
+
+
     public struct SceneMessage : NetworkMessage
     {
         public string sceneName;

@@ -5,12 +5,7 @@ using UnityEngine;
 using Random = UnityEngine.Random;
 
 [Serializable]
-public struct DropLootMassage
-{
-    public ItemLootData[] loot;
-    public Vector2 pos;
-}
-[Serializable]
+
 public struct ItemLoot
 {
     public Item item;

@@ -5,24 +5,32 @@ using Mirror;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using System;
+using System.Linq;
+using JetBrains.Annotations;
+
 
 public class GameManager : NetworkManager
 {
-    public ServerManager serverManager;
-    public WorldData worldData;
     public bool vanishMode;
 
     private new void Start()
     {
         base.Start();
-        RegMessages();
     }
     public void StartGame()
     {
         var manager = this as NetworkManager;
 
-        manager.StartHost();
+        if (!Session.dedicatedServerMode)
+        {
+            manager.StartHost();
+        }
+        else
+        {
+            manager.StartServer();
+        }
     }
+
     public void Connect(string addres)
     {
         networkAddress = addres;
@@ -30,86 +38,40 @@ public class GameManager : NetworkManager
         StartClient();
 
     }
-    private void RegMessages()
+    public override void OnClientSceneChanged()
     {
-        print("RegInitMsg");
-        NetworkClient.RegisterHandler<InitPlayerMessage>(OnInitPlayerMessage);
-        NetworkClient.RegisterHandler<HellowWorldMessage>(OnHellowWorldMessage);
-    }
+        base.OnClientSceneChanged();
 
-    ///CLIENT///CLIENT///CLIENT///CLIENT///CLIENT///CLIENT///CLIENT///CLIENT///
-    ///
-    public void OnInitPlayerMessage(InitPlayerMessage message)
+        StartCoroutine(StartSync());
+    }
+    IEnumerator StartSync()
     {
-        print("OnInit: " + NetworkClient.localPlayer.transform.name);
-        Initializer.Init(NetworkClient.localPlayer.transform);
-        if(NetworkClient.localPlayer.isLocalPlayer && !NetworkClient.localPlayer.isServer)
-        {
-            NetworkClient.localPlayer.name = "Local Player";
-        }
+        yield return new WaitForSeconds(1f);
+        print("[CLEINT] сцена загружена, отправл€ю сообщение на сервер в виде готовности к синхронизации");
+        NetworkClient.Send(new ReadyToSyncMessage { });
     }
-
-    private void OnHellowWorldMessage(HellowWorldMessage message)
-    {
-        if (serverManager == null || worldData == null)
-        {
-            serverManager = FindObjectOfType<ServerManager>();
-            worldData = FindObjectOfType<WorldData>();
-        }
-        print("load net data");
-        if (serverManager.isClientOnly)
-        {
-            print("load net data!!!!");
-            FindObjectOfType<WorldData>().SetData(message.worlddata);
-        }
-    }
-
-
-    ///SERVER///SERVER///SERVER///SERVER///SERVER///SERVER///SERVER///SERVER///
-    ///
-
     public override void OnServerAddPlayer(NetworkConnectionToClient conn)
     {
-        if(serverManager == null || worldData == null)
-        {
-            serverManager = FindObjectOfType<ServerManager>();
-            worldData = FindObjectOfType<WorldData>();
-        }
+
+    }
+
+    public void ServerSetPlayer(NetworkConnectionToClient conn)
+    {
         Transform startPos = GameObject.Find("SPAWNPOINT").transform;
         GameObject player = startPos != null
             ? Instantiate(playerPrefab, startPos.position, startPos.rotation)
             : Instantiate(playerPrefab);
 
-        // instantiating a "Player" prefab gives it the name "Player(clone)"
-        // => appending the connectionId is WAY more useful for debugging!
-        player.name = $"{playerPrefab.name} [connId={conn.connectionId}]";
-        if (player.GetComponent<NetworkIdentity>().isServer)
-        {
-            player.name = $"HOST - {playerPrefab.name} [connId={conn.connectionId}]";
-
-        }
-        NetworkServer.AddPlayerForConnection(conn, player);
-        conn.Send(new InitPlayerMessage());
-
-        player.GetComponent<NetworkIdentity>().AssignClientAuthority(conn);
-        
-
-        serverManager.netPlayers.Add(new NetPlayerCase()
-        {
-            conn = conn,
-            player = player
-        });
+        player.name = $"Player [connId={conn.connectionId}]";
 
 
-
+        NetworkServer.AddPlayerForConnection(conn, player);//—павним игрока у клиентов
+        player.GetComponent<NetworkIdentity>().AssignClientAuthority(conn);//ѕозвол€ем клиенту управл€ем своим игроком на сервере (использовать [Comand] на объекте своего игрока)
+        //”ведомл€ем все компоненты о том что подключилс€ новый игрок, чтобы настроить их работу с новым игроком
         Initializer.UpdateNetState();
-    
-        if(vanishMode && NetworkServer.active && player.GetComponent<PlayerNetwork>().isLocalPlayer)
-        {
-            player.SetActive(false);
-            print("server vanish active");
-        }
 
+        print($"[SERVER] отправл€ю клиенту {conn.connectionId} сообщение, чтобы он завершил локальную синхронизацию на своей стороне");
+        conn.Send(new InitPlayerMessage { });
     }
 
     public void TeleportToSpawn()
@@ -117,8 +79,6 @@ public class GameManager : NetworkManager
         Transform startPos = GameObject.Find("SPAWNPOINT").transform;
         NetworkClient.localPlayer.transform.position = startPos.position;
     }
-}
-public struct HellowWorldMessage : NetworkMessage
-{
-    public wData worlddata;
+
+
 }

@@ -16,7 +16,6 @@ public class IdentityManager : MonoBehaviour
 
     public static void SetObjectID(ref IdentityObject odject)
     {
-
         odject.ID = instance.nextID;
         instance.nextID++;
     }

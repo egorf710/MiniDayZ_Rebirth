@@ -6,98 +6,124 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UIElements;
+using static ClientManager;
 
-public class ServerManager : NetworkBehaviour, Initable
+public struct ReadyToSyncMessage : NetworkMessage { }
+public struct ClaimSyncMessage : NetworkMessage { }
+public struct DestroyItemObjectMessage : NetworkMessage { public int ID; }
+public struct CreateItemObjectMessage : NetworkMessage { public Vector3 position; public ItemObject.NetworkItemInfo itemInfo; public int ID; }
+public struct TeleportPlayerToMessage : NetworkMessage { public Vector3 position; }
+public struct TeleportPlayerToSpawnMessage : NetworkMessage {}
+public struct SetActiveObjectMessage : NetworkMessage { public uint object_netID; public bool state; };
+public struct DropLootMessage : NetworkMessage { public ItemLootData[] loot; public Vector2 pos; }
+
+public class ServerManager : NetworkBehaviour
 {
-    [SerializeField] private TargetManager targetManager;
+    public GameManager gameManager;
     public static ServerManager instance;
     public List<NetPlayerCase> netPlayers = new List<NetPlayerCase>();
-    public PlayerNetwork playerNetwork;
+    public GameObject itemObjectPrefab;
+
     private void Awake()
     {
         instance = this;
-    }
-    public void Init(Transform player)
-    {
-        playerNetwork = player.GetComponent<PlayerNetwork>();
+        gameManager = FindObjectOfType<GameManager>();
+
+        if (!NetworkServer.active) { this.enabled = false; }
+
+        NetworkServer.RegisterHandler<ReadyToSyncMessage>(OnReadyToSync);
+        NetworkServer.RegisterHandler<ClaimSyncMessage>(OnClaimSync);
+        NetworkServer.RegisterHandler<DestroyItemObjectMessage>(OnDestroyItemObject);
+        NetworkServer.RegisterHandler<CreateItemObjectMessage>(OnCreateItemObject);
+        NetworkServer.RegisterHandler<TeleportPlayerToMessage>(OnTeleportPlayerToMessage);
+        NetworkServer.RegisterHandler<TeleportPlayerToSpawnMessage>(OnTeleportPlayerToSpawnMessage);
+        NetworkServer.RegisterHandler<SetActiveObjectMessage>(OnSetActivePlayerMessage);
+        NetworkServer.RegisterHandler<DropLootMessage>(OnDropLootMessage);
     }
 
-    //[Command]
-    public void TakeDamage(uint targetNetID, int damage)
+    private void OnDropLootMessage(NetworkConnectionToClient client, DropLootMessage message)
     {
-        TakeDamageSM(targetNetID, damage);
+        Vector2 pos = message.pos;
+        ItemLootData[] itemLoots = message.loot;
+
+        InventoryManager.SpawnLoot(itemLoots, pos);
     }
+
+    private void OnSetActivePlayerMessage(NetworkConnectionToClient client, SetActiveObjectMessage message)
+    {
+        NetworkServer.spawned.TryGetValue(message.object_netID, out var identity);
+        if(identity != null)
+        {
+            identity.gameObject.SetActive(message.state);
+
+            NetworkServer.SendToAll(new SetActiveObjectMessage { object_netID = message.object_netID, state = message.state });
+        }
+    }
+
+    private void OnTeleportPlayerToSpawnMessage(NetworkConnectionToClient client, TeleportPlayerToSpawnMessage message)
+    {
+        Transform startPos = GameObject.Find("SPAWNPOINT").transform;
+        GetPlayer(client).transform.position = startPos.position;
+    }
+
+    private void OnTeleportPlayerToMessage(NetworkConnectionToClient client, TeleportPlayerToMessage message)
+    {
+        GetPlayer(client).transform.position = message.position;
+    }
+
+    private void OnCreateItemObject(NetworkConnectionToClient client, CreateItemObjectMessage message)
+    {
+        ItemObject itemObject = Instantiate(itemObjectPrefab, message.position, Quaternion.identity).GetComponent<ItemObject>();
+        itemObject.Set(message.itemInfo);
+        IdentityObject identityObject = itemObject.GetComponent<IdentityObject>();
+        IdentityManager.SetObjectID(ref identityObject);
+
+        NetworkServer.SendToAll(new CreateItemObjectMessage { position = message.position, itemInfo = message.itemInfo, ID = identityObject.ID });
+    }
+
+    private void OnDestroyItemObject(NetworkConnectionToClient client, DestroyItemObjectMessage message)
+    {
+        IdentityManager.TryGetAtID(message.ID, out GameObject itemObject);
+        if(itemObject != null)
+        {
+            Destroy(itemObject);
+            NetworkServer.SendToAll(new DestroyItemObjectMessage { ID = message.ID });
+        }
+    }
+
     public PlayerNetwork GetPlayer(uint targetNetID)
     {
-        //print("i find: " + targetNetID);
         var s = netPlayers.Where(x => x.player.GetComponent<PlayerNetwork>().netId == targetNetID).FirstOrDefault().player.GetComponent<PlayerNetwork>();
-        //print("i finded s: " + s.netId);
         return s;
     }
     public PlayerNetwork GetPlayer(NetworkConnectionToClient conn)
     {
         return netPlayers.Where(x => x.conn == conn).FirstOrDefault().player.GetComponent<PlayerNetwork>();
     }
-    //[ClientRpc]
-    private void TakeDamageSM(uint targetNetID, int damage)
+    public static void AddPlayer(NetworkConnectionToClient conn, GameObject player)
     {
-        //if (netIdentity.isServer) { return; }
-        targetManager.targetsBases.Find(x => x.getNetID() == targetNetID).TakeDamage(damage);
-    }
-    //[Command]
-    public void DropLoot(DropLootMassage dropLootMassage)
-    {
-        DropLootSM(dropLootMassage);
-    }
-    //[ClientRpc]
-    private void DropLootSM(DropLootMassage dropLootMassage)
-    {
-        Vector2 pos = dropLootMassage.pos;
-        ItemLootData[] itemLoots = dropLootMassage.loot;
-        foreach (var loot in itemLoots)
+        instance.netPlayers.Add(new NetPlayerCase()
         {
-            InventoryManager.SpawnLoot(itemLoots, pos);
-        }
+            conn = conn,
+            player = player
+        });
     }
-    public void TakePlayerDamage(int netID, int damage)
+    private void OnReadyToSync(NetworkConnectionToClient client, ReadyToSyncMessage message)
     {
-        (netPlayers.Where(x => x.player.GetComponent<PlayerNetwork>().netId == netID).FirstOrDefault().player.GetComponent<PlayerNetwork>() as AliveTarget).TakeDamage(damage); 
-    }
-    public void NetUpdate()
-    {
-    }
-    public static PlayerNetwork GetMyPlayer() => instance.playerNetwork;
+        print($"[SERVER] клиент {client.connectionId} готов к синхронизации");
+        print("[SERVER] отправл€ю информацию о предметах на сервере");
+        client.Send(new InitItemObjects { items = ItemObjectSyncer.GetItemObjectData() });
 
-    public static void DestroyItemObjectAtID(int ID)
-    {
-        instance.playerNetwork.CMDDestroyItemObjectAtID(ID);
     }
-
-    public static void TeleportToSpawn(int secondRestart)
+    private void OnClaimSync(NetworkConnectionToClient client, ClaimSyncMessage message)
     {
-        instance.StartCoroutine(instance.IEStartFunAtTime(secondRestart));
-    }
-    private IEnumerator IEStartFunAtTime(float time)
-    {
+        print($"[SERVER] клиент {client.connectionId} закончил синхронизацию");
+        print($"[SERVER] инициализирую объект игрока клиента {client.connectionId} ");
+        gameManager.ServerSetPlayer(client);
 
-        yield return new WaitForSeconds(time);
-        var GM = FindObjectOfType<GameManager>();
-        GM.TeleportToSpawn();
-        if (!GM.vanishMode)
-        {
-
-            SetActivePlayer(true);
-            CanvasManager.SetActiveDeathPanel(false);
-        }
-    }
-
-    public static void SetActivePlayer(bool b)
-    {
-        instance.ISetActivePlayer(b);
-    }
-    private void ISetActivePlayer(bool b)
-    {
-        playerNetwork.SetActivePlayerSkin(b);
+        print("[SERVER] отправл€ю информацию о инициализации игрока клиента");
+        client.Send(new InitPlayerMessage { });
     }
 }
 [Serializable]

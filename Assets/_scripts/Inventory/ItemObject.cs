@@ -1,4 +1,5 @@
 using Assets._scripts.Interfaces;
+using Mirror;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -126,7 +127,7 @@ public class ItemObject : MonoBehaviour, Interactable
         if (InventoryManager.AddItem(itemInfo))
         {
             //Destroy(gameObject);
-            ServerManager.DestroyItemObjectAtID(GetComponent<IdentityObject>().ID);
+            NetworkClient.Send(new DestroyItemObjectMessage { ID = GetComponent<IdentityObject>().ID });
         }
     }
 

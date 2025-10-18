@@ -13,6 +13,6 @@ namespace Assets._scripts.World
     {
         public Transform getTransform();
         public uint getNetID();
-
+        public bool isActive();
     }
 }

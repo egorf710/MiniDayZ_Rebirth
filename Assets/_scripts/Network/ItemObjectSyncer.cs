@@ -4,25 +4,28 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using static ItemObject;
+using UnityEngine.UIElements;
 
-public class ItemObjectSyncer : NetworkBehaviour, Initable
+
+
+public class ItemObjectSyncer : MonoBehaviour
 {
-    public List<ItemObject> regItemObject;
-    public PlayerNetwork playerNetwork;
-    public static ItemObjectSyncer instance;
+    private List<ItemObject> regItemObject;
     public GameObject itemObjectPrefab;
-    public ServerManager serverManager;
-    void Awake()
+    public static ItemObjectSyncer instance;
+    private void Awake()
     {
         instance = this;
     }
-
-    public void Init(Transform player)
+    private void Start()
     {
-        print("NetworkServer.active: " + NetworkServer.active);
-        if(!NetworkServer.active) { return; }
-
+        if (NetworkServer.active)
+        {
+            iInit();
+        }
+    }
+    public void iInit()
+    {
         regItemObject = FindObjectsOfType<ItemObject>(true).ToList();
         for (int i = 0; i < regItemObject.Count; i++)
         {
@@ -31,39 +34,34 @@ public class ItemObjectSyncer : NetworkBehaviour, Initable
         }
     }
 
-    public void NetUpdate()
+    public static List<ItemObjectData> GetItemObjectData()
     {
-        //if (Session.dedicatedServerMode) { return; }
-        if(playerNetwork == null)
-        {
-            playerNetwork = NetworkClient.localPlayer.GetComponent<PlayerNetwork>();
-        }
-        if(NetworkServer.active)
-        {
-            regItemObject = FindObjectsOfType<ItemObject>(true).ToList();
-            List<ItemObjectData> itemObjectDatas = new List<ItemObjectData>();
+        return instance.iGetItemObjectData();
+    }
+    public List<ItemObjectData> iGetItemObjectData()
+    {
+        var regItemObject = FindObjectsOfType<ItemObject>(true).ToList();
+        List<ItemObjectData> itemObjectDatas = new List<ItemObjectData>();
 
-            foreach(var regObj in regItemObject)
+        foreach (var regObj in regItemObject)
+        {
+            itemObjectDatas.Add(new ItemObjectData()
             {
-                itemObjectDatas.Add(new ItemObjectData()
-                {
-                   NetworkItemInfo = new ItemObject.NetworkItemInfo(regObj.itemInfo),
-                   pos = regObj.GetPosition(),
-                   ID = regObj.GetComponent<IdentityObject>().ID,
-                });
-            }
-
-            playerNetwork.CLTSynceItemObjects(itemObjectDatas);
-
+                NetworkItemInfo = new ItemObject.NetworkItemInfo(regObj.itemInfo),
+                pos = regObj.GetPosition(),
+                ID = regObj.GetComponent<IdentityObject>().ID,
+            });
         }
+        return itemObjectDatas;
     }
-    public static void InitItemObjects(List<ItemObjectData> itemObjectDatas)
+
+    public static void InitItemObjects(List<ItemObjectData> newItemObjectDatas)
     {
-        instance.TInitItemObjects(itemObjectDatas);
+        instance.TInitItemObjects(newItemObjectDatas);
     }
-    private void TInitItemObjects(List<ItemObjectData> newItemObjectDatas)
+    public void TInitItemObjects(List<ItemObjectData> newItemObjectDatas)
     {
-        if (playerNetwork.isServer) { return; }
+
         print("init IO datas");
         DsrtMyItemObjects();
         List<ItemObjectData> itemObjectDatas = newItemObjectDatas;
@@ -85,6 +83,8 @@ public class ItemObjectSyncer : NetworkBehaviour, Initable
     }
 
 }
+
+
 [Serializable]
 public class ItemObjectData
 {

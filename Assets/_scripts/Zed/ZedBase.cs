@@ -246,4 +246,8 @@ public class ZedBase : NetworkBehaviour, AliveTarget
     {
         return netId;
     }
+    public bool isActive()
+    {
+        return gameObject.activeSelf;
+    }
 }

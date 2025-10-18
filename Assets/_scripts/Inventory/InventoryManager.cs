@@ -123,7 +123,7 @@ public class InventoryManager : MonoBehaviour
         {
             if (Instance.playerNetwork.isLocalPlayer)
             {
-                Instance.playerNetwork.TOCMDSpawnItemObject(Instance.player.position, new NetworkItemInfo(inventorySlot.itemInfo));
+                NetworkClient.Send(new CreateItemObjectMessage { position = Instance.player.position, itemInfo = new NetworkItemInfo(inventorySlot.itemInfo) });
             }
         }
     }
@@ -148,7 +148,7 @@ public class InventoryManager : MonoBehaviour
             ammo = ammo
         };
 
-        Instance.playerNetwork.TOCMDSpawnItemObject(Instance.player.position, new NetworkItemInfo(itemInfo));
+        NetworkClient.Send(new CreateItemObjectMessage { position = Instance.player.position, itemInfo = new NetworkItemInfo(itemInfo) });
     }
     public static void InstantiateItem(ItemInfo itemInfo)
     {
@@ -296,7 +296,7 @@ public class InventoryManager : MonoBehaviour
                 durability = loot.durability
             };
 
-            Instantiate(itemObjectPrefab, pos + MyInstance.RandomVector(0.5f), Quaternion.identity).GetComponent<ItemObject>().Set(itemInfo);
+            NetworkClient.Send(new CreateItemObjectMessage { itemInfo = new NetworkItemInfo(itemInfo), position = pos });
         }
     }
 }

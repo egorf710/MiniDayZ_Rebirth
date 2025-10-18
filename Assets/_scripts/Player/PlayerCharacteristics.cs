@@ -417,8 +417,10 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
         effectCases.Clear();
 
         CanvasManager.SetActiveDeathPanel(true);
-        ServerManager.SetActivePlayer(false);
-        ServerManager.TeleportToSpawn(10);
+
+        NetworkClient.Send(new SetActiveObjectMessage { object_netID = playerNetwork.netId, state = false });
+
+        NetworkClient.Send(new TeleportPlayerToSpawnMessage { });
     }
     public void SetBleedingParticle(int power)
     {

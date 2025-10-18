@@ -34,10 +34,9 @@ public class Tree : NetworkBehaviour, Interactable, Revivedable
 
             //mySpriteRenderer.color = new Color(1, 1, 1, 0);
             //deathTreeObject.SetActive(true);
-            if (ServerManager.GetMyPlayer().isLocalPlayer)
-            {
-                CMDSetAlive(false);
-            }
+
+            NetworkClient.Send(new SetActiveObjectMessage { object_netID = netId, state = false });
+
             //IsAlive = false;
         }
 
@@ -77,10 +76,9 @@ public class Tree : NetworkBehaviour, Interactable, Revivedable
     {
         strength = Random.Range(2, 3);
         //deathTreeObject.SetActive(false);
-        if (ServerManager.GetMyPlayer().isLocalPlayer)
-        {
-            CMDSetAlive(true);
-        }
+
+        NetworkClient.Send(new SetActiveObjectMessage { object_netID = netId, state = true });
+
         //mySpriteRenderer.color = new Color(1, 1, 1, 1);
         //IsAlive = true;
     }
