@@ -77,8 +77,13 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
 
     private bool IsLocalPlayer()
     {
-        return GetComponent<PlayerNetwork>().isLocalPlayer;
+        if(playerNetwork == null)
+        {
+            playerNetwork = GetComponent<PlayerNetwork>();
+        }
+        return playerNetwork.isLocalPlayer;
     }
+
     public void InitUI
         
         (Slider healthField, Slider waterSlider, Slider foodField, Slider heatField,
@@ -100,6 +105,7 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
     private void Refresh()
     {
         if (!IsLocalPlayer()) { return; }
+
         //UI
         currentHealth = Mathf.Clamp(currentHealth, 0, 100);
         currentWater = Mathf.Clamp(currentWater, 0, 100);
@@ -304,7 +310,7 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
             }
             if (code == 1)
             {
-                SetBleedingParticle(5);
+
                 playerNetwork.TOCMDSetBleedingParticle(5);
 
                 if (UnityEngine.Random.Range(0, 5) <= 1)
@@ -328,7 +334,7 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
             }
             if (code == 1)
             {
-                SetBleedingParticle(5);
+
                 playerNetwork.TOCMDSetBleedingParticle(5);
 
                 if (UnityEngine.Random.Range(0, 5) <= 1)
@@ -346,7 +352,8 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
     }
     public void TakeDamage(int damage, int code = 0)
     {
-        if(armor < damage)
+        if (!IsLocalPlayer()) { return; }
+        if (armor < damage)
         {
             if(UnityEngine.Random.Range(0, 100) <= blockChanse)
             {
@@ -357,7 +364,7 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
             if(code == 1)
             {
                 
-                playerNetwork.TOCMDSetBleedingParticle(5);
+
 
                 if (UnityEngine.Random.Range(0, 5) <= 1)
                 {
@@ -367,7 +374,7 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
 
                 if(playerHealth > 0)
                 {
-                    SetBleedingParticle(5);
+                    playerNetwork.TOCMDSetBleedingParticle(5);
                 }
             }
             else
@@ -389,7 +396,7 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
             }
             if (code == 1)
             {
-                SetBleedingParticle(5);
+
                 playerNetwork.TOCMDSetBleedingParticle(5);
 
                 if (UnityEngine.Random.Range(0, 5) <= 1)
@@ -415,6 +422,7 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
         playerWater = 100;
         playerHeat = 100;
         effectCases.Clear();
+        StopAllCoroutines();
 
         CanvasManager.SetActiveDeathPanel(true);
 
@@ -430,11 +438,14 @@ public class PlayerCharacteristics : MonoBehaviour, Vulnerable
     {
         for (int i = 0; i < power; i++)
         {
+
             ParticleSystem particleSystem = Instantiate(bleedingParticlePrefab, transform).GetComponent<ParticleSystem>();
             var main = particleSystem.main;
             main.duration = 4;
             particleSystem.Play();
             Destroy(particleSystem.gameObject, 9);
+
+
 
             yield return new WaitForSeconds(0.05f);
         }

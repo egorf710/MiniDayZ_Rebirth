@@ -1,4 +1,6 @@
+using Assets._scripts.Interfaces;
 using Assets._scripts.World;
+using JetBrains.Annotations;
 using Microsoft.VisualBasic;
 using Mirror;
 using System;
@@ -17,6 +19,8 @@ public struct TeleportPlayerToMessage : NetworkMessage { public Vector3 position
 public struct TeleportPlayerToSpawnMessage : NetworkMessage {}
 public struct SetActiveObjectMessage : NetworkMessage { public uint object_netID; public bool state; };
 public struct DropLootMessage : NetworkMessage { public ItemLootData[] loot; public Vector2 pos; }
+public struct SetStateMessage : NetworkMessage { public uint object_netID; public int state; }
+public struct InteractMessage : NetworkMessage { public uint object_netID; }
 
 public class ServerManager : NetworkBehaviour
 {
@@ -40,6 +44,48 @@ public class ServerManager : NetworkBehaviour
         NetworkServer.RegisterHandler<TeleportPlayerToSpawnMessage>(OnTeleportPlayerToSpawnMessage);
         NetworkServer.RegisterHandler<SetActiveObjectMessage>(OnSetActivePlayerMessage);
         NetworkServer.RegisterHandler<DropLootMessage>(OnDropLootMessage);
+        NetworkServer.RegisterHandler<SetStateMessage>(OnSetStateMessage);
+        NetworkServer.RegisterHandler<InteractMessage>(OnInteractMessage);
+    }
+
+    private void OnInteractMessage(NetworkConnectionToClient client, InteractMessage message)
+    {
+        NetworkServer.spawned.TryGetValue(message.object_netID, out var identity);
+        if (identity != null)
+        {
+            identity.gameObject.TryGetComponent(out Interactable component);
+            if (component != null)
+            {
+                if (component.IsInteractable(out string msg))
+                {
+                    component.Interact();
+                    NetworkServer.SendToAll(new InteractMessage { object_netID = message.object_netID });
+                }
+
+                print("[SERVER] " + msg);
+            }
+
+
+        }
+        else
+        {
+            print("try change active state " + message.object_netID);
+        }
+    }
+
+    private void OnSetStateMessage(NetworkConnectionToClient client, SetStateMessage message)
+    {
+        NetworkServer.spawned.TryGetValue(message.object_netID, out var identity);
+        if (identity != null)
+        {
+            identity.gameObject.GetComponent<Statetable>().SetStatetable(message.state);
+
+            NetworkServer.SendToAll(new SetStateMessage { object_netID = message.object_netID, state = message.state });
+        }
+        else
+        {
+            print("try change active state " + message.object_netID);
+        }
     }
 
     private void OnDropLootMessage(NetworkConnectionToClient client, DropLootMessage message)
@@ -58,6 +104,10 @@ public class ServerManager : NetworkBehaviour
             identity.gameObject.SetActive(message.state);
 
             NetworkServer.SendToAll(new SetActiveObjectMessage { object_netID = message.object_netID, state = message.state });
+        }
+        else
+        {
+            print("try change active state " + message.object_netID);
         }
     }
 
@@ -112,18 +162,19 @@ public class ServerManager : NetworkBehaviour
     private void OnReadyToSync(NetworkConnectionToClient client, ReadyToSyncMessage message)
     {
         print($"[SERVER] клиент {client.connectionId} готов к синхронизации");
+        print($"[SERVER] инициализирую объект игрока клиента {client.connectionId} ");
+        gameManager.ServerSetPlayer(client);
+        print("[SERVER] отправл€ю информацию о инициализации игрока клиента");
+        client.Send(new InitPlayerMessage { });
         print("[SERVER] отправл€ю информацию о предметах на сервере");
         client.Send(new InitItemObjects { items = ItemObjectSyncer.GetItemObjectData() });
+        print("[SERVER] отправл€ю информацию о состо€ни€х объектов на сервере");
+        client.Send(new StatetableMessage { statetableObjects = StatetableManager.GetStatetableObjects() });
 
     }
     private void OnClaimSync(NetworkConnectionToClient client, ClaimSyncMessage message)
     {
         print($"[SERVER] клиент {client.connectionId} закончил синхронизацию");
-        print($"[SERVER] инициализирую объект игрока клиента {client.connectionId} ");
-        gameManager.ServerSetPlayer(client);
-
-        print("[SERVER] отправл€ю информацию о инициализации игрока клиента");
-        client.Send(new InitPlayerMessage { });
     }
 }
 [Serializable]

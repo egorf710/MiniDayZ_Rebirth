@@ -18,9 +18,10 @@ namespace Assets._scripts.Interfaces
         public bool IsActive();
         public Vector2 GetPosition();
     }
-    public interface Revivedable
+    public interface Statetable
     {
-        public void Revived();
+        public void SetStatetable(int state);
+        public int GetStatetable();
     }
     [Serializable]
     public struct VulnerabledData

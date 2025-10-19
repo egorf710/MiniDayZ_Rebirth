@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Assets._scripts.Interfaces;
 using Mirror;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -16,6 +17,10 @@ public class ClientManager : MonoBehaviour
     {
         public List<ItemObjectData> items;
     }
+    public struct StatetableMessage : NetworkMessage
+    {
+        public List<StatetableObject> statetableObjects;
+    }
     private void Awake()
     {
         NetworkClient.RegisterHandler<InitItemObjects>(OnInitItemObjects);
@@ -23,13 +28,65 @@ public class ClientManager : MonoBehaviour
         NetworkClient.RegisterHandler<DestroyItemObjectMessage>(OnDestroyItemObjectMessage);
         NetworkClient.RegisterHandler<CreateItemObjectMessage>(OnCreateItemObject);
         NetworkClient.RegisterHandler<SetActiveObjectMessage>(OnSetActivePlayerMessage);
+        NetworkClient.RegisterHandler<SetStateMessage>(OnSetStateMessage);
+        NetworkClient.RegisterHandler<InteractMessage>(OnInteractMessage);
+        NetworkClient.RegisterHandler<StatetableMessage>(OnStatetableMessage);
 
         SetupCanvas.SetText("–егистрируем сообщений");
     }
 
+    private void OnStatetableMessage(StatetableMessage message)
+    {
+        SetupCanvas.SetText("—инхронизируем состо€ни€ объектов");
+        foreach (var item in message.statetableObjects)
+        {
+            NetworkClient.spawned.TryGetValue(item.netId, out var identity);
+            if (identity != null)
+            {
+                identity.gameObject.TryGetComponent(out Statetable component);
+                component.SetStatetable(item.state);
+            }
+            else
+            {
+                print("[CLIENT] try change state " + item.netId);
+            }
+        }
+        print("[CLEINT] отправл€ю сообщение и том, что € (клиент) закончил синхронизацию");
+        NetworkClient.Send(new ClaimSyncMessage { });
+        SetupCanvas.Destroy();
+    }
+
+    private void OnInteractMessage(InteractMessage message)
+    {
+        NetworkClient.spawned.TryGetValue(message.object_netID, out var identity);
+        if (identity != null)
+        {
+            identity.gameObject.TryGetComponent(out Interactable component);
+            component.Interact();
+        }
+        else
+        {
+            print("[CLIENT] try change active state " + message.object_netID);
+        }
+    }
+
+    private void OnSetStateMessage(SetStateMessage message)
+    {
+        NetworkClient.spawned.TryGetValue(message.object_netID, out var identity);
+        if (identity != null)
+        {
+            identity.gameObject.GetComponent<Statetable>().SetStatetable(message.state);
+            print($"[CLIENT] устанавливаю стосто€ние {message.state} дл€ {message.object_netID}");
+        }
+        else
+        {
+            print("[CLIENT] try change active state " + message.object_netID);
+        }
+    }
+
     private void OnSetActivePlayerMessage(SetActiveObjectMessage message)
     {
-        NetworkServer.spawned.TryGetValue(message.object_netID, out var identity);
+        NetworkClient.spawned.TryGetValue(message.object_netID, out var identity);
         if (identity != null)
         {
             identity.gameObject.SetActive(message.state);
@@ -56,22 +113,13 @@ public class ClientManager : MonoBehaviour
     public void OnInitItemObjects(InitItemObjects message)
     {
         print("ItemObjectSyncer is null? - " + ItemObjectSyncer.instance == null);
-        SetupCanvas.SetText("—инхронизируем объекты");
+        SetupCanvas.SetText("—инхронизируем предметы");
         itemObjectSyncer.TInitItemObjects(message.items);
-
-        print("[CLEINT] отправл€ю сообщение и том, что € (клиент) закончил синхронизацию");
-        NetworkClient.Send(new ClaimSyncMessage { });
     }
     public void OnInitPlayerMessage(InitPlayerMessage message)
     {
         SetupCanvas.SetText("»нициализируем игрока");
-
         Initializer.Init(NetworkClient.localPlayer.transform);
-        if (NetworkClient.localPlayer.isLocalPlayer)
-        {
-            NetworkClient.localPlayer.name = "Local Player";
-        }
-
-        SetupCanvas.Destroy();
+        NetworkClient.localPlayer.name = "Local Player";
     }
 }

@@ -57,6 +57,7 @@ public class GameManager : NetworkManager
 
     public void ServerSetPlayer(NetworkConnectionToClient conn)
     {
+
         Transform startPos = GameObject.Find("SPAWNPOINT").transform;
         GameObject player = startPos != null
             ? Instantiate(playerPrefab, startPos.position, startPos.rotation)
@@ -69,6 +70,8 @@ public class GameManager : NetworkManager
         player.GetComponent<NetworkIdentity>().AssignClientAuthority(conn);//Позволяем клиенту управляем своим игроком на сервере (использовать [Comand] на объекте своего игрока)
         //Уведомляем все компоненты о том что подключился новый игрок, чтобы настроить их работу с новым игроком
         Initializer.UpdateNetState();
+
+        ServerManager.AddPlayer(conn, player);
 
         print($"[SERVER] отправляю клиенту {conn.connectionId} сообщение, чтобы он завершил локальную синхронизацию на своей стороне");
         conn.Send(new InitPlayerMessage { });

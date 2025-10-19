@@ -37,7 +37,6 @@ public class InventoryManager : MonoBehaviour
                 clothesSlots.ToList().Add(slot);
             }
         }
-        print(clothesSlots.Length);
         SetActiveInventory(true);
         SetActiveInventory(false);
     }
@@ -149,6 +148,19 @@ public class InventoryManager : MonoBehaviour
         };
 
         NetworkClient.Send(new CreateItemObjectMessage { position = Instance.player.position, itemInfo = new NetworkItemInfo(itemInfo) });
+    }
+    public static void InstantiateItem(Vector3 pos, Item item, int amount = 1, int durability = 100, int ammo = 0)
+    {
+        ItemInfo itemInfo = new ItemInfo
+        {
+            name = item.name,
+            item = item,
+            amount = amount,
+            durability = durability,
+            ammo = ammo
+        };
+
+        NetworkClient.Send(new CreateItemObjectMessage { position = pos, itemInfo = new NetworkItemInfo(itemInfo) });
     }
     public static void InstantiateItem(ItemInfo itemInfo)
     {

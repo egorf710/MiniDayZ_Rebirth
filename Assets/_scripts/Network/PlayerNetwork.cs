@@ -217,6 +217,7 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
 
     public void TOCMDSetBleedingParticle(int power)
     {
+        if (!isLocalPlayer) { return; }
         CMDSetBleedingParticle(power);
     }
     [Command]
@@ -229,6 +230,7 @@ public class PlayerNetwork : NetworkBehaviour, Initable, AliveTarget
     {
         if (isServer) { return; }
         GetComponent<PlayerCharacteristics>().SetBleedingParticle(power);
+        print("krov");
     }
 }
 public class PlayerData

@@ -10,7 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4319530072602907839}
   - component: {fileID: 4319530072602907838}
-  m_Layer: 0
+  - component: {fileID: 1448069107070062376}
+  - component: {fileID: 8482669580696179364}
+  - component: {fileID: 673554722195562121}
+  m_Layer: 6
   m_Name: tree_leaves_new2-sheet0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,6 +48,85 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
+--- !u!114 &1448069107070062376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4319530072602907836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  _assetId: 2063149430
+  serverOnly: 0
+  visible: 0
+  StartActiveState: 1
+  hasSpawned: 0
+--- !u!114 &8482669580696179364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4319530072602907836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81ac91453f05d9f449a6af832854d2ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 0
+  syncMode: 0
+  syncInterval: 0.1
+  strength: 0
+  treeFallClip:
+  - {fileID: 8300000, guid: 63db59eb2fb5d274eacfc87c6b41c11f, type: 3}
+  - {fileID: 8300000, guid: afe1759b0737c2d44ab306ff86a5c4e4, type: 3}
+  itemLoot:
+  - item: {fileID: 11400000, guid: d08ae0f425d072947bac7af6ceb4acca, type: 2}
+    amountRange: {x: 1, y: 1}
+    durabilityRange: {x: 0, y: 0}
+    maxDropCount: 1
+    chance: 100
+  - item: {fileID: 11400000, guid: ecfcae087772adf47a58178533934171, type: 2}
+    amountRange: {x: 1, y: 5}
+    durabilityRange: {x: 0, y: 0}
+    maxDropCount: 2
+    chance: 100
+  deathTreeObject: {fileID: 159680243054069180}
+  mySpriteRenderer: {fileID: 4319530073028670783}
+  myparent: {fileID: 0}
+  dropCount: 3
+  state: 0
+--- !u!61 &673554722195562121
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4319530072602907836}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.010015726, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.65625, y: 3.65625}
+    newSize: {x: 1.65625, y: 3.65625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.42232704, y: 0.2112546}
+  m_EdgeRadius: 0
 --- !u!1 &4319530073028670770
 GameObject:
   m_ObjectHideFlags: 0
@@ -55,9 +137,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4319530073028670781}
   - component: {fileID: 4319530073028670783}
-  - component: {fileID: 4319530073028670780}
-  - component: {fileID: 165915164}
-  - component: {fileID: 5685966522577884378}
   m_Layer: 6
   m_Name: tree_leaves_new2-sheet0
   m_TagString: Untagged
@@ -73,7 +152,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4319530073028670770}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.97, y: 0.81, z: 0}
+  m_LocalPosition: {x: 0.1, y: 1.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -132,84 +211,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4319530073028670780
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4319530073028670770}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.1679802, y: -1.5737946}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.65625, y: 3.65625}
-    newSize: {x: 1.65625, y: 3.65625}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.4941597, y: 0.2112546}
-  m_EdgeRadius: 0
---- !u!114 &165915164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4319530073028670770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81ac91453f05d9f449a6af832854d2ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncDirection: 0
-  syncMode: 0
-  syncInterval: 0.1
-  treeFallClip:
-  - {fileID: 8300000, guid: 63db59eb2fb5d274eacfc87c6b41c11f, type: 3}
-  - {fileID: 8300000, guid: afe1759b0737c2d44ab306ff86a5c4e4, type: 3}
-  itemLoot:
-  - item: {fileID: 11400000, guid: d08ae0f425d072947bac7af6ceb4acca, type: 2}
-    amountRange: {x: 1, y: 1}
-    durabilityRange: {x: 0, y: 0}
-    maxDropCount: 1
-    chance: 100
-  - item: {fileID: 11400000, guid: ecfcae087772adf47a58178533934171, type: 2}
-    amountRange: {x: 1, y: 5}
-    durabilityRange: {x: 0, y: 0}
-    maxDropCount: 2
-    chance: 100
-  deathTreeObject: {fileID: 159680243054069180}
-  mySpriteRenderer: {fileID: 4319530073028670783}
-  myparent: {fileID: 0}
-  dropCount: 3
-  IsAlive: 1
---- !u!114 &5685966522577884378
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4319530073028670770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneId: 0
-  _assetId: 2063149430
-  serverOnly: 0
-  visible: 0
-  StartActiveState: 1
-  hasSpawned: 0
 --- !u!1001 &1000232473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -231,11 +232,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 159680244037227431, guid: d25103bcfd9e0a24fbf29de4125b64ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.202
+      value: -0.668
       objectReference: {fileID: 0}
     - target: {fileID: 159680244037227431, guid: d25103bcfd9e0a24fbf29de4125b64ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.511
+      value: 0.23899996
       objectReference: {fileID: 0}
     - target: {fileID: 159680244037227431, guid: d25103bcfd9e0a24fbf29de4125b64ee, type: 3}
       propertyPath: m_LocalPosition.z
