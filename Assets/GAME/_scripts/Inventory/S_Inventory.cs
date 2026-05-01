@@ -1,5 +1,8 @@
 using Assets._scripts;
 using Assets._scripts.Menu;
+using Assets.GAME._scripts.Fic;
+using Assets.GAME._scripts.Inventory;
+using Assets.GAME._scripts.Inventory.Signals;
 using Mirror;
 using System;
 using System.Collections;
@@ -9,23 +12,34 @@ using UnityEngine;
 using UnityEngine.UI;
 using static ItemObject;
 
-public class InventoryManager : MonoBehaviour
+public class S_Inventory: MonoBehaviour
 {
     [SerializeField] private GameObject itemObjectPrefab;
-    [SerializeField] public static InventoryManager Instance;
+    [SerializeField] private InventorySlot[] clothesSlots = new InventorySlot[5];
     [SerializeField] private List<InventorySlot> slots = new List<InventorySlot>();
-    [SerializeField] public Transform player;
     [SerializeField] private ItemMenu itemMenu;
+    private bool InventoryOpen;
+
+    [Space]
+    [Header("UI")]
     [SerializeField] private Transform outPanel;
     [SerializeField] private Image dropPanel;
     [SerializeField] private Transform dropitemsParent;
     [SerializeField] private GameObject dropItemSlotPrefab;
-    [SerializeField] public bool InventoryOpen;
-    public void Init(Transform player)
-    {
-        Instance = this;
-        this.player = player;
 
+
+    public Item item;
+    public ItemInfo[] insitem;
+    public ItemObject[] itemsDrops;
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            AddItem(item);
+        }
+    }
+    public void Init()
+    {
         foreach (var slot in slots)
         {
             slot.Init();
@@ -34,13 +48,25 @@ public class InventoryManager : MonoBehaviour
                 clothesSlots.ToList().Add(slot);
             }
         }
-        SetActiveInventory(true);
-        SetActiveInventory(false);
+        EventBus.Subscribe<Signal_RefreshDropPanel>(RefreshDropPanel);
     }
-    public static bool AddItem(ItemInfo itemInfo)
+    public bool AddItem(Item item)
+    {
+        ItemInfo itemInfo = new ItemInfo()
+        {
+            name = item.name,
+            item = item,
+            ammo = 0,
+            amount = 1,
+            durability = 100,
+            insideItems = new List<ItemInfo>(insitem),
+        };
+        return AddItem(itemInfo);
+    }
+    public bool AddItem(ItemInfo itemInfo)
     {
 
-        var notFullCollections = Instance.slots
+        var notFullCollections = slots
             .Where(state =>(!state.IsEmpty
             && (itemInfo.item == state.itemInfo.item)
             && (state.itemInfo.amount < state.itemInfo.item.item_max_amount)) || (state.IsEmpty && !state.IsLocked && itemInfo.item.item_type == state.slotType)
@@ -108,14 +134,9 @@ public class InventoryManager : MonoBehaviour
         }
         return false;
     }
-    public static void Drop(InventorySlot inventorySlot)
+    public void DropAllInventory()
     {
-        ItemObject itemObject = Instantiate(Instance.itemObjectPrefab, Instance.player.position, Quaternion.identity).GetComponent<ItemObject>();
-        itemObject.Set(inventorySlot);
-    }
-    public static void DropAllInventory()
-    {
-        foreach (var slot in Instance.slots)
+        foreach (var slot in slots)
         {
             if (slot.itemInfo != null && slot.itemInfo.item != null && !slot.IsEmpty)
             {
@@ -123,135 +144,127 @@ public class InventoryManager : MonoBehaviour
             }
         }
     }
-    public static void InstantiateItem(Item item, int amount = 1, int durability = 100, int ammo = 0)
+
+    public void InstantiateItem(ItemInfo itemInfo)
     {
-        ItemInfo itemInfo = new ItemInfo
-        {
-            name = item.name,
-            item = item,
-            amount = amount,
-            durability = durability,
-            ammo = ammo
-        };
-    }
-    public static void InstantiateItem(Vector3 pos, Item item, int amount = 1, int durability = 100, int ammo = 0)
-    {
-        ItemInfo itemInfo = new ItemInfo
-        {
-            name = item.name,
-            item = item,
-            amount = amount,
-            durability = durability,
-            ammo = ammo
-        };
-    }
-    public static void InstantiateItem(ItemInfo itemInfo)
-    {
-        ItemObject itemObject = Instantiate(Instance.itemObjectPrefab, Instance.player.position, Quaternion.identity).GetComponent<ItemObject>();
+        ItemObject itemObject = Instantiate(itemObjectPrefab, ServiceLocator.Get<GamePlayManager>().GetMyPlayer().transform.position, Quaternion.identity).GetComponent<ItemObject>();
         itemObject.Set(itemInfo);
+
+        EventBus.Invoke<Signal_UpdateDropItems>(new Signal_UpdateDropItems(InventoryOpen));
     }
-    public static Item GetItemByName(string name)
+    public Item GetItemByName(string name)
     {
-        //print(name);
         return Resources.Load<Item>(name);
     }
     public void OpenClose()
     {
         SetActiveInventory(!transform.GetChild(0).gameObject.activeSelf);
         InventoryOpen = transform.GetChild(0).gameObject.activeSelf;
-        Instance.ClearTemp();
+        EventBus.Invoke<Signal_UpdateDropItems>(new Signal_UpdateDropItems(InventoryOpen));
     }
-    public static void SetActiveInventory(bool b)
+    public void SetActiveInventory(bool b)
     {
-        Instance.transform.GetChild(0).gameObject.SetActive(b);
-        Instance.InventoryOpen = Instance.transform.GetChild(0).gameObject.activeSelf;
-        Instance.ClearTemp();
+        transform.GetChild(0).gameObject.SetActive(b);
+        InventoryOpen = b;
+        EventBus.Invoke<Signal_UpdateDropItems>(new Signal_UpdateDropItems(InventoryOpen));
     }
-    public static void OpenItemMenu(InventorySlot inventorySlot, Vector2 point)
+    public void OpenItemMenu(InventorySlot inventorySlot, Vector2 point)
     {
-        Instance.itemMenu.gameObject.SetActive(true);
-        Instance.itemMenu.transform.position = point;
-        Instance.itemMenu.Set(inventorySlot);
+        itemMenu.gameObject.SetActive(true);
+        itemMenu.transform.position = point;
+        itemMenu.Set(inventorySlot);
     }
-    public static Transform GetOutTransform()
+    public void SetActiveDropPanel(bool b)
     {
-        return Instance.outPanel;
+        dropPanel.gameObject.SetActive(b);
     }
-    public static void SetActiveDropPanel(bool b)
+    public Transform GetOutTransform()
     {
-        Instance.dropPanel.gameObject.SetActive(b);
+        return outPanel;
     }
-    public static void RefreshDropPanel()
-    {
-        Instance.InstanceRefreshDropPanel();
-    }
-    private void InstanceRefreshDropPanel()
+
+    private void RefreshDropPanel(Signal_RefreshDropPanel signal)
     {
         if (!InventoryOpen) { return; }
 
-        for (int i = 0; i < dropitemsParent.childCount; i++)
+        for (int i = 0; i < signal.dropItems.Length; i++)
         {
-            Destroy(dropitemsParent.GetChild(i).gameObject);
+            if (dropitemsParent.childCount > i)
+            {
+                dropitemsParent.GetChild(i).TryGetComponent<DropSlot>(out DropSlot drop);
+                if (drop != null)
+                {
+                    if (!signal.dropItems.Contains(drop.myObject))
+                    {
+                        Destroy(dropitemsParent.GetChild(i).gameObject);
+                    }
+                    else
+                    {
+                        drop.SetSlot(signal.dropItems[i]);
+                    }
+                }
+            }
+            else
+            {
+                GameObject dropSlot = Instantiate(dropItemSlotPrefab, dropitemsParent);
+                dropSlot.GetComponent<DropSlot>().SetSlot(signal.dropItems[i]);
+            }
         }
 
-        //ItemObject[] items = playerInteract.GetAroundItems();
 
-        //foreach (var item in items)
-        //{
-        //    GameObject dropSlot = Instantiate(dropItemSlotPrefab, dropitemsParent);
-        //    dropSlot.GetComponent<DropSlot>().SetSlot(item);
-        //}
-    }
-    private void ClearTemp()
-    {
-        RefreshDropPanel();
     }
 
-    //EVENT BUS
-    public static void SetClothes(Item item, bool isWeapon = false)
+    public void SetClothes(Item item, bool isWeapon = false)
     {
         if(item == null) { Debug.LogWarning("item is null!"); return; }
-        Instance.player.GetChild(0).GetComponent<PlayerAnimator>().SetClothByName(item.name, isWeapon);
+        EventBus.Invoke<Signal_SetClothes>(new Signal_SetClothes(item, isWeapon));
     }
 
     //EVENT BUS
-    public static void ClearClothes(string itemName)
+    public void ClearClothes(string itemName)
     {
-        Instance.player.GetChild(0).GetComponent<PlayerAnimator>().ClearClothByName(itemName);
+        EventBus.Invoke<Signal_ClearClothes>(new Signal_ClearClothes(itemName));
     }
-    public static void ClearClothes(ItemType itemType)
+    public void ClearClothes(ItemType itemType)
     {
-        Instance.player.GetChild(0).GetComponent<PlayerAnimator>().ClearClothByType(itemType);
+        EventBus.Invoke<Signal_ClearClothes>(new Signal_ClearClothes(itemType));
     }
-    public static void ClearClothes(AnimationThpe animType)
+    public void ClearClothes(AnimationThpe animType)
     {
-        Instance.player.GetChild(0).GetComponent<PlayerAnimator>().ClearClothByType(animType);
+        EventBus.Invoke<Signal_ClearClothes>(new Signal_ClearClothes(animType));
     }
 
+/* InventoryManager (singleton)
+    только:
+        хранение слотов
+        Add/Remove/Move/Split
 
-    /// <summary>
-    /// Switch to pistol when pislot and rifle == null
-    /// Switch to rifle when pistol != null or pistol == null
-    /// </summary>
-    public static void SwitchToNewWeapon(bool mainSwitch = false)
-    {
-    }
-    public static InventorySlot GetSlotByItem(Item item)
-    {
-        if (Instance.slots.Count == 0) { return null; }
+InventoryUI
+    рисует UI
 
-        var list = Instance.slots.Where(x => !x.SlotIsNull() && x.itemInfo.item == item).ToArray();
+EquipmentSystem
+    экипировка
+
+DropSystem
+    выброс в мир
+
+NetworkInventoryBridge
+    Cmd/Rpc Mirror
+
+EventBus
+    склейка всего */
+
+
+    public InventorySlot GetSlotByItem(Item item)
+    {
+        if (slots.Count == 0) { return null; }
+
+        var list = slots.Where(x => !x.SlotIsNull() && x.itemInfo.item == item).ToArray();
 
         return (list.Length > 0 ? list.First() : null);
     }
 
-    [ShowInInspector] public InventorySlot[] clothesSlots = new InventorySlot[5];
-
-    public static void ClothesDamage(int damage = 1)
-    {
-        Instance.ClothesDamageInstance(damage);
-    }
-    private void ClothesDamageInstance(int damage)
+    public void ClothesDamage(int damage)
     {
         foreach (var slot in clothesSlots)
         {

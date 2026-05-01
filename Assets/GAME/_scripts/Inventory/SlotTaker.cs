@@ -1,11 +1,12 @@
 using Assets._scripts.Menu;
+using Assets.GAME._scripts.Fic;
+using Assets.GAME._scripts.Inventory;
 using Mirror;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using static ItemObject;
 
 public class SlotTaker : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerUpHandler, IPointerExitHandler
 {
@@ -39,10 +40,10 @@ public class SlotTaker : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         if (stopIt) { return; }
         //StartDrag
         lastMousePosition = eventData.position;
-        transform.SetParent(InventoryManager.GetOutTransform());
+        transform.SetParent(ServiceLocator.Get<S_Inventory>().GetOutTransform());
         GetComponent<Image>().raycastTarget = false;
         GetComponent<Image>().color = Color.gray;
-        InventoryManager.SetActiveDropPanel(true);
+        ServiceLocator.Get<S_Inventory>().SetActiveDropPanel(true);
     }
     public void OnDrag(PointerEventData eventData)
     {
@@ -106,19 +107,20 @@ public class SlotTaker : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
                         Item myItem = mySlot.itemInfo.item;
                         if (second == myItem && second.stacable)
                         {
-                            int diff = second.item_max_amount - slotTaker.mySlot.itemInfo.amount - mySlot.itemInfo.amount;
+                            int diff = second.item_max_amount - (slotTaker.mySlot.itemInfo.amount + mySlot.itemInfo.amount);
 
-                            if (diff < 0)
-                            {
-                                slotTaker.mySlot.SetSlot(mySlot.itemInfo);
-                                mySlot.itemInfo.amount = Mathf.Abs(diff);
-                                mySlot.Refresh();
-                            }
-                            else
+                            if(diff >= 0)
                             {
                                 slotTaker.mySlot.SetSlot(mySlot.itemInfo);
                                 mySlot.ClearSlot();
                             }
+                            else
+                            {
+                                slotTaker.mySlot.SetSlot(mySlot.itemInfo);
+                                mySlot.itemInfo.amount = Mathf.Abs(diff);
+                                mySlot.ClearSlot();
+                            }
+
                         }
                         else if (second == null)
                         {
@@ -163,7 +165,7 @@ public class SlotTaker : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         {
             GetComponent<Image>().color = new Color(1, 1, 1, 0);
         }
-        InventoryManager.SetActiveDropPanel(false);
+        ServiceLocator.Get<S_Inventory>().SetActiveDropPanel(false);
     }
     public void OnPointerUp(PointerEventData eventData)
     {

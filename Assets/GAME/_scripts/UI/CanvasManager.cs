@@ -33,8 +33,6 @@ public class CanvasManager : MonoBehaviour
     public void Init(Transform player)
     {
         interactButton.onClick.AddListener(Interact);
-        FindObjectOfType<InventoryManager>().Init(player);
-
     }
     public static void SetActiveInteractButton(bool b)
     {

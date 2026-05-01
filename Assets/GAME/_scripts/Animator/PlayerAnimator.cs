@@ -1,3 +1,5 @@
+using Assets.GAME._scripts.Fic;
+using Assets.GAME._scripts.Inventory.Signals;
 using Mirror;
 using System;
 using System.Collections;
@@ -26,6 +28,7 @@ public class PlayerAnimator : MonoBehaviour
     public AnimationControllerState controllerState;
     public float AnimationSpeed;
     public Vector2 animationDir;
+    public Vector2 shootDir;
     public float speed;
     public bool shoot;
     public bool interact;
@@ -39,60 +42,19 @@ public class PlayerAnimator : MonoBehaviour
     public string cur_hand;
     public string cur_vest;
 
-    [Header("DEBUG")]
-    public string itemName;
-    public AnimationThpe animationType;
-    public bool SET;
-    public bool CLEAR;
-    public bool SHOOT;
-    public bool SHOOTING;
-    public Vector2 ShootDir;
-    public float timeInteract;
-    public bool INTERACT;
+
 
     [Header("Network")]
 
     [SerializeField] private int repeate = 5;
-
-    //private void Update()
-    //{
-    //    if (SET)
-    //    {
-    //        SET = false;
-    //        SetClothByName(itemName);
-    //    }
-    //    if (CLEAR)
-    //    {
-    //        CLEAR = false;
-    //        if (itemName == "")
-    //        {
-    //            ClearClothByType(animationType);
-    //        }
-    //        else
-    //        {
-    //            ClearClothByName(itemName);
-    //        }
-    //    }
-    //    if (SHOOT)
-    //    {
-    //        SHOOT = false;
-    //        Shoot(ShootDir);
-    //    }
-    //    if (SHOOTING)
-    //    {
-    //        Shoot(ShootDir);
-    //    }
-    //    if (INTERACT)
-    //    {
-    //        INTERACT = false;
-    //        Interact(timeInteract);
-    //    }
-    //}
     private void Start()
     {
         SetClothByName("default_skin");
         StartCoroutine(Animating());
+
     }
+
+
     public void AnimMove(Vector2 dir)
     {
         dir.Normalize();
@@ -133,7 +95,7 @@ public class PlayerAnimator : MonoBehaviour
             }
             rep++;
 
-            while (INTERACT)
+            while (interact)
             {
                 if (index > 3) { index = 0; }
                 AnimInteract(ref index);
@@ -313,7 +275,7 @@ public class PlayerAnimator : MonoBehaviour
     }
     private void AnimIdle(ref int index)
     {
-        int side = GetSideByDir(shoot ? ShootDir : animationDir);
+        int side = GetSideByDir(shoot ? shootDir : animationDir);
         if (controllerState == AnimationControllerState.none)
         {
             bodyskin.sprite = bodyskin_idle[side];
@@ -436,7 +398,7 @@ public class PlayerAnimator : MonoBehaviour
     public void Shoot(Vector2 dir)
     {
         shoot = true;
-        ShootDir = dir;
+        shootDir = dir;
     }
     public bool Interact(float time = 1)
     {

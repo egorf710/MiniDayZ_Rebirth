@@ -1,12 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Assets.GAME._scripts.Fic;
+using Assets.GAME._scripts.Inventory;
 using Mirror;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-using static ItemObject;
+
 
 public class DropSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
@@ -16,7 +18,7 @@ public class DropSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     private int siblingIndex;
     private Vector2 lastMousePosition;
     private Transform myParent;
-    private ItemObject myObject;
+    public ItemObject myObject;
     public Vector3 defPos;
 
     void Start()
@@ -48,7 +50,7 @@ public class DropSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
             itemText.text += "\n(" + itemInfo.durability + ")%";
         }
     }
-    private void Refresh()
+    public void Refresh()
     {
         itemText.text = itemInfo.item.item_name;
         if (itemInfo.item is weaponItem)
@@ -74,7 +76,7 @@ public class DropSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         //StartDrag
         lastMousePosition = eventData.position;
-        itemIcon.transform.SetParent(InventoryManager.GetOutTransform());
+        itemIcon.transform.SetParent(ServiceLocator.Get<S_Inventory>().GetOutTransform());
         itemIcon.raycastTarget = false;
         itemIcon.color = Color.gray;
     }
@@ -119,9 +121,11 @@ public class DropSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     }
     public void OnEndDrag(PointerEventData eventData)
     {
+
         //EndDrag
         if (eventData.pointerCurrentRaycast.gameObject)
         {
+            
             if (eventData.pointerCurrentRaycast.gameObject.TryGetComponent(out SlotTaker slotTaker))
             {
                 if (slotTaker.mySlot.slotType == ItemType.def)
@@ -163,14 +167,16 @@ public class DropSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
                             Destroy(gameObject);
                         }
                     }
-                    slotTaker.HideSlotState();
                 }
+                slotTaker.HideSlotState();
             }
             else
             {
-                if (InventoryManager.AddItem(itemInfo))
+                if (ServiceLocator.Get<S_Inventory>().AddItem(itemInfo))
                 {
+                    Destroy(myObject.gameObject);
                     Destroy(gameObject);
+
                 }
             }
         }
@@ -192,8 +198,9 @@ public class DropSlot : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     {
         if(eventData.clickCount > 1)
         {
-            if (InventoryManager.AddItem(itemInfo))
+            if (ServiceLocator.Get<S_Inventory>().AddItem(itemInfo))
             {
+                Destroy(myObject.gameObject);
                 Destroy(gameObject);
             }
         }

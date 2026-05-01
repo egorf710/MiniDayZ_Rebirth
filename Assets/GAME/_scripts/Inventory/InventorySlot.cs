@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Assets.GAME._scripts.Fic;
+using Assets.GAME._scripts.Inventory;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -38,8 +40,12 @@ public class InventorySlot : MonoBehaviour
 
     public void SetSlot(ItemInfo itemInfo)
     {
-        if (this.itemInfo == null) { this.itemInfo = new ItemInfo(); }
-        if(itemInfo == null || itemInfo.item == null) { ClearSlot(); return; }
+        if (this.itemInfo == null)
+        {
+            this.itemInfo = new ItemInfo();
+        }
+
+        if (itemInfo == null || itemInfo.item == null) { ClearSlot(); return; }
         this.itemInfo.name = itemInfo.name;
         this.itemInfo.item = itemInfo.item;
         this.itemInfo.amount += itemInfo.amount;
@@ -50,10 +56,10 @@ public class InventorySlot : MonoBehaviour
             {
                 this.itemInfo.amount = this.itemInfo.item.item_max_amount;
             }
-/*            if (this.itemInfo.durability > 100)
+            if (this.itemInfo.durability > 100)
             {
                 this.itemInfo.amount = 100;
-            }*/
+            }
             if (this.itemInfo.durability < 0)
             {
                 this.itemInfo.amount = 0;
@@ -156,15 +162,18 @@ public class InventorySlot : MonoBehaviour
 
             if (slotType != ItemType.def && this.itemInfo.item.slot_count > 0)
             {
-                for (int i = 0; i < itemInfo.insideItems.Count; i++)
+                this.itemInfo.insideItems = itemInfo.insideItems;
+
+                if (itemInfo.insideItems != null)
                 {
-                    this.insideSlots[i].SetSlot(itemInfo.insideItems[i]);
+                    for (int i = 0; i < itemInfo.insideItems.Count; i++)
+                    {
+                        this.insideSlots[i].SetSlot(itemInfo.insideItems[i]);
+                    }
                 }
             }
 
-            InventoryManager.SetClothes(this.itemInfo.item, true);
-
-            InventoryManager.SwitchToNewWeapon(false);
+            ServiceLocator.Get<S_Inventory>().SetClothes(this.itemInfo.item, true);
         }
 
         IsEmpty = false;
@@ -172,16 +181,7 @@ public class InventorySlot : MonoBehaviour
     public void DropSlot()
     {
         if (IsSlotBlocked) { return; }
-        itemInfo.insideItems = new List<ItemInfo>();
-        foreach (var item in insideSlots)
-        {
-            if (item.itemInfo != null && item.itemInfo.item != null)
-            {
-                itemInfo.insideItems.Add(item.itemInfo);
-            }
-        }
-        InventoryManager.Drop(this);
-        InventoryManager.SetActiveDropPanel(false);
+        ServiceLocator.Get<S_Inventory>().InstantiateItem(new ItemInfo(itemInfo));
         ClearSlot();
     }
     public void ClearSlot()
@@ -191,11 +191,11 @@ public class InventorySlot : MonoBehaviour
         if (itemInfo != null && itemInfo.item != null)
         {
             isWeapon = itemInfo.item is armorItem || itemInfo.item is weaponItem;
-            InventoryManager.ClearClothes(itemInfo.item.name);
+            ServiceLocator.Get<S_Inventory>().ClearClothes(itemInfo.item.name);
         }
         else
         {
-            InventoryManager.ClearClothes(slotType);
+            ServiceLocator.Get<S_Inventory>().ClearClothes(slotType);
         }
 
         foreach (var slot in insideSlots)
@@ -207,11 +207,14 @@ public class InventorySlot : MonoBehaviour
 
         if (itemInfo != null)
         {
-
             itemInfo.item = null;
             itemInfo.amount = 0;
             itemInfo.durability = 0;
             itemInfo.ammo = 0;
+            if (itemInfo.insideItems != null)
+            {
+                itemInfo.insideItems.Clear();
+            }
             itemInfo = null;
         }
         itemIcon.color = new Color(1, 1, 1, 0);
@@ -242,7 +245,6 @@ public class InventorySlot : MonoBehaviour
 
         if (isWeapon)
         {
-            InventoryManager.SwitchToNewWeapon(false);
         }
 
         IsEmpty = true;
