@@ -18,6 +18,7 @@ public class Item : ScriptableObject
     public bool stacable;
     public int item_max_amount;
     public bool use_durability;
+    public int durabilityDamage = 1;
     public int slot_count;
 
     [Serializable]

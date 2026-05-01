@@ -143,6 +143,7 @@ public class InventorySlot : MonoBehaviour
             itemBar.SetActive(true);
             //durabilityText.text = ((this.itemInfo.item as weaponItem).durability / 100 * itemInfo.durability) + "%";
             ammoText.text = this.itemInfo.ammo.ToString();
+
         }
         if (itemInfo.item is armorItem || itemInfo.item is weaponItem)
         {
@@ -173,7 +174,7 @@ public class InventorySlot : MonoBehaviour
                 }
             }
 
-            ServiceLocator.Get<S_Inventory>().SetClothes(this.itemInfo.item, true);
+            ServiceLocator.Get<InventoryWeaponChanger>().WeaponSlotUpdate(this);
         }
 
         IsEmpty = false;
@@ -183,6 +184,8 @@ public class InventorySlot : MonoBehaviour
         if (IsSlotBlocked) { return; }
         ServiceLocator.Get<S_Inventory>().InstantiateItem(new ItemInfo(itemInfo));
         ClearSlot();
+
+        ServiceLocator.Get<InventoryWeaponChanger>().ChangeBestWeapon();
     }
     public void ClearSlot()
     {
@@ -317,9 +320,10 @@ public class InventorySlot : MonoBehaviour
     
     public void RefreshAmmo()
     {
-        //print("test");
+        if (this.itemInfo != null && (this.itemInfo.item is ammoItem && this.itemInfo.ammo == 0) ) { ClearSlot(); return; }
+
         itemBar.SetActive(true);
-        durabilityText.text = itemInfo.durability.ToString() + "%";
+        //durabilityText.text = itemInfo.durability.ToString() + "%";
         ammoText.text = itemInfo.ammo.ToString();
     }
     public bool SlotIsNull()

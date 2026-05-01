@@ -27,4 +27,4 @@ MonoBehaviour:
   use_durability: 0
   slot_count: 0
   recipes: []
-  prefabAmmo: {fileID: 8874859707319872651, guid: 61aaeda98f1513d4bb477e855692cc21, type: 3}
+  prefabAmmo: {fileID: 5780931969531164569, guid: 07f0480a50d750848813582053b3d21f, type: 3}

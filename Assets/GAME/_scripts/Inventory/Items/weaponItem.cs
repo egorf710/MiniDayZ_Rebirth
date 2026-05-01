@@ -7,6 +7,7 @@ public class weaponItem : Item
 {
     public Sprite fullSprite;
     public int durability = 100;
+
     public int damage;
     public float shot = 1;
     public float punch_range;
